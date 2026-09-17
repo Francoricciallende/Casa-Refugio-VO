@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Paredes · Casa-Refugio</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=Spline+Sans+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&amp;family=Inter:wght@400;500;600&amp;family=Spline+Sans+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
 <style>
   :root{--ink:#23201b;--ink2:#5a544a;--paper:#efe9dd;--card:#f8f4ea;--line:#d6ccb8;
     --clay:#8a5a34;--clay-soft:#c69a6d;--moss:#4f6b3f;--rust:#a9502c;--done:#3f6b4a;
@@ -130,18 +131,18 @@
 </head>
 <body>
 <div id="loginGate" style="position:fixed;inset:0;z-index:9999;background:#efe9dd;display:flex;align-items:center;justify-content:center;font-family:'Inter',system-ui,sans-serif">
-  <div style="max-width:340px;width:90%;text-align:center;padding:32px 28px;background:#f8f4ea;border:1px solid #d6ccb8;border-radius:18px;box-shadow:0 8px 40px rgba(60,48,30,.12)">
-    <div style="font-family:'Fraunces',serif;font-weight:600;font-size:1.6rem;color:#23201b;margin-bottom:6px">Casa-Refugio</div>
-    <div style="font-size:.85rem;color:#5a544a;margin-bottom:22px">Proyecto privado · ingresá para ver</div>
-    <input id="gu" placeholder="Usuario" autocomplete="off" style="width:100%;padding:11px 14px;margin-bottom:10px;border:1px solid #d6ccb8;border-radius:10px;background:#efe9dd;color:#23201b;font-size:.95rem;box-sizing:border-box">
-    <input id="gp" type="password" placeholder="Clave" style="width:100%;padding:11px 14px;margin-bottom:8px;border:1px solid #d6ccb8;border-radius:10px;background:#efe9dd;color:#23201b;font-size:.95rem;box-sizing:border-box">
-    <div id="gerr" style="color:#a9502c;font-size:.82rem;min-height:18px;margin-bottom:8px"></div>
-    <button id="gb" style="width:100%;padding:12px;border:none;border-radius:10px;background:#8a5a34;color:#fff;font-size:.95rem;font-weight:600;cursor:pointer">Entrar</button>
-  </div>
+<div style="max-width:340px;width:90%;text-align:center;padding:32px 28px;background:#f8f4ea;border:1px solid #d6ccb8;border-radius:18px;box-shadow:0 8px 40px rgba(60,48,30,.12)">
+<div style="font-family:'Fraunces',serif;font-weight:600;font-size:1.6rem;color:#23201b;margin-bottom:6px">Casa-Refugio</div>
+<div style="font-size:.85rem;color:#5a544a;margin-bottom:22px">Proyecto privado · ingresá para ver</div>
+<input autocomplete="off" id="gu" placeholder="Usuario" style="width:100%;padding:11px 14px;margin-bottom:10px;border:1px solid #d6ccb8;border-radius:10px;background:#efe9dd;color:#23201b;font-size:.95rem;box-sizing:border-box"/>
+<input id="gp" placeholder="Clave" style="width:100%;padding:11px 14px;margin-bottom:8px;border:1px solid #d6ccb8;border-radius:10px;background:#efe9dd;color:#23201b;font-size:.95rem;box-sizing:border-box" type="password"/>
+<div id="gerr" style="color:#a9502c;font-size:.82rem;min-height:18px;margin-bottom:8px"></div>
+<button id="gb" style="width:100%;padding:12px;border:none;border-radius:10px;background:#8a5a34;color:#fff;font-size:.95rem;font-weight:600;cursor:pointer">Entrar</button>
+</div>
 </div>
 <script>
 (function(){
-  var U="Refugio", P="1234", K="clr_auth_ok";
+  var U="RefugioV0", P="1234", K="clr_auth_ok";
   var gate=document.getElementById('loginGate');
   function ok(){ gate.style.display='none'; }
   try{ if(sessionStorage.getItem(K)==='1'){ ok(); } }catch(e){}
@@ -156,16 +157,27 @@
   document.getElementById('gu').addEventListener('keydown',function(e){ if(e.key==='Enter')document.getElementById('gp').focus(); });
 })();
 </script>
-
 <header class="top">
-  <div class="wrap">
-    <div class="brand"><span class="b1">Casa-Refugio</span><span class="b2">Villa Las Rosas · Traslasierra</span></div>
-    <a class="navback" href="index.html">Proyecto</a>
-  </div>
+<div class="wrap">
+<div class="brand"><span class="b1">Casa-Refugio</span><span class="b2">Villa Las Rosas · Traslasierra</span></div>
+<a class="navback" href="index.html">Proyecto</a>
+</div>
 </header>
-<nav class="strip" aria-label="Secciones de obra">
-  <div class="strip-wrap"><div class="wrap">
-    <a class="chip" href="index.html">Proyecto</a>
+<nav aria-label="Secciones de obra" class="strip">
+<div class="strip-wrap"><div class="wrap">
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="chip" href="index.html">Proyecto</a>
     <a class="chip" href="fundacion.html">1·Fundación</a>
     <a class="chip" href="piso.html">2·Piso</a>
     <a class="chip" href="columnas.html">3·Columnas</a>
@@ -174,148 +186,153 @@
     <a class="chip" href="instalaciones.html">6·Instalaciones</a>
     <a class="chip" href="cerramientos.html">7·Cerramientos</a>
     <a class="chip" href="terminaciones.html">8·Terminaciones</a>
-    <a class="chip" href="cronograma.html">Cronograma</a>
-    <a class="chip" href="costos.html">Costo total</a>
-    <a class="chip" href="materiales.html">Materiales</a>
-  </div></div>
+    </div></div>
 </nav>
 <main class="wrap">
+
   <div class="hero">
     <p class="kicker">Etapa 5 de 8</p>
     <h1>Paredes</h1>
-    <p class="lead">El cierre de quincha entre las columnas: bastidor, caña, barro y cal. No cargan el techo, solo aíslan y dan masa térmica. La etapa más larga de la obra.</p>
+    <p class="lead">El cierre exterior entre columnas: paneles de <b>woodframe no portantes</b> con
+    <b>placa cementicia</b> hacia afuera y aislación en la cavidad. No cargan el techo (lo sostienen
+    las columnas): solo cierran, aíslan y arriostran el conjunto.</p>
+
     <div class="progwrap">
       <div class="progbar"><div class="progfill" id="fill"></div></div>
-      <div class="progtxt" id="ptxt">0 pasos</div>
+      <div class="progtxt" id="ptxt">0 de 9 pasos</div>
     </div>
     <div class="savednote" id="saved"></div>
   </div>
+
   <div class="figs">
-    <div class="fig"><div class="n">197<small> m²</small></div><div class="l">superficie encañada</div></div>
-    <div class="fig"><div class="n">8,7<small> m³</small></div><div class="l">barro-paja</div></div>
-    <div class="fig"><div class="n">1.350</div><div class="l">cañas</div></div>
-    <div class="fig"><div class="n">617<small> h</small></div><div class="l">mano de obra</div></div>
-    <div class="fig"><div class="n">$10,19<small> M</small></div><div class="l">costo de la etapa</div></div>
+    <div class="fig"><div class="n">55<small> m²</small></div><div class="l">muro exterior</div></div>
+    <div class="fig"><div class="n">0,15<small> m</small></div><div class="l">espesor del panel</div></div>
+    <div class="fig"><div class="n">100<small> mm</small></div><div class="l">aislación (lana)</div></div>
+    <div class="fig"><div class="n">2"×4"</div><div class="l">montantes @ 0,40</div></div>
   </div>
 
+  <!-- QUÉ SE HACE -->
   <section class="blk">
     <h2><span class="mk">i</span>Qué se hace en esta etapa</h2>
-    <p>Con la casa ya techada, se cierran las paredes de quincha entre las columnas. Primero el bastidor de
-    madera (que no carga el techo, solo sostiene el barro), después el encañado en las dos caras, el relleno
-    de barro-paja, y por último los revoques de tierra terminados en cal. Es la etapa más larga de la obra:
-    casi la mitad de las horas totales.</p>
-    <div class="note"><b>Las paredes cierran, no sostienen.</b> El techo ya está parado sobre las columnas. La quincha
-    entra entre medio: aísla, da masa térmica y cierra. Por eso el bastidor puede ser más liviano que en un sistema portante.</div>
+    <p>Con la casa ya techada, se cierran los muros entre columnas con paneles de estructura de
+    madera (woodframe). Cada panel es un bastidor de montantes 2"×4" que se rellena con aislación,
+    se arriostra con una placa de OSB/fenólico y se reviste: hacia afuera con <b>placa cementicia</b>
+    sobre una barrera de agua-viento, y hacia adentro con placa de yeso sobre una barrera de vapor.
+    El panel no carga el techo, solo cierra y aísla.</p>
+
+    <div class="note"><b>Las paredes cierran, no sostienen.</b> El techo ya está parado sobre las
+    columnas. El panel de woodframe es el cerramiento y la aislación; la placa cementicia le da la
+    piel exterior dura y resistente al agua.</div>
   </section>
+
+  <!-- COMPOSICIÓN DEL MURO -->
+  <section class="blk">
+    <h2><span class="mk">▤</span>Composición del muro (exterior → interior)</h2>
+    <div class="tablecard">
+      <table>
+        <thead><tr><th>Capa</th><th>Función</th></tr></thead>
+        <tbody>
+          <tr><td>Placa cementicia 8–10 mm</td><td>revestimiento exterior, resiste agua e intemperie</td></tr>
+          <tr><td>Barrera de agua-viento (membrana hidrófuga)</td><td>evita que entre agua, deja salir el vapor</td></tr>
+          <tr><td>OSB / fenólico 12 mm</td><td>arriostramiento estructural del panel</td></tr>
+          <tr><td>Montantes 2"×4" @ 0,40 + lana de vidrio 100 mm</td><td>estructura del cierre y aislación térmica</td></tr>
+          <tr><td>Barrera de vapor (film polietileno)</td><td>del lado interior (cálido), evita condensación en la cavidad</td></tr>
+          <tr><td>Placa de yeso 12,5 mm</td><td>terminación interior</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="muted">Sistema woodframe estándar. La placa cementicia se termina con junta tomada y
+    pintura, o con un revoque fino sobre la placa para aspecto tradicional.</p>
+  </section>
+
+  <!-- MATERIALES -->
   <section class="blk">
     <h2><span class="mk">▦</span>Materiales de la etapa</h2>
+    <p>Cantidades netas con desperdicio incluido, para ~55 m² de muro.</p>
     <div class="tablecard">
       <table>
-        <thead><tr><th>Bastidor y arriostramiento</th><th class="num">Cantidad</th><th class="num">P. unit.</th><th class="num">Subtotal</th></tr></thead>
+        <thead><tr><th>Material</th><th class="num">Cantidad</th></tr></thead>
         <tbody>
-          <tr><td>Bastidor pino 2"×4"</td><td class="num">465 ml</td><td class="num">$4.200</td><td class="num">$2.148.300</td></tr>
-          <tr><td>Fenólico 12 mm (arriostramiento)</td><td class="num">10 placas</td><td class="num">$44.000</td><td class="num">$440.000</td></tr>
+          <tr><td>Montantes y soleras 2"×4"</td><td class="num">185 ml</td></tr>
+          <tr><td>Placa cementicia 8 mm (1,20×2,40)</td><td class="num">22 placas</td></tr>
+          <tr><td>OSB / fenólico 12 mm (arriostramiento)</td><td class="num">22 placas</td></tr>
+          <tr><td>Placa de yeso 12,5 mm interior</td><td class="num">22 placas</td></tr>
+          <tr><td>Lana de vidrio 100 mm</td><td class="num">55 m²</td></tr>
+          <tr><td>Membrana hidrófuga (barrera agua-viento)</td><td class="num">60 m²</td></tr>
+          <tr><td>Film polietileno 200 µ (barrera de vapor)</td><td class="num">60 m²</td></tr>
+          <tr><td>Tornillería, fijaciones, cinta y tomajunta</td><td class="num">1 global</td></tr>
         </tbody>
-        <tfoot><tr><td>Subtotal bastidor</td><td class="num"></td><td class="num"></td><td class="num">$2.588.300</td></tr></tfoot>
       </table>
     </div>
-    <div class="tablecard">
-      <table>
-        <thead><tr><th>Quincha</th><th class="num">Cantidad</th><th class="num">P. unit.</th><th class="num">Subtotal</th></tr></thead>
-        <tbody>
-          <tr><td>Caña de Castilla 3 m</td><td class="num">1.350 u</td><td class="num">$2.500</td><td class="num">$3.375.000</td></tr>
-          <tr><td>Paja · fardos 20 kg</td><td class="num">55 u</td><td class="num">$9.000</td><td class="num">$495.000</td></tr>
-          <tr><td>Cal aérea · bolsas 25 kg</td><td class="num">10 u</td><td class="num">$18.000</td><td class="num">$180.000</td></tr>
-          <tr><td>Arena fina y mediana</td><td class="num">6 m³</td><td class="num">$35.000</td><td class="num">$210.000</td></tr>
-          <tr><td>Sales de boro</td><td class="num">25 kg</td><td class="num">$8.500</td><td class="num">$212.500</td></tr>
-        </tbody>
-        <tfoot><tr><td>Subtotal quincha</td><td class="num"></td><td class="num"></td><td class="num">$4.472.500</td></tr></tfoot>
-      </table>
-    </div>
-    <div class="tablecard">
-      <table>
-        <thead><tr><th>Tarea</th><th class="num">Horas</th><th class="num">Nivel</th><th class="num">Valor/h</th><th class="num">Subtotal</th></tr></thead>
-        <tbody>
-          <tr><td>Bastidores y anclado</td><td class="num">64 h</td><td class="num">Oficial</td><td class="num">$11.000</td><td class="num">$704.000</td></tr>
-          <tr><td>Encañado</td><td class="num">48 h</td><td class="num">Peón</td><td class="num">$6.500</td><td class="num">$312.000</td></tr>
-          <tr><td>Relleno de barro</td><td class="num">40 h</td><td class="num">Peón</td><td class="num">$6.500</td><td class="num">$260.000</td></tr>
-          <tr><td>Revoques de barro y cal</td><td class="num">80 h</td><td class="num">Semi-oficial</td><td class="num">$8.500</td><td class="num">$680.000</td></tr>
-        </tbody>
-        <tfoot><tr><td>Subtotal mano de obra</td><td class="num">232 h</td><td class="num"></td><td class="num"></td><td class="num">$1.956.000</td></tr></tfoot>
-      </table>
-    </div>
-    <div class="tablecard"><table><tfoot><tr><td><b>Total de la etapa Paredes</b></td><td class="num"></td><td class="num"></td><td class="num"><b>$10.186.800</b></td></tr></tfoot></table></div>
-    <p class="muted">La tierra sale de la excavación (no se computa). Si cortás la caña en el terreno en otoño, ahorrás ~$3,4 M.</p>
   </section>
+
+  <!-- COLGAR COSAS -->
   <section class="blk">
-    <h2><span class="mk">◔</span>Dirección y asistencia técnica</h2>
-    <p>El director no está toda la jornada: da las instrucciones al inicio del día y controla el trabajo al
-    cierre. Para esta etapa se estiman <b>90 horas</b> de dirección y asistencia técnica (30 días de obra, ~3 h por día).</p>
-    <div class="tablecard"><table>
-      <thead><tr><th>Concepto</th><th class="num">Horas est.</th><th class="num">Valor/h est.</th><th class="num">Monto estimado</th></tr></thead>
-      <tbody><tr><td>Supervisión y control de obra</td><td class="num">90 h</td><td class="num">$13.000</td><td class="num">$1.170.000</td></tr></tbody>
-    </table></div>
-    <p class="muted">Valor de referencia de un supervisor con experiencia media (sin título). El valor final se acuerda con quien dirija la obra.
-    El cálculo estructural y los planos municipales los firma un profesional matriculado aparte.</p>
+    <h2><span class="mk">⚑</span>Refuerzos para colgar cosas (prever antes de cerrar)</h2>
+    <p>En woodframe las <b>cosas livianas</b> (cuadros, repisas chicas) se fijan con tornillo a la
+    placa con tarugo tipo mariposa. Las <b>cosas pesadas</b> tienen que agarrar en madera: hay que
+    dejar un refuerzo (una tabla o un montante extra entre montantes) en el lugar exacto <b>antes de
+    cerrar el panel</b>. El tornillo después agarra en la madera, no en la placa.</p>
+    <div class="tablecard">
+      <table>
+        <thead><tr><th>Qué se cuelga</th><th>Dónde</th><th>Refuerzo</th></tr></thead>
+        <tbody>
+          <tr><td>Muebles bajo mesada</td><td>muro sur</td><td>tabla continua entre montantes a la altura de anclaje</td></tr>
+          <tr><td>Calefón / termotanque</td><td>a definir</td><td>doble montante + tabla, es lo más pesado</td></tr>
+          <tr><td>Estantería / biblioteca</td><td>a definir</td><td>montantes reforzados en los puntos de anclaje</td></tr>
+          <tr><td>Repisas y cuadros livianos</td><td>cualquier lado</td><td>ninguno · tarugo mariposa a la placa</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note"><b>Cómo hacerlo:</b> antes de colocar la placa interior, marcá en el bastidor
+    dónde van los pesos y clavá ahí una tabla o un montante extra. Anotá la altura exacta (medí
+    desde el piso) y sacá una foto del bastidor con las medidas antes de cerrar.</div>
   </section>
+
+  <!-- PASO A PASO -->
   <section class="blk">
     <h2><span class="mk moss">→</span>Paso a paso de obra</h2>
     <ol class="steps">
-      <li><b>Prueba de la tierra</b><span>Antes de mezclar, prueba del frasco: sirve una tierra con 15-25% de arcilla. Prueba de mano: si la bola se rompe falta arcilla, si queda pegajosa sobra.</span></li>
-      <li><b>Bastidor entre columnas</b><span>Armar los bastidores 2"×4" acostados sobre la plataforma, marcar y levantar entre las columnas. Bloqueos horizontales cada 1,20. Montante doble en extremos y vanos.</span></li>
-      <li><b>Instalaciones en el muro</b><span>Pasar las cañerías eléctricas corrugadas y cajas ANTES de encañar. Agua y cloaca mejor por tabiques interiores o la cámara.</span></li>
-      <li><b>Encañado</b><span>Partir la caña y clavarla horizontal cada 0,05 en las dos caras. Empalmar solapando 0,15 sobre un montante. Dejar la caña 1 cm saliente para que agarre el revoque.</span></li>
-      <li><b>Relleno de barro-paja</b><span>Mezcla tierra:paja 1:1, densidad ~900 kg/m³. Cargar por tongadas de 0,40 empujando con la mano contra las cañas. Sin pisón mecánico: revienta la caña.</span></li>
-      <li><b>Secado</b><span>2 a 3 semanas con la casa techada y aberturas abiertas. Control del clavo: si sale húmedo, todavía no. Revocar sobre barro húmedo = fisuras cada año.</span></li>
-      <li><b>Revoque grueso</b><span>Tierra:arena 1:2 con paja picada, apretado contra la caña. Rayar en cruz antes de que endurezca para que agarre el fino. Secar una semana.</span></li>
-      <li><b>Revoque fino y terminación</b><span>Tierra cribada:arena 1:3. Zócalo de 0,30 en cal, no en barro. Exterior en cal aérea, nunca cemento: el muro tiene que secar hacia afuera.</span></li>
+      <li><b>Replanteo y soleras</b><span>Marcar sobre la plataforma las líneas de muro entre columnas. Fijar la solera inferior al piso.</span></li>
+      <li><b>Armado de bastidores</b><span>Montantes 2"×4" @ 0,40 acostados sobre la plataforma; soleras superior e inferior, bloqueos horizontales cada 1,20, montante doble en extremos y vanos de aberturas.</span></li>
+      <li><b>Levantar y fijar los paneles</b><span>Aplomar entre columnas y fijar a la estructura arriba y al piso abajo. Verificar escuadra y plomo.</span></li>
+      <li><b>Instalaciones en el muro</b><span>Pasar las cañerías eléctricas corrugadas y cajas ANTES de cerrar. Agua y cloaca por tabiques interiores o la cámara.</span></li>
+      <li><b>Arriostramiento (OSB/fenólico)</b><span>Placa de OSB o fenólico 12 mm clavada sobre los montantes en la cara exterior: rigidiza el panel contra el viento.</span></li>
+      <li><b>Barrera de agua-viento</b><span>Membrana hidrófuga sobre el OSB, solapada 0,10 y sellada en aberturas. El agua no entra, el vapor sale.</span></li>
+      <li><b>Placa cementicia exterior</b><span>Atornillar la placa cementicia sobre la membrana, respetando juntas de dilatación. Tomar juntas con malla y masilla para exterior.</span></li>
+      <li><b>Aislación y barrera de vapor</b><span>Lana de vidrio 100 mm en la cavidad; film de polietileno del lado interior, solapado y sellado.</span></li>
+      <li><b>Placa de yeso interior</b><span>Atornillar la placa de yeso, tomar juntas y lijar. Queda listo para pintar en terminaciones.</span></li>
     </ol>
   </section>
 
-  <section class="blk">
-    <h2><span class="mk">⚑</span>Refuerzos para colgar cosas (prever antes de encañar)</h2>
-    <p>En la quincha se pueden colgar <b>cosas livianas</b> (cuadros, repisas chicas, percheros) con tornillo
-    y tarugo sin problema: agarran en el revoque. Pero las <b>cosas pesadas</b> el barro solo no las sostiene:
-    hay que dejar un refuerzo de madera dentro del bastidor, en el lugar exacto, ANTES de encañar. El tornillo
-    después agarra en la madera, no en el barro. Romper para reforzar después es trabajo repetido.</p>
-    <div class="tablecard"><table>
-      <thead><tr><th>Qué se cuelga</th><th>Dónde</th><th>Refuerzo a dejar</th></tr></thead>
-      <tbody>
-        <tr><td>Alacenas de cocina</td><td>muro sur (sobre mesada)</td><td>tabla horizontal 2"×6" embutida a la altura de fijación</td></tr>
-        <tr><td>Muebles bajo mesada</td><td>muro sur</td><td>montante extra + tabla al ras del piso</td></tr>
-        <tr><td>Calefón / termotanque</td><td>a definir</td><td>doble montante + tabla, es lo más pesado</td></tr>
-        <tr><td>TV</td><td>estar</td><td>tabla 2"×6" horizontal en la zona del soporte</td></tr>
-        <tr><td>Estantería / biblioteca</td><td>a definir</td><td>montantes reforzados en los puntos de anclaje</td></tr>
-        <tr><td>Repisas y cuadros livianos</td><td>cualquier lado</td><td>ninguno · tarugo directo al revoque</td></tr>
-      </tbody>
-    </table></div>
-    <div class="note"><b>Cómo hacerlo:</b> antes de encañar, marcá en el bastidor dónde van los pesos y clavá ahí
-    una tabla o un montante extra. Anotá la altura exacta (medí desde el piso) para encontrarla después bajo el
-    revoque. Un truco: sacá una foto del bastidor con las medidas antes de tapar con la caña.</div>
-  </section>
+  <div class="note warn"><b>Respetar el orden de las barreras.</b> La barrera de agua-viento va
+  siempre del lado exterior (bajo la placa cementicia) y la de vapor del lado interior (bajo el
+  yeso). Invertirlas atrapa humedad dentro de la cavidad y pudre la madera.</div>
 
-  <div class="note warn"><b>Nunca revoque de cemento.</b> Sella el muro, la humedad queda atrapada del lado del barro
-  y la madera se pudre sin que se note. El zócalo (primeros 30 cm) va en cal directa: es la franja que recibe el rebote de la lluvia.</div>
-
+  <!-- AVANCE -->
   <section class="blk">
     <h2><span class="mk moss">✓</span>Marcar avance</h2>
     <p>Tocá cada paso a medida que se completa en obra. Se guarda en este dispositivo.</p>
     <div class="checkcard" id="checklist">
-      <div class="chkitem" data-id="w1"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Prueba de tierra hecha (15-25% arcilla)</div></div>
-      <div class="chkitem" data-id="w2"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Bastidores armados entre columnas</div></div>
-      <div class="chkitem" data-id="w3"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Instalaciones pasadas antes de encañar</div></div>
-      <div class="chkitem" data-id="w4"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Encañado completo en las dos caras</div></div>
-      <div class="chkitem" data-id="w5"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Relleno de barro-paja cargado</div></div>
-      <div class="chkitem" data-id="w6"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Secado verificado (prueba del clavo)<span class=chkhint>2 a 3 semanas</span></div></div>
-      <div class="chkitem" data-id="w7"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Revoque grueso aplicado y rayado</div></div>
-      <div class="chkitem" data-id="w8"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Revoque fino y zócalo de cal terminados</div></div>
+      <div class="chkitem" data-id="w1"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Replanteo y soleras fijadas</div></div>
+      <div class="chkitem" data-id="w2"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Bastidores armados</div></div>
+      <div class="chkitem" data-id="w3"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Paneles levantados y aplomados</div></div>
+      <div class="chkitem" data-id="w4"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Instalaciones pasadas antes de cerrar</div></div>
+      <div class="chkitem" data-id="w5"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Arriostramiento (OSB/fenólico) colocado</div></div>
+      <div class="chkitem" data-id="w6"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Barrera de agua-viento sellada</div></div>
+      <div class="chkitem" data-id="w7"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Placa cementicia exterior con juntas tomadas</div></div>
+      <div class="chkitem" data-id="w8"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Aislación y barrera de vapor colocadas</div></div>
+      <div class="chkitem" data-id="w9"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Placa de yeso interior tomada y lijada</div></div>
     </div>
     <button class="reset" id="resetbtn">Reiniciar avance de esta sección</button>
   </section>
+
+  <!-- PAGER -->
   <nav class="pager">
     <a class="pgbtn" href="techo.html"><span class="dir">← Anterior</span><div class="t">4 · Techo</div></a>
     <a class="pgbtn next" href="instalaciones.html"><span class="dir">Siguiente →</span><div class="t">6 · Instalaciones</div></a>
   </nav>
+
 </main>
 <script>
   var KEY='clr_paredes';

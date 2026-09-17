@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Terminaciones · Casa-Refugio</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=Spline+Sans+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&amp;family=Inter:wght@400;500;600&amp;family=Spline+Sans+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
 <style>
   :root{--ink:#23201b;--ink2:#5a544a;--paper:#efe9dd;--card:#f8f4ea;--line:#d6ccb8;
     --clay:#8a5a34;--clay-soft:#c69a6d;--moss:#4f6b3f;--rust:#a9502c;--done:#3f6b4a;
@@ -130,18 +131,18 @@
 </head>
 <body>
 <div id="loginGate" style="position:fixed;inset:0;z-index:9999;background:#efe9dd;display:flex;align-items:center;justify-content:center;font-family:'Inter',system-ui,sans-serif">
-  <div style="max-width:340px;width:90%;text-align:center;padding:32px 28px;background:#f8f4ea;border:1px solid #d6ccb8;border-radius:18px;box-shadow:0 8px 40px rgba(60,48,30,.12)">
-    <div style="font-family:'Fraunces',serif;font-weight:600;font-size:1.6rem;color:#23201b;margin-bottom:6px">Casa-Refugio</div>
-    <div style="font-size:.85rem;color:#5a544a;margin-bottom:22px">Proyecto privado · ingresá para ver</div>
-    <input id="gu" placeholder="Usuario" autocomplete="off" style="width:100%;padding:11px 14px;margin-bottom:10px;border:1px solid #d6ccb8;border-radius:10px;background:#efe9dd;color:#23201b;font-size:.95rem;box-sizing:border-box">
-    <input id="gp" type="password" placeholder="Clave" style="width:100%;padding:11px 14px;margin-bottom:8px;border:1px solid #d6ccb8;border-radius:10px;background:#efe9dd;color:#23201b;font-size:.95rem;box-sizing:border-box">
-    <div id="gerr" style="color:#a9502c;font-size:.82rem;min-height:18px;margin-bottom:8px"></div>
-    <button id="gb" style="width:100%;padding:12px;border:none;border-radius:10px;background:#8a5a34;color:#fff;font-size:.95rem;font-weight:600;cursor:pointer">Entrar</button>
-  </div>
+<div style="max-width:340px;width:90%;text-align:center;padding:32px 28px;background:#f8f4ea;border:1px solid #d6ccb8;border-radius:18px;box-shadow:0 8px 40px rgba(60,48,30,.12)">
+<div style="font-family:'Fraunces',serif;font-weight:600;font-size:1.6rem;color:#23201b;margin-bottom:6px">Casa-Refugio</div>
+<div style="font-size:.85rem;color:#5a544a;margin-bottom:22px">Proyecto privado · ingresá para ver</div>
+<input autocomplete="off" id="gu" placeholder="Usuario" style="width:100%;padding:11px 14px;margin-bottom:10px;border:1px solid #d6ccb8;border-radius:10px;background:#efe9dd;color:#23201b;font-size:.95rem;box-sizing:border-box"/>
+<input id="gp" placeholder="Clave" style="width:100%;padding:11px 14px;margin-bottom:8px;border:1px solid #d6ccb8;border-radius:10px;background:#efe9dd;color:#23201b;font-size:.95rem;box-sizing:border-box" type="password"/>
+<div id="gerr" style="color:#a9502c;font-size:.82rem;min-height:18px;margin-bottom:8px"></div>
+<button id="gb" style="width:100%;padding:12px;border:none;border-radius:10px;background:#8a5a34;color:#fff;font-size:.95rem;font-weight:600;cursor:pointer">Entrar</button>
+</div>
 </div>
 <script>
 (function(){
-  var U="Refugio", P="1234", K="clr_auth_ok";
+  var U="RefugioV0", P="1234", K="clr_auth_ok";
   var gate=document.getElementById('loginGate');
   function ok(){ gate.style.display='none'; }
   try{ if(sessionStorage.getItem(K)==='1'){ ok(); } }catch(e){}
@@ -156,16 +157,27 @@
   document.getElementById('gu').addEventListener('keydown',function(e){ if(e.key==='Enter')document.getElementById('gp').focus(); });
 })();
 </script>
-
 <header class="top">
-  <div class="wrap">
-    <div class="brand"><span class="b1">Casa-Refugio</span><span class="b2">Villa Las Rosas · Traslasierra</span></div>
-    <a class="navback" href="index.html">Proyecto</a>
-  </div>
+<div class="wrap">
+<div class="brand"><span class="b1">Casa-Refugio</span><span class="b2">Villa Las Rosas · Traslasierra</span></div>
+<a class="navback" href="index.html">Proyecto</a>
+</div>
 </header>
-<nav class="strip" aria-label="Secciones de obra">
-  <div class="strip-wrap"><div class="wrap">
-    <a class="chip" href="index.html">Proyecto</a>
+<nav aria-label="Secciones de obra" class="strip">
+<div class="strip-wrap"><div class="wrap">
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="chip" href="index.html">Proyecto</a>
     <a class="chip" href="fundacion.html">1·Fundación</a>
     <a class="chip" href="piso.html">2·Piso</a>
     <a class="chip" href="columnas.html">3·Columnas</a>
@@ -174,105 +186,79 @@
     <a class="chip" href="instalaciones.html">6·Instalaciones</a>
     <a class="chip" href="cerramientos.html">7·Cerramientos</a>
     <a class="chip active" href="terminaciones.html">8·Terminaciones</a>
-    <a class="chip" href="cronograma.html">Cronograma</a>
-    <a class="chip" href="costos.html">Costo total</a>
-    <a class="chip" href="materiales.html">Materiales</a>
-  </div></div>
+    </div></div>
 </nav>
 <main class="wrap">
-  <div class="hero">
-    <p class="kicker">Etapa 8 de 8</p>
-    <h1>Terminaciones</h1>
-    <p class="lead">Todo lo que deja la casa lista para habitar: aberturas, pisos, pintura, muebles y artefactos. La etapa con más variación de precio según lo que elijas.</p>
-    <div class="progwrap">
-      <div class="progbar"><div class="progfill" id="fill"></div></div>
-      <div class="progtxt" id="ptxt">0 pasos</div>
-    </div>
-    <div class="savednote" id="saved"></div>
-  </div>
-  <div class="figs">
-    <div class="fig"><div class="n">10</div><div class="l">aberturas</div></div>
-    <div class="fig"><div class="n">45<small> m²</small></div><div class="l">pisos</div></div>
-    <div class="fig"><div class="n">100<small> h</small></div><div class="l">mano de obra</div></div>
-    <div class="fig"><div class="n">$10,15<small> M</small></div><div class="l">costo de la etapa</div></div>
-  </div>
+<div class="hero">
+<p class="kicker">Etapa 8 de 8</p>
+<h1>Terminaciones</h1>
+<p class="lead">Todo lo que deja la casa lista para habitar: aberturas, pisos, pintura, muebles y artefactos. La etapa con más variación de precio según lo que elijas.</p>
+<div class="progwrap">
+<div class="progbar"><div class="progfill" id="fill"></div></div>
+<div class="progtxt" id="ptxt">0 pasos</div>
+</div>
+<div class="savednote" id="saved"></div>
+</div>
+<div class="figs">
+<div class="fig"><div class="n">10</div><div class="l">aberturas</div></div>
+<div class="fig"><div class="n">45<small> m²</small></div><div class="l">pisos</div></div>
 
-  <section class="blk">
-    <h2><span class="mk">i</span>Qué se hace en esta etapa</h2>
-    <p>Todo lo que deja la casa lista para habitar: aberturas, pisos interiores, pintura, muebles de cocina y
-    baño, y los artefactos. Es la etapa con más variación de precio, porque depende mucho de la calidad que
-    elijas en cada cosa. Los números son de referencia: conviene ajustarlos con presupuestos reales cuando llegues acá.</p>
-    <div class="note warn"><b>Números de referencia.</b> Este rubro (aberturas, muebles, artefactos) tiene el mayor rango
-    de precio de toda la obra. Tomá estos valores como orientación y ajustalos con cotizaciones reales al momento de comprar.</div>
-  </section>
-  <section class="blk">
-    <h2><span class="mk">▦</span>Materiales de la etapa</h2>
-    <div class="tablecard">
-      <table>
-        <thead><tr><th>Terminación</th><th class="num">Cantidad</th><th class="num">P. unit.</th><th class="num">Subtotal</th></tr></thead>
-        <tbody>
-          <tr><td>Aberturas (ventanas y puertas)</td><td class="num">1 conjunto</td><td class="num">—</td><td class="num">$4.153.200</td></tr>
-          <tr><td>Pisos interiores</td><td class="num">45,36 m²</td><td class="num">$35.000</td><td class="num">$1.587.600</td></tr>
-          <tr><td>Pintura (cal/silicato, 2 manos)</td><td class="num">1 global</td><td class="num">—</td><td class="num">$350.000</td></tr>
-          <tr><td>Muebles de cocina, baño y guardado</td><td class="num">1 conjunto</td><td class="num">—</td><td class="num">$1.800.000</td></tr>
-          <tr><td>Artefactos (sanitarios, mesada)</td><td class="num">1 conjunto</td><td class="num">—</td><td class="num">$900.000</td></tr>
-        </tbody>
-        <tfoot><tr><td>Subtotal materiales</td><td class="num"></td><td class="num"></td><td class="num">$8.790.800</td></tr></tfoot>
-      </table>
-    </div>
-    <div class="tablecard">
-      <table>
-        <thead><tr><th>Tarea</th><th class="num">Horas</th><th class="num">Nivel</th><th class="num">Valor/h</th><th class="num">Subtotal</th></tr></thead>
-        <tbody>
-          <tr><td>Colocación y terminación</td><td class="num">100 h</td><td class="num">Semi-oficial</td><td class="num">$8.500</td><td class="num">$850.000</td></tr>
-        </tbody>
-        <tfoot><tr><td>Subtotal mano de obra</td><td class="num">100 h</td><td class="num"></td><td class="num"></td><td class="num">$850.000</td></tr></tfoot>
-      </table>
-    </div>
-    <div class="tablecard"><table><tfoot><tr><td><b>Total de la etapa Terminaciones</b></td><td class="num"></td><td class="num"></td><td class="num"><b>$10.147.800</b></td></tr></tfoot></table></div>
-  </section>
-  <section class="blk">
-    <h2><span class="mk">◔</span>Dirección y asistencia técnica</h2>
-    <p>El director no está toda la jornada: da las instrucciones al inicio del día y controla el trabajo al
-    cierre. Para esta etapa se estiman <b>39 horas</b> de dirección y asistencia técnica (13 días de obra, ~3 h por día).</p>
-    <div class="tablecard"><table>
-      <thead><tr><th>Concepto</th><th class="num">Horas est.</th><th class="num">Valor/h est.</th><th class="num">Monto estimado</th></tr></thead>
-      <tbody><tr><td>Supervisión y control de obra</td><td class="num">39 h</td><td class="num">$13.000</td><td class="num">$507.000</td></tr></tbody>
-    </table></div>
-    <p class="muted">Valor de referencia de un supervisor con experiencia media (sin título). El valor final se acuerda con quien dirija la obra.
-    El cálculo estructural y los planos municipales los firma un profesional matriculado aparte.</p>
-  </section>
-  <section class="blk">
-    <h2><span class="mk moss">→</span>Paso a paso de obra</h2>
-    <ol class="steps">
-      <li><b>Aberturas</b><span>Colocar ventanas y puertas con sus dinteles ya previstos en el bastidor. Sellar los encuentros con el muro de quincha.</span></li>
-      <li><b>Pisos</b><span>Colocar el piso interior elegido sobre el fenólico. Zócalos.</span></li>
-      <li><b>Pintura</b><span>Interior: cal o silicato, dos manos. Exterior ya terminado en la etapa de paredes (cal aérea).</span></li>
-      <li><b>Muebles y mesada</b><span>Cocina, baño y guardado. Mesada sobre el muro sur según proyecto.</span></li>
-      <li><b>Artefactos y conexión final</b><span>Sanitarios, grifería, conexión de artefactos. Prueba final de todas las instalaciones.</span></li>
-      <li><b>Revisión final</b><span>Recorrer zócalos y encuentros de aberturas. Después de la primera temporada de lluvias, retocar lo que se haya lavado.</span></li>
-    </ol>
-  </section>
-  <div class="note"><b>Mantenimiento.</b> Un muro de quincha bien sombrereado (aleros) y con buenas botas (zócalo de cal,
-  piso elevado) dura más que la chapa que lo cubre. Revisión cada 3-4 años.</div>
 
-  <section class="blk">
-    <h2><span class="mk moss">✓</span>Marcar avance</h2>
-    <p>Tocá cada paso a medida que se completa en obra. Se guarda en este dispositivo.</p>
-    <div class="checkcard" id="checklist">
-      <div class="chkitem" data-id="z1"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Aberturas colocadas y selladas</div></div>
-      <div class="chkitem" data-id="z2"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Pisos interiores y zócalos</div></div>
-      <div class="chkitem" data-id="z3"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Pintura interior terminada</div></div>
-      <div class="chkitem" data-id="z4"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Muebles y mesada instalados</div></div>
-      <div class="chkitem" data-id="z5"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Artefactos conectados y probados</div></div>
-      <div class="chkitem" data-id="z6"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Revisión final de la obra</div></div>
-    </div>
-    <button class="reset" id="resetbtn">Reiniciar avance de esta sección</button>
-  </section>
-  <nav class="pager">
-    <a class="pgbtn" href="cerramientos.html"><span class="dir">← Anterior</span><div class="t">7 · Cerramientos internos</div></a>
-    <a class="pgbtn next" href="cronograma.html"><span class="dir">Siguiente →</span><div class="t">Cronograma</div></a>
-  </nav>
+</div>
+<section class="blk">
+<h2><span class="mk">i</span>Qué se hace en esta etapa</h2>
+<p>Todo lo que deja la casa lista para habitar: aberturas, pisos interiores, pintura, muebles de cocina y
+    baño, y los artefactos. Es la etapa con mayor variación según la calidad que se elija en cada cosa.</p>
+</section>
+<section class="blk">
+<h2><span class="mk">▦</span>Materiales de la etapa</h2>
+<div class="tablecard">
+<table>
+<thead><tr><th>Terminación</th><th class="num">Cantidad</th></tr></thead>
+<tbody>
+<tr><td>Aberturas (ventanas y puertas)</td><td class="num">1 conjunto</td></tr>
+<tr><td>Pisos interiores</td><td class="num">45,36 m²</td></tr>
+<tr><td>Pintura (cal/silicato, 2 manos)</td><td class="num">1 global</td></tr>
+<tr><td>Muebles de cocina, baño y guardado</td><td class="num">1 conjunto</td></tr>
+<tr><td>Artefactos (sanitarios, mesada)</td><td class="num">1 conjunto</td></tr>
+</tbody>
+
+</table>
+</div>
+
+
+</section>
+
+<section class="blk">
+<h2><span class="mk moss">→</span>Paso a paso de obra</h2>
+<ol class="steps">
+<li><b>Aberturas</b><span>Colocar ventanas y puertas con sus dinteles ya previstos en el bastidor. Sellar los encuentros con el muro exterior (membrana + placa cementicia).</span></li>
+<li><b>Pisos</b><span>Colocar el piso interior elegido sobre el fenólico. Zócalos.</span></li>
+<li><b>Pintura</b><span>Interior: cal o silicato, dos manos. Exterior ya terminado en la etapa de paredes (cal aérea).</span></li>
+<li><b>Muebles y mesada</b><span>Cocina, baño y guardado. Mesada sobre el muro sur según proyecto.</span></li>
+<li><b>Artefactos y conexión final</b><span>Sanitarios, grifería, conexión de artefactos. Prueba final de todas las instalaciones.</span></li>
+<li><b>Revisión final</b><span>Recorrer zócalos y encuentros de aberturas. Después de la primera temporada de lluvias, retocar lo que se haya lavado.</span></li>
+</ol>
+</section>
+<div class="note"><b>Mantenimiento.</b> Un muro de woodframe bien sombrereado (aleros) y con buenas botas (zócalo,
+  piso elevado, barrera de agua sana) dura décadas. Revisar sellos de aberturas y juntas de la placa cementicia cada 3-4 años.</div>
+<section class="blk">
+<h2><span class="mk moss">✓</span>Marcar avance</h2>
+<p>Tocá cada paso a medida que se completa en obra. Se guarda en este dispositivo.</p>
+<div class="checkcard" id="checklist">
+<div class="chkitem" data-id="z1"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Aberturas colocadas y selladas</div></div>
+<div class="chkitem" data-id="z2"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Pisos interiores y zócalos</div></div>
+<div class="chkitem" data-id="z3"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Pintura interior terminada</div></div>
+<div class="chkitem" data-id="z4"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Muebles y mesada instalados</div></div>
+<div class="chkitem" data-id="z5"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Artefactos conectados y probados</div></div>
+<div class="chkitem" data-id="z6"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Revisión final de la obra</div></div>
+</div>
+<button class="reset" id="resetbtn">Reiniciar avance de esta sección</button>
+</section>
+<nav class="pager">
+<a class="pgbtn" href="cerramientos.html"><span class="dir">← Anterior</span><div class="t">7 · Cerramientos internos</div></a>
+<a class="pgbtn next" href="index.html"><span class="dir">Siguiente →</span><div class="t">Proyecto y planos</div></a>
+</nav>
 </main>
 <script>
   var KEY='clr_terminaciones';

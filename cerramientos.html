@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Cerramientos internos · Casa-Refugio</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=Spline+Sans+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&amp;family=Inter:wght@400;500;600&amp;family=Spline+Sans+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
 <style>
   :root{--ink:#23201b;--ink2:#5a544a;--paper:#efe9dd;--card:#f8f4ea;--line:#d6ccb8;
     --clay:#8a5a34;--clay-soft:#c69a6d;--moss:#4f6b3f;--rust:#a9502c;--done:#3f6b4a;
@@ -130,18 +131,18 @@
 </head>
 <body>
 <div id="loginGate" style="position:fixed;inset:0;z-index:9999;background:#efe9dd;display:flex;align-items:center;justify-content:center;font-family:'Inter',system-ui,sans-serif">
-  <div style="max-width:340px;width:90%;text-align:center;padding:32px 28px;background:#f8f4ea;border:1px solid #d6ccb8;border-radius:18px;box-shadow:0 8px 40px rgba(60,48,30,.12)">
-    <div style="font-family:'Fraunces',serif;font-weight:600;font-size:1.6rem;color:#23201b;margin-bottom:6px">Casa-Refugio</div>
-    <div style="font-size:.85rem;color:#5a544a;margin-bottom:22px">Proyecto privado · ingresá para ver</div>
-    <input id="gu" placeholder="Usuario" autocomplete="off" style="width:100%;padding:11px 14px;margin-bottom:10px;border:1px solid #d6ccb8;border-radius:10px;background:#efe9dd;color:#23201b;font-size:.95rem;box-sizing:border-box">
-    <input id="gp" type="password" placeholder="Clave" style="width:100%;padding:11px 14px;margin-bottom:8px;border:1px solid #d6ccb8;border-radius:10px;background:#efe9dd;color:#23201b;font-size:.95rem;box-sizing:border-box">
-    <div id="gerr" style="color:#a9502c;font-size:.82rem;min-height:18px;margin-bottom:8px"></div>
-    <button id="gb" style="width:100%;padding:12px;border:none;border-radius:10px;background:#8a5a34;color:#fff;font-size:.95rem;font-weight:600;cursor:pointer">Entrar</button>
-  </div>
+<div style="max-width:340px;width:90%;text-align:center;padding:32px 28px;background:#f8f4ea;border:1px solid #d6ccb8;border-radius:18px;box-shadow:0 8px 40px rgba(60,48,30,.12)">
+<div style="font-family:'Fraunces',serif;font-weight:600;font-size:1.6rem;color:#23201b;margin-bottom:6px">Casa-Refugio</div>
+<div style="font-size:.85rem;color:#5a544a;margin-bottom:22px">Proyecto privado · ingresá para ver</div>
+<input autocomplete="off" id="gu" placeholder="Usuario" style="width:100%;padding:11px 14px;margin-bottom:10px;border:1px solid #d6ccb8;border-radius:10px;background:#efe9dd;color:#23201b;font-size:.95rem;box-sizing:border-box"/>
+<input id="gp" placeholder="Clave" style="width:100%;padding:11px 14px;margin-bottom:8px;border:1px solid #d6ccb8;border-radius:10px;background:#efe9dd;color:#23201b;font-size:.95rem;box-sizing:border-box" type="password"/>
+<div id="gerr" style="color:#a9502c;font-size:.82rem;min-height:18px;margin-bottom:8px"></div>
+<button id="gb" style="width:100%;padding:12px;border:none;border-radius:10px;background:#8a5a34;color:#fff;font-size:.95rem;font-weight:600;cursor:pointer">Entrar</button>
+</div>
 </div>
 <script>
 (function(){
-  var U="Refugio", P="1234", K="clr_auth_ok";
+  var U="RefugioV0", P="1234", K="clr_auth_ok";
   var gate=document.getElementById('loginGate');
   function ok(){ gate.style.display='none'; }
   try{ if(sessionStorage.getItem(K)==='1'){ ok(); } }catch(e){}
@@ -156,16 +157,27 @@
   document.getElementById('gu').addEventListener('keydown',function(e){ if(e.key==='Enter')document.getElementById('gp').focus(); });
 })();
 </script>
-
 <header class="top">
-  <div class="wrap">
-    <div class="brand"><span class="b1">Casa-Refugio</span><span class="b2">Villa Las Rosas · Traslasierra</span></div>
-    <a class="navback" href="index.html">Proyecto</a>
-  </div>
+<div class="wrap">
+<div class="brand"><span class="b1">Casa-Refugio</span><span class="b2">Villa Las Rosas · Traslasierra</span></div>
+<a class="navback" href="index.html">Proyecto</a>
+</div>
 </header>
-<nav class="strip" aria-label="Secciones de obra">
-  <div class="strip-wrap"><div class="wrap">
-    <a class="chip" href="index.html">Proyecto</a>
+<nav aria-label="Secciones de obra" class="strip">
+<div class="strip-wrap"><div class="wrap">
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="chip" href="index.html">Proyecto</a>
     <a class="chip" href="fundacion.html">1·Fundación</a>
     <a class="chip" href="piso.html">2·Piso</a>
     <a class="chip" href="columnas.html">3·Columnas</a>
@@ -174,108 +186,100 @@
     <a class="chip" href="instalaciones.html">6·Instalaciones</a>
     <a class="chip active" href="cerramientos.html">7·Cerramientos</a>
     <a class="chip" href="terminaciones.html">8·Terminaciones</a>
-    <a class="chip" href="cronograma.html">Cronograma</a>
-    <a class="chip" href="costos.html">Costo total</a>
-    <a class="chip" href="materiales.html">Materiales</a>
-  </div></div>
+    </div></div>
 </nav>
 <main class="wrap">
+
   <div class="hero">
     <p class="kicker">Etapa 7 de 8</p>
     <h1>Cerramientos internos</h1>
-    <p class="lead">Las divisiones interiores, al final y livianas. Durlock o quincha seca de 10 cm, no portantes. El interior fue un monoambiente toda la obra: se divide cuando querés.</p>
+    <p class="lead">Las divisiones interiores, al final y livianas: tabiques de estructura de madera
+    con placa, no portantes. El interior fue un monoambiente toda la obra; se divide cuando querés.</p>
+
     <div class="progwrap">
       <div class="progbar"><div class="progfill" id="fill"></div></div>
-      <div class="progtxt" id="ptxt">0 pasos</div>
+      <div class="progtxt" id="ptxt">0 de 4 pasos</div>
     </div>
     <div class="savednote" id="saved"></div>
   </div>
+
   <div class="figs">
     <div class="fig"><div class="n">27<small> m²</small></div><div class="l">tabiques</div></div>
-    <div class="fig"><div class="n">2</div><div class="l">sistemas (durlock+quincha)</div></div>
-    <div class="fig"><div class="n">60<small> h</small></div><div class="l">mano de obra</div></div>
-    <div class="fig"><div class="n">$1,21<small> M</small></div><div class="l">costo de la etapa</div></div>
+    <div class="fig"><div class="n">0,10<small> m</small></div><div class="l">espesor</div></div>
+    <div class="fig"><div class="n">2</div><div class="l">ambientes (baño + dormitorio)</div></div>
   </div>
 
+  <!-- QUÉ SE HACE -->
   <section class="blk">
     <h2><span class="mk">i</span>Qué se hace en esta etapa</h2>
-    <p>Las divisiones internas (dormitorio, baño, pasillo) se levantan al final, cuando la estructura y el
-    cierre exterior ya están. No son portantes: solo dividen. Por eso se pueden hacer con lo más económico y
-    rápido —durlock o quincha seca de 10 cm— y apoyan sobre pilotines para acompañar con su peso.</p>
-    <div class="note"><b>Se hacen últimas y son livianas.</b> Como no sostienen nada, el interior fue un monoambiente
-    durante toda la obra. Dividir al final da libertad: si cambiás de idea sobre la distribución, no tocás la estructura.</div>
+    <p>Las divisiones internas (dormitorio, baño, pasillo) se levantan al final, cuando la estructura
+    y el cierre exterior ya están. No son portantes: solo dividen. Son tabiques livianos de bastidor
+    de madera con placa a ambas caras, apoyados sobre los pilotines previstos.</p>
+    <div class="note"><b>Se hacen últimas y son livianas.</b> Como no sostienen nada, el interior fue
+    un monoambiente durante toda la obra. Dividir al final da libertad: si cambiás la distribución,
+    no tocás la estructura.</div>
   </section>
+
+  <!-- MATERIALES -->
   <section class="blk">
-    <h2><span class="mk">▦</span>Materiales de la etapa · dos sistemas</h2>
-    <p>Cada ambiente lleva el sistema que le conviene: <b>durlock verde</b> (resistente a la humedad) solo en el
-    baño, y <b>quincha seca</b> en el dormitorio para mantener la masa térmica y el criterio de barro de la casa.
-    El pasillo no lleva cerramiento propio: queda definido por las paredes del dormitorio y la pared exterior,
-    que ya están cotizadas en sus etapas.</p>
+    <h2><span class="mk">▦</span>Materiales de la etapa · dos ambientes</h2>
+    <p>Cada ambiente lleva la placa que le conviene: <b>placa verde antihumedad</b> en el baño y
+    <b>placa de yeso común</b> en el dormitorio. El pasillo queda definido por las paredes del
+    dormitorio y el muro exterior, ya contemplados en sus etapas.</p>
     <div class="tablecard">
       <table>
-        <thead><tr><th>Baño · durlock verde</th><th class="num">Cantidad</th><th class="num">P. unit.</th><th class="num">Subtotal</th></tr></thead>
+        <thead><tr><th>Baño · placa verde antihumedad</th><th class="num">Cantidad</th></tr></thead>
         <tbody>
-          <tr><td>Placa verde antihumedad (ambas caras)</td><td class="num">16 m²</td><td class="num">$16.000</td><td class="num">$256.000</td></tr>
-          <tr><td>Perfilería</td><td class="num">8 m²</td><td class="num">$8.000</td><td class="num">$64.000</td></tr>
-          <tr><td>Aislación interior</td><td class="num">8 m²</td><td class="num">$4.000</td><td class="num">$32.000</td></tr>
-          <tr><td>Mano de obra</td><td class="num">15 h</td><td class="num">$8.500</td><td class="num">$127.500</td></tr>
+          <tr><td>Placa verde antihumedad (ambas caras)</td><td class="num">16 m²</td></tr>
+          <tr><td>Estructura de montantes 2"×2"</td><td class="num">1 global</td></tr>
+          <tr><td>Aislación interior (lana)</td><td class="num">8 m²</td></tr>
         </tbody>
-        <tfoot><tr><td>Subtotal baño</td><td class="num"></td><td class="num"></td><td class="num">$479.500</td></tr></tfoot>
       </table>
     </div>
     <div class="tablecard">
       <table>
-        <thead><tr><th>Dormitorio · quincha seca</th><th class="num">Cantidad</th><th class="num">P. unit.</th><th class="num">Subtotal</th></tr></thead>
+        <thead><tr><th>Dormitorio · placa de yeso</th><th class="num">Cantidad</th></tr></thead>
         <tbody>
-          <tr><td>Bastidor 2"×4"</td><td class="num">12 m²</td><td class="num">—</td><td class="num">$42.000</td></tr>
-          <tr><td>Caña de Castilla</td><td class="num">—</td><td class="num">—</td><td class="num">$60.000</td></tr>
-          <tr><td>Barro y paja (tierra propia)</td><td class="num">—</td><td class="num">—</td><td class="num">$15.000</td></tr>
-          <tr><td>Mano de obra</td><td class="num">40 h</td><td class="num">$8.500</td><td class="num">$340.000</td></tr>
+          <tr><td>Placa de yeso 12,5 mm (ambas caras)</td><td class="num">22 m²</td></tr>
+          <tr><td>Estructura de montantes 2"×2"</td><td class="num">1 global</td></tr>
+          <tr><td>Aislación interior (lana)</td><td class="num">12 m²</td></tr>
         </tbody>
-        <tfoot><tr><td>Subtotal dormitorio</td><td class="num"></td><td class="num"></td><td class="num">$457.000</td></tr></tfoot>
       </table>
     </div>
-    <div class="tablecard"><table><tfoot><tr><td><b>Total de la etapa Cerramientos internos</b></td><td class="num"></td><td class="num"></td><td class="num"><b>$1.209.500</b></td></tr></tfoot></table></div>
-    <p class="muted">El durlock verde soporta la humedad del baño; la quincha seca del dormitorio suma masa térmica sin cargar peso. Incluye $195.000 de dirección.</p>
+    <p class="muted">La placa verde soporta la humedad del baño; la de yeso común alcanza para el
+    resto. Ambos tabiques son livianos y no cargan la estructura.</p>
   </section>
-  <section class="blk">
-    <h2><span class="mk">◔</span>Dirección y asistencia técnica</h2>
-    <p>El director no está toda la jornada: da las instrucciones al inicio del día y controla el trabajo al
-    cierre. Para esta etapa se estiman <b>21 horas</b> de dirección y asistencia técnica (7 días de obra, ~3 h por día).</p>
-    <div class="tablecard"><table>
-      <thead><tr><th>Concepto</th><th class="num">Horas est.</th><th class="num">Valor/h est.</th><th class="num">Monto estimado</th></tr></thead>
-      <tbody><tr><td>Supervisión y control de obra</td><td class="num">21 h</td><td class="num">$13.000</td><td class="num">$273.000</td></tr></tbody>
-    </table></div>
-    <p class="muted">Valor de referencia de un supervisor con experiencia media (sin título). El valor final se acuerda con quien dirija la obra.
-    El cálculo estructural y los planos municipales los firma un profesional matriculado aparte.</p>
-  </section>
+
+  <!-- PASO A PASO -->
   <section class="blk">
     <h2><span class="mk moss">→</span>Paso a paso de obra</h2>
     <ol class="steps">
       <li><b>Replanteo de divisiones</b><span>Marcar sobre el piso terminado las líneas de los tabiques, coincidiendo con los pilotines previstos para que apoyen su peso.</span></li>
-      <li><b>Estructura del tabique</b><span>Perfiles (durlock) o bastidor liviano (quincha seca). Anclar arriba a la estructura de techo y abajo al piso.</span></li>
-      <li><b>Instalaciones internas</b><span>Pasar lo que corresponda (llaves, luces) antes de cerrar las caras.</span></li>
-      <li><b>Cierre</b><span>Placas de yeso o encañado+barro seco. Puertas: dormitorio entre pasillo y baño (abre adentro), baño (abre adentro).</span></li>
-      <li><b>Terminación</b><span>Empastinado y lijado (durlock) o revoque fino (quincha). Queda listo para pintar en la etapa de terminaciones.</span></li>
+      <li><b>Estructura del tabique</b><span>Bastidor de montantes 2"×2" @ 0,40. Anclar arriba a la estructura de techo y abajo al piso. Dejar los vanos de puertas.</span></li>
+      <li><b>Instalaciones y aislación</b><span>Pasar cañerías y cajas dentro del bastidor antes de cerrar. Colocar lana en la cavidad (aislación acústica entre ambientes).</span></li>
+      <li><b>Cierre y terminación</b><span>Placa a ambas caras (verde en el baño, yeso en el resto), tomar juntas y lijar. Colocar puertas. Queda listo para pintar en terminaciones.</span></li>
     </ol>
   </section>
 
+  <!-- AVANCE -->
   <section class="blk">
     <h2><span class="mk moss">✓</span>Marcar avance</h2>
     <p>Tocá cada paso a medida que se completa en obra. Se guarda en este dispositivo.</p>
     <div class="checkcard" id="checklist">
-      <div class="chkitem" data-id="x1"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Divisiones replanteadas sobre pilotines</div></div>
+      <div class="chkitem" data-id="x1"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Divisiones replanteadas</div></div>
       <div class="chkitem" data-id="x2"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Estructura de tabiques armada</div></div>
-      <div class="chkitem" data-id="x3"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Instalaciones internas pasadas</div></div>
+      <div class="chkitem" data-id="x3"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Instalaciones y aislación colocadas</div></div>
       <div class="chkitem" data-id="x4"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Tabiques cerrados y puertas colocadas</div></div>
-      <div class="chkitem" data-id="x5"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Terminación lista para pintar</div></div>
     </div>
     <button class="reset" id="resetbtn">Reiniciar avance de esta sección</button>
   </section>
+
+  <!-- PAGER -->
   <nav class="pager">
     <a class="pgbtn" href="instalaciones.html"><span class="dir">← Anterior</span><div class="t">6 · Instalaciones</div></a>
     <a class="pgbtn next" href="terminaciones.html"><span class="dir">Siguiente →</span><div class="t">8 · Terminaciones</div></a>
   </nav>
+
 </main>
 <script>
   var KEY='clr_cerramientos';

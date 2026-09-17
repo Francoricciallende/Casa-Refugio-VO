@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Columnas · Casa-Refugio</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=Spline+Sans+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&amp;family=Inter:wght@400;500;600&amp;family=Spline+Sans+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
 <style>
   :root{--ink:#23201b;--ink2:#5a544a;--paper:#efe9dd;--card:#f8f4ea;--line:#d6ccb8;
     --clay:#8a5a34;--clay-soft:#c69a6d;--moss:#4f6b3f;--rust:#a9502c;--done:#3f6b4a;
@@ -130,18 +131,18 @@
 </head>
 <body>
 <div id="loginGate" style="position:fixed;inset:0;z-index:9999;background:#efe9dd;display:flex;align-items:center;justify-content:center;font-family:'Inter',system-ui,sans-serif">
-  <div style="max-width:340px;width:90%;text-align:center;padding:32px 28px;background:#f8f4ea;border:1px solid #d6ccb8;border-radius:18px;box-shadow:0 8px 40px rgba(60,48,30,.12)">
-    <div style="font-family:'Fraunces',serif;font-weight:600;font-size:1.6rem;color:#23201b;margin-bottom:6px">Casa-Refugio</div>
-    <div style="font-size:.85rem;color:#5a544a;margin-bottom:22px">Proyecto privado · ingresá para ver</div>
-    <input id="gu" placeholder="Usuario" autocomplete="off" style="width:100%;padding:11px 14px;margin-bottom:10px;border:1px solid #d6ccb8;border-radius:10px;background:#efe9dd;color:#23201b;font-size:.95rem;box-sizing:border-box">
-    <input id="gp" type="password" placeholder="Clave" style="width:100%;padding:11px 14px;margin-bottom:8px;border:1px solid #d6ccb8;border-radius:10px;background:#efe9dd;color:#23201b;font-size:.95rem;box-sizing:border-box">
-    <div id="gerr" style="color:#a9502c;font-size:.82rem;min-height:18px;margin-bottom:8px"></div>
-    <button id="gb" style="width:100%;padding:12px;border:none;border-radius:10px;background:#8a5a34;color:#fff;font-size:.95rem;font-weight:600;cursor:pointer">Entrar</button>
-  </div>
+<div style="max-width:340px;width:90%;text-align:center;padding:32px 28px;background:#f8f4ea;border:1px solid #d6ccb8;border-radius:18px;box-shadow:0 8px 40px rgba(60,48,30,.12)">
+<div style="font-family:'Fraunces',serif;font-weight:600;font-size:1.6rem;color:#23201b;margin-bottom:6px">Casa-Refugio</div>
+<div style="font-size:.85rem;color:#5a544a;margin-bottom:22px">Proyecto privado · ingresá para ver</div>
+<input autocomplete="off" id="gu" placeholder="Usuario" style="width:100%;padding:11px 14px;margin-bottom:10px;border:1px solid #d6ccb8;border-radius:10px;background:#efe9dd;color:#23201b;font-size:.95rem;box-sizing:border-box"/>
+<input id="gp" placeholder="Clave" style="width:100%;padding:11px 14px;margin-bottom:8px;border:1px solid #d6ccb8;border-radius:10px;background:#efe9dd;color:#23201b;font-size:.95rem;box-sizing:border-box" type="password"/>
+<div id="gerr" style="color:#a9502c;font-size:.82rem;min-height:18px;margin-bottom:8px"></div>
+<button id="gb" style="width:100%;padding:12px;border:none;border-radius:10px;background:#8a5a34;color:#fff;font-size:.95rem;font-weight:600;cursor:pointer">Entrar</button>
+</div>
 </div>
 <script>
 (function(){
-  var U="Refugio", P="1234", K="clr_auth_ok";
+  var U="RefugioV0", P="1234", K="clr_auth_ok";
   var gate=document.getElementById('loginGate');
   function ok(){ gate.style.display='none'; }
   try{ if(sessionStorage.getItem(K)==='1'){ ok(); } }catch(e){}
@@ -156,16 +157,27 @@
   document.getElementById('gu').addEventListener('keydown',function(e){ if(e.key==='Enter')document.getElementById('gp').focus(); });
 })();
 </script>
-
 <header class="top">
-  <div class="wrap">
-    <div class="brand"><span class="b1">Casa-Refugio</span><span class="b2">Villa Las Rosas · Traslasierra</span></div>
-    <a class="navback" href="index.html">Proyecto</a>
-  </div>
+<div class="wrap">
+<div class="brand"><span class="b1">Casa-Refugio</span><span class="b2">Villa Las Rosas · Traslasierra</span></div>
+<a class="navback" href="index.html">Proyecto</a>
+</div>
 </header>
-<nav class="strip" aria-label="Secciones de obra">
-  <div class="strip-wrap"><div class="wrap">
-    <a class="chip" href="index.html">Proyecto</a>
+<nav aria-label="Secciones de obra" class="strip">
+<div class="strip-wrap"><div class="wrap">
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="chip" href="index.html">Proyecto</a>
     <a class="chip" href="fundacion.html">1·Fundación</a>
     <a class="chip" href="piso.html">2·Piso</a>
     <a class="chip active" href="columnas.html">3·Columnas</a>
@@ -174,126 +186,103 @@
     <a class="chip" href="instalaciones.html">6·Instalaciones</a>
     <a class="chip" href="cerramientos.html">7·Cerramientos</a>
     <a class="chip" href="terminaciones.html">8·Terminaciones</a>
-    <a class="chip" href="cronograma.html">Cronograma</a>
-    <a class="chip" href="costos.html">Costo total</a>
-    <a class="chip" href="materiales.html">Materiales</a>
-  </div></div>
+    </div></div>
 </nav>
 <main class="wrap">
-  <div class="hero">
-    <p class="kicker">Etapa 3 de 8</p>
-    <h1>Columnas</h1>
-    <p class="lead">El esqueleto que sostiene el techo. Seis columnas de rollizo ancladas a los pilotines, aplomadas y tratadas. Trabajan al 9% de su capacidad: sobra margen.</p>
-    <div class="progwrap">
-      <div class="progbar"><div class="progfill" id="fill"></div></div>
-      <div class="progtxt" id="ptxt">0 pasos</div>
-    </div>
-    <div class="savednote" id="saved"></div>
-  </div>
-  <div class="figs">
-    <div class="fig"><div class="n">6</div><div class="l">columnas Ø20</div></div>
-    <div class="fig"><div class="n">9%</div><div class="l">aprovechamiento</div></div>
-    <div class="fig"><div class="n">Ø20<small> cm</small></div><div class="l">diámetro</div></div>
-    <div class="fig"><div class="n">$949<small> mil</small></div><div class="l">costo de la etapa</div></div>
-  </div>
+<div class="hero">
+<p class="kicker">Etapa 3 de 8</p>
+<h1>Columnas</h1>
+<p class="lead">El esqueleto que sostiene el techo. Seis columnas de rollizo ancladas a los pilotines, aplomadas y tratadas. Trabajan al 9% de su capacidad: sobra margen.</p>
+<div class="progwrap">
+<div class="progbar"><div class="progfill" id="fill"></div></div>
+<div class="progtxt" id="ptxt">0 pasos</div>
+</div>
+<div class="savednote" id="saved"></div>
+</div>
+<div class="figs">
+<div class="fig"><div class="n">6</div><div class="l">columnas Ø20</div></div>
+<div class="fig"><div class="n">9%</div><div class="l">aprovechamiento</div></div>
+<div class="fig"><div class="n">Ø20<small> cm</small></div><div class="l">diámetro</div></div>
 
-  <section class="blk">
-    <h2><span class="mk">i</span>Qué se hace en esta etapa</h2>
-    <p>Se levantan las seis columnas de rollizo que sostienen todo el techo. Nacen directamente de los
+</div>
+<section class="blk">
+<h2><span class="mk">i</span>Qué se hace en esta etapa</h2>
+<p>Se levantan las seis columnas de rollizo que sostienen todo el techo. Nacen directamente de los
     seis pilotines de columna (no del piso), se aploman y se anclan al hormigón con barra roscada. Van
     en tres pares: oeste, centro y este, cada par con una al norte y una al sur.</p>
-    <div class="note"><b>Por qué rollizo y no aserrado:</b> la columna trabaja a compresión (aguanta peso de
+<div class="note"><b>Por qué rollizo y no aserrado:</b> la columna trabaja a compresión (aguanta peso de
     arriba). El rollizo es ideal para eso, más barato, y su sección redonda continua aguanta mucho más de
     lo que esta casa necesita: trabajan al 9% de su capacidad. Te libera de depender de la calidad de la madera.</div>
-  </section>
-  <section class="blk">
-    <h2><span class="mk">▢</span>Ubicación de las 6 columnas</h2>
-    <div class="plano scroll">
-      <p class="planotitle">Planta · ejes de columna</p>
-      <svg viewBox="0 0 520 300" role="img" aria-label="Ubicación de las 6 columnas en planta">
-        <rect x="60" y="50" width="400" height="200" fill="none" stroke="var(--line)" stroke-width="1.5" stroke-dasharray="5 5"/>
-        <line x1="60" y1="50" x2="60" y2="250" stroke="var(--clay-soft)" stroke-width="1" opacity=".5"/>
-        <line x1="232" y1="50" x2="232" y2="250" stroke="var(--clay-soft)" stroke-width="1" opacity=".5"/>
-        <line x1="460" y1="50" x2="460" y2="250" stroke="var(--clay-soft)" stroke-width="1" opacity=".5"/>
-        <g fill="var(--clay)" stroke="#fff" stroke-width="2">
-          <circle cx="60" cy="50" r="10"/><circle cx="60" cy="250" r="10"/>
-          <circle cx="232" cy="50" r="10"/><circle cx="232" cy="250" r="10"/>
-          <circle cx="460" cy="50" r="10"/><circle cx="460" cy="250" r="10"/>
-        </g>
-        <text x="60" y="35" text-anchor="middle" class="subt">Oeste</text>
-        <text x="232" y="35" text-anchor="middle" class="subt">Centro</text>
-        <text x="460" y="35" text-anchor="middle" class="subt">Este</text>
-        <text x="35" y="55" class="subt">N</text><text x="35" y="255" class="subt">S</text>
-        <text x="146" y="270" text-anchor="middle" class="dimt">3,60</text>
-        <text x="346" y="270" text-anchor="middle" class="dimt">4,80</text>
-      </svg>
-      <div class="cap">Seis columnas Ø20 en tres pares. Los tramos de viga entre ellas: 3,60 (oeste-centro) y 4,80 (centro-este).</div>
-    </div>
-  </section>
-  <section class="blk">
-    <h2><span class="mk">▦</span>Materiales de la etapa</h2>
-    <div class="tablecard">
-      <table>
-        <thead><tr><th>Material</th><th class="num">Cantidad</th><th class="num">P. unit.</th><th class="num">Subtotal</th></tr></thead>
-        <tbody>
-          <tr><td>Rollizo Ø20 × 4 m (tratado)</td><td class="num">6 u</td><td class="num">$45.000</td><td class="num">$270.000</td></tr>
-          <tr><td>Sales de boro + brea base</td><td class="num">1 lote</td><td class="num">—</td><td class="num">$88.000</td></tr>
-          <tr><td>Anclaje barra roscada Ø16 + químico</td><td class="num">6 u</td><td class="num">$35.000</td><td class="num">$210.000</td></tr>
-        </tbody>
-        <tfoot><tr><td>Subtotal materiales</td><td class="num"></td><td class="num"></td><td class="num">$568.000</td></tr></tfoot>
-      </table>
-    </div>
-    <div class="tablecard">
-      <table>
-        <thead><tr><th>Tarea</th><th class="num">Horas</th><th class="num">Nivel</th><th class="num">Valor/h</th><th class="num">Subtotal</th></tr></thead>
-        <tbody>
-          <tr><td>Rollizos, aplome y anclaje</td><td class="num">24 h</td><td class="num">Oficial</td><td class="num">$11.000</td><td class="num">$264.000</td></tr>
-        </tbody>
-        <tfoot><tr><td>Subtotal mano de obra</td><td class="num">24 h</td><td class="num"></td><td class="num"></td><td class="num">$264.000</td></tr></tfoot>
-      </table>
-    </div>
-    <div class="tablecard"><table><tfoot><tr><td><b>Total de la etapa Columnas</b></td><td class="num"></td><td class="num"></td><td class="num"><b>$949.000</b></td></tr></tfoot></table></div>
-  </section>
-  <section class="blk">
-    <h2><span class="mk">◔</span>Dirección y asistencia técnica</h2>
-    <p>El director no está toda la jornada: da las instrucciones al inicio del día y controla el trabajo al
-    cierre. Para esta etapa se estiman <b>9 horas</b> de dirección y asistencia técnica (3 días de obra, ~3 h por día).</p>
-    <div class="tablecard"><table>
-      <thead><tr><th>Concepto</th><th class="num">Horas est.</th><th class="num">Valor/h est.</th><th class="num">Monto estimado</th></tr></thead>
-      <tbody><tr><td>Supervisión y control de obra</td><td class="num">9 h</td><td class="num">$13.000</td><td class="num">$117.000</td></tr></tbody>
-    </table></div>
-    <p class="muted">Valor de referencia de un supervisor con experiencia media (sin título). El valor final se acuerda con quien dirija la obra.
-    El cálculo estructural y los planos municipales los firma un profesional matriculado aparte.</p>
-  </section>
-  <section class="blk">
-    <h2><span class="mk moss">→</span>Paso a paso de obra</h2>
-    <ol class="steps">
-      <li><b>Selección de rollizos</b><span>Elegir 6 rollizos Ø20 sanos, derechos, sin rajaduras profundas ni pudrición. Descartar los muy curvos: la columna tiene que quedar a plomo.</span></li>
-      <li><b>Tratamiento</b><span>Dos manos de sales de boro a pincel en toda la columna. En el pie (los primeros 40 cm que quedan cerca del hormigón), brea o alquitrán como barrera de humedad.</span></li>
-      <li><b>Preparación del anclaje</b><span>En cada pilotín de columna, la barra roscada Ø16 embutida con químico. Es lo que ata la columna al hormigón contra el viento.</span></li>
-      <li><b>Izado y aplome</b><span>Parar cada columna sobre su pilotín, calzar la barra roscada en la base perforada del rollizo, y aplomar con dos niveles cruzados. Apuntalar en diagonal provisoriamente.</span></li>
-      <li><b>Fijación</b><span>Ajustar tuerca y arandela sobre la barra roscada. Verificar que las 6 queden a plomo y que las coronas superiores queden a la altura que pide cada viga (norte más alto, sur más bajo).</span></li>
-    </ol>
-  </section>
-  <div class="note warn"><b>El aplome no se negocia.</b> Una columna fuera de plomo transmite mal la carga y
-  desalinea la viga y el techo. Apuntalar hasta que las vigas superiores estén colocadas y aten todo.</div>
+</section>
+<section class="blk">
+<h2><span class="mk">▢</span>Ubicación de las 6 columnas</h2>
+<div class="plano scroll">
+<p class="planotitle">Planta · ejes de columna</p>
+<svg aria-label="Ubicación de las 6 columnas en planta" role="img" viewbox="0 0 520 300">
+<rect fill="none" height="200" stroke="var(--line)" stroke-dasharray="5 5" stroke-width="1.5" width="400" x="60" y="50"></rect>
+<line opacity=".5" stroke="var(--clay-soft)" stroke-width="1" x1="60" x2="60" y1="50" y2="250"></line>
+<line opacity=".5" stroke="var(--clay-soft)" stroke-width="1" x1="232" x2="232" y1="50" y2="250"></line>
+<line opacity=".5" stroke="var(--clay-soft)" stroke-width="1" x1="460" x2="460" y1="50" y2="250"></line>
+<g fill="var(--clay)" stroke="#fff" stroke-width="2">
+<circle cx="60" cy="50" r="10"></circle><circle cx="60" cy="250" r="10"></circle>
+<circle cx="232" cy="50" r="10"></circle><circle cx="232" cy="250" r="10"></circle>
+<circle cx="460" cy="50" r="10"></circle><circle cx="460" cy="250" r="10"></circle>
+</g>
+<text class="subt" text-anchor="middle" x="60" y="35">Oeste</text>
+<text class="subt" text-anchor="middle" x="232" y="35">Centro</text>
+<text class="subt" text-anchor="middle" x="460" y="35">Este</text>
+<text class="subt" x="35" y="55">N</text><text class="subt" x="35" y="255">S</text>
+<text class="dimt" text-anchor="middle" x="146" y="270">3,60</text>
+<text class="dimt" text-anchor="middle" x="346" y="270">4,80</text>
+</svg>
+<div class="cap">Seis columnas Ø20 en tres pares. Los tramos de viga entre ellas: 3,60 (oeste-centro) y 4,80 (centro-este).</div>
+</div>
+</section>
+<section class="blk">
+<h2><span class="mk">▦</span>Materiales de la etapa</h2>
+<div class="tablecard">
+<table>
+<thead><tr><th>Material</th><th class="num">Cantidad</th></tr></thead>
+<tbody>
+<tr><td>Rollizo Ø20 × 4 m (tratado)</td><td class="num">6 u</td></tr>
+<tr><td>Sales de boro + brea base</td><td class="num">1 lote</td></tr>
+<tr><td>Anclaje barra roscada Ø16 + químico</td><td class="num">6 u</td></tr>
+</tbody>
 
-  <section class="blk">
-    <h2><span class="mk moss">✓</span>Marcar avance</h2>
-    <p>Tocá cada paso a medida que se completa en obra. Se guarda en este dispositivo.</p>
-    <div class="checkcard" id="checklist">
-      <div class="chkitem" data-id="c1"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">6 rollizos seleccionados, sanos y derechos</div></div>
-      <div class="chkitem" data-id="c2"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Tratamiento de boro + brea en el pie</div></div>
-      <div class="chkitem" data-id="c3"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Barras roscadas embutidas en pilotines</div></div>
-      <div class="chkitem" data-id="c4"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">6 columnas izadas y aplomadas</div></div>
-      <div class="chkitem" data-id="c5"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Anclajes ajustados y coronas a nivel</div></div>
-    </div>
-    <button class="reset" id="resetbtn">Reiniciar avance de esta sección</button>
-  </section>
-  <nav class="pager">
-    <a class="pgbtn" href="piso.html"><span class="dir">← Anterior</span><div class="t">2 · Piso</div></a>
-    <a class="pgbtn next" href="techo.html"><span class="dir">Siguiente →</span><div class="t">4 · Techo</div></a>
-  </nav>
+</table>
+</div>
+
+
+</section>
+
+<section class="blk">
+<h2><span class="mk moss">→</span>Paso a paso de obra</h2>
+<ol class="steps">
+<li><b>Selección de rollizos</b><span>Elegir 6 rollizos Ø20 sanos, derechos, sin rajaduras profundas ni pudrición. Descartar los muy curvos: la columna tiene que quedar a plomo.</span></li>
+<li><b>Tratamiento</b><span>Dos manos de sales de boro a pincel en toda la columna. En el pie (los primeros 40 cm que quedan cerca del hormigón), brea o alquitrán como barrera de humedad.</span></li>
+<li><b>Preparación del anclaje</b><span>En cada pilotín de columna, la barra roscada Ø16 embutida con químico. Es lo que ata la columna al hormigón contra el viento.</span></li>
+<li><b>Izado y aplome</b><span>Parar cada columna sobre su pilotín, calzar la barra roscada en la base perforada del rollizo, y aplomar con dos niveles cruzados. Apuntalar en diagonal provisoriamente.</span></li>
+<li><b>Fijación</b><span>Ajustar tuerca y arandela sobre la barra roscada. Verificar que las 6 queden a plomo y que las coronas superiores queden a la altura que pide cada viga (norte más alto, sur más bajo).</span></li>
+</ol>
+</section>
+<div class="note warn"><b>El aplome no se negocia.</b> Una columna fuera de plomo transmite mal la carga y
+  desalinea la viga y el techo. Apuntalar hasta que las vigas superiores estén colocadas y aten todo.</div>
+<section class="blk">
+<h2><span class="mk moss">✓</span>Marcar avance</h2>
+<p>Tocá cada paso a medida que se completa en obra. Se guarda en este dispositivo.</p>
+<div class="checkcard" id="checklist">
+<div class="chkitem" data-id="c1"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">6 rollizos seleccionados, sanos y derechos</div></div>
+<div class="chkitem" data-id="c2"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Tratamiento de boro + brea en el pie</div></div>
+<div class="chkitem" data-id="c3"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Barras roscadas embutidas en pilotines</div></div>
+<div class="chkitem" data-id="c4"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">6 columnas izadas y aplomadas</div></div>
+<div class="chkitem" data-id="c5"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Anclajes ajustados y coronas a nivel</div></div>
+</div>
+<button class="reset" id="resetbtn">Reiniciar avance de esta sección</button>
+</section>
+<nav class="pager">
+<a class="pgbtn" href="piso.html"><span class="dir">← Anterior</span><div class="t">2 · Piso</div></a>
+<a class="pgbtn next" href="techo.html"><span class="dir">Siguiente →</span><div class="t">4 · Techo</div></a>
+</nav>
 </main>
 <script>
   var KEY='clr_columnas';

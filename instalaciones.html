@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Instalaciones · Casa-Refugio</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=Spline+Sans+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&amp;family=Inter:wght@400;500;600&amp;family=Spline+Sans+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
 <style>
   :root{--ink:#23201b;--ink2:#5a544a;--paper:#efe9dd;--card:#f8f4ea;--line:#d6ccb8;
     --clay:#8a5a34;--clay-soft:#c69a6d;--moss:#4f6b3f;--rust:#a9502c;--done:#3f6b4a;
@@ -130,18 +131,18 @@
 </head>
 <body>
 <div id="loginGate" style="position:fixed;inset:0;z-index:9999;background:#efe9dd;display:flex;align-items:center;justify-content:center;font-family:'Inter',system-ui,sans-serif">
-  <div style="max-width:340px;width:90%;text-align:center;padding:32px 28px;background:#f8f4ea;border:1px solid #d6ccb8;border-radius:18px;box-shadow:0 8px 40px rgba(60,48,30,.12)">
-    <div style="font-family:'Fraunces',serif;font-weight:600;font-size:1.6rem;color:#23201b;margin-bottom:6px">Casa-Refugio</div>
-    <div style="font-size:.85rem;color:#5a544a;margin-bottom:22px">Proyecto privado · ingresá para ver</div>
-    <input id="gu" placeholder="Usuario" autocomplete="off" style="width:100%;padding:11px 14px;margin-bottom:10px;border:1px solid #d6ccb8;border-radius:10px;background:#efe9dd;color:#23201b;font-size:.95rem;box-sizing:border-box">
-    <input id="gp" type="password" placeholder="Clave" style="width:100%;padding:11px 14px;margin-bottom:8px;border:1px solid #d6ccb8;border-radius:10px;background:#efe9dd;color:#23201b;font-size:.95rem;box-sizing:border-box">
-    <div id="gerr" style="color:#a9502c;font-size:.82rem;min-height:18px;margin-bottom:8px"></div>
-    <button id="gb" style="width:100%;padding:12px;border:none;border-radius:10px;background:#8a5a34;color:#fff;font-size:.95rem;font-weight:600;cursor:pointer">Entrar</button>
-  </div>
+<div style="max-width:340px;width:90%;text-align:center;padding:32px 28px;background:#f8f4ea;border:1px solid #d6ccb8;border-radius:18px;box-shadow:0 8px 40px rgba(60,48,30,.12)">
+<div style="font-family:'Fraunces',serif;font-weight:600;font-size:1.6rem;color:#23201b;margin-bottom:6px">Casa-Refugio</div>
+<div style="font-size:.85rem;color:#5a544a;margin-bottom:22px">Proyecto privado · ingresá para ver</div>
+<input autocomplete="off" id="gu" placeholder="Usuario" style="width:100%;padding:11px 14px;margin-bottom:10px;border:1px solid #d6ccb8;border-radius:10px;background:#efe9dd;color:#23201b;font-size:.95rem;box-sizing:border-box"/>
+<input id="gp" placeholder="Clave" style="width:100%;padding:11px 14px;margin-bottom:8px;border:1px solid #d6ccb8;border-radius:10px;background:#efe9dd;color:#23201b;font-size:.95rem;box-sizing:border-box" type="password"/>
+<div id="gerr" style="color:#a9502c;font-size:.82rem;min-height:18px;margin-bottom:8px"></div>
+<button id="gb" style="width:100%;padding:12px;border:none;border-radius:10px;background:#8a5a34;color:#fff;font-size:.95rem;font-weight:600;cursor:pointer">Entrar</button>
+</div>
 </div>
 <script>
 (function(){
-  var U="Refugio", P="1234", K="clr_auth_ok";
+  var U="RefugioV0", P="1234", K="clr_auth_ok";
   var gate=document.getElementById('loginGate');
   function ok(){ gate.style.display='none'; }
   try{ if(sessionStorage.getItem(K)==='1'){ ok(); } }catch(e){}
@@ -156,16 +157,27 @@
   document.getElementById('gu').addEventListener('keydown',function(e){ if(e.key==='Enter')document.getElementById('gp').focus(); });
 })();
 </script>
-
 <header class="top">
-  <div class="wrap">
-    <div class="brand"><span class="b1">Casa-Refugio</span><span class="b2">Villa Las Rosas · Traslasierra</span></div>
-    <a class="navback" href="index.html">Proyecto</a>
-  </div>
+<div class="wrap">
+<div class="brand"><span class="b1">Casa-Refugio</span><span class="b2">Villa Las Rosas · Traslasierra</span></div>
+<a class="navback" href="index.html">Proyecto</a>
+</div>
 </header>
-<nav class="strip" aria-label="Secciones de obra">
-  <div class="strip-wrap"><div class="wrap">
-    <a class="chip" href="index.html">Proyecto</a>
+<nav aria-label="Secciones de obra" class="strip">
+<div class="strip-wrap"><div class="wrap">
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="chip" href="index.html">Proyecto</a>
     <a class="chip" href="fundacion.html">1·Fundación</a>
     <a class="chip" href="piso.html">2·Piso</a>
     <a class="chip" href="columnas.html">3·Columnas</a>
@@ -174,106 +186,81 @@
     <a class="chip active" href="instalaciones.html">6·Instalaciones</a>
     <a class="chip" href="cerramientos.html">7·Cerramientos</a>
     <a class="chip" href="terminaciones.html">8·Terminaciones</a>
-    <a class="chip" href="cronograma.html">Cronograma</a>
-    <a class="chip" href="costos.html">Costo total</a>
-    <a class="chip" href="materiales.html">Materiales</a>
-  </div></div>
+    </div></div>
 </nav>
 <main class="wrap">
-  <div class="hero">
-    <p class="kicker">Etapa 6 de 8</p>
-    <h1>Instalaciones</h1>
-    <p class="lead">Luz, agua y gas, todas por debajo del piso. El metro de cámara ventilada deja cada caño accesible para reparar sin romper. Gas siempre por matriculado.</p>
-    <div class="progwrap">
-      <div class="progbar"><div class="progfill" id="fill"></div></div>
-      <div class="progtxt" id="ptxt">0 pasos</div>
-    </div>
-    <div class="savednote" id="saved"></div>
-  </div>
-  <div class="figs">
-    <div class="fig"><div class="n">3</div><div class="l">instalaciones</div></div>
-    <div class="fig"><div class="n">120<small> h</small></div><div class="l">mano de obra</div></div>
-    <div class="fig"><div class="n">1,00<small> m</small></div><div class="l">cámara de acceso</div></div>
-    <div class="fig"><div class="n">$4,49<small> M</small></div><div class="l">costo de la etapa</div></div>
-  </div>
+<div class="hero">
+<p class="kicker">Etapa 6 de 8</p>
+<h1>Instalaciones</h1>
+<p class="lead">Luz, agua y gas, todas por debajo del piso. El metro de cámara ventilada deja cada caño accesible para reparar sin romper. Gas siempre por matriculado.</p>
+<div class="progwrap">
+<div class="progbar"><div class="progfill" id="fill"></div></div>
+<div class="progtxt" id="ptxt">0 pasos</div>
+</div>
+<div class="savednote" id="saved"></div>
+</div>
+<div class="figs">
+<div class="fig"><div class="n">3</div><div class="l">instalaciones</div></div>
 
-  <section class="blk">
-    <h2><span class="mk">i</span>Qué se hace en esta etapa</h2>
-    <p>Las tres instalaciones —luz, agua y gas— van por debajo del piso, aprovechando el metro de cámara
+<div class="fig"><div class="n">1,00<small> m</small></div><div class="l">cámara de acceso</div></div>
+
+</div>
+<section class="blk">
+<h2><span class="mk">i</span>Qué se hace en esta etapa</h2>
+<p>Las tres instalaciones —luz, agua y gas— van por debajo del piso, aprovechando el metro de cámara
     ventilada. Esa es la gran ventaja de la casa elevada: si algún día hay que reparar un caño, se entra por
     abajo sin romper nada. Buena parte del trabajo se coordina con las etapas anteriores (las bajadas se dejan
     previstas al armar piso y paredes).</p>
-    <div class="note"><b>Todo accesible por la cámara.</b> Agua, luz y gas se distribuyen por debajo del piso. Dejar
+<div class="note"><b>Todo accesible por la cámara.</b> Agua, luz y gas se distribuyen por debajo del piso. Dejar
     la tapa de inspección y las rejillas de la cámara siempre registrables: nunca cerrar con mampostería.</div>
-  </section>
-  <section class="blk">
-    <h2><span class="mk">▦</span>Materiales de la etapa</h2>
-    <div class="tablecard">
-      <table>
-        <thead><tr><th>Instalación</th><th class="num">Cantidad</th><th class="num">P. unit.</th><th class="num">Subtotal</th></tr></thead>
-        <tbody>
-          <tr><td>Eléctrica · cable, cajas, tablero, corrugado</td><td class="num">1 global</td><td class="num">—</td><td class="num">$850.000</td></tr>
-          <tr><td>Agua · termofusión, grifería base, tanque</td><td class="num">1 global</td><td class="num">—</td><td class="num">$650.000</td></tr>
-          <tr><td>Gas · caño epoxi, artefactos base, aprobación</td><td class="num">1 global</td><td class="num">—</td><td class="num">$900.000</td></tr>
-        </tbody>
-        <tfoot><tr><td>Subtotal materiales</td><td class="num"></td><td class="num"></td><td class="num">$2.400.000</td></tr></tfoot>
-      </table>
-    </div>
-    <div class="tablecard">
-      <table>
-        <thead><tr><th>Instalación (mano de obra por trabajo)</th><th class="num">Días est.</th><th class="num">Monto</th></tr></thead>
-        <tbody>
-          <tr><td>Eléctrica (electricista matriculado)</td><td class="num">4 días</td><td class="num">$550.000</td></tr>
-          <tr><td>Agua (plomero)</td><td class="num">4 días</td><td class="num">$450.000</td></tr>
-          <tr><td>Gas (gasista matriculado)</td><td class="num">3 días</td><td class="num">$700.000</td></tr>
-        </tbody>
-        <tfoot><tr><td>Subtotal mano de obra especializada</td><td class="num"></td><td class="num">$1.700.000</td></tr></tfoot>
-      </table>
-    </div>
-    <p class="muted">Los profesionales matriculados cotizan por trabajo cerrado, no por hora. Estos son montos estimados de referencia.</p>
-    <div class="tablecard"><table><tfoot><tr><td><b>Total de la etapa Instalaciones</b></td><td class="num"></td><td class="num"></td><td class="num"><b>$4.490.000</b></td></tr></tfoot></table></div>
-    <p class="muted">Los materiales de instalación varían mucho según artefactos elegidos. Ajustar con presupuesto real del gasista/electricista matriculado.</p>
-  </section>
-  <section class="blk">
-    <h2><span class="mk">◔</span>Dirección y asistencia técnica</h2>
-    <p>Las instalaciones de luz, agua y gas las ejecutan profesionales matriculados propios (electricista y
-    gasista), coordinados por el propietario junto con el director de obra, que controla que el trabajo se
-    integre bien al resto. Se estiman <b>30 horas</b> de control (11 días de trabajo, ~3 h por día).</p>
-    <div class="tablecard"><table>
-      <thead><tr><th>Concepto</th><th class="num">Horas est.</th><th class="num">Valor/h est.</th><th class="num">Monto estimado</th></tr></thead>
-      <tbody><tr><td>Control y coordinación (11 días × 3 h)</td><td class="num">30 h</td><td class="num">$13.000</td><td class="num">$390.000</td></tr></tbody>
-    </table></div>
-    <p class="muted">El gas y la electricidad los firma un matriculado. El director controla la integración con la obra.</p>
-  </section>
-  <section class="blk">
-    <h2><span class="mk moss">→</span>Paso a paso de obra</h2>
-    <ol class="steps">
-      <li><b>Previsiones tempranas</b><span>Al armar el piso y las paredes, dejar pasadas las bajadas y los corrugados. Romper después es trabajo repetido.</span></li>
-      <li><b>Eléctrica</b><span>Tablero, circuitos y cajas. El cableado corre por los montantes (corrugado) y baja a la cámara. Puesta a tierra obligatoria.</span></li>
-      <li><b>Agua</b><span>Distribución por termofusión desde el tanque, corriendo por la cámara ventilada. Griferías y llaves de corte accesibles.</span></li>
-      <li><b>Gas</b><span>Cañería epoxi o aprobada, por gasista matriculado. Es la única instalación que exige firma y aprobación externa sí o sí.</span></li>
-      <li><b>Pruebas</b><span>Prueba de presión en agua y gas antes de cerrar nada. Verificar que todo quede registrable desde la cámara.</span></li>
-    </ol>
-  </section>
-  <div class="note warn"><b>Gas lo firma un matriculado.</b> La instalación de gas requiere proyecto y aprobación de gasista
-  matriculado obligatoriamente. No es opcional ni se puede hacer por cuenta propia.</div>
+</section>
+<section class="blk">
+<h2><span class="mk">▦</span>Materiales de la etapa</h2>
+<div class="tablecard">
+<table>
+<thead><tr><th>Instalación</th><th class="num">Cantidad</th></tr></thead>
+<tbody>
+<tr><td>Eléctrica · cable, cajas, tablero, corrugado</td><td class="num">1 global</td></tr>
+<tr><td>Agua · termofusión, grifería base, tanque</td><td class="num">1 global</td></tr>
+<tr><td>Gas · caño epoxi, artefactos base, aprobación</td><td class="num">1 global</td></tr>
+</tbody>
 
-  <section class="blk">
-    <h2><span class="mk moss">✓</span>Marcar avance</h2>
-    <p>Tocá cada paso a medida que se completa en obra. Se guarda en este dispositivo.</p>
-    <div class="checkcard" id="checklist">
-      <div class="chkitem" data-id="i1"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Bajadas y corrugados previstos en piso y paredes</div></div>
-      <div class="chkitem" data-id="i2"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Instalación eléctrica y puesta a tierra</div></div>
-      <div class="chkitem" data-id="i3"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Instalación de agua por la cámara</div></div>
-      <div class="chkitem" data-id="i4"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Instalación de gas (gasista matriculado)</div></div>
-      <div class="chkitem" data-id="i5"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Pruebas de presión aprobadas</div></div>
-    </div>
-    <button class="reset" id="resetbtn">Reiniciar avance de esta sección</button>
-  </section>
-  <nav class="pager">
-    <a class="pgbtn" href="paredes.html"><span class="dir">← Anterior</span><div class="t">5 · Paredes</div></a>
-    <a class="pgbtn next" href="cerramientos.html"><span class="dir">Siguiente →</span><div class="t">7 · Cerramientos internos</div></a>
-  </nav>
+</table>
+</div>
+
+
+
+<p class="muted">Los materiales de instalación varían según los artefactos elegidos; los define el gasista/electricista matriculado en obra.</p>
+</section>
+
+<section class="blk">
+<h2><span class="mk moss">→</span>Paso a paso de obra</h2>
+<ol class="steps">
+<li><b>Previsiones tempranas</b><span>Al armar el piso y las paredes, dejar pasadas las bajadas y los corrugados. Romper después es trabajo repetido.</span></li>
+<li><b>Eléctrica</b><span>Tablero, circuitos y cajas. El cableado corre por los montantes (corrugado) y baja a la cámara. Puesta a tierra obligatoria.</span></li>
+<li><b>Agua</b><span>Distribución por termofusión desde el tanque, corriendo por la cámara ventilada. Griferías y llaves de corte accesibles.</span></li>
+<li><b>Gas</b><span>Cañería epoxi o aprobada, por gasista matriculado. Es la única instalación que exige firma y aprobación externa sí o sí.</span></li>
+<li><b>Pruebas</b><span>Prueba de presión en agua y gas antes de cerrar nada. Verificar que todo quede registrable desde la cámara.</span></li>
+</ol>
+</section>
+<div class="note warn"><b>Gas lo firma un matriculado.</b> La instalación de gas requiere proyecto y aprobación de gasista
+  matriculado obligatoriamente. No es opcional ni se puede hacer por cuenta propia.</div>
+<section class="blk">
+<h2><span class="mk moss">✓</span>Marcar avance</h2>
+<p>Tocá cada paso a medida que se completa en obra. Se guarda en este dispositivo.</p>
+<div class="checkcard" id="checklist">
+<div class="chkitem" data-id="i1"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Bajadas y corrugados previstos en piso y paredes</div></div>
+<div class="chkitem" data-id="i2"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Instalación eléctrica y puesta a tierra</div></div>
+<div class="chkitem" data-id="i3"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Instalación de agua por la cámara</div></div>
+<div class="chkitem" data-id="i4"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Instalación de gas (gasista matriculado)</div></div>
+<div class="chkitem" data-id="i5"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Pruebas de presión aprobadas</div></div>
+</div>
+<button class="reset" id="resetbtn">Reiniciar avance de esta sección</button>
+</section>
+<nav class="pager">
+<a class="pgbtn" href="paredes.html"><span class="dir">← Anterior</span><div class="t">5 · Paredes</div></a>
+<a class="pgbtn next" href="cerramientos.html"><span class="dir">Siguiente →</span><div class="t">7 · Cerramientos internos</div></a>
+</nav>
 </main>
 <script>
   var KEY='clr_instalaciones';
