@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Memoria de cálculo · Casa-Refugio</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&amp;family=Inter:wght@400;500;600&amp;family=Spline+Sans+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<style>
+  :root{--ink:#23201b;--ink2:#5a544a;--paper:#efe9dd;--card:#f8f4ea;--line:#d6ccb8;
+    --clay:#8a5a34;--clay-soft:#c69a6d;--moss:#4f6b3f;--rust:#a9502c;--done:#3f6b4a;
+    --wall:#8a7a5c;--glass:#7fa8c4;--door:#b0623a;--dim:#3f8f6f}
+  @media (prefers-color-scheme:dark){:root:not([data-theme=light]){--ink:#ece5d8;--ink2:#a89f8d;
+    --paper:#211e19;--card:#2a2620;--line:#3d372d;--clay:#c99a6b;--clay-soft:#8a6742;--moss:#8aa670;
+    --rust:#d07a4e;--done:#7bab7f;--wall:#a8956f;--glass:#6f9dbd;--door:#c0714a;--dim:#5faf8a}}
+  :root[data-theme=dark]{--ink:#ece5d8;--ink2:#a89f8d;--paper:#211e19;--card:#2a2620;--line:#3d372d;
+    --clay:#c99a6b;--clay-soft:#8a6742;--moss:#8aa670;--rust:#d07a4e;--done:#7bab7f;--wall:#a8956f;
+    --glass:#6f9dbd;--door:#c0714a;--dim:#5faf8a}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,sans-serif;
+    line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:940px;margin:0 auto;padding:0 20px}
+  header.top{border-bottom:1px solid var(--line);background:color-mix(in srgb,var(--paper) 88%,transparent);
+    position:sticky;top:0;z-index:20;backdrop-filter:blur(8px)}
+  .top .wrap{display:flex;align-items:center;justify-content:space-between;height:58px}
+  .brand{display:flex;align-items:baseline;gap:10px;font-family:'Fraunces',serif;font-weight:600}
+  .brand .b1{font-size:1.15rem}.brand .b2{font-size:.8rem;color:var(--ink2);font-family:'Inter'}
+  .navback{font-size:.85rem;color:var(--clay);text-decoration:none;border:1px solid var(--line);
+    padding:6px 12px;border-radius:100px;white-space:nowrap}
+  .navback:hover{background:var(--card)}
+  .strip{border-bottom:1px solid var(--line);background:var(--card);position:sticky;top:58px;z-index:19}
+  .strip-wrap{position:relative}
+  .strip-wrap::after{content:"";position:absolute;right:0;top:0;bottom:0;width:36px;pointer-events:none;
+    background:linear-gradient(90deg,transparent,var(--card));border-radius:0}
+  .strip .wrap{display:flex;gap:5px;overflow-x:auto;padding:9px 20px;scrollbar-width:thin;
+    scroll-behavior:smooth;-webkit-overflow-scrolling:touch}
+  .strip .wrap::-webkit-scrollbar{height:3px}
+  .strip .wrap::-webkit-scrollbar-thumb{background:var(--clay-soft);border-radius:2px}
+  .chip{font-size:.74rem;color:var(--ink2);white-space:nowrap;padding:5px 10px;border-radius:100px;
+    border:1px solid transparent;text-decoration:none;flex:none}
+  .chip.active{background:var(--clay);color:#fff;font-weight:500}
+  .chip:not(.active){background:var(--paper);border-color:var(--line)}
+  .chip:not(.active):hover{border-color:var(--clay-soft)}
+  .hero{padding:40px 0 26px}
+  .kicker{font-size:.8rem;color:var(--clay);font-weight:600;margin:0 0 8px}
+  .hero h1{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(2.1rem,6vw,3.2rem);
+    line-height:1.02;margin:0 0 14px;letter-spacing:-.01em}
+  .hero p.lead{font-size:1.05rem;color:var(--ink2);max-width:64ch;margin:0}
+  .progwrap{margin:22px 0 8px;display:flex;align-items:center;gap:14px}
+  .progbar{flex:1;height:10px;background:var(--line);border-radius:100px;overflow:hidden}
+  .progfill{height:100%;background:linear-gradient(90deg,var(--moss),var(--done));width:0;
+    transition:width .5s cubic-bezier(.4,0,.2,1)}
+  .progtxt{font-family:'Spline Sans Mono',monospace;font-size:.85rem;color:var(--ink2);min-width:118px;text-align:right}
+  .savednote{font-size:.78rem;color:var(--moss);margin-top:8px;min-height:16px;transition:opacity .3s}
+  .figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1px;
+    background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:26px 0}
+  .fig{background:var(--card);padding:16px 18px}
+  .fig .n{font-family:'Fraunces',serif;font-size:1.7rem;font-weight:600;line-height:1;color:var(--ink)}
+  .fig .n small{font-size:.9rem;color:var(--ink2);font-weight:400}
+  .fig .l{font-size:.78rem;color:var(--ink2);margin-top:6px}
+  section.blk{padding:14px 0}
+  .blk h2{font-family:'Fraunces',serif;font-weight:600;font-size:1.5rem;margin:26px 0 4px;
+    display:flex;align-items:center;gap:12px}
+  .blk h2 .mk{width:26px;height:26px;border-radius:8px;background:var(--clay);color:#fff;
+    font-family:'Inter';font-size:.85rem;font-weight:600;display:grid;place-items:center;flex:none}
+  .blk h2 .mk.moss{background:var(--moss)}
+  .blk > p{color:var(--ink2);max-width:70ch}
+  .tablecard{border:1px solid var(--line);border-radius:14px;overflow-x:auto;overflow-y:hidden;margin:14px 0 6px;-webkit-overflow-scrolling:touch}
+  table{width:100%;border-collapse:collapse;font-size:.9rem;min-width:0}
+  thead th{background:var(--card);text-align:left;padding:10px 12px;font-weight:600;font-size:.76rem;
+    color:var(--ink2);border-bottom:1px solid var(--line);white-space:nowrap}
+  thead th.num{text-align:right}
+  tbody td{padding:10px 12px;border-bottom:1px solid var(--line);font-size:.86rem}
+  tbody td:first-child{min-width:130px}
+  tbody tr:last-child td{border-bottom:none}
+  tbody td.num{text-align:right;font-family:'Spline Sans Mono',monospace;font-size:.8rem;white-space:nowrap}
+  tbody tr:hover{background:color-mix(in srgb,var(--card) 60%,transparent)}
+  tfoot td{padding:11px 12px;font-weight:600;background:var(--card);border-top:2px solid var(--line);font-size:.88rem}
+  tfoot td.num{text-align:right;font-family:'Spline Sans Mono',monospace;white-space:nowrap}
+  @media(max-width:560px){
+    tbody td:first-child,thead th:first-child{position:sticky;left:0;background:var(--paper);z-index:1}
+    tbody tr:hover td:first-child{background:var(--card)}
+  }
+  .muted{color:var(--ink2);font-size:.8rem}
+  ol.steps{list-style:none;counter-reset:s;padding:0;margin:16px 0}
+  ol.steps li{counter-increment:s;position:relative;padding:14px 16px 14px 54px;border:1px solid var(--line);
+    border-radius:12px;margin-bottom:10px;background:var(--card)}
+  ol.steps li::before{content:counter(s);position:absolute;left:14px;top:14px;width:26px;height:26px;
+    background:var(--paper);border:1px solid var(--line);border-radius:8px;
+    font-family:'Spline Sans Mono',monospace;font-size:.85rem;display:grid;place-items:center;color:var(--clay)}
+  ol.steps li b{display:block;margin-bottom:3px;font-weight:600;font-size:.98rem}
+  ol.steps li span{color:var(--ink2);font-size:.9rem}
+  .checkcard{border:1px solid var(--line);border-radius:14px;background:var(--card);padding:6px 4px;margin:14px 0}
+  .chkitem{display:flex;gap:13px;align-items:flex-start;padding:13px 16px;border-bottom:1px solid var(--line);cursor:pointer}
+  .chkitem:last-child{border-bottom:none}
+  .chkbox{width:24px;height:24px;border:2px solid var(--clay-soft);border-radius:7px;flex:none;margin-top:1px;
+    display:grid;place-items:center;transition:all .18s}
+  .chkbox svg{width:14px;height:14px;opacity:0;transform:scale(.4);transition:all .2s}
+  .chkitem.on .chkbox{background:var(--done);border-color:var(--done)}
+  .chkitem.on .chkbox svg{opacity:1;transform:scale(1)}
+  .chktext{font-size:.95rem}
+  .chkitem.on .chktext{color:var(--ink2);text-decoration:line-through;text-decoration-color:var(--clay-soft)}
+  .chkhint{display:block;font-size:.78rem;color:var(--ink2);margin-top:2px;text-decoration:none!important}
+  .note{border-left:3px solid var(--clay);background:var(--card);padding:14px 16px;border-radius:0 12px 12px 0;
+    margin:16px 0;font-size:.92rem}
+  .note.warn{border-left-color:var(--rust)}
+  .note b{color:var(--ink)}
+  .plano{border:1px solid var(--line);border-radius:14px;background:var(--card);padding:18px;margin:14px 0;overflow-x:auto}
+  .plano svg{display:block;margin:0 auto;max-width:100%;height:auto}
+  .plano.scroll svg{min-width:460px}
+  .plano .cap{font-size:.8rem;color:var(--ink2);text-align:center;margin-top:10px;line-height:1.4}
+  .planotitle{font-family:'Spline Sans Mono',monospace;font-size:.8rem;color:var(--clay);margin:0 0 4px;
+    text-transform:uppercase;letter-spacing:.04em}
+  .pager{display:flex;justify-content:space-between;gap:12px;margin:34px 0 50px;flex-wrap:wrap}
+  .pgbtn{flex:1;min-width:200px;border:1px solid var(--line);border-radius:14px;padding:16px 18px;
+    text-decoration:none;background:var(--card);transition:border-color .15s}
+  .pgbtn:hover{border-color:var(--clay)}
+  .pgbtn .dir{font-size:.75rem;color:var(--ink2)}
+  .pgbtn .t{font-family:'Fraunces',serif;font-weight:600;font-size:1.05rem;color:var(--ink);margin-top:3px}
+  .pgbtn.next{text-align:right}
+  .pgbtn.disabled{opacity:.4;pointer-events:none}
+  .reset{background:none;border:none;color:var(--ink2);font-size:.78rem;text-decoration:underline;
+    cursor:pointer;padding:0;margin-top:10px}
+  svg text{font-family:'Inter',sans-serif}
+  .dimt{font-family:'Spline Sans Mono',monospace;font-size:11px;fill:var(--dim)}
+  .lblt{font-size:12px;font-weight:600;fill:var(--ink)}
+  .subt{font-size:10px;fill:var(--ink2)}
+
+  /* --- agregado: estructura y planillas --- */
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0}
+  @media(max-width:640px){.twocol{grid-template-columns:1fr}}
+  .infocard{border:1px solid var(--line);border-radius:14px;background:var(--card);padding:18px 20px}
+  .infocard h3{margin:0 0 10px;font-family:'Fraunces',serif;font-size:1rem}
+  .kv{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid var(--line);font-size:.9rem}
+  .kv:last-child{border-bottom:0}
+  .kv .k{color:var(--ink2)}
+  .kv .v{text-align:right;font-weight:500}
+</style>
+</head>
+<body>
+<div id="loginGate" style="position:fixed;inset:0;z-index:9999;background:#efe9dd;display:flex;align-items:center;justify-content:center;font-family:'Inter',system-ui,sans-serif">
+<div style="max-width:340px;width:90%;text-align:center;padding:32px 28px;background:#f8f4ea;border:1px solid #d6ccb8;border-radius:18px;box-shadow:0 8px 40px rgba(60,48,30,.12)">
+<div style="font-family:'Fraunces',serif;font-weight:600;font-size:1.6rem;color:#23201b;margin-bottom:6px">Casa-Refugio</div>
+<div style="font-size:.85rem;color:#5a544a;margin-bottom:22px">Proyecto privado · ingresá para ver</div>
+<input autocomplete="off" id="gu" placeholder="Usuario" style="width:100%;padding:11px 14px;margin-bottom:10px;border:1px solid #d6ccb8;border-radius:10px;background:#efe9dd;color:#23201b;font-size:.95rem;box-sizing:border-box"/>
+<input id="gp" placeholder="Clave" style="width:100%;padding:11px 14px;margin-bottom:8px;border:1px solid #d6ccb8;border-radius:10px;background:#efe9dd;color:#23201b;font-size:.95rem;box-sizing:border-box" type="password"/>
+<div id="gerr" style="color:#a9502c;font-size:.82rem;min-height:18px;margin-bottom:8px"></div>
+<button id="gb" style="width:100%;padding:12px;border:none;border-radius:10px;background:#8a5a34;color:#fff;font-size:.95rem;font-weight:600;cursor:pointer">Entrar</button>
+</div>
+</div>
+<script>
+(function(){
+  var U="RefugioV0", P="1234", K="clr_auth_ok";
+  var gate=document.getElementById('loginGate');
+  function ok(){ gate.style.display='none'; }
+  try{ if(sessionStorage.getItem(K)==='1'){ ok(); } }catch(e){}
+  function tryLogin(){
+    var u=document.getElementById('gu').value.trim();
+    var p=document.getElementById('gp').value;
+    if(u===U && p===P){ try{sessionStorage.setItem(K,'1')}catch(e){} ok(); }
+    else{ document.getElementById('gerr').textContent='Usuario o clave incorrectos'; }
+  }
+  document.getElementById('gb').addEventListener('click',tryLogin);
+  document.getElementById('gp').addEventListener('keydown',function(e){ if(e.key==='Enter')tryLogin(); });
+  document.getElementById('gu').addEventListener('keydown',function(e){ if(e.key==='Enter')document.getElementById('gp').focus(); });
+})();
+</script>
+<header class="top">
+<div class="wrap">
+<div class="brand"><span class="b1">Casa-Refugio</span><span class="b2">Villa Las Rosas · Traslasierra</span></div>
+<a class="navback" href="index.html">Proyecto</a>
+</div>
+</header>
+<nav aria-label="Secciones de obra" class="strip">
+<div class="strip-wrap"><div class="wrap">
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="chip" href="index.html">Proyecto</a>
+    <a class="chip" href="fundacion.html">1·Fundación</a>
+    <a class="chip" href="piso.html">2·Piso</a>
+    <a class="chip" href="columnas.html">3·Columnas</a>
+    <a class="chip" href="techo.html">4·Techo</a>
+    <a class="chip" href="paredes.html">5·Paredes</a>
+    <a class="chip" href="instalaciones.html">6·Instalaciones</a>
+    <a class="chip" href="cerramientos.html">7·Cerramientos</a>
+    <a class="chip" href="terminaciones.html">8·Terminaciones</a>
+    <a class="chip active" href="calculo.html">Cálculo</a>
+    </div></div>
+</nav>
+<main class="wrap">
+<div class="hero">
+<p class="kicker">Documento técnico</p>
+<h1>Memoria de cálculo</h1>
+<p class="lead">Verificación estructural preliminar del esqueleto de madera y de la fundación,
+    según CIRSOC 601 (estructuras de madera), CIRSOC 101 (cargas) y CIRSOC 102 (viento).
+    Documento de anteproyecto, para revisión y firma del profesional interviniente.</p>
+</div>
+<div class="figs">
+<div class="fig"><div class="n">601</div><div class="l">CIRSOC madera</div></div>
+<div class="fig"><div class="n">19,8<small> t</small></div><div class="l">carga total a fundar</div></div>
+<div class="fig"><div class="n">4,80<small> m</small></div><div class="l">luz máxima de viga</div></div>
+<div class="fig"><div class="n">8</div><div class="l">elementos verificados</div></div>
+
+</div>
+
+<section class="blk">
+<h2><span class="mk">i</span>Alcance y criterio</h2>
+<p>Esta memoria verifica los elementos estructurales del esqueleto: vigas de techo, cabios, columnas,
+    vigas de piso y elementos de fundación. Se trabaja por <b>estados límite</b>: último (resistencia,
+    con cargas mayoradas) y de servicio (deformación, con cargas sin mayorar).</p>
+<div class="note warn"><b>Carácter del documento.</b> Los valores de esta página son de
+    <b>anteproyecto</b>: sirven para dimensionar, comparar alternativas y cerrar la definición
+    geométrica del proyecto. La verificación definitiva, con las tensiones admisibles de la madera
+    efectivamente adquirida y el estudio de suelos del lote, corresponde al profesional matriculado
+    que firme el legajo municipal. Ningún elemento se ejecuta sobre la base de esta página sin esa
+    revisión.</div>
+<div class="twocol">
+<div class="infocard">
+<h3>Normativa aplicada</h3>
+<div class="kv"><span class="k">CIRSOC 601</span><span class="v">Estructuras de madera</span></div>
+<div class="kv"><span class="k">CIRSOC 101</span><span class="v">Cargas permanentes y sobrecargas</span></div>
+<div class="kv"><span class="k">CIRSOC 102</span><span class="v">Acción del viento</span></div>
+<div class="kv"><span class="k">CIRSOC 201</span><span class="v">Hormigón (fundación)</span></div>
+</div>
+<div class="infocard">
+<h3>Materiales</h3>
+<div class="kv"><span class="k">Madera</span><span class="v">Pino · clase resistente C</span></div>
+<div class="kv"><span class="k">f<sub>m</sub> flexión</span><span class="v">≈ 10 MPa (valor de diseño)</span></div>
+<div class="kv"><span class="k">E medio</span><span class="v">9.000 MPa</span></div>
+<div class="kv"><span class="k">E mínimo (pandeo)</span><span class="v">4.500 MPa</span></div>
+<div class="kv"><span class="k">Humedad</span><span class="v">≤ 19% (madera seca)</span></div>
+<div class="kv"><span class="k">Hormigón</span><span class="v">H-21 · acero ADN-420</span></div>
+</div>
+</div>
+</section>
+
+<section class="blk">
+<h2><span class="mk">▤</span>Hipótesis de carga</h2>
+<div class="tablecard scroll">
+<table>
+<thead><tr><th>Superficie</th><th>Carga permanente D</th><th>Sobrecarga</th><th>Combinación ELU</th><th>Combinación servicio</th></tr></thead>
+<tbody>
+<tr><td>Cubierta</td><td>0,25 kN/m²</td><td>L<sub>r</sub> = 0,30 kN/m²</td><td>1,2 D + 1,6 L<sub>r</sub> = 0,78 kN/m²</td><td>D + L<sub>r</sub> = 0,55 kN/m²</td></tr>
+<tr><td>Entrepiso</td><td>0,35 kN/m²</td><td>L = 2,00 kN/m²</td><td>1,2 D + 1,6 L = 3,62 kN/m²</td><td>D + L = 2,35 kN/m²</td></tr>
+<tr><td>Muros woodframe</td><td>0,50 kN/m²</td><td>—</td><td>1,2 D</td><td>D</td></tr>
+</tbody>
+</table>
+</div>
+<p class="muted">Cubierta: chapa + contralistón + membrana + celulosa 140 mm + machimbre ½" + cabios.
+    Entrepiso: fenólico 18 mm + I-joist + celulosa + piso terminado. Sobrecarga de vivienda según
+    CIRSOC 101. Nieve despreciable en Villa de Las Rosas. Viento: V₀ = 45 m/s, categoría de
+    exposición C, a confirmar con el mapa de la zona.</p>
+<div class="note"><b>Anchos tributarios de las vigas de techo.</b> Los cabios apoyan en las tres
+    vigas, de modo que cada una recibe la mitad de los tramos adyacentes más el alero que le
+    corresponda: viga norte 0,90 + 2,65/2 = <b>2,225 m</b>; viga central 2,65/2 + 2,72/2 =
+    <b>2,685 m</b>; viga sur 2,72/2 + 0,70 = <b>2,060 m</b>. <b>La viga central gobierna</b>, y es la
+    que se verifica.</div>
+</section>
+
+<section class="blk">
+<h2><span class="mk">▦</span>1 · Vigas de techo</h2>
+<p>Se verifica la viga central (la de mayor ancho tributario) en sus dos tramos. Carga lineal:
+    q<sub>u</sub> = 0,78 × 2,685 + 0,18 (peso propio) = <b>2,27 kN/m</b>.</p>
+<div class="tablecard scroll">
+<table>
+<thead><tr><th>Tramo</th><th>Luz</th><th>Sección</th><th>M<sub>u</sub></th><th>σ actuante</th><th>Flecha</th><th>Límite L/300</th><th>Verifica</th></tr></thead>
+<tbody>
+<tr><td>Oeste</td><td>3,60 m</td><td>doble 3×8" (140×185)</td><td>3,68 kNm</td><td>4,61 MPa</td><td>5,4 mm</td><td>12,0 mm</td><td><b>Sí</b> · 46% de f<sub>m</sub></td></tr>
+<tr><td>Este</td><td>4,80 m</td><td>doble 3×10" (140×235)</td><td>6,55 kNm</td><td>5,08 MPa</td><td>8,3 mm</td><td>16,0 mm</td><td><b>Sí</b> · 51% de f<sub>m</sub></td></tr>
+</tbody>
+</table>
+</div>
+<p class="muted">σ = M/S con S = 2·b·h²/6. Flecha = 5qL⁴/384EI con q de servicio y E = 9.000 MPa.
+    Ambos tramos verifican también contra L/360 (10,0 y 13,3 mm).</p>
+<div class="note"><b>Por qué el tramo este cambia de canto.</b> Con 4,80 m de luz y el mismo doble
+    3×8" del tramo oeste, la tensión subiría a 8,2 MPa y la flecha a 17 mm, por encima de L/300.
+    Pasar a doble 3×10" baja la tensión a 5,08 MPa y la flecha a 8,3 mm. El cambio de canto se
+    resuelve sobre la columna del eje 3,60, alineando las caras superiores para que el plano de
+    apoyo de los cabios siga siendo continuo.</div>
+<div class="note"><b>Alternativas para el tramo este.</b> Si no se consigue el 3×10" en escuadría y
+    largo, dos caminos equivalentes:
+    <b>(a) LVL 45×240 mm</b> —madera laminada de fábrica, capacidad certificada, muy estable
+    dimensionalmente, canto similar al doble 3×10"—; o
+    <b>(b) viga flitch</b>, sándwich de dos tablas de 3×8" con una planchuela de acero de
+    6×180 mm bulonada entre medio c/0,30, que aprovecha la escuadría disponible y sube la rigidez
+    del conjunto. Cualquiera de las dos exige recalcular los apoyos y los anclajes.</div>
+<div class="note"><b>Voladizos.</b> Cada viga vuela 0,60 m a cada lado. El momento en el voladizo,
+    M = qL²/2 = 2,27 × 0,36/2 = 0,41 kNm, es un orden de magnitud menor que el del tramo y no
+    gobierna. Sí gobierna en el anclaje: el voladizo en succión de viento tracciona la unión
+    viga–columna del eje extremo.</div>
+</section>
+
+<section class="blk">
+<h2><span class="mk">▦</span>2 · Cabios</h2>
+<p>Cabios 2×6" (45×140 mm) cada 0,50 m, continuos sobre la viga central. Carga lineal:
+    q<sub>u</sub> = 0,78 × 0,50 = <b>0,39 kN/m</b>. Tramo mayor: 2,72 m.</p>
+<div class="tablecard scroll">
+<table>
+<thead><tr><th>Verificación</th><th>Valor</th><th>Límite</th><th>Aprovechamiento</th></tr></thead>
+<tbody>
+<tr><td>Momento (apoyo central, 2 tramos)</td><td>0,36 kNm</td><td>—</td><td>—</td></tr>
+<tr><td>Tensión de flexión</td><td>2,45 MPa</td><td>≈ 10 MPa</td><td><b>25%</b></td></tr>
+<tr><td>Flecha (hipótesis simple, conservadora)</td><td>2,12 mm</td><td>9,1 mm (L/300)</td><td><b>23%</b></td></tr>
+<tr><td>Voladizo alero norte 0,90</td><td>0,158 kNm</td><td>—</td><td>trivial</td></tr>
+</tbody>
+</table>
+</div>
+<p class="muted">La flecha se calculó como viga simplemente apoyada de 2,72 m, que es conservador:
+    la continuidad sobre la viga central la reduce aproximadamente a un 40%. Longitudes: 3,58 m los
+    20 cabios norte (2,65 + alero 0,90, medido sobre la pendiente) y 3,45 m los 20 sur
+    (2,72 + alero 0,70). Cos 7,41° = 0,9917.</p>
+<div class="note">Los cabios están muy holgados en resistencia: la separación de 0,50 m no la fija
+    el cálculo estructural sino el soporte del machimbre y el ancho del rollo de aislación. Es una
+    decisión constructiva, no resistente.</div>
+</section>
+
+<section class="blk">
+<h2><span class="mk">▦</span>3 · Columnas</h2>
+<p>Nueve columnas dobles 2×6", sección 90×140 mm, A = 12.600 mm². La más cargada es la del cruce
+    de la viga central con el eje x = 3,60: recibe 1,80 + 2,40 = 4,20 m de viga por 2,685 m de ancho
+    tributario.</p>
+<div class="tablecard scroll">
+<table>
+<thead><tr><th>Verificación</th><th>Valor</th><th>Observación</th></tr></thead>
+<tbody>
+<tr><td>Carga axil N<sub>u</sub></td><td>9,50 kN</td><td>incluye peso de vigas</td></tr>
+<tr><td>Tensión de compresión</td><td>0,75 MPa</td><td>muy holgada frente a f<sub>c</sub></td></tr>
+<tr><td>Altura de cálculo</td><td>3,40 m</td><td>la columna más alta (línea norte)</td></tr>
+<tr><td>Pandeo eje débil (90 mm), <b>sin</b> arriostrar</td><td>λ = 131 · f<sub>cr</sub> = 2,59 MPa</td><td>margen <b>3,4</b> — insuficiente como criterio de diseño</td></tr>
+<tr><td>Pandeo eje fuerte (140 mm), <b>con</b> muro</td><td>λ = 84 · f<sub>cr</sub> = 6,28 MPa</td><td>margen <b>8,3</b> — <b>verifica</b></td></tr>
+</tbody>
+</table>
+</div>
+<div class="note warn"><b>Condición de validez.</b> La verificación de la columna <b>depende del muro
+    de woodframe</b>. El bastidor clavado a la columna cada 0,60 m impide el pandeo en el eje débil y
+    hace que gobierne el fuerte. Consecuencias operativas: (1) las columnas se apuntalan en diagonal
+    desde que se izan hasta que el woodframe está cerrado; (2) ningún muro que contenga una columna
+    puede eliminarse ni perforarse de lado a lado sin recalcular; (3) la columna del eje x = 3,60 que
+    queda en el tabique del dormitorio hace de ese tabique un elemento estructural, no divisorio.</div>
+<div class="note"><b>Tracción por succión.</b> Con V₀ = 45 m/s la succión de cubierta alcanza
+    1,61 kN/m² contra 0,25 kN/m² de peso propio. El saldo es tracción neta: la columna trabaja
+    "colgada" de la viga y anclada al pilotín. Anclaje previsto: barra roscada Ø16 empotrada 0,20 m
+    con adhesivo químico. La verificación de ese anclaje a arrancamiento debe hacerla el profesional
+    con los datos del producto.</div>
+</section>
+
+<section class="blk">
+<h2><span class="mk">▦</span>4 · Vigas de piso</h2>
+<p>Carga de entrepiso q<sub>u</sub> = 3,62 kN/m². La viga maestra central (eje y = 2,65) toma
+    2,685 m de ancho tributario: q = <b>9,72 kN/m</b>. Es la viga más cargada de toda la casa.</p>
+<div class="tablecard scroll">
+<table>
+<thead><tr><th>Elemento</th><th>Luz entre apoyos</th><th>Sección</th><th>M<sub>u</sub></th><th>σ actuante</th><th>Verifica</th></tr></thead>
+<tbody>
+<tr><td>Maestra central · apoyos sólo en ejes de columna</td><td>4,80 m</td><td>doble 3×8"</td><td>27,99 kNm</td><td><b>35,1 MPa</b></td><td><b>NO</b> — 3,5× el límite</td></tr>
+<tr><td>Maestra central · con un apoyo intermedio</td><td>3,60 m</td><td>doble 3×8"</td><td>15,75 kNm</td><td><b>19,7 MPa</b></td><td><b>NO</b> — 2× el límite</td></tr>
+<tr><td>Maestra central · <b>grilla adoptada</b></td><td>2,40 m</td><td>doble 3×8" (140×185)</td><td>7,00 kNm</td><td><b>8,8 MPa</b></td><td><b>Sí</b> · 88%</td></tr>
+<tr><td>Perimetral norte y sur</td><td>2,40 m</td><td>3×8" (70×185)</td><td>3,45 kNm</td><td>8,6 MPa</td><td><b>Sí</b> · 86%</td></tr>
+</tbody>
+</table>
+</div>
+<p class="muted">Flecha de la maestra con luz 2,40 m: 4,1 mm contra 6,7 mm de L/360. Verifica.</p>
+<div class="note warn"><b>Esta tabla es la que fija la grilla de fundación.</b> Las dos primeras filas
+    muestran que apoyar las vigas de piso sólo en los ejes de columna (0 / 3,60 / 8,40) es inviable
+    con escuadrías de pino corrientes. Por eso la fundación incorpora <b>dos ejes intermedios en
+    x = 1,80 y x = 6,00</b>, que llevan la luz máxima a 2,40 m y la tensión a 8,8 MPa. Los seis
+    pilotines adicionales son el precio de que las vigas de piso sean de madera comercial en lugar de
+    perfiles especiales.</div>
+<div class="note">Las dos filas superiores quedan documentadas a propósito: son la justificación
+    técnica de la grilla de 5 × 3 ante el revisor municipal, no un descarte que convenga ocultar.
+    El aprovechamiento del 88% de la maestra es ajustado: es el elemento a revisar primero si el
+    profesional adopta una clase resistente de madera distinta.</div>
+</section>
+
+<section class="blk">
+<h2><span class="mk">▦</span>5 · Viguetas de entrepiso · I-joist</h2>
+<p>Las viguetas <b>no se calculan con las fórmulas de madera maciza</b>: son un producto de fábrica
+    (alas de madera laminada, alma de OSB) y se seleccionan de la tabla de luces admisibles del
+    fabricante. Lo que corresponde a esta memoria es fijar los datos de entrada y el criterio de
+    aceptación.</p>
+<div class="twocol">
+<div class="infocard">
+<h3>Datos de entrada</h3>
+<div class="kv"><span class="k">Luz de cálculo</span><span class="v">2,72 m (la mayor)</span></div>
+<div class="kv"><span class="k">Separación</span><span class="v">0,50 m (0,494 real)</span></div>
+<div class="kv"><span class="k">Carga permanente</span><span class="v">0,35 kN/m²</span></div>
+<div class="kv"><span class="k">Sobrecarga de uso</span><span class="v">2,00 kN/m²</span></div>
+<div class="kv"><span class="k">Condición</span><span class="v">simple o continua sobre 2 tramos</span></div>
+</div>
+<div class="infocard">
+<h3>Criterio de aceptación</h3>
+<div class="kv"><span class="k">Canto mínimo</span><span class="v">240 mm (≈ 2×10")</span></div>
+<div class="kv"><span class="k">Flecha</span><span class="v">L/360 bajo sobrecarga</span></div>
+<div class="kv"><span class="k">Vibración</span><span class="v">según criterio del fabricante</span></div>
+<div class="kv"><span class="k">Apoyo mínimo</span><span class="v">según ficha (típico 45 mm)</span></div>
+<div class="kv"><span class="k">Rigidizadores</span><span class="v">de alma, en cada apoyo</span></div>
+</div>
+</div>
+<div class="note warn"><b>A confirmar en obra.</b> Los 240 mm son el mínimo de proyecto. Con luz de
+    2,72 m y separación 0,50 m, cualquier serie comercial de 240 mm queda holgada en resistencia;
+    lo que suele gobernar en pisos de vivienda es el <b>criterio de vibración</b>, que cada
+    fabricante define a su manera. <b>El canto definitivo sale de la ficha técnica del I-joist que
+    se consiga en Córdoba</b>, no de esta página. Si el producto disponible obliga a un canto mayor,
+    hay que revisar la altura del paquete de piso y la cota de corona de los pilotines.</div>
+<div class="note"><b>Restricciones del producto.</b> El alma de OSB no se corta ni se perfora fuera
+    de las zonas y diámetros que indica la plantilla del fabricante. Todas las cañerías que crucen
+    el entrepiso deben replantearse contra esa plantilla <b>antes</b> de colocar las viguetas.</div>
+</section>
+
+<section class="blk">
+<h2><span class="mk">▦</span>6 · Acción del viento y arriostramiento</h2>
+<p>Presión dinámica de referencia con V₀ = 45 m/s: q<sub>z</sub> = 0,613 · V² = <b>1,24 kN/m²</b>.</p>
+<div class="tablecard scroll">
+<table>
+<thead><tr><th>Acción</th><th>Valor</th><th>Resiste</th><th>Solicitación</th></tr></thead>
+<tbody>
+<tr><td>Succión de cubierta (GC<sub>p</sub> = −1,3)</td><td>1,61 kN/m²</td><td>cadena de anclaje</td><td>tracción neta (D = 0,25 kN/m²)</td></tr>
+<tr><td>Empuje norte–sur</td><td>26,8 kN al diafragma</td><td>muros oeste y este (5,37 m c/u)</td><td><b>2,50 kN/m</b> de corte</td></tr>
+<tr><td>Empuje este–oeste</td><td>15,0 kN al diafragma</td><td>muros norte y sur (8,40 m c/u)</td><td><b>0,89 kN/m</b> de corte</td></tr>
+</tbody>
+</table>
+</div>
+<p class="muted">El diafragma de techo (machimbre ½" clavado sobre los cabios) recoge el empuje de
+    las fachadas y lo transfiere a los muros paralelos a la dirección del viento. Una placa cementicia
+    clavada c/0,15 sobre bastidor desarrolla del orden de 3 a 5 kN/m, por encima de los 2,50 kN/m
+    requeridos.</p>
+<div class="note warn"><b>El caso crítico es el muro norte.</b> La fachada norte es casi toda ventana
+    (V1, V2 y V3), de modo que la placa no forma un paño continuo y el muro aporta poco al diafragma
+    vertical. Ahí es donde se justifican las <b>riostras diagonales de 1×6" a 45°</b> entre columna y
+    viga, con un mínimo de dos paños arriostrados por fachada en esquinas opuestas.</div>
+<div class="note"><b>Los tres mecanismos son solidarios:</b> diafragma de techo (machimbre),
+    diafragma de muro (placa cementicia) y riostras diagonales. Si se retira uno —por ejemplo, si se
+    reemplaza el machimbre por un cielorraso suspendido sin función estructural— hay que recalcular
+    los otros dos.</div>
+</section>
+
+<section class="blk">
+<h2><span class="mk">▦</span>7 · Fundación</h2>
+<p>Bajada de cargas en estado de servicio sobre los quince pilotines.</p>
+<div class="tablecard scroll">
+<table>
+<thead><tr><th>Concepto</th><th>Carga</th></tr></thead>
+<tbody>
+<tr><td>Cubierta · permanente (67,5 m²)</td><td class="num">16,9 kN</td></tr>
+<tr><td>Cubierta · sobrecarga</td><td class="num">20,2 kN</td></tr>
+<tr><td>Entrepiso · permanente (45,1 m²)</td><td class="num">15,8 kN</td></tr>
+<tr><td>Entrepiso · sobrecarga de uso</td><td class="num">90,2 kN</td></tr>
+<tr><td>Muros perimetrales woodframe</td><td class="num">42,0 kN</td></tr>
+<tr><td>Tabiques interiores</td><td class="num">9,6 kN</td></tr>
+<tr><td><b>Total en servicio</b></td><td class="num"><b>194,7 kN ≈ 19,8 t</b></td></tr>
+</tbody>
+</table>
+</div>
+<div class="tablecard scroll">
+<table>
+<thead><tr><th>Zapata</th><th>Dimensión</th><th>Área</th><th>Carga de diseño</th><th>Tensión</th><th>Verifica</th></tr></thead>
+<tbody>
+<tr><td>De columna (9)</td><td>0,60 × 0,60 m</td><td>0,36 m²</td><td>25,0 kN</td><td>69 kPa · <b>0,71 kg/cm²</b></td><td>Sí, si σ<sub>adm</sub> ≥ 1,0 kg/cm²</td></tr>
+<tr><td>De plataforma (6)</td><td>0,50 × 0,50 m</td><td>0,25 m²</td><td>15,0 kN</td><td>60 kPa · <b>0,61 kg/cm²</b></td><td>Sí, si σ<sub>adm</sub> ≥ 1,0 kg/cm²</td></tr>
+</tbody>
+</table>
+</div>
+<div class="note warn"><b>Falta el estudio de suelos.</b> La verificación supone una tensión
+    admisible de 1,0 kg/cm², razonable para suelo firme de la zona, pero <b>no verificada en el
+    lote</b>. Los suelos loéssicos de Traslasierra pueden ser colapsables al saturarse: si el pozo
+    de exploración encuentra loess suelto, hay que bajar la cota de fundación, ampliar la zapata o
+    ambas cosas. Este es el punto abierto más importante de la memoria.</div>
+<div class="note"><b>Viga de fundación.</b> El encadenado 0,20 × 0,20 con 4 Ø10 y estribos Ø6 c/0,20
+    no trabaja como viga de carga vertical: es un elemento de <b>atado</b> que solidariza las quince
+    zapatas frente a acciones horizontales (sismo y viento) y frente a asentamientos diferenciales.
+    Desarrollo: 41,31 m (perímetro 27,54 + eje central 8,40 + travesaño 5,37).</div>
+</section>
+
+<section class="blk">
+<h2><span class="mk">✓</span>Resumen de verificación</h2>
+<div class="tablecard scroll">
+<table>
+<thead><tr><th>#</th><th>Elemento</th><th>Sección adoptada</th><th>Solicitación crítica</th><th>Aprovechamiento</th><th>Estado</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Viga techo · tramo oeste</td><td>doble 3×8"</td><td>flexión, L = 3,60</td><td>46%</td><td>Verifica</td></tr>
+<tr><td>2</td><td>Viga techo · tramo este</td><td>doble 3×10"</td><td>flexión, L = 4,80</td><td>51%</td><td>Verifica</td></tr>
+<tr><td>3</td><td>Cabios</td><td>2×6" c/0,50</td><td>flexión, L = 2,72</td><td>25%</td><td>Verifica</td></tr>
+<tr><td>4</td><td>Columnas</td><td>doble 2×6"</td><td>pandeo eje fuerte</td><td>12%</td><td>Verifica <b>con muro</b></td></tr>
+<tr><td>5</td><td>Viga maestra de piso</td><td>doble 3×8"</td><td>flexión, L = 2,40</td><td><b>88%</b></td><td>Verifica · el más ajustado</td></tr>
+<tr><td>6</td><td>Vigas perimetrales de piso</td><td>3×8"</td><td>flexión, L = 2,40</td><td>86%</td><td>Verifica</td></tr>
+<tr><td>7</td><td>Viguetas de entrepiso</td><td>I-joist ≥ 240 mm</td><td>flecha / vibración</td><td>—</td><td><b>A confirmar</b> con ficha</td></tr>
+<tr><td>8</td><td>Zapatas</td><td>0,60 y 0,50 m</td><td>tensión sobre suelo</td><td>0,71 kg/cm²</td><td><b>A confirmar</b> con estudio de suelos</td></tr>
+</tbody>
+</table>
+</div>
+<div class="note"><b>Los dos elementos más ajustados</b> son la viga maestra de piso (88%) y las
+    perimetrales (86%). Si el profesional adopta una clase resistente inferior a la supuesta, son
+    los primeros a revisar: la salida más simple es pasar la maestra a doble 3×10" o agregar un
+    sexto eje de pilotines.</div>
+</section>
+
+<section class="blk">
+<h2><span class="mk">⚑</span>Puntos abiertos para el profesional interviniente</h2>
+<ol class="steps">
+<li><b>Estudio de suelos</b><span>Determinar la tensión admisible real del lote y confirmar si hay loess colapsable. Condiciona directamente el dimensionado de las quince zapatas y la cota de fundación.</span></li>
+<li><b>Clase resistente de la madera</b><span>Verificar la clase efectiva del pino que se adquiera. Todas las tensiones de esta memoria se contrastaron contra un valor de diseño de flexión de ≈ 10 MPa.</span></li>
+<li><b>Velocidad básica de viento</b><span>Confirmar V₀ para Villa de Las Rosas contra el mapa de CIRSOC 102 y la categoría de exposición del lote. Se adoptó 45 m/s, categoría C.</span></li>
+<li><b>Ficha técnica del I-joist</b><span>Seleccionar la serie y el canto contra la tabla del fabricante disponible en Córdoba, incluyendo el criterio de vibración y los rigidizadores de alma.</span></li>
+<li><b>Anclajes a tracción</b><span>Verificar la cadena completa contra succión de viento: fleje cabio–viga, unión viga–columna y barra roscada columna–pilotín, con los valores del producto adhesivo.</span></li>
+<li><b>Detalle de arriostramiento</b><span>Definir los paños concretos de riostra diagonal en la fachada norte, donde la superficie vidriada impide formar un diafragma de muro continuo.</span></li>
+<li><b>Acción sísmica</b><span>Villa de Las Rosas se ubica en zona sísmica de Córdoba. Verificar el conjunto según CIRSOC 103: la estructura es liviana y muy favorable a ese efecto, pero la verificación debe hacerse de forma explícita.</span></li>
+</ol>
+</section>
+<nav class="pager">
+<a class="pgbtn" href="techo.html"><span class="dir">← Anterior</span><div class="t">4 · Techo</div></a>
+<a class="pgbtn next" href="index.html"><span class="dir">Volver a</span><div class="t">Proyecto y planos</div></a>
+</nav>
+</main>
+<!-- sin checklist de avance: documento de consulta, no de obra -->
+</body>
+</html>

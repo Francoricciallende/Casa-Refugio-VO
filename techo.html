@@ -127,6 +127,17 @@
   .dimt{font-family:'Spline Sans Mono',monospace;font-size:11px;fill:var(--dim)}
   .lblt{font-size:12px;font-weight:600;fill:var(--ink)}
   .subt{font-size:10px;fill:var(--ink2)}
+
+  /* --- agregado: estructura y planillas --- */
+  .alerot{font-family:'Spline Sans Mono',monospace;font-size:10px;fill:var(--clay)}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0}
+  @media(max-width:640px){.twocol{grid-template-columns:1fr}}
+  .infocard{border:1px solid var(--line);border-radius:14px;background:var(--card);padding:18px 20px}
+  .infocard h3{margin:0 0 10px;font-family:'Fraunces',serif;font-size:1rem}
+  .kv{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid var(--line);font-size:.9rem}
+  .kv:last-child{border-bottom:0}
+  .kv .k{color:var(--ink2)}
+  .kv .v{text-align:right;font-weight:500}
 </style>
 </head>
 <body>
@@ -186,13 +197,16 @@
     <a class="chip" href="instalaciones.html">6·Instalaciones</a>
     <a class="chip" href="cerramientos.html">7·Cerramientos</a>
     <a class="chip" href="terminaciones.html">8·Terminaciones</a>
+    <a class="chip" href="calculo.html">Cálculo</a>
     </div></div>
 </nav>
 <main class="wrap">
 <div class="hero">
 <p class="kicker">Etapa 4 de 8</p>
 <h1>Techo</h1>
-<p class="lead">El faldón que cierra la casa por arriba y la deja bajo cubierta. Dos vigas de pino sobre las columnas, cabios, y chapa sobre machimbre. Caída norte-sur del 13%.</p>
+<p class="lead">El faldón que cierra la casa por arriba y la deja bajo cubierta. Tres vigas de pino
+sobre las nueve columnas, cabios cada 0,50, y chapa sobre un paquete ventilado. Caída norte–sur
+del 13%.</p>
 <div class="progwrap">
 <div class="progbar"><div class="progfill" id="fill"></div></div>
 <div class="progtxt" id="ptxt">0 pasos</div>
@@ -200,108 +214,194 @@
 <div class="savednote" id="saved"></div>
 </div>
 <div class="figs">
-<div class="fig"><div class="n">2</div><div class="l">vigas 2"×12"</div></div>
-<div class="fig"><div class="n">36</div><div class="l">cabios 2"×6"</div></div>
-<div class="fig"><div class="n">74<small> m²</small></div><div class="l">chapa</div></div>
-<div class="fig"><div class="n">13%</div><div class="l">pendiente N→S</div></div>
+<div class="fig"><div class="n">3</div><div class="l">vigas E–O</div></div>
+<div class="fig"><div class="n">40</div><div class="l">cabios 2×6"</div></div>
+<div class="fig"><div class="n">13%</div><div class="l">pendiente N→S (7,41°)</div></div>
+<div class="fig"><div class="n">9,60<small> m</small></div><div class="l">largo de viga con aleros</div></div>
 
 </div>
 <section class="blk">
 <h2><span class="mk">i</span>Qué se hace en esta etapa</h2>
-<p>Sobre las columnas se colocan las dos vigas grandes que cruzan de este a oeste (una fila norte, una
-    sur), el encadenado que ata las columnas, y encima los cabios que cruzan de norte a sur sosteniendo la
-    chapa. El faldón cae del norte (alto) al sur (bajo) con 13% de pendiente. Al terminar esta etapa la casa
-    queda techada y se puede trabajar bajo cubierta.</p>
-<div class="note"><b>Las vigas son de pino aserrado, no rollizo:</b> trabajan a flexión (se doblan) y necesitan
-    apoyo plano para los cabios. Se arman con 3 tablas de 2"×12" pegadas, todas iguales (homogéneas), con la
-    tabla de 4,85 m entrando casi justa en el tramo largo de 4,80.</div>
+<p>Sobre las columnas se colocan las <b>tres vigas que cruzan de este a oeste</b> —la norte, la
+central y la sur—, cada una apoyada en tres columnas. Encima van los cabios, que cruzan de norte
+a sur sosteniendo la cubierta. El faldón cae del norte (alto) al sur (bajo) con 13% de pendiente.
+Al terminar esta etapa la casa queda techada y se puede trabajar bajo cubierta.</p>
+<p>La <b>viga central es la correa maestra</b>: recibe el mayor ancho tributario (2,685 m contra
+2,225 de la norte y 2,060 de la sur) y es la que permite que los cabios sean continuos en vez de
+salvar los 5,37 m de un tramo. Cruza el estar–cocina por el aire a 3,05 m de altura y queda a la
+vista: es parte del lenguaje de la casa, no un elemento a tapar.</p>
+<div class="note"><b>Las vigas son de pino aserrado, dobles:</b> trabajan a flexión y necesitan apoyo
+plano para los cabios. Cada una se arma con dos tablas clavadas entre sí. <b>El canto cambia según
+el tramo:</b> doble 3×8" en el tramo oeste (luz 3,60) y doble 3×10" en el este (luz 4,80), que es
+donde el estar queda libre sin columna intermedia.</div>
 </section>
 <section class="blk">
 <h2><span class="mk">▢</span>Cómo se apoya el techo</h2>
 <div class="plano scroll">
-<p class="planotitle">Planta de techo</p>
-<svg aria-label="Vigas este-oeste y cabios norte-sur" role="img" viewbox="0 0 520 300">
-<rect fill="none" height="200" stroke="var(--line)" stroke-width="1" width="400" x="60" y="50"></rect>
-<g stroke="#b4b2a9" stroke-width="1.5">
-<line x1="90" x2="90" y1="50" y2="250"></line><line x1="130" x2="130" y1="50" y2="250"></line>
-<line x1="170" x2="170" y1="50" y2="250"></line><line x1="210" x2="210" y1="50" y2="250"></line>
-<line x1="250" x2="250" y1="50" y2="250"></line><line x1="290" x2="290" y1="50" y2="250"></line>
-<line x1="330" x2="330" y1="50" y2="250"></line><line x1="370" x2="370" y1="50" y2="250"></line>
-<line x1="410" x2="410" y1="50" y2="250"></line>
+<p class="planotitle">Planta de techo · norte arriba</p>
+<svg aria-label="Tres vigas este-oeste sobre nueve columnas y cuarenta cabios norte-sur" role="img" viewbox="0 0 600 425">
+<defs><marker id="at" markerHeight="6" markerWidth="6" orient="auto" refX="3" refY="3">
+<path d="M0,3 L6,1 L6,5 Z" fill="var(--dim)"></path></marker></defs>
+<!-- borde del faldon (incluye aleros) -->
+<rect fill="none" height="349" stroke="var(--clay-soft)" stroke-dasharray="5 4" stroke-width="1" width="480" x="45" y="45"></rect>
+<!-- perimetro de la casa -->
+<rect fill="none" height="269" stroke="var(--line)" stroke-dasharray="4 4" stroke-width="1.2" width="420" x="75" y="90"></rect>
+<!-- 20 cabios N-S sobre los 9,60 m del faldon -->
+<g stroke="#b4b2a9" stroke-width="1.8">
+<line x1="45" x2="45" y1="45" y2="394"></line>
+<line x1="70.3" x2="70.3" y1="45" y2="394"></line>
+<line x1="95.5" x2="95.5" y1="45" y2="394"></line>
+<line x1="120.8" x2="120.8" y1="45" y2="394"></line>
+<line x1="146.1" x2="146.1" y1="45" y2="394"></line>
+<line x1="171.3" x2="171.3" y1="45" y2="394"></line>
+<line x1="196.6" x2="196.6" y1="45" y2="394"></line>
+<line x1="221.8" x2="221.8" y1="45" y2="394"></line>
+<line x1="247.1" x2="247.1" y1="45" y2="394"></line>
+<line x1="272.4" x2="272.4" y1="45" y2="394"></line>
+<line x1="297.6" x2="297.6" y1="45" y2="394"></line>
+<line x1="322.9" x2="322.9" y1="45" y2="394"></line>
+<line x1="348.2" x2="348.2" y1="45" y2="394"></line>
+<line x1="373.4" x2="373.4" y1="45" y2="394"></line>
+<line x1="398.7" x2="398.7" y1="45" y2="394"></line>
+<line x1="423.9" x2="423.9" y1="45" y2="394"></line>
+<line x1="449.2" x2="449.2" y1="45" y2="394"></line>
+<line x1="474.5" x2="474.5" y1="45" y2="394"></line>
+<line x1="499.7" x2="499.7" y1="45" y2="394"></line>
+<line x1="525" x2="525" y1="45" y2="394"></line>
 </g>
-<line stroke="var(--rust)" stroke-width="8" x1="60" x2="460" y1="90" y2="90"></line>
-<line stroke="var(--rust)" stroke-width="8" x1="60" x2="460" y1="210" y2="210"></line>
-<text class="subt" fill="#712b13" text-anchor="middle" x="260" y="82">VIGA 2"×12" (norte)</text>
-<text class="subt" fill="#712b13" text-anchor="middle" x="260" y="228">VIGA 2"×12" (sur)</text>
-<g fill="var(--clay)" stroke="#fff" stroke-width="1.5">
-<circle cx="60" cy="90" r="7"></circle><circle cx="232" cy="90" r="7"></circle><circle cx="460" cy="90" r="7"></circle>
-<circle cx="60" cy="210" r="7"></circle><circle cx="232" cy="210" r="7"></circle><circle cx="460" cy="210" r="7"></circle>
+<!-- 3 vigas E-O, de alero a alero -->
+<line stroke="var(--rust)" stroke-width="8" x1="45" x2="525" y1="90" y2="90"></line>
+<line stroke="var(--rust)" stroke-width="8" x1="45" x2="525" y1="222" y2="222"></line>
+<line stroke="var(--rust)" stroke-width="8" x1="45" x2="525" y1="358" y2="358"></line>
+<text class="subt" fill="#712b13" text-anchor="middle" x="285" y="83">VIGA NORTE · y = 0 · corona 3,40</text>
+<text class="subt" fill="#712b13" text-anchor="middle" x="285" y="215">VIGA CENTRAL (correa maestra) · y = 2,65 · corona 3,05</text>
+<text class="subt" fill="#712b13" text-anchor="middle" x="285" y="375">VIGA SUR · y = 5,37 · corona 2,70</text>
+<!-- 9 columnas -->
+<g fill="var(--clay)" stroke="#fff" stroke-width="1.6">
+<circle cx="75" cy="90" r="7"></circle><circle cx="255" cy="90" r="7"></circle><circle cx="495" cy="90" r="7"></circle>
+<circle cx="75" cy="222" r="7"></circle><circle cx="255" cy="222" r="7"></circle><circle cx="495" cy="222" r="7"></circle>
+<circle cx="75" cy="358" r="7"></circle><circle cx="255" cy="358" r="7"></circle><circle cx="495" cy="358" r="7"></circle>
 </g>
-<text class="subt" x="485" y="150">cabios</text>
-<text class="subt" x="485" y="163">2"×6"</text>
+<!-- rotulos de tramo de viga -->
+<text class="subt" text-anchor="middle" x="165" y="240">doble 3×8" · luz 3,60</text>
+<text class="subt" text-anchor="middle" x="375" y="240">doble 3×10" · luz 4,80</text>
+<!-- flecha de pendiente -->
+<g stroke="var(--moss)" stroke-width="1.5">
+<line marker-end="url(#at)" x1="556" x2="556" y1="100" y2="350"></line>
+</g>
+<text class="subt" fill="var(--moss)" text-anchor="middle" transform="rotate(90 570 225)" x="570" y="225">caída 13% · N→S</text>
+<!-- cotas de alero -->
+<text class="alerot" text-anchor="middle" x="285" y="40">alero norte 0,90</text>
+<text class="alerot" text-anchor="middle" x="285" y="408">alero sur 0,70</text>
+<text class="alerot" text-anchor="middle" transform="rotate(-90 36 220)" x="36" y="220">alero oeste 0,60</text>
+<text class="alerot" text-anchor="middle" transform="rotate(90 538 220)" x="538" y="220">alero este 0,60</text>
+<text class="subt" x="45" y="418">cabios 2×6" c/0,50 · 20 por faldón</text>
 </svg>
-<div class="cap">Dos vigas 2"×12" cruzan este-oeste sobre las columnas. Los cabios finos (líneas grises) apoyan sobre ellas cruzando norte-sur.</div>
+<div class="cap">Tres vigas este–oeste apoyan cada una en tres columnas y vuelan 0,60 a cada lado.
+      Los cabios (líneas grises) cruzan norte–sur y son continuos sobre la viga central: 20 al norte
+      de 3,58 m y 20 al sur de 3,45 m.</div>
 </div>
 </section>
 <section class="blk">
-<h2><span class="mk">▦</span>Materiales de la etapa</h2>
-<div class="tablecard">
+<h2><span class="mk">▤</span>Cabios y geometría del faldón</h2>
+<p>El faldón es un plano único inclinado al 13%, es decir 7,41°. La pendiente se genera por
+    diferencia de altura entre las tres coronas de columna, no cortando los cabios en cuña: cada
+    cabio es una pieza recta que apoya en tres puntos que ya están a la altura correcta.</p>
+<div class="twocol">
+<div class="infocard">
+<h3>Cabios norte</h3>
+<div class="kv"><span class="k">Cantidad</span><span class="v">20</span></div>
+<div class="kv"><span class="k">Largo</span><span class="v">3,58 m</span></div>
+<div class="kv"><span class="k">Tramo</span><span class="v">2,65 m + alero 0,90</span></div>
+<div class="kv"><span class="k">Sección</span><span class="v">2×6" (45×140 mm)</span></div>
+</div>
+<div class="infocard">
+<h3>Cabios sur</h3>
+<div class="kv"><span class="k">Cantidad</span><span class="v">20</span></div>
+<div class="kv"><span class="k">Largo</span><span class="v">3,45 m</span></div>
+<div class="kv"><span class="k">Tramo</span><span class="v">2,72 m + alero 0,70</span></div>
+<div class="kv"><span class="k">Sección</span><span class="v">2×6" (45×140 mm)</span></div>
+</div>
+</div>
+<div class="note"><b>Continuos sobre la viga central.</b> Donde el largo comercial lo permita, conviene
+    que el cabio sea una sola pieza que pase por encima de la viga central en vez de dos tramos
+    apoyados. La continuidad reduce el momento en el centro del tramo y la flecha, y evita una junta
+    justo donde más se mueve el techo. Si hay que empalmar, el empalme va sobre la viga, nunca en el aire.</div>
+<div class="note"><b>Alturas de corona.</b> Norte 3,40 · central 3,05 · sur 2,70, medidas desde el nivel
+    de piso terminado. La diferencia de 0,35 entre coronas consecutivas es exactamente lo que da el 13%
+    sobre 2,65 y 2,72 m. Verificar con nivel antes de cortar las columnas.</div>
+</section>
+<section class="blk">
+<h2><span class="mk">▥</span>Capas de la cubierta</h2>
+<p>De adentro hacia afuera, el paquete es un techo ventilado: el aislante queda seco porque la
+    chapa nunca lo toca y el aire circula entre medio.</p>
+<div class="tablecard scroll">
 <table>
-<thead><tr><th>Estructura de madera</th><th class="num">Cantidad</th></tr></thead>
+<thead><tr><th>#</th><th>Capa</th><th>Espesor / sección</th><th>Función</th></tr></thead>
 <tbody>
-<tr><td>Viga 2"×12" · tablas 3,66 m</td><td class="num">6 u</td></tr>
-<tr><td>Viga 2"×12" · tablas 4,85 m</td><td class="num">7 u</td></tr>
-<tr><td>Encadenado 2"×8"</td><td class="num">36 ml</td></tr>
-<tr><td>Cabios 2"×6" · 4,85 m</td><td class="num">18 u</td></tr>
-<tr><td>Cabios 2"×6" · 3,05 m</td><td class="num">18 u</td></tr>
+<tr><td>1</td><td>Machimbre de pino ½" a la vista</td><td>12 mm</td><td>Cielorraso visto y diafragma rígido de techo</td></tr>
+<tr><td>2</td><td>Barrera de vapor</td><td>polietileno 200 µm</td><td>Impide que el vapor de adentro entre al aislante</td></tr>
+<tr><td>3</td><td>Celulosa / wichi entre cabios</td><td>140 mm (canto del cabio)</td><td>Aislación térmica</td></tr>
+<tr><td>4</td><td>Membrana hidrófuga respirable</td><td>—</td><td>Frena agua y viento, deja salir el vapor</td></tr>
+<tr><td>5</td><td>Contralistón</td><td>1×2" (19×38 mm)</td><td>Genera la cámara ventilada bajo la chapa</td></tr>
+<tr><td>6</td><td>Chapa galvanizada</td><td>trapezoidal C25</td><td>Cubierta y escurrimiento</td></tr>
 </tbody>
-
 </table>
 </div>
-<div class="tablecard">
+<div class="note warn"><b>El contralistón no es opcional.</b> Sin la cámara ventilada, el vapor que
+    atraviesa el paquete condensa en la cara fría de la chapa, gotea sobre la celulosa y la moja. Una
+    celulosa mojada pierde la aislación y no se seca. Los 19 mm de cámara con entrada de aire en el
+    alero sur y salida en el norte son lo que mantiene todo el sistema seco.</div>
+</section>
+<section class="blk">
+<h2><span class="mk">▦</span>Planilla de escuadrías</h2>
+<div class="tablecard scroll">
 <table>
-<thead><tr><th>Cubierta y aislación</th><th class="num">Cantidad</th></tr></thead>
+<thead><tr><th>Elemento</th><th>Sección nominal</th><th>Sección real</th><th>Separación</th><th>Largo unitario</th><th>Especie / clase</th></tr></thead>
 <tbody>
-<tr><td>Chapa trapezoidal C25</td><td class="num">74 m²</td></tr>
-<tr><td>Fenólico 12 mm (diafragma)</td><td class="num">9 placas</td></tr>
-<tr><td>Machimbre 1/2" a la vista</td><td class="num">52 m²</td></tr>
-<tr><td>Celulosa insuflada</td><td class="num">8,5 m³</td></tr>
-<tr><td>Membrana + zinguería</td><td class="num">—</td></tr>
+<tr><td>Viga E–O · tramo oeste</td><td>doble 3×8"</td><td>140×185 mm</td><td>3 vigas (y = 0 / 2,65 / 5,37)</td><td>luz 3,60 + alero 0,60</td><td>Pino · C (CIRSOC 601)</td></tr>
+<tr><td>Viga E–O · tramo este</td><td>doble 3×10"</td><td>140×235 mm</td><td>3 vigas (y = 0 / 2,65 / 5,37)</td><td>luz 4,80 + alero 0,60</td><td>Pino · C</td></tr>
+<tr><td>Cabio norte</td><td>2×6"</td><td>45×140 mm</td><td>c/0,50</td><td>3,58 m</td><td>Pino · C</td></tr>
+<tr><td>Cabio sur</td><td>2×6"</td><td>45×140 mm</td><td>c/0,50</td><td>3,45 m</td><td>Pino · C</td></tr>
+<tr><td>Cabio de borde</td><td>2×6"</td><td>45×140 mm</td><td>perímetro del faldón</td><td>continuo</td><td>Pino · C</td></tr>
+<tr><td>Contralistón</td><td>1×2"</td><td>19×38 mm</td><td>sobre cada cabio</td><td>según faldón</td><td>Pino · C</td></tr>
+<tr><td>Machimbre</td><td>½"</td><td>12 mm</td><td>continuo</td><td>juntas sobre cabio</td><td>Pino cepillado</td></tr>
+<tr><td>Fleje de anclaje cabio–viga</td><td>galvanizado</td><td>—</td><td>1 por cabio y apoyo</td><td>—</td><td>Acero galvanizado</td></tr>
 </tbody>
-
 </table>
 </div>
-
-
-<p class="muted">Rubro más caro después de Paredes. Si conseguís cabios en largo directo de 6,95 m se ahorran los empalmes.</p>
+<p class="muted">Escuadrías cepilladas. Cargas de proyecto: permanente 0,25 kN/m², sobrecarga de
+    mantenimiento 0,30 kN/m². Superficie de faldón 9,60 × 7,03 m. Madera seca, humedad ≤ 19%.</p>
 </section>
 
 <section class="blk">
 <h2><span class="mk moss">→</span>Paso a paso de obra</h2>
 <ol class="steps">
-<li><b>Armado de las vigas</b><span>Pegar y clavar las 3 tablas de 2"×12" de cada viga. Empalmes en largo siempre sobre una columna, escalonados entre las 3 tablas para que no coincidan.</span></li>
-<li><b>Colocación de vigas</b><span>Izar las dos vigas sobre las columnas (fila norte y fila sur). Fijar a la corona de cada columna. La viga norte queda más alta que la sur: eso da la pendiente.</span></li>
-<li><b>Encadenado</b><span>Atar las columnas entre sí con el encadenado 2"×8" que corre por arriba. Esto rigidiza el conjunto.</span></li>
-<li><b>Cabios</b><span>Colocar los cabios 2"×6" cada 0,50 cruzando de norte a sur, apoyados en las dos vigas. Cada cabio se ata con fleje galvanizado contra la succión del viento.</span></li>
-<li><b>Diafragma de fenólico</b><span>Clavar el fenólico de 12 mm sobre los cabios: convierte el techo en un plano rígido que reparte el viento a los apoyos.</span></li>
-<li><b>Aislación y machimbre</b><span>Celulosa entre cabios, barrera de vapor, y el machimbre a la vista por debajo como cielorraso.</span></li>
-<li><b>Chapa</b><span>Membrana de respiración, clavaderas y chapa trapezoidal. Canaleta en el borde bajo (sur) hacia la cisterna.</span></li>
+<li><b>Armado de las vigas</b><span>Clavar las dos tablas de cada viga entre sí: doble 3×8" en el tramo oeste y doble 3×10" en el este. El cambio de canto se resuelve sobre la columna del eje 3,60, alineando las caras superiores para que los cabios apoyen en un plano continuo. Empalmes en largo siempre sobre una columna y escalonados entre las dos tablas.</span></li>
+<li><b>Colocación de vigas</b><span>Izar las tres vigas sobre las columnas: norte, central y sur. Cada una apoya en tres columnas y vuela 0,60 a cada lado. Fijar a la corona de cada columna con ménsula o escuadra metálica. Las tres quedan a alturas distintas (3,40 / 3,05 / 2,70): eso es lo que da la pendiente.</span></li>
+<li><b>Verificación del plano</b><span>Antes de poner un solo cabio, tender tanza de la viga norte a la sur en varios puntos y confirmar que las tres coronas están en un mismo plano al 13%. Corregir acá es fácil; después no.</span></li>
+<li><b>Cabios</b><span>Colocar los 40 cabios 2×6" cada 0,50 cruzando de norte a sur, apoyados en las tres vigas y continuos sobre la central donde el largo lo permita. Cada cabio se ata con fleje galvanizado en cada apoyo contra la succión del viento.</span></li>
+<li><b>Cabio de borde y aleros</b><span>Cerrar el perímetro del faldón con cabio de borde continuo, que es el que da el canto a los cuatro aleros y sirve de apoyo a la zinguería.</span></li>
+<li><b>Machimbre</b><span>Clavar el machimbre de ½" sobre los cabios. Queda a la vista por debajo como cielorraso y arriba forma el diafragma rígido que reparte el viento a los muros: clavado perimetral c/0,10 e interior c/0,20.</span></li>
+<li><b>Barrera de vapor y aislación</b><span>Polietileno de 200 µm sobre el machimbre, con solapes sellados, y celulosa entre cabios llenando los 140 mm.</span></li>
+<li><b>Membrana y contralistón</b><span>Membrana hidrófuga respirable, y sobre cada cabio el contralistón de 1×2" que genera la cámara ventilada. Dejar entrada de aire en el alero sur y salida en el norte.</span></li>
+<li><b>Chapa</b><span>Chapa trapezoidal C25 sobre los contralistones, con tornillo autoperforante y arandela en la cresta. Canaleta en el borde bajo (sur) hacia la cisterna.</span></li>
 </ol>
 </section>
-<div class="note warn"><b>La cadena de anclaje es continua:</b> chapa → cabio → viga → columna → pilotín. La succión
-  del viento en el borde del alero llega a 252 kg/m² contra 55 de peso propio. Cada eslabón de esa cadena tiene que
-  estar, o el viento levanta el techo.</div>
+<div class="note warn"><b>La cadena de anclaje es continua:</b> chapa → contralistón → cabio → viga → columna
+  → pilotín. Con V₀ = 45 m/s la succión en el borde del alero llega a 1,61 kN/m² contra 0,25 de peso propio:
+  el saldo es tracción neta. Cada eslabón de esa cadena tiene que estar, o el viento levanta el techo.</div>
 <section class="blk">
 <h2><span class="mk moss">✓</span>Marcar avance</h2>
 <p>Tocá cada paso a medida que se completa en obra. Se guarda en este dispositivo.</p>
 <div class="checkcard" id="checklist">
-<div class="chkitem" data-id="t1"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Vigas 2"×12" armadas (3 tablas, empalmes escalonados)</div></div>
-<div class="chkitem" data-id="t2"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Vigas colocadas sobre columnas (norte alta, sur baja)</div></div>
-<div class="chkitem" data-id="t3"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Encadenado atando las columnas</div></div>
-<div class="chkitem" data-id="t4"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Cabios colocados c/0,50 con flejes</div></div>
-<div class="chkitem" data-id="t5"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Diafragma de fenólico clavado</div></div>
-<div class="chkitem" data-id="t6"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Celulosa y machimbre colocados</div></div>
-<div class="chkitem" data-id="t7"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Chapa, canaleta y zinguería terminadas</div></div>
+<div class="chkitem" data-id="t1"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">3 vigas armadas (doble 3×8" oeste · doble 3×10" este)</div></div>
+<div class="chkitem" data-id="t2"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Vigas colocadas sobre las 9 columnas, aleros 0,60</div></div>
+<div class="chkitem" data-id="t3"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Plano del faldón verificado al 13%</div></div>
+<div class="chkitem" data-id="t4"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">40 cabios colocados c/0,50 con flejes</div></div>
+<div class="chkitem" data-id="t5"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Machimbre ½" clavado (diafragma + cielorraso)</div></div>
+<div class="chkitem" data-id="t6"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Barrera de vapor, celulosa y membrana</div></div>
+<div class="chkitem" data-id="t7"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Contralistón, chapa, canaleta y zinguería terminadas</div></div>
 </div>
 <button class="reset" id="resetbtn">Reiniciar avance de esta sección</button>
 </section>

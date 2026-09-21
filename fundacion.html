@@ -171,6 +171,13 @@
   .savednote{font-size:.78rem;color:var(--moss);margin-top:8px;min-height:16px;transition:opacity .3s}
 
   svg text{font-family:'Inter',sans-serif}
+
+  /* --- agregado: estructura y planillas --- */
+  .planotitle{font-family:'Spline Sans Mono',monospace;font-size:.8rem;color:var(--clay);margin:0 0 4px;
+    text-transform:uppercase;letter-spacing:.04em}
+  .plano.scroll{overflow-x:auto}
+  .plano.scroll svg{min-width:460px}
+  .tablecard.scroll{overflow-x:auto}
 </style>
 </head>
 <body>
@@ -230,6 +237,7 @@
     <a class="chip" href="instalaciones.html">6·Instalaciones</a>
     <a class="chip" href="cerramientos.html">7·Cerramientos</a>
     <a class="chip" href="terminaciones.html">8·Terminaciones</a>
+    <a class="chip" href="calculo.html">Cálculo</a>
     </div></div>
 </nav>
 <main class="wrap">
@@ -237,10 +245,11 @@
   <div class="hero">
     <p class="kicker">Etapa 1 de 8</p>
     <h1>Fundación</h1>
-    <p class="lead">Doce pilotines de hormigón armado que elevan la casa un metro sobre el
-    terreno, <b>unidos en su base por una viga de fundación (encadenado) perimetral</b>. Seis
-    pilotines reciben las columnas de la estructura; los otros seis sostienen la plataforma del
-    piso. El encadenado ata las zapatas para que toda la fundación trabaje como un solo bloque.</p>
+    <p class="lead">Quince pilotines de hormigón armado que elevan la casa un metro sobre el
+    terreno, <b>unidos en su base por una viga de fundación (encadenado)</b> que corre por el
+    perímetro, por el eje central y por el eje del tabique. Nueve pilotines reciben las columnas
+    de la estructura; los otros seis sostienen las vigas de la plataforma de piso. El encadenado
+    ata las quince zapatas para que toda la fundación trabaje como un solo bloque.</p>
 
     <div class="progwrap">
       <div class="progbar"><div class="progfill" id="fill"></div></div>
@@ -250,95 +259,152 @@
   </div>
 
   <div class="figs">
-    <div class="fig"><div class="n">12</div><div class="l">pilotines de H-21</div></div>
-    <div class="fig"><div class="n">27,6<small> m</small></div><div class="l">viga de fundación (perímetro)</div></div>
+    <div class="fig"><div class="n">15</div><div class="l">pilotines de H-21</div></div>
+    <div class="fig"><div class="n">41,3<small> m</small></div><div class="l">viga de fundación</div></div>
     <div class="fig"><div class="n">0,20×0,20<small> m</small></div><div class="l">sección del encadenado</div></div>
-    <div class="fig"><div class="n">3,1<small> m³</small></div><div class="l">hormigón H-21 total</div></div>
-    <div class="fig"><div class="n">37,1<small> t</small></div><div class="l">carga total a fundar</div></div>
+    <div class="fig"><div class="n">5×3</div><div class="l">grilla de ejes</div></div>
+    <div class="fig"><div class="n">+0,68<small> m</small></div><div class="l">cota de corona</div></div>
   </div>
 
   <!-- QUÉ SE HACE -->
   <section class="blk">
     <h2><span class="mk">i</span>Qué se hace en esta etapa</h2>
-    <p>Se replantea el rectángulo de la casa y se excavan doce pozos a mano. En cada uno se
+    <p>Se replantea la grilla, se excavan los quince pozos y en el fondo de cada uno se arma y
     hormigona una zapata; sobre las zapatas corre una <b>viga de fundación (encadenado)</b> que
-    las une entre sí, y desde esa base nacen los fustes de 0,20 × 0,20 que suben 1,45 m hasta
-    quedar un metro sobre el suelo. Es lo primero de toda la obra: si la fundación queda nivelada,
-    a escuadra y bien atada, todo lo que va arriba entra derecho y se mueve como una sola pieza.</p>
-
+    las une en la base. Desde esa viga suben los fustes, que son los que dejan la casa elevada
+    y emergen a la cota +0,68 para recibir columnas y plataforma.</p>
+    <p>La grilla es de <b>cinco ejes norte–sur por tres líneas este–oeste</b>: x = 0 / 1,80 / 3,60 /
+    6,00 / 8,40, cruzados con y = 0 / 2,65 / 5,37. Los ejes x = 0, 3,60 y 8,40 son los de columna;
+    los ejes x = 1,80 y 6,00 existen para acortar la luz de las vigas de la plataforma de piso.</p>
     <div class="note">
-      <b>Dos tipos de pilotín.</b> Los seis que reciben columnas llevan zapata más grande porque
-      concentran el peso del techo. Los seis de la plataforma llevan zapata estándar. Todos suben
-      a la misma cota: +0,68 la corona, +1,10 el piso terminado.
+      <b>Dos tipos de pilotín.</b> Los nueve que reciben columnas llevan zapata más grande porque
+      concentran el peso del techo y trabajan a tracción por succión de viento. Los seis intermedios,
+      que sólo reciben la plataforma, llevan zapata estándar. Todos suben a la misma cota de corona.
+    </div>
+    <div class="note warn">
+      <b>Por qué cinco ejes y no tres.</b> Si la viga maestra del piso apoyara sólo en los ejes de
+      columna, su luz sería de 4,80 m y la tensión de flexión llegaría a 35 MPa: más del triple de
+      lo que admite el pino. Con los ejes intermedios en 1,80 y 6,00 la luz máxima baja a 2,40 m y
+      la tensión cae a 8,8 MPa, dentro de lo verificable. Los seis pilotines de más son lo que
+      permite que las vigas de piso sean de escuadría corriente.
     </div>
   </section>
 
   <!-- POR QUÉ SE UNEN -->
   <section class="blk">
     <h2><span class="mk">⚑</span>Por qué se unen los pilotines (requisito municipal)</h2>
-    <p>Un pilotín aislado transmite bien las cargas verticales (el peso) al suelo. El problema
+    <p>Un pilotín aislado resiste bien la carga vertical, pero los problemas serios
     aparecen con las fuerzas horizontales de un sismo: cada zapata, suelta, puede desplazarse o
-    rotar distinto de su vecina, y esos movimientos diferenciales descuadran y fisuran lo que está
+    girar por su cuenta, y esa diferencia de movimiento entre apoyos es la que rompe lo que tienen
     arriba. La <b>viga de fundación</b> une las zapatas en la base y obliga a que todos los apoyos
-    se muevan juntos, repartiendo el empuje horizontal entre los doce. No es una zapata corrida ni
-    una platea: es solo una riostra continua que amarra los apoyos.</p>
+    se muevan juntos, repartiendo el empuje horizontal entre los quince. No es una zapata corrida ni
+    un muro de contención: es un elemento de atado.</p>
     <div class="note">
       <b>La unión va en la base, no arriba.</b> Como los pilotines quedan levantados del suelo (la
       casa se eleva sobre una cámara ventilada de 1 m), el encadenado corre abajo, al nivel de las
       zapatas, uniéndolas cerca del terreno natural. Los fustes suben desde ahí a través de la
-      cámara. El arriostramiento del esqueleto en altura (columnas y techo) se resuelve en las
-      etapas 3 y 4, no acá.
+      cámara hasta la cota de corona.
+    </div>
+    <div class="note">
+      <b>Trazado.</b> El encadenado forma un anillo perimetral cerrado, más dos travesaños: uno
+      este–oeste sobre el eje central (y = 2,65) y uno norte–sur sobre el eje del tabique
+      (x = 3,60). Con ese recorrido las quince zapatas quedan atadas sin necesidad de reticular
+      toda la grilla: las de los ejes 1,80 y 6,00 caen sobre el perímetro o sobre el eje central.
     </div>
   </section>
 
-  <!-- PLANO -->
+  <!-- PLANO DE REPLANTEO -->
   <section class="blk">
-    <h2><span class="mk">▢</span>Plano de replanteo · 12 pilotines + encadenado</h2>
-    <div class="plano">
-      <svg viewBox="0 0 560 380" role="img" aria-label="Grilla de 12 pilotines unidos por una viga de fundación perimetral e interior">
-        <!-- perimetro casa -->
-        <rect x="70" y="70" width="420" height="240" fill="none" stroke="var(--line)" stroke-width="1.5" stroke-dasharray="5 5"/>
-        <text x="280" y="58" text-anchor="middle" font-size="12" fill="var(--ink2)">8,40 m (Este–Oeste)</text>
-        <text x="46" y="195" text-anchor="middle" font-size="12" fill="var(--ink2)" transform="rotate(-90 46 195)">5,40 m</text>
+    <h2><span class="mk">▢</span>Plano de replanteo · 15 pilotines + encadenado</h2>
+    <div class="plano scroll">
+      <p class="planotitle">Replanteo de fundación · norte arriba</p>
+      <svg viewBox="0 0 600 410" role="img" aria-label="Grilla de quince pilotines unidos por una viga de fundación perimetral, eje central y travesaño norte-sur">
+        <defs><marker id="af" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+          <path d="M0,3 L6,1 L6,5 Z" fill="var(--dim)"/></marker></defs>
 
-        <!-- ENCADENADO: anillo perimetral por los pilotines de columna -->
-        <polyline points="71,83 250,83 490,83 490,297 250,297 71,297 71,83"
-          fill="none" stroke="var(--moss)" stroke-width="4" stroke-linejoin="round"/>
-        <!-- riostra central que ata los pilotines de plataforma -->
-        <line x1="71" y1="190" x2="490" y2="190" stroke="var(--moss)" stroke-width="4"/>
-        <!-- riostras a los pilotines intermedios norte y sur -->
-        <line x1="370" y1="83" x2="370" y2="190" stroke="var(--moss)" stroke-width="4"/>
-        <line x1="370" y1="190" x2="370" y2="297" stroke="var(--moss)" stroke-width="4"/>
+        <!-- perimetro de la casa -->
+        <rect x="75" y="55" width="420" height="269" fill="none" stroke="var(--line)" stroke-width="1.5" stroke-dasharray="5 5"/>
 
-        <!-- pilotines plataforma (chicos): 6 total -->
-        <g fill="var(--card)" stroke="var(--ink2)" stroke-width="1.3">
-          <rect x="362" y="72" width="16" height="16" rx="2"/>
-          <rect x="362" y="286" width="16" height="16" rx="2"/>
-          <rect x="72" y="182" width="16" height="16" rx="2"/>
-          <rect x="210" y="182" width="16" height="16" rx="2"/>
-          <rect x="350" y="182" width="16" height="16" rx="2"/>
-          <rect x="474" y="182" width="16" height="16" rx="2"/>
+        <!-- ENCADENADO: anillo perimetral -->
+        <polyline points="75,55 495,55 495,324 75,324 75,55"
+          fill="none" stroke="var(--moss)" stroke-width="5" stroke-linejoin="round"/>
+        <!-- travesaño E-O sobre el eje central -->
+        <line x1="75" y1="188" x2="495" y2="188" stroke="var(--moss)" stroke-width="5"/>
+        <!-- travesaño N-S sobre el eje del tabique -->
+        <line x1="255" y1="55" x2="255" y2="324" stroke="var(--moss)" stroke-width="5"/>
+
+        <!-- pilotines de plataforma (chicos): ejes 1,80 y 6,00 -->
+        <g fill="var(--card)" stroke="var(--ink2)" stroke-width="1.4">
+          <rect x="157" y="47" width="16" height="16" rx="2"/>
+          <rect x="157" y="180" width="16" height="16" rx="2"/>
+          <rect x="157" y="316" width="16" height="16" rx="2"/>
+          <rect x="367" y="47" width="16" height="16" rx="2"/>
+          <rect x="367" y="180" width="16" height="16" rx="2"/>
+          <rect x="367" y="316" width="16" height="16" rx="2"/>
         </g>
 
-        <!-- pilotines columna (grandes, resaltados) -->
-        <g fill="var(--clay)" stroke="#fff" stroke-width="1.5">
-          <rect x="60" y="72" width="22" height="22" rx="3"/>
-          <rect x="60" y="286" width="22" height="22" rx="3"/>
-          <rect x="239" y="72" width="22" height="22" rx="3"/>
-          <rect x="239" y="286" width="22" height="22" rx="3"/>
-          <rect x="479" y="72" width="22" height="22" rx="3"/>
-          <rect x="479" y="286" width="22" height="22" rx="3"/>
+        <!-- pilotines de columna (grandes): ejes 0, 3,60 y 8,40 -->
+        <g fill="var(--clay)" stroke="#fff" stroke-width="1.6">
+          <rect x="64" y="44" width="22" height="22" rx="3"/>
+          <rect x="64" y="177" width="22" height="22" rx="3"/>
+          <rect x="64" y="313" width="22" height="22" rx="3"/>
+          <rect x="244" y="44" width="22" height="22" rx="3"/>
+          <rect x="244" y="177" width="22" height="22" rx="3"/>
+          <rect x="244" y="313" width="22" height="22" rx="3"/>
+          <rect x="484" y="44" width="22" height="22" rx="3"/>
+          <rect x="484" y="177" width="22" height="22" rx="3"/>
+          <rect x="484" y="313" width="22" height="22" rx="3"/>
+        </g>
+
+        <!-- rotulos de eje X -->
+        <text x="75" y="34" text-anchor="middle" font-size="10" fill="var(--ink2)">0</text>
+        <text x="165" y="34" text-anchor="middle" font-size="10" fill="var(--ink2)">1,80</text>
+        <text x="255" y="34" text-anchor="middle" font-size="10" fill="var(--ink2)">3,60</text>
+        <text x="375" y="34" text-anchor="middle" font-size="10" fill="var(--ink2)">6,00</text>
+        <text x="495" y="34" text-anchor="middle" font-size="10" fill="var(--ink2)">8,40</text>
+        <!-- rotulos de eje Y -->
+        <text x="530" y="59" font-size="10" fill="var(--ink2)">y = 0</text>
+        <text x="530" y="192" font-size="10" fill="var(--ink2)">y = 2,65</text>
+        <text x="530" y="328" font-size="10" fill="var(--ink2)">y = 5,37</text>
+
+        <!-- cotas parciales -->
+        <g stroke="var(--dim)" stroke-width="1" marker-start="url(#af)" marker-end="url(#af)">
+          <line x1="75" y1="352" x2="165" y2="352"/>
+          <line x1="165" y1="352" x2="255" y2="352"/>
+          <line x1="255" y1="352" x2="375" y2="352"/>
+          <line x1="375" y1="352" x2="495" y2="352"/>
+        </g>
+        <text x="120" y="366" text-anchor="middle" font-size="10" fill="var(--dim)">1,80</text>
+        <text x="210" y="366" text-anchor="middle" font-size="10" fill="var(--dim)">1,80</text>
+        <text x="315" y="366" text-anchor="middle" font-size="10" fill="var(--dim)">2,40</text>
+        <text x="435" y="366" text-anchor="middle" font-size="10" fill="var(--dim)">2,40</text>
+        <line x1="75" y1="386" x2="495" y2="386" stroke="var(--dim)" stroke-width="1" marker-start="url(#af)" marker-end="url(#af)"/>
+        <text x="285" y="400" text-anchor="middle" font-size="10" fill="var(--dim)">8,40 m</text>
+        <g stroke="var(--dim)" stroke-width="1" marker-start="url(#af)" marker-end="url(#af)">
+          <line x1="40" y1="55" x2="40" y2="188"/>
+          <line x1="40" y1="188" x2="40" y2="324"/>
+        </g>
+        <text x="34" y="124" text-anchor="middle" font-size="10" fill="var(--dim)" transform="rotate(-90 34 124)">2,65</text>
+        <text x="34" y="258" text-anchor="middle" font-size="10" fill="var(--dim)" transform="rotate(-90 34 258)">2,72</text>
+
+        <!-- N -->
+        <g transform="translate(568,40)">
+          <line x1="0" y1="10" x2="0" y2="-10" stroke="var(--rust)" stroke-width="2"/>
+          <path d="M0,-10 L-3,-4 L3,-4 Z" fill="var(--rust)"/>
+          <text x="0" y="-14" text-anchor="middle" font-size="10" font-weight="700" fill="var(--rust)">N</text>
         </g>
 
         <!-- leyenda -->
-        <rect x="70" y="333" width="14" height="14" rx="2" fill="var(--clay)"/>
-        <text x="90" y="344" font-size="11" fill="var(--ink)">6 pilotines de columna</text>
-        <rect x="250" y="333" width="14" height="14" rx="2" fill="var(--card)" stroke="var(--ink2)" stroke-width="1.3"/>
-        <text x="270" y="344" font-size="11" fill="var(--ink)">6 de plataforma</text>
-        <line x1="410" y1="340" x2="430" y2="340" stroke="var(--moss)" stroke-width="4"/>
-        <text x="436" y="344" font-size="11" fill="var(--ink)">encadenado</text>
+        <rect x="75" y="15" width="13" height="13" rx="2" fill="var(--clay)"/>
+        <text x="93" y="26" font-size="10" fill="var(--ink)">9 de columna</text>
+        <rect x="185" y="15" width="13" height="13" rx="2" fill="var(--card)" stroke="var(--ink2)" stroke-width="1.3"/>
+        <text x="203" y="26" font-size="10" fill="var(--ink)">6 de plataforma</text>
+        <line x1="320" y1="22" x2="342" y2="22" stroke="var(--moss)" stroke-width="5"/>
+        <text x="348" y="26" font-size="10" fill="var(--ink)">viga de fundación (encadenado)</text>
       </svg>
-      <div class="cap">La viga de fundación (verde) corre por el perímetro y por el eje central, uniendo las doce zapatas en la base.</div>
+      <div class="cap">La viga de fundación (verde) corre por el perímetro, por el eje central este–oeste
+      y por el eje del tabique norte–sur, uniendo las quince zapatas en la base. Diagonal de control
+      del replanteo: 9,97 m.</div>
     </div>
   </section>
 
@@ -356,6 +422,7 @@
           <tr><td>Armadura longitudinal</td><td>4 Ø10 (2 arriba, 2 abajo)</td></tr>
           <tr><td>Estribos</td><td>Ø6 c/0,20 m</td></tr>
           <tr><td>Recubrimiento</td><td>0,05 m</td></tr>
+          <tr><td>Desarrollo</td><td>perímetro 27,54 + eje central 8,40 + travesaño 5,37 = 41,31 m</td></tr>
           <tr><td>Continuidad en esquinas</td><td>barras dobladas y ancladas, sin empalme en el ángulo</td></tr>
           <tr><td>Vínculo con el pilotín</td><td>estribos comunes / barras ancladas en la zapata</td></tr>
         </tbody>
@@ -365,38 +432,35 @@
     memoria de cálculo firmada por profesional matriculado, en función de la bajada de cargas.</p>
   </section>
 
-  <!-- MATERIALES -->
+  <!-- PLANILLA -->
   <section class="blk">
-    <h2><span class="mk">▦</span>Materiales de la etapa</h2>
-    <p>Cantidades netas con desperdicio incluido. La tierra de la excavación se criba y se
-    reutiliza, así que no se computa.</p>
-    <div class="tablecard">
+    <h2><span class="mk">▦</span>Planilla de elementos de fundación</h2>
+    <div class="tablecard scroll">
       <table>
-        <thead>
-          <tr><th>Material</th><th class="num">Cantidad</th></tr>
-        </thead>
+        <thead><tr><th>Elemento</th><th>Sección</th><th>Ubicación</th><th>Profundidad / largo</th><th>Armadura</th></tr></thead>
         <tbody>
-          <tr><td>Hormigón H-21 (pilotines + encadenado)</td><td class="num">3,1 m³</td></tr>
-          <tr><td>Barras Ø10 (fustes y encadenado)</td><td class="num">88 kg</td></tr>
-          <tr><td>Barras Ø8 (mallas de zapata)</td><td class="num">32 kg</td></tr>
-          <tr><td>Barras Ø6 (estribos)</td><td class="num">28 kg</td></tr>
-          <tr><td>Brocas Ø12 galvanizadas</td><td class="num">12 u</td></tr>
+          <tr><td>Zapata de columna</td><td>0,60 × 0,60 × 0,25 m</td><td>ejes x = 0 / 3,60 / 8,40</td><td>fondo a −1,00 m</td><td>malla Ø8 c/0,12</td></tr>
+          <tr><td>Zapata de plataforma</td><td>0,50 × 0,50 × 0,20 m</td><td>ejes x = 1,80 / 6,00</td><td>fondo a −1,00 m</td><td>malla Ø8 c/0,15</td></tr>
+          <tr><td>Fuste de pilotín</td><td>0,20 × 0,20 m</td><td>los 15</td><td>hasta corona +0,68</td><td>4 Ø10 + estribos Ø6 c/0,15</td></tr>
+          <tr><td>Viga de fundación</td><td>0,20 × 0,20 m</td><td>perímetro + 2 travesaños</td><td>41,31 m de desarrollo</td><td>4 Ø10 + estribos Ø6 c/0,20</td></tr>
+          <tr><td>Broca de anclaje</td><td>Ø12 galvanizada</td><td>2 por pilotín de columna</td><td>empotre 0,20 m</td><td>—</td></tr>
         </tbody>
       </table>
     </div>
+    <p class="muted">Hormigón H-21 en todos los elementos. Acero ADN-420.</p>
   </section>
 
   <!-- PASO A PASO -->
   <section class="blk">
     <h2><span class="mk moss">→</span>Paso a paso de obra</h2>
     <ol class="steps">
-      <li><b>Replanteo del rectángulo</b><span>Marcar 8,40 × 5,40 con estacas y controlar las dos diagonales: deben medir 9,99 m y no diferir más de 10 mm. Sobre ese rectángulo se replantean los ejes de pilotín.</span></li>
-      <li><b>Zanja de coronamiento</b><span>Antes de excavar, abrir una zanja aguas arriba y desviar el escurrimiento a 3 m del perímetro. El terreno escurre al este con 4%.</span></li>
-      <li><b>Excavación de los 12 pozos</b><span>A mano, 0,36 m³ cada uno. Cribar la tierra y taparla. Confirmar suelo firme; si aparece loess suelto, bajar la cota y agrandar la zapata.</span></li>
+      <li><b>Replanteo de la grilla</b><span>Marcar los cinco ejes norte–sur y las tres líneas este–oeste con camillas y tanza. Verificar la diagonal del rectángulo: 9,97 m con tolerancia ± 10 mm. Todo lo que salga torcido acá se arrastra a la casa entera.</span></li>
+      <li><b>Zanja del encadenado</b><span>Abrir la zanja de la viga de fundación siguiendo el perímetro, el eje central y el travesaño del tabique. Fondo nivelado, apoyado sobre las zapatas.</span></li>
+      <li><b>Excavación de los 15 pozos</b><span>A mano. Cribar la tierra y taparla. Confirmar suelo firme; si aparece loess suelto, bajar la cota y agrandar la zapata.</span></li>
       <li><b>Armado y hormigonado de zapatas</b><span>Malla Ø8 en el fondo, recubrimiento 0,05. Zapata 0,60 bajo columnas, 0,50 bajo plataforma. Fondo a −1,00. Dejar las esperas del encadenado.</span></li>
-      <li><b>Encadenado (viga de fundación)</b><span>Encofrar y armar la viga 0,20 × 0,20 sobre las zapatas: 4 Ø10 + estribos Ø6 c/0,20, continua en el perímetro y el eje central. Anclar las barras en las esquinas. Hormigonar junto con los fustes.</span></li>
-      <li><b>Fustes con encofrado</b><span>0,20 × 0,20, armadura 4 Ø10 + estribos Ø6 c/0,15. Dejar embutidas las 2 brocas Ø12 en los pilotines de columna, empotradas 0,20 en el hormigón.</span></li>
-      <li><b>Nivelación de coronas</b><span>Todas las coronas a +0,68 con nivel de manguera, tolerancia 5 mm en las doce. De esto depende que la casa entera quede a nivel.</span></li>
+      <li><b>Encadenado (viga de fundación)</b><span>Encofrar y armar la viga 0,20 × 0,20 sobre las zapatas: 4 Ø10 + estribos Ø6 c/0,20, continua en el perímetro, el eje central y el travesaño. Anclar las barras en las esquinas doblando 90°. Hormigonar junto con los fustes.</span></li>
+      <li><b>Fustes con encofrado</b><span>0,20 × 0,20, armadura 4 Ø10 + estribos Ø6 c/0,15. Dejar embutidas las 2 brocas Ø12 en los nueve pilotines de columna, empotradas 0,20 en el hormigón.</span></li>
+      <li><b>Nivelación de coronas</b><span>Las quince coronas a +0,68, tolerancia 5 mm. Verificar con manguera de nivel o láser antes de que fragüe.</span></li>
       <li><b>Curado</b><span>Mantener el hormigón húmedo 7 días. No cargar la fundación hasta el fraguado.</span></li>
     </ol>
   </section>
@@ -406,13 +470,13 @@
     <h2><span class="mk moss">✓</span>Marcar avance</h2>
     <p>Tocá cada paso a medida que se completa en obra. Se guarda en este dispositivo.</p>
     <div class="checkcard" id="checklist">
-      <div class="chkitem" data-id="f1"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Replanteo y diagonales verificadas<span class="chkhint">9,99 m ± 10 mm</span></div></div>
-      <div class="chkitem" data-id="f2"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Zanja de coronamiento abierta</div></div>
-      <div class="chkitem" data-id="f3"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">12 pozos excavados y tierra cribada</div></div>
-      <div class="chkitem" data-id="f4"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Zapatas armadas y hormigonadas</div></div>
-      <div class="chkitem" data-id="f5"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Encadenado armado y hormigonado<span class="chkhint">continuo en perímetro y eje central</span></div></div>
+      <div class="chkitem" data-id="f1"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Replanteo y diagonales verificadas<span class="chkhint">9,97 m ± 10 mm</span></div></div>
+      <div class="chkitem" data-id="f2"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Zanja del encadenado abierta<span class="chkhint">perímetro + eje central + travesaño</span></div></div>
+      <div class="chkitem" data-id="f3"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">15 pozos excavados y tierra cribada</div></div>
+      <div class="chkitem" data-id="f4"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Zapatas armadas y hormigonadas<span class="chkhint">9 de 0,60 · 6 de 0,50</span></div></div>
+      <div class="chkitem" data-id="f5"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Encadenado armado y hormigonado<span class="chkhint">continuo, sin empalme en las esquinas</span></div></div>
       <div class="chkitem" data-id="f6"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Fustes hormigonados con brocas embutidas</div></div>
-      <div class="chkitem" data-id="f7"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Coronas niveladas a +0,68<span class="chkhint">tolerancia 5 mm en las doce</span></div></div>
+      <div class="chkitem" data-id="f7"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Coronas niveladas a +0,68<span class="chkhint">tolerancia 5 mm en las quince</span></div></div>
       <div class="chkitem" data-id="f8"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Curado de 7 días completado</div></div>
     </div>
     <button class="reset" id="resetbtn">Reiniciar avance de esta sección</button>
@@ -420,7 +484,7 @@
 
   <div class="note warn">
     <b>Antes de avanzar al piso.</b> No se arma un solo panel ni se apoya una viga hasta que las
-    doce coronas estén niveladas, el encadenado hormigonado y el hormigón fraguado. La escuadra y
+    quince coronas estén niveladas, el encadenado hormigonado y el hormigón fraguado. La escuadra y
     el nivel de la fundación se copian a toda la casa.
   </div>
 
