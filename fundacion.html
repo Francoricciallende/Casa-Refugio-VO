@@ -22,7 +22,6 @@
     --done:#3f6b4a;
     --shadow:0 1px 0 rgba(60,48,30,.06);
   }
-  :root:not([data-theme="light"]){}
   @media (prefers-color-scheme: dark){
     :root:not([data-theme="light"]){
       --ink:#ece5d8; --ink2:#a89f8d; --paper:#211e19; --card:#2a2620;
@@ -277,9 +276,8 @@
     6,00 / 8,40, cruzados con y = 0 / 2,65 / 5,37. Los ejes x = 0, 3,60 y 8,40 son los de columna;
     los ejes x = 1,80 y 6,00 existen para acortar la luz de las vigas de la plataforma de piso.</p>
     <div class="note">
-      <b>Dos tipos de pilotín.</b> Los nueve que reciben columnas llevan zapata más grande porque
-      concentran el peso del techo y trabajan a tracción por succión de viento. Los seis intermedios,
-      que sólo reciben la plataforma, llevan zapata estándar. Todos suben a la misma cota de corona.
+      <b>Pilotines.</b> Hemos decidido unificar el tamaño de todos los pilotines, nueve de ellos concentran el peso del techo y trabajan a tracción por succión de viento y los seis restantes que solo reciben la plataforma, todos llevan el mismo tamaño de zapata.
+      Todos suben a la misma cota de corona.
     </div>
     <div class="note warn">
       <b>Por qué cinco ejes y no tres.</b> Si la viga maestra del piso apoyara sólo en los ejes de
@@ -292,7 +290,7 @@
 
   <!-- POR QUÉ SE UNEN -->
   <section class="blk">
-    <h2><span class="mk">⚑</span>Por qué se unen los pilotines (requisito municipal)</h2>
+    <h2><span class="mk">⚑</span>Por qué se unen los pilotines </h2>
     <p>Un pilotín aislado resiste bien la carga vertical, pero los problemas serios
     aparecen con las fuerzas horizontales de un sismo: cada zapata, suelta, puede desplazarse o
     girar por su cuenta, y esa diferencia de movimiento entre apoyos es la que rompe lo que tienen
@@ -440,7 +438,7 @@
         <thead><tr><th>Elemento</th><th>Sección</th><th>Ubicación</th><th>Profundidad / largo</th><th>Armadura</th></tr></thead>
         <tbody>
           <tr><td>Zapata de columna</td><td>0,60 × 0,60 × 0,25 m</td><td>ejes x = 0 / 3,60 / 8,40</td><td>fondo a −1,00 m</td><td>malla Ø8 c/0,12</td></tr>
-          <tr><td>Zapata de plataforma</td><td>0,50 × 0,50 × 0,20 m</td><td>ejes x = 1,80 / 6,00</td><td>fondo a −1,00 m</td><td>malla Ø8 c/0,15</td></tr>
+          <tr><td>Zapata de plataforma</td><td>0,60 × 0,60 × 0,25 m</td><td>ejes x = 1,80 / 6,00</td><td>fondo a −1,00 m</td><td>malla Ø8 c/0,12</td></tr>
           <tr><td>Fuste de pilotín</td><td>0,20 × 0,20 m</td><td>los 15</td><td>hasta corona +0,68</td><td>4 Ø10 + estribos Ø6 c/0,15</td></tr>
           <tr><td>Viga de fundación</td><td>0,20 × 0,20 m</td><td>perímetro + 2 travesaños</td><td>41,31 m de desarrollo</td><td>4 Ø10 + estribos Ø6 c/0,20</td></tr>
           <tr><td>Broca de anclaje</td><td>Ø12 galvanizada</td><td>2 por pilotín de columna</td><td>empotre 0,20 m</td><td>—</td></tr>
@@ -457,11 +455,11 @@
       <li><b>Replanteo de la grilla</b><span>Marcar los cinco ejes norte–sur y las tres líneas este–oeste con camillas y tanza. Verificar la diagonal del rectángulo: 9,97 m con tolerancia ± 10 mm. Todo lo que salga torcido acá se arrastra a la casa entera.</span></li>
       <li><b>Zanja del encadenado</b><span>Abrir la zanja de la viga de fundación siguiendo el perímetro, el eje central y el travesaño del tabique. Fondo nivelado, apoyado sobre las zapatas.</span></li>
       <li><b>Excavación de los 15 pozos</b><span>A mano. Cribar la tierra y taparla. Confirmar suelo firme; si aparece loess suelto, bajar la cota y agrandar la zapata.</span></li>
-      <li><b>Armado y hormigonado de zapatas</b><span>Malla Ø8 en el fondo, recubrimiento 0,05. Zapata 0,60 bajo columnas, 0,50 bajo plataforma. Fondo a −1,00. Dejar las esperas del encadenado.</span></li>
+      <li><b>Armado y hormigonado de zapatas</b><span>Malla Ø8 en el fondo, recubrimiento 0,05. Zapata 0,60 bajo columnas y bajo plataforma. Fondo a −1,00. Dejar las esperas del encadenado.</span></li>
       <li><b>Encadenado (viga de fundación)</b><span>Encofrar y armar la viga 0,20 × 0,20 sobre las zapatas: 4 Ø10 + estribos Ø6 c/0,20, continua en el perímetro, el eje central y el travesaño. Anclar las barras en las esquinas doblando 90°. Hormigonar junto con los fustes.</span></li>
       <li><b>Fustes con encofrado</b><span>0,20 × 0,20, armadura 4 Ø10 + estribos Ø6 c/0,15. Dejar embutidas las 2 brocas Ø12 en los nueve pilotines de columna, empotradas 0,20 en el hormigón.</span></li>
       <li><b>Nivelación de coronas</b><span>Las quince coronas a +0,68, tolerancia 5 mm. Verificar con manguera de nivel o láser antes de que fragüe.</span></li>
-      <li><b>Curado</b><span>Mantener el hormigón húmedo 7 días. No cargar la fundación hasta el fraguado.</span></li>
+      <li><b>Curado</b><span>Mantener el hormigón húmedo 10 días. No cargar la fundación hasta el fraguado.</span></li>
     </ol>
   </section>
 
@@ -473,11 +471,11 @@
       <div class="chkitem" data-id="f1"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Replanteo y diagonales verificadas<span class="chkhint">9,97 m ± 10 mm</span></div></div>
       <div class="chkitem" data-id="f2"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Zanja del encadenado abierta<span class="chkhint">perímetro + eje central + travesaño</span></div></div>
       <div class="chkitem" data-id="f3"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">15 pozos excavados y tierra cribada</div></div>
-      <div class="chkitem" data-id="f4"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Zapatas armadas y hormigonadas<span class="chkhint">9 de 0,60 · 6 de 0,50</span></div></div>
+      <div class="chkitem" data-id="f4"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Zapatas armadas y hormigonadas<span class="chkhint">15 de 0,60 </span></div></div>
       <div class="chkitem" data-id="f5"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Encadenado armado y hormigonado<span class="chkhint">continuo, sin empalme en las esquinas</span></div></div>
       <div class="chkitem" data-id="f6"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Fustes hormigonados con brocas embutidas</div></div>
       <div class="chkitem" data-id="f7"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Coronas niveladas a +0,68<span class="chkhint">tolerancia 5 mm en las quince</span></div></div>
-      <div class="chkitem" data-id="f8"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Curado de 7 días completado</div></div>
+      <div class="chkitem" data-id="f8"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Curado de 10 días completado</div></div>
     </div>
     <button class="reset" id="resetbtn">Reiniciar avance de esta sección</button>
   </section>
