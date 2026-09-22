@@ -108,6 +108,20 @@
 
   /* --- agregado: estructura y planillas --- */
   .muted{color:var(--ink2);font-size:.8rem}
+
+  /* --- galeria: vista de la estructura general --- */
+  .stepgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0}
+  .stepcard{margin:0;border:1px solid var(--line);border-radius:14px;background:var(--card);
+    overflow:hidden;display:flex;flex-direction:column}
+  .stepimgwrap{background:#c9c9c9;line-height:0}
+  .stepimg{width:100%;height:auto;display:block}
+  .stepcard figcaption{padding:14px 16px 16px}
+  .stepnum{font-family:'Spline Sans Mono',monospace;font-size:.78rem;color:var(--clay);
+    margin:0 0 6px;text-transform:uppercase;letter-spacing:.04em}
+  .stepcap{margin:0;font-size:.88rem;color:var(--ink2);line-height:1.5}
+  .stepcap a{color:var(--clay);text-decoration:none;white-space:nowrap}
+  .stepcap a:hover{text-decoration:underline}
+  @media(max-width:700px){.stepgrid{grid-template-columns:1fr;gap:14px}}
 </style>
 </head>
 <body>
@@ -657,6 +671,61 @@
 <b>Las dos ventanitas de 20×20 del oeste</b> van a más de 2 m del piso: son solo para ventilación
       cruzada del dormitorio y el baño, no para mirar ni para entrar sol. Por eso van en lo alto del muro ciego.
     </div>
+</section>
+<section class="blk">
+<h2><span class="mk">◳</span>Vista de la estructura general</h2>
+<p>Cómo se arma la estructura, paso a paso. Cuatro momentos del modelo tridimensional, en el mismo
+    orden en que se ejecuta la obra: primero los pilotines salen del suelo, después se tiende la
+    plataforma de piso, se paran las columnas con sus vigas y por último se cierra el plano del techo
+    con los cabios. Cada paso apoya sobre el anterior.</p>
+<div class="stepgrid">
+<figure class="stepcard">
+<div class="stepimgwrap">
+<img alt="Quince pilotines de hormigón emergiendo del terreno, en grilla de cinco por tres, con las cotas de separación entre ejes" class="stepimg" decoding="async" height="615" src="Planos/1.jpeg" width="1368"/>
+</div>
+<figcaption>
+<p class="stepnum">Paso 1 · Pilotines</p>
+<p class="stepcap">Los quince pilotines salen del terreno en grilla de cinco ejes por tres.
+        Es lo único que toca el suelo: todo lo demás apoya acá. <a href="fundacion.html">Ver Fundación →</a></p>
+</figcaption>
+</figure>
+<figure class="stepcard">
+<div class="stepimgwrap">
+<img alt="Plataforma de piso armada sobre los pilotines: vigas este-oeste y viguetas norte-sur" class="stepimg" decoding="async" height="668" loading="lazy" src="Planos/2.jpeg" width="1259"/>
+</div>
+<figcaption>
+<p class="stepnum">Paso 2 · Plataforma de piso</p>
+<p class="stepcap">Sobre las coronas se tienden las vigas este–oeste y, cruzadas, las viguetas
+        que van de norte a sur. Queda la mesa de trabajo de toda la obra. <a href="piso.html">Ver Piso →</a></p>
+</figcaption>
+</figure>
+<figure class="stepcard">
+<div class="stepimgwrap">
+<img alt="Columnas verticales levantadas sobre la plataforma, unidas arriba por las vigas de techo este-oeste, con cotas generales" class="stepimg" decoding="async" height="876" loading="lazy" src="Planos/3.jpeg" width="1250"/>
+</div>
+<figcaption>
+<p class="stepnum">Paso 3 · Columnas y vigas de techo</p>
+<p class="stepcap">Se paran las columnas y se atan arriba con las tres vigas este–oeste. Recién
+        acá la casa tiene su altura definitiva y aparece la pendiente. <a href="columnas.html">Ver Columnas →</a></p>
+</figcaption>
+</figure>
+<figure class="stepcard">
+<div class="stepimgwrap">
+<img alt="Estructura completa con los cabios norte-sur apoyados sobre las vigas, formando el plano del techo con sus aleros" class="stepimg" decoding="async" height="849" loading="lazy" src="Planos/4.jpeg" width="1529"/>
+</div>
+<figcaption>
+<p class="stepnum">Paso 4 · Cabios · estructura completa</p>
+<p class="stepcap">Los cabios cruzan de norte a sur sobre las tres vigas y cierran el plano del
+        faldón con sus aleros. El esqueleto queda listo para techar. <a href="techo.html">Ver Techo →</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="note"><b>Qué son estas imágenes.</b> Son capturas del modelo tridimensional de origen,
+    el que se usó para definir la estructura. Sirven para entender el orden de armado y las
+    proporciones, no para medir: no tienen escala, carátula ni capas. <b>Ante cualquier diferencia
+    manda la documentación del proyecto</b>, no el modelo. Dos diferencias conocidas: el modelo no
+    dibuja la viga de fundación que une las zapatas, y representa una columna por pilotín, mientras
+    que el proyecto define nueve columnas en grilla de tres por tres.</div>
 </section>
 <div class="note warn">
 <b>Los planos son de predimensionado.</b> Sirven para entender y presentar. La verificación
