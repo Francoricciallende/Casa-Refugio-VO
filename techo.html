@@ -231,9 +231,11 @@ Al terminar esta etapa la casa queda techada y se puede trabajar bajo cubierta.<
 salvar los 5,37 m de un tramo. Cruza el estar–cocina por el aire a 3,05 m de altura y queda a la
 vista: es parte del lenguaje de la casa, no un elemento a tapar.</p>
 <div class="note"><b>Las vigas son de pino aserrado, dobles:</b> trabajan a flexión y necesitan apoyo
-plano para los cabios. Cada una se arma con dos tablas clavadas entre sí. <b>El canto cambia según
-el tramo:</b> doble 3×8" en el tramo oeste (luz 3,60) y doble 3×10" en el este (luz 4,80), que es
-donde el estar queda libre sin columna intermedia.</div>
+plano para los cabios. Cada una se arma con dos tablas clavadas entre sí. <b>Son doble 3×10"
+(140×235 mm) continuas de alero a alero</b>, con una sola escuadría en los 9,60 m: la sección la fija
+el tramo este, de 4,80 m de luz libre sobre el estar, donde no hay columna intermedia. Manteniendo el
+mismo canto en el tramo oeste, la cara superior de la viga queda en un plano continuo y los cabios
+apoyan sin calces ni transiciones sobre la columna del eje 3,60.</div>
 </section>
 <section class="blk">
 <h2><span class="mk">▢</span>Cómo se apoya el techo</h2>
@@ -283,8 +285,9 @@ donde el estar queda libre sin columna intermedia.</div>
 <circle cx="75" cy="358" r="7"></circle><circle cx="255" cy="358" r="7"></circle><circle cx="495" cy="358" r="7"></circle>
 </g>
 <!-- rotulos de tramo de viga -->
-<text class="subt" text-anchor="middle" x="165" y="240">doble 3×8" · luz 3,60</text>
-<text class="subt" text-anchor="middle" x="375" y="240">doble 3×10" · luz 4,80</text>
+<text class="subt" text-anchor="middle" x="165" y="240">luz 3,60</text>
+<text class="subt" text-anchor="middle" x="375" y="240">luz 4,80</text>
+<text class="subt" text-anchor="middle" x="285" y="257">vigas doble 3×10" continuas · 9,60 m con aleros</text>
 <!-- flecha de pendiente -->
 <g stroke="var(--moss)" stroke-width="1.5">
 <line marker-end="url(#at)" x1="556" x2="556" y1="100" y2="350"></line>
@@ -339,15 +342,24 @@ donde el estar queda libre sin columna intermedia.</div>
 <table>
 <thead><tr><th>#</th><th>Capa</th><th>Espesor / sección</th><th>Función</th></tr></thead>
 <tbody>
-<tr><td>1</td><td>Machimbre de pino ½" a la vista</td><td>12 mm</td><td>Cielorraso visto y diafragma rígido de techo</td></tr>
+<tr><td>1</td><td>Machimbre de pino ½" a la vista</td><td>12 mm</td><td>Cielorraso visto y soporte de la aislación</td></tr>
 <tr><td>2</td><td>Barrera de vapor</td><td>polietileno 200 µm</td><td>Impide que el vapor de adentro entre al aislante</td></tr>
 <tr><td>3</td><td>Celulosa / wichi entre cabios</td><td>140 mm (canto del cabio)</td><td>Aislación térmica</td></tr>
-<tr><td>4</td><td>Membrana hidrófuga respirable</td><td>—</td><td>Frena agua y viento, deja salir el vapor</td></tr>
-<tr><td>5</td><td>Contralistón</td><td>1×2" (19×38 mm)</td><td>Genera la cámara ventilada bajo la chapa</td></tr>
-<tr><td>6</td><td>Chapa galvanizada</td><td>trapezoidal C25</td><td>Cubierta y escurrimiento</td></tr>
+<tr><td>4</td><td><b>Entablado de fenólico sobre los cabios</b></td><td>12 mm</td><td><b>Diafragma rígido de techo</b> · arriostramiento</td></tr>
+<tr><td>5</td><td>Membrana hidrófuga respirable</td><td>—</td><td>Frena agua y viento, deja salir el vapor</td></tr>
+<tr><td>6</td><td>Contralistón</td><td>1×2" (19×38 mm)</td><td>Genera la cámara ventilada bajo la chapa</td></tr>
+<tr><td>7</td><td>Chapa galvanizada</td><td>trapezoidal C25</td><td>Cubierta y escurrimiento</td></tr>
 </tbody>
 </table>
 </div>
+<div class="note warn"><b>El entablado de fenólico es el diafragma; el machimbre es el cielorraso.</b>
+    El machimbre de ½" que queda a la vista desde abajo cierra el interior y sostiene la celulosa, pero
+    una sola capa de tablas machihembradas no desarrolla el corte que pide un diafragma. El plano del
+    techo se cierra como placa rígida con el <b>fenólico de 12 mm clavado sobre los cabios</b>, por
+    encima de la aislación y por debajo de la membrana: clavado perimetral c/0,15 e interior c/0,30.
+    Es el primero de los cuatro planos del sistema de arriostramiento y trabaja al 28% de su capacidad
+    con el viento de proyecto. Si se suprime, el techo deja de arriostrar y hay que recalcular los
+    otros tres planos.</div>
 <div class="note warn"><b>El contralistón no es opcional.</b> Sin la cámara ventilada, el vapor que
     atraviesa el paquete condensa en la cara fría de la chapa, gotea sobre la celulosa y la moja. Una
     celulosa mojada pierde la aislación y no se seca. Los 19 mm de cámara con entrada de aire en el
@@ -359,48 +371,53 @@ donde el estar queda libre sin columna intermedia.</div>
 <table>
 <thead><tr><th>Elemento</th><th>Sección nominal</th><th>Sección real</th><th>Separación</th><th>Largo unitario</th><th>Especie / clase</th></tr></thead>
 <tbody>
-<tr><td>Viga E–O · tramo oeste</td><td>doble 3×8"</td><td>140×185 mm</td><td>3 vigas (y = 0 / 2,65 / 5,37)</td><td>luz 3,60 + alero 0,60</td><td>Pino · C (CIRSOC 601)</td></tr>
-<tr><td>Viga E–O · tramo este</td><td>doble 3×10"</td><td>140×235 mm</td><td>3 vigas (y = 0 / 2,65 / 5,37)</td><td>luz 4,80 + alero 0,60</td><td>Pino · C</td></tr>
+<tr><td>Viga E–O · continua</td><td>doble 3×10"</td><td>140×235 mm</td><td>3 vigas (y = 0 / 2,65 / 5,37)</td><td>9,60 m (8,40 + 2 aleros de 0,60)</td><td>Pino · C (CIRSOC 601)</td></tr>
 <tr><td>Cabio norte</td><td>2×6"</td><td>45×140 mm</td><td>c/0,50</td><td>3,58 m</td><td>Pino · C</td></tr>
 <tr><td>Cabio sur</td><td>2×6"</td><td>45×140 mm</td><td>c/0,50</td><td>3,45 m</td><td>Pino · C</td></tr>
 <tr><td>Cabio de borde</td><td>2×6"</td><td>45×140 mm</td><td>perímetro del faldón</td><td>continuo</td><td>Pino · C</td></tr>
 <tr><td>Contralistón</td><td>1×2"</td><td>19×38 mm</td><td>sobre cada cabio</td><td>según faldón</td><td>Pino · C</td></tr>
 <tr><td>Machimbre</td><td>½"</td><td>12 mm</td><td>continuo</td><td>juntas sobre cabio</td><td>Pino cepillado</td></tr>
+<tr><td>Entablado de diafragma</td><td>fenólico 12 mm</td><td>12 mm</td><td>continuo sobre cabios</td><td>clavado perim. c/0,15</td><td>Fenólico WBP</td></tr>
 <tr><td>Fleje de anclaje cabio–viga</td><td>galvanizado</td><td>—</td><td>1 por cabio y apoyo</td><td>—</td><td>Acero galvanizado</td></tr>
 </tbody>
 </table>
 </div>
-<p class="muted">Escuadrías cepilladas. Cargas de proyecto: permanente 0,25 kN/m², sobrecarga de
+<p class="muted">Escuadrías cepilladas. Cargas de proyecto: permanente 0,32 kN/m², sobrecarga de
     mantenimiento 0,30 kN/m². Superficie de faldón 9,60 × 7,03 m. Madera seca, humedad ≤ 19%.</p>
 </section>
 
 <section class="blk">
 <h2><span class="mk moss">→</span>Paso a paso de obra</h2>
 <ol class="steps">
-<li><b>Armado de las vigas</b><span>Clavar las dos tablas de cada viga entre sí: doble 3×8" en el tramo oeste y doble 3×10" en el este. El cambio de canto se resuelve sobre la columna del eje 3,60, alineando las caras superiores para que los cabios apoyen en un plano continuo. Empalmes en largo siempre sobre una columna y escalonados entre las dos tablas.</span></li>
+<li><b>Armado de las vigas</b><span>Clavar las dos tablas de cada viga entre sí: doble 3×10" (140×235 mm) en toda su longitud, de alero a alero. La cara superior queda en un plano continuo en los 9,60 m, de modo que los cabios apoyan sin calces. Empalmes en largo siempre sobre una columna y escalonados entre las dos tablas.</span></li>
 <li><b>Colocación de vigas</b><span>Izar las tres vigas sobre las columnas: norte, central y sur. Cada una apoya en tres columnas y vuela 0,60 a cada lado. Fijar a la corona de cada columna con ménsula o escuadra metálica. Las tres quedan a alturas distintas (3,40 / 3,05 / 2,70): eso es lo que da la pendiente.</span></li>
 <li><b>Verificación del plano</b><span>Antes de poner un solo cabio, tender tanza de la viga norte a la sur en varios puntos y confirmar que las tres coronas están en un mismo plano al 13%. Corregir acá es fácil; después no.</span></li>
 <li><b>Cabios</b><span>Colocar los 40 cabios 2×6" cada 0,50 cruzando de norte a sur, apoyados en las tres vigas y continuos sobre la central donde el largo lo permita. Cada cabio se ata con fleje galvanizado en cada apoyo contra la succión del viento.</span></li>
 <li><b>Cabio de borde y aleros</b><span>Cerrar el perímetro del faldón con cabio de borde continuo, que es el que da el canto a los cuatro aleros y sirve de apoyo a la zinguería.</span></li>
-<li><b>Machimbre</b><span>Clavar el machimbre de ½" sobre los cabios. Queda a la vista por debajo como cielorraso y arriba forma el diafragma rígido que reparte el viento a los muros: clavado perimetral c/0,10 e interior c/0,20.</span></li>
+<li><b>Machimbre</b><span>Clavar el machimbre de ½" contra la cara inferior de los cabios. Queda a la vista por debajo como cielorraso y sostiene la aislación. No es el diafragma: eso lo hace el entablado que va arriba.</span></li>
 <li><b>Barrera de vapor y aislación</b><span>Polietileno de 200 µm sobre el machimbre, con solapes sellados, y celulosa entre cabios llenando los 140 mm.</span></li>
+<li><b>Entablado de fenólico · diafragma de techo</b><span>Clavar el fenólico de 12 mm sobre los cabios, por encima de la aislación: clavado perimetral c/0,15 e interior c/0,30, con las juntas apoyadas sobre cabio y el cabio de borde continuo haciendo de cordón. Esto es lo que cierra el plano del techo como placa rígida y reparte el viento a los muros de corte. Clavado estructural, no de terminación.</span></li>
 <li><b>Membrana y contralistón</b><span>Membrana hidrófuga respirable, y sobre cada cabio el contralistón de 1×2" que genera la cámara ventilada. Dejar entrada de aire en el alero sur y salida en el norte.</span></li>
 <li><b>Chapa</b><span>Chapa trapezoidal C25 sobre los contralistones, con tornillo autoperforante y arandela en la cresta. Canaleta en el borde bajo (sur) hacia la cisterna.</span></li>
 </ol>
 </section>
 <div class="note warn"><b>La cadena de anclaje es continua:</b> chapa → contralistón → cabio → viga → columna
-  → pilotín. Con V₀ = 45 m/s la succión en el borde del alero llega a 1,61 kN/m² contra 0,25 de peso propio:
-  el saldo es tracción neta. Cada eslabón de esa cadena tiene que estar, o el viento levanta el techo.</div>
+  → pilotín → encadenado. Con V₀ = 45 m/s la succión en el borde del alero llega a 1,37 kN/m² contra
+  0,32 de peso propio: el saldo es tracción neta. Cada eslabón de esa cadena tiene que estar, o el
+  viento levanta el techo. La verificación de cada uno está en la
+  <a href="calculo.html">memoria de cálculo</a>.</div>
 <section class="blk">
 <h2><span class="mk moss">✓</span>Marcar avance</h2>
 <p>Tocá cada paso a medida que se completa en obra. Se guarda en este dispositivo.</p>
 <div class="checkcard" id="checklist">
-<div class="chkitem" data-id="t1"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">3 vigas armadas (doble 3×8" oeste · doble 3×10" este)</div></div>
+<div class="chkitem" data-id="t1"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">3 vigas armadas (doble 3×10" continuas, 9,60 m)</div></div>
 <div class="chkitem" data-id="t2"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Vigas colocadas sobre las 9 columnas, aleros 0,60</div></div>
 <div class="chkitem" data-id="t3"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Plano del faldón verificado al 13%</div></div>
 <div class="chkitem" data-id="t4"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">40 cabios colocados c/0,50 con flejes</div></div>
-<div class="chkitem" data-id="t5"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Machimbre ½" clavado (diafragma + cielorraso)</div></div>
-<div class="chkitem" data-id="t6"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Barrera de vapor, celulosa y membrana</div></div>
+<div class="chkitem" data-id="t5"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Machimbre ½" clavado (cielorraso visto)</div></div>
+<div class="chkitem" data-id="t6"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Barrera de vapor y celulosa entre cabios</div></div>
+<div class="chkitem" data-id="t8"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Fenólico 12 mm del diafragma clavado c/0,15<span class="chkhint">plano 1 de 4 del arriostramiento</span></div></div>
+<div class="chkitem" data-id="t9"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Membrana hidrófuga colocada y solapada</div></div>
 <div class="chkitem" data-id="t7"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Contralistón, chapa, canaleta y zinguería terminadas</div></div>
 </div>
 <button class="reset" id="resetbtn">Reiniciar avance de esta sección</button>

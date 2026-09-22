@@ -204,7 +204,8 @@
 <p class="kicker">Etapa 3 de 8</p>
 <h1>Columnas</h1>
 <p class="lead">El esqueleto que sostiene el techo. Nueve columnas de pino cepillado, dobles, ocultas dentro
-    de los muros, ancladas a los pilotines y arriostradas contra el viento.</p>
+    de los muros, ancladas a los pilotines y arriostradas por cruces de San Andrés y diafragmas en
+    cuatro planos.</p>
 <div class="progwrap">
 <div class="progbar"><div class="progfill" id="fill"></div></div>
 <div class="progtxt" id="ptxt">0 pasos</div>
@@ -216,6 +217,7 @@
 <div class="fig"><div class="n">2×6"<small> doble</small></div><div class="l">sección (90×140 mm)</div></div>
 <div class="fig"><div class="n">3×3</div><div class="l">grilla de ejes</div></div>
 <div class="fig"><div class="n">2,70–3,40<small> m</small></div><div class="l">altura libre</div></div>
+<div class="fig"><div class="n">4</div><div class="l">planos arriostrados</div></div>
 
 </div>
 <section class="blk">
@@ -286,45 +288,338 @@
 </div>
 </section>
 <section class="blk">
-<h2><span class="mk">✕</span>Arriostramiento contra viento</h2>
-<p>Nueve columnas paradas y tres vigas arriba forman un esqueleto que resiste bien el peso propio, pero
-    por sí solo se deforma como un paralelogramo ante el empuje horizontal del viento. Hace falta
-    <b>triangular o rigidizar</b> los planos verticales y el plano del techo. Son tres mecanismos que
-    trabajan juntos.</p>
+<h2><span class="mk">✕</span>Arriostramiento · cruces de San Andrés y diafragmas</h2>
+<p>Nueve columnas paradas y tres vigas arriba forman un esqueleto que resiste bien el peso propio,
+    pero por sí solo se deforma como un paralelogramo ante el empuje horizontal del viento. El sistema
+    que lo impide son <b>cruces de San Andrés y diafragmas trabajando en cuatro planos</b>, encadenados
+    en una única bajada que arranca en el techo y termina en el suelo. No son cuatro soluciones
+    alternativas: son cuatro eslabones de la misma cadena, y falta uno y no funciona ninguno.</p>
+<div class="note"><b>La cadena completa, de arriba hacia abajo:</b> diafragma de techo → muros de corte
+    con cruces en el bastidor → diafragma de piso → <b>cruces en la cámara bajo piso</b> → pilotines →
+    encadenado → suelo. Cada plano recoge el empuje del de arriba y lo entrega al de abajo; el último
+    eslabón lo descarga en el terreno.</div>
+
+<div class="plano scroll">
+<p class="planotitle">Corte N–S por el muro oeste · la cadena de los cuatro planos</p>
+<svg aria-label="Corte norte-sur mostrando los cuatro planos arriostrados: diafragma de techo, cruz en el muro, diafragma de piso y cruz en la camara bajo piso, con la bajada de esfuerzos hasta el encadenado" role="img" viewbox="0 0 600 460">
+<defs>
+<marker id="ab" markerHeight="6" markerWidth="6" orient="auto" refX="5" refY="3">
+<path d="M0,0 L6,3 L0,6 Z" fill="var(--rust)"></path></marker>
+<pattern id="hatchd" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse" width="6">
+<line stroke="var(--moss)" stroke-width="1.6" x1="0" x2="0" y1="0" y2="6"></line></pattern>
+</defs>
+
+<!-- terreno -->
+<line stroke="var(--ink2)" stroke-width="1.5" x1="40" x2="560" y1="355" y2="355"></line>
+<text class="subt" x="44" y="370">terreno natural ±0,00</text>
+
+<!-- zapatas -->
+<g fill="var(--card)" stroke="var(--ink2)" stroke-width="1.2">
+<rect height="15" width="37" x="91.5" y="402"></rect>
+<rect height="15" width="37" x="255.5" y="402"></rect>
+<rect height="15" width="37" x="424.5" y="402"></rect>
+</g>
+<text class="subt" x="44" y="414">zapatas −1,00</text>
+
+<!-- encadenado -->
+<rect fill="var(--moss)" height="13" width="370" x="91.5" y="389"></rect>
+<text class="subt" fill="var(--moss)" text-anchor="middle" x="276" y="399" style="font-weight:600">ENCADENADO</text>
+
+<!-- fustes de pilotin -->
+<g fill="var(--card)" stroke="var(--ink2)" stroke-width="1.2">
+<rect height="76" width="12" x="104" y="313"></rect>
+<rect height="76" width="12" x="268" y="313"></rect>
+<rect height="76" width="12" x="437" y="313"></rect>
+</g>
+
+<!-- PLANO 4: cruz en la camara -->
+<g stroke="var(--rust)" stroke-width="3.4" stroke-linecap="round">
+<line x1="110" x2="274" y1="389" y2="313"></line>
+<line x1="274" x2="110" y1="389" y2="313"></line>
+</g>
+<circle cx="192" cy="351" fill="var(--paper)" r="11" stroke="var(--rust)" stroke-width="1.4"></circle>
+<text fill="var(--rust)" font-size="12" font-weight="700" text-anchor="middle" x="192" y="355">4</text>
+<text class="subt" fill="var(--rust)" x="292" y="346" style="font-weight:600">cruz de la cámara</text>
+<text class="subt" fill="var(--rust)" x="292" y="359">barra roscada Ø12 con tensor</text>
+
+<!-- PLANO 3: diafragma de piso -->
+<rect fill="url(#hatchd)" height="26" opacity=".5" width="370" x="91.5" y="287"></rect>
+<rect fill="none" height="26" stroke="var(--moss)" stroke-width="1.6" width="370" x="91.5" y="287"></rect>
+<circle cx="500" cy="300" fill="var(--paper)" r="11" stroke="var(--moss)" stroke-width="1.4"></circle>
+<text fill="var(--moss)" font-size="12" font-weight="700" text-anchor="middle" x="500" y="304">3</text>
+<text class="subt" fill="var(--moss)" x="516" y="304">piso</text>
+<text class="dimt" x="44" y="303">+1,10</text>
+
+<!-- columnas -->
+<g fill="var(--clay)">
+<rect height="237" width="6" x="107" y="76"></rect>
+<rect height="215" width="6" x="271" y="98"></rect>
+<rect height="194" width="6" x="440" y="119"></rect>
+</g>
+
+<!-- PLANO 2: cruz en el muro -->
+<g stroke="var(--clay)" stroke-width="3" stroke-linecap="round">
+<line x1="120" x2="269" y1="287" y2="120"></line>
+<line x1="269" x2="120" y1="287" y2="120"></line>
+</g>
+<circle cx="194" cy="203" fill="var(--paper)" r="11" stroke="var(--clay)" stroke-width="1.4"></circle>
+<text fill="var(--clay)" font-size="12" font-weight="700" text-anchor="middle" x="194" y="207">2</text>
+<text class="subt" fill="var(--clay)" x="300" y="200" style="font-weight:600">cruz del muro</text>
+<text class="subt" fill="var(--clay)" x="300" y="213">planchuela 40×4 embutida</text>
+
+<!-- vigas de techo de punta -->
+<g fill="var(--rust)">
+<rect height="13" width="16" x="102" y="63"></rect>
+<rect height="13" width="16" x="266" y="85"></rect>
+<rect height="13" width="16" x="435" y="106"></rect>
+</g>
+
+<!-- PLANO 1: diafragma de techo -->
+<polygon fill="url(#hatchd)" opacity=".5" points="54,69 486,125 486,136 54,80"></polygon>
+<polygon fill="none" points="54,69 486,125 486,136 54,80" stroke="var(--moss)" stroke-width="1.6"></polygon>
+<circle cx="500" cy="131" fill="var(--paper)" r="11" stroke="var(--moss)" stroke-width="1.4"></circle>
+<text fill="var(--moss)" font-size="12" font-weight="700" text-anchor="middle" x="500" y="135">1</text>
+<text class="subt" fill="var(--moss)" x="516" y="135">techo</text>
+
+<!-- bajada de esfuerzos -->
+<g marker-end="url(#ab)" stroke="var(--rust)" stroke-width="1.6">
+<line x1="34" x2="74" y1="100" y2="100"></line>
+<line x1="88" x2="88" y1="150" y2="270"></line>
+<line x1="88" x2="88" y1="320" y2="375"></line>
+<line x1="72" x2="72" y1="420" y2="442"></line>
+</g>
+<text class="subt" fill="var(--rust)" x="24" y="94" style="font-weight:600">viento</text>
+<text class="subt" fill="var(--rust)" text-anchor="middle" transform="rotate(-90 78 210)" x="78" y="210">muro de corte</text>
+<text class="subt" fill="var(--rust)" text-anchor="middle" x="72" y="453">al suelo</text>
+
+<!-- ejes -->
+<text class="subt" text-anchor="middle" x="110" y="440">y = 0</text>
+<text class="subt" text-anchor="middle" x="274" y="440">y = 2,65</text>
+<text class="subt" text-anchor="middle" x="443" y="440">y = 5,37</text>
+<text class="subt" fill="var(--rust)" x="106" y="52" style="font-weight:700">N</text>
+<text class="subt" fill="var(--rust)" x="440" y="95" style="font-weight:700">S</text>
+</svg>
+<div class="cap">Los cuatro planos, de arriba hacia abajo: ① diafragma de techo (fenólico 12 mm sobre los
+      cabios), ② cruz de San Andrés en el bastidor del muro, ③ diafragma de piso (fenólico 18 mm sobre
+      las viguetas) y ④ cruz de San Andrés en la cámara bajo piso, entre la corona del pilotín y el
+      encadenado. Las flechas marcan la bajada: el viento entra por el techo, baja por el muro de
+      corte, cruza el piso, atraviesa la cámara y descarga en el suelo.</div>
+</div>
+
+<div class="plano scroll">
+<p class="planotitle">Planta de la cámara bajo piso · planos arriostrados · norte arriba</p>
+<svg aria-label="Planta de la camara bajo piso con los seis planos arriostrados: tres norte-sur en los ejes de columna y tres este-oeste en las tres lineas" role="img" viewbox="0 0 600 400">
+<defs><marker id="ax" markerHeight="6" markerWidth="6" orient="auto" refX="3" refY="3">
+<path d="M0,3 L6,1 L6,5 Z" fill="var(--dim)"></path></marker></defs>
+
+<!-- perimetro -->
+<rect fill="none" height="269" stroke="var(--line)" stroke-dasharray="5 5" stroke-width="1.2" width="420" x="75" y="55"></rect>
+
+<!-- encadenado de fondo -->
+<g opacity=".45" stroke="var(--moss)" stroke-width="4">
+<polyline fill="none" points="75,55 495,55 495,324 75,324 75,55"></polyline>
+<line x1="75" x2="495" y1="188" y2="188"></line>
+<line x1="255" x2="255" y1="55" y2="324"></line>
+</g>
+
+<!-- PLANOS ARRIOSTRADOS N-S (resisten viento norte-sur) -->
+<g stroke="var(--rust)" stroke-width="6" stroke-linecap="round">
+<line x1="75" x2="75" y1="55" y2="188"></line>
+<line x1="255" x2="255" y1="55" y2="188"></line>
+<line x1="495" x2="495" y1="55" y2="188"></line>
+</g>
+<g fill="var(--paper)" stroke="var(--rust)" stroke-width="1.3">
+<circle cx="75" cy="121" r="10"></circle>
+<circle cx="255" cy="121" r="10"></circle>
+<circle cx="495" cy="121" r="10"></circle>
+</g>
+<g fill="var(--rust)" font-size="12" font-weight="700" text-anchor="middle">
+<text x="75" y="126">✕</text><text x="255" y="126">✕</text><text x="495" y="126">✕</text>
+</g>
+
+<!-- PLANOS ARRIOSTRADOS E-O (resisten viento este-oeste) -->
+<g stroke="var(--clay)" stroke-width="6" stroke-linecap="round">
+<line x1="75" x2="165" y1="55" y2="55"></line>
+<line x1="75" x2="165" y1="188" y2="188"></line>
+<line x1="75" x2="165" y1="324" y2="324"></line>
+</g>
+<g fill="var(--paper)" stroke="var(--clay)" stroke-width="1.3">
+<circle cx="120" cy="55" r="10"></circle>
+<circle cx="120" cy="188" r="10"></circle>
+<circle cx="120" cy="324" r="10"></circle>
+</g>
+<g fill="var(--clay)" font-size="12" font-weight="700" text-anchor="middle">
+<text x="120" y="60">✕</text><text x="120" y="193">✕</text><text x="120" y="329">✕</text>
+</g>
+
+<!-- 15 pilotines -->
+<g fill="var(--card)" stroke="var(--ink)" stroke-width="1.5">
+<rect height="13" rx="2" width="13" x="68.5" y="48.5"></rect>
+<rect height="13" rx="2" width="13" x="158.5" y="48.5"></rect>
+<rect height="13" rx="2" width="13" x="248.5" y="48.5"></rect>
+<rect height="13" rx="2" width="13" x="368.5" y="48.5"></rect>
+<rect height="13" rx="2" width="13" x="488.5" y="48.5"></rect>
+<rect height="13" rx="2" width="13" x="68.5" y="181.5"></rect>
+<rect height="13" rx="2" width="13" x="158.5" y="181.5"></rect>
+<rect height="13" rx="2" width="13" x="248.5" y="181.5"></rect>
+<rect height="13" rx="2" width="13" x="368.5" y="181.5"></rect>
+<rect height="13" rx="2" width="13" x="488.5" y="181.5"></rect>
+<rect height="13" rx="2" width="13" x="68.5" y="317.5"></rect>
+<rect height="13" rx="2" width="13" x="158.5" y="317.5"></rect>
+<rect height="13" rx="2" width="13" x="248.5" y="317.5"></rect>
+<rect height="13" rx="2" width="13" x="368.5" y="317.5"></rect>
+<rect height="13" rx="2" width="13" x="488.5" y="317.5"></rect>
+</g>
+
+<!-- rotulos de eje -->
+<g class="subt" fill="var(--ink2)" text-anchor="middle">
+<text x="75" y="42">x = 0</text><text x="165" y="42">1,80</text><text x="255" y="42">3,60</text>
+<text x="375" y="42">6,00</text><text x="495" y="42">8,40</text>
+</g>
+<text class="subt" x="512" y="59">y = 0</text>
+<text class="subt" x="512" y="192">y = 2,65</text>
+<text class="subt" x="512" y="328">y = 5,37</text>
+
+<!-- direcciones de viento -->
+<g marker-end="url(#ax)" stroke="var(--dim)" stroke-width="1.4">
+<line x1="285" x2="285" y1="14" y2="40"></line>
+<line x1="560" x2="534" y1="240" y2="240"></line>
+</g>
+<text class="dimt" text-anchor="middle" x="285" y="11">viento N–S · 34,3 kN</text>
+<text class="dimt" text-anchor="end" x="560" y="232">viento E–O · 21,9 kN</text>
+
+<!-- leyenda -->
+<line stroke="var(--rust)" stroke-width="6" x1="75" x2="100" y1="360" y2="360"></line>
+<text class="subt" x="107" y="364">3 planos N–S · paño 2,65 × 1,23</text>
+<line stroke="var(--clay)" stroke-width="6" x1="75" x2="100" y1="380" y2="380"></line>
+<text class="subt" x="107" y="384">3 planos E–O · paño 1,80 × 1,23</text>
+<line stroke="var(--moss)" stroke-width="4" x1="330" x2="355" y1="360" y2="360"></line>
+<text class="subt" x="362" y="364">encadenado</text>
+<rect fill="var(--card)" height="13" rx="2" stroke="var(--ink)" stroke-width="1.5" width="13" x="330" y="374"></rect>
+<text class="subt" x="350" y="384">pilotín</text>
+</svg>
+<div class="cap">Seis planos arriostrados en la cámara: tres norte–sur sobre los ejes de columna
+      (x = 0 / 3,60 / 8,40) y tres este–oeste sobre las tres líneas (y = 0 / 2,65 / 5,37). Cada plano
+      cae exactamente debajo de un muro de corte o del tabique central, para que la bajada del esfuerzo
+      sea continua y no tenga que desviarse por el diafragma de piso.</div>
+</div>
+
+<h3 style="font-family:'Fraunces',serif;font-size:1.05rem;margin:26px 0 8px">Los cuatro planos, uno por uno</h3>
+
 <div class="twocol">
 <div class="infocard">
-<h3>1 · Diafragma de techo</h3>
-<p class="muted">El machimbre de ½" clavado sobre los cabios convierte todo el faldón en una placa rígida
-      horizontal. Es lo que recoge el empuje del viento en las fachadas y lo lleva a los muros.</p>
-<div class="kv"><span class="k">Clavado</span><span class="v">perimetral c/0,10 · interior c/0,20</span></div>
-<div class="kv"><span class="k">Borde</span><span class="v">cabio de borde continuo, empalmes solapados</span></div>
+<h3>1 · Techo · diafragma</h3>
+<p class="muted">El plano del faldón se cierra como una placa rígida horizontal con el
+      <b>entablado de fenólico de 12 mm clavado sobre los cabios</b>, por encima de la aislación y por
+      debajo de la membrana. El machimbre de ½" que queda a la vista abajo es cielorraso y apoyo de la
+      celulosa: una sola capa de tablas machihembradas no desarrolla el corte que pide el diafragma.
+      Es el plano que recoge el empuje de las cuatro fachadas y lo entrega a los muros.</p>
+<div class="kv"><span class="k">Tablero</span><span class="v">fenólico 12 mm sobre cabios</span></div>
+<div class="kv"><span class="k">Clavado</span><span class="v">perimetral c/0,15 · interior c/0,30</span></div>
+<div class="kv"><span class="k">Corte de diseño</span><span class="v">1,39 kN/m · <b>28%</b></span></div>
+<div class="kv"><span class="k">Cordón</span><span class="v">cabio de borde continuo · 2,92 kN</span></div>
 </div>
 <div class="infocard">
-<h3>2 · Diafragma de muro</h3>
-<p class="muted">La placa de OSB/fenólico de 12 mm clavada al bastidor rigidiza el plano de cada pared. La cementicia que va por encima es revestimiento, no arriostramiento.
-      Los muros oeste y este toman el viento norte–sur; los muros norte y sur toman el este–oeste.</p>
-<div class="kv"><span class="k">Corte N–S</span><span class="v">2,50 kN/m por muro</span></div>
-<div class="kv"><span class="k">Corte E–O</span><span class="v">0,89 kN/m por muro</span></div>
+<h3>2 · Paredes · cruces en el bastidor</h3>
+<p class="muted">Cada una de las <b>cuatro fachadas</b> lleva cruces de San Andrés dentro del bastidor
+      de woodframe, con un <b>mínimo de dos paños arriostrados por fachada</b> en esquinas opuestas.
+      Los muros oeste y este toman el viento norte–sur; los muros norte y sur toman el este–oeste. La
+      diagonal es una planchuela de acero embutida en canaleta en los montantes, y trabaja sólo a
+      tracción: de las dos ramas de la cruz, una tira y la otra descansa.</p>
+<div class="kv"><span class="k">Diagonal</span><span class="v">planchuela 40×4 galvanizada</span></div>
+<div class="kv"><span class="k">Paño</span><span class="v">2,40 × 2,70 m · 48,4°</span></div>
+<div class="kv"><span class="k">Tracción de diseño</span><span class="v">5,6 kN · <b>17%</b></span></div>
+<div class="kv"><span class="k">Unión</span><span class="v">3 bulones Ø12 · <b>51%</b></span></div>
 </div>
 </div>
-<div class="infocard" style="margin-top:14px">
-<h3>3 · Riostras diagonales en el plano de columnas</h3>
-<p class="muted">Donde el muro tiene muchas aberturas y la placa no alcanza a formar un paño continuo
-    —sobre todo la fachada norte, que es casi toda ventana— se agrega una diagonal de tabla 1×6" a 45°
-    entre columna y viga, clavada en ambos extremos. Van de a pares en cruz o alternadas en V invertida.</p>
-<div class="kv"><span class="k">Sección</span><span class="v">1×6" pino (19×140 mm)</span></div>
-<div class="kv"><span class="k">Ángulo</span><span class="v">entre 30° y 60° respecto de la horizontal</span></div>
-<div class="kv"><span class="k">Ubicación mínima</span><span class="v">2 paños por fachada, en esquinas opuestas</span></div>
+<div class="twocol">
+<div class="infocard">
+<h3>3 · Piso · diafragma</h3>
+<p class="muted">El <b>fenólico de 18 mm clavado y encolado sobre las viguetas I-joist</b> cierra el
+      plano del entrepiso. No es sólo el piso sobre el que se camina: es el elemento que recibe lo que
+      bajó por los muros, lo suma al empuje que el viento ejerce sobre el canto de la plataforma y lo
+      reparte entre los planos arriostrados de la cámara. Su clavado perimetral es especificación
+      estructural, no de terminación.</p>
+<div class="kv"><span class="k">Tablero</span><span class="v">fenólico 18 mm sobre I-joist</span></div>
+<div class="kv"><span class="k">Clavado</span><span class="v">perimetral c/0,15 · encolado</span></div>
+<div class="kv"><span class="k">Corte de diseño</span><span class="v">1,80 kN/m · <b>30%</b></span></div>
+<div class="kv"><span class="k">Bloqueo</span><span class="v">perimetral en todo el borde</span></div>
 </div>
-<div class="note warn"><b>La columna depende del muro.</b> Doble 2×6" da 90×140 mm: el eje débil es el de 90 mm.
-    Sin el muro alrededor, la esbeltez en ese eje llega a λ = 131 y el margen contra pandeo baja a 3,4.
-    Con el bastidor de woodframe clavado a la columna cada 0,40 —la separación de montantes—, ese eje queda arriostrado y gobierna el
-    fuerte: λ = 84 y margen 8,3. <b>Por eso el muro no es opcional</b>, y por eso el apuntalamiento
+<div class="infocard">
+<h3>4 · Cámara bajo piso · cruces</h3>
+<p class="muted">Cruces de San Andrés entre pilotines <b>en las dos direcciones</b>, tres planos
+      norte–sur y tres este–oeste, en el espacio de 1,23 m que hay entre el encadenado y la corona de
+      los pilotines. La diagonal es barra roscada con tensor, de corona de un pilotín a base del
+      contiguo. <b>Es el punto crítico del sistema:</b> por acá pasa el corte de base completo.</p>
+<div class="kv"><span class="k">Diagonal</span><span class="v">barra roscada Ø12 con tensor</span></div>
+<div class="kv"><span class="k">Paños</span><span class="v">2,65 × 1,23 (N–S) · 1,80 × 1,23 (E–O)</span></div>
+<div class="kv"><span class="k">Tracción de diseño</span><span class="v">14,3 kN · <b>57%</b></span></div>
+<div class="kv"><span class="k">Unión</span><span class="v">placa 6 mm + 2 brocas Ø12 · <b>48%</b></span></div>
+</div>
+</div>
+
+<div class="note warn"><b>Por qué la cámara es el punto crítico: el piso blando.</b> La casa está
+    elevada un metro sobre el terreno, así que entre el suelo y la plataforma hay un nivel que no tiene
+    muros: sólo quince pilotines de 0,20 × 0,20 parados. Si ese nivel queda sin arriostrar, todo el
+    arriostramiento de arriba —el techo rígido, los muros con sus cruces, el piso rígido— trabaja
+    perfecto y después descansa sobre un piso que se puede desplazar en bloque: la casa entera se
+    ladea sobre sus pilotines como una mesa a la que se le tuercen las patas. Eso es un
+    <b>piso blando</b>, y es el modo de falla clásico de las construcciones elevadas. Las cruces de la
+    cámara son lo que lo elimina: convierten los pilotines sueltos en un plano triangulado que baja el
+    esfuerzo al encadenado.</div>
+<div class="note"><b>Por qué la cámara toma todo el corte.</b> Lo que recoge el diafragma de techo baja
+    por los muros de corte hasta el nivel de piso; ahí se suma a lo que el diafragma de piso recibe
+    directamente del viento sobre el canto de la plataforma. Recién entonces el total cruza la cámara.
+    En la dirección norte–sur eso son <b>34,3 kN</b> atravesando un plano de 1,23 m de altura. Los
+    planos de arriba trabajan cada uno con una fracción; el de abajo, con el total.</div>
+<div class="note"><b>El ángulo bajo de las diagonales de la cámara.</b> El plano tiene 1,23 m de alto y
+    los vanos entre pilotines van de 1,80 a 2,65 m, así que las diagonales quedan entre 24,9° y 34,3°
+    respecto de la horizontal. Un ángulo bajo encarece el esfuerzo: la diagonal tracciona más que el
+    corte que transmite y descarga en el pilotín una componente vertical de hasta 6,0 kN. Está tomado
+    en cuenta en el dimensionado del tensor y de las placas. Por eso los planos este–oeste se ubican
+    en los vanos de 1,80 m, los más angostos de la grilla: mejoran el ángulo de 24,9° a 34,3°.</div>
+
+<h3 style="font-family:'Fraunces',serif;font-size:1.05rem;margin:26px 0 8px">Anclaje columna–pilotín contra tracción por viento</h3>
+<p>El arriostramiento resuelve el empuje horizontal, pero el viento tiene una segunda acción que va en
+    sentido contrario al peso: la <b>succión sobre la cubierta</b>. En el borde del alero llega a
+    1,37 kN/m² contra los 0,32 kN/m² de peso propio del techo, de modo que el saldo es
+    <b>tracción neta</b>: la columna no se comprime, se cuelga de la viga y tira del pilotín hacia
+    arriba. La cadena de anclaje es la misma que la de carga, recorrida al revés.</p>
+<div class="tablecard scroll">
+<table>
+<thead><tr><th>Eslabón</th><th>Fijación</th><th>Verificación</th></tr></thead>
+<tbody>
+<tr><td>Chapa → contralistón</td><td>tornillo autoperforante con arandela, en la cresta</td><td>según succión de zona de borde</td></tr>
+<tr><td>Cabio → viga</td><td>fleje galvanizado, 1 por cabio y apoyo</td><td>succión local 1,37 kN/m²</td></tr>
+<tr><td>Viga → columna</td><td>ménsula o escuadra metálica abulonada</td><td>tracción del voladizo en succión</td></tr>
+<tr><td><b>Columna → pilotín</b></td><td><b>barra roscada Ø16 galvanizada, empotre 0,20 m con químico</b></td><td>tracción 8,03 kN · <b>17%</b> del acero</td></tr>
+<tr><td>Pilotín → encadenado → suelo</td><td>armadura del fuste 4 Ø10 anclada en la zapata</td><td>levantamiento 8,03 kN · <b>37%</b> con encadenado</td></tr>
+</tbody>
+</table>
+</div>
+<div class="note warn"><b>La barra va centrada y dentro de la jaula de armadura.</b> El fuste tiene
+    0,20 × 0,20 m, así que la distancia al borde es de 0,10 m y el cono de hormigón alrededor de un
+    anclaje aislado es chico. Lo que toma la tracción no es el cono: es la <b>transferencia a las
+    4 Ø10 del fuste</b>, que bajan el esfuerzo hasta la zapata. Por eso la barra roscada se perfora
+    centrada en la sección, con el empotre de 0,20 m solapando al menos un estribo, y nunca contra una
+    cara. El detalle completo está en la <a href="calculo.html">memoria de cálculo</a>.</div>
+<div class="note warn"><b>Un pilotín suelto no aguanta el levantamiento.</b> Con el suelo que lleva
+    encima de la zapata, un pilotín aislado pesa menos que lo que el viento tira hacia arriba en la
+    columna más cargada. Atado por el encadenado, el esfuerzo se reparte entre los pilotines contiguos
+    y el conjunto queda al 37%. La viga de fundación no es sólo un elemento de atado frente al sismo:
+    es parte de la cadena de anclaje contra el viento.</div>
+
+<div class="note warn"><b>La columna depende del muro.</b> Doble 2×6" da 90×140 mm: el eje débil es el
+    de 90 mm. Sin el muro alrededor, la esbeltez en ese eje llega a λ = 131 y el aprovechamiento contra
+    pandeo sube al 34%, con un margen de apenas 3,0. Con el bastidor de woodframe clavado a la columna
+    cada 0,40 —la separación de montantes—, ese eje queda arriostrado y gobierna el fuerte: λ = 84,
+    aprovechamiento 14% y margen 7,2. <b>Por eso el muro no es opcional</b>, y por eso el apuntalamiento
     provisorio tiene que quedar hasta que el woodframe esté cerrado.</div>
-<div class="note"><b>Succión de viento:</b> con V₀ = 45 m/s la cubierta recibe una succión de hasta
-    1,61 kN/m², muy por encima del peso propio del techo (0,25 kN/m²). El saldo es <b>tracción neta</b>:
-    el viento tiende a levantar el techo. La cadena de anclaje —cabio a viga, viga a columna, columna a
-    pilotín— tiene que estar completa y verificada a tracción en cada eslabón.</div>
+<div class="note warn"><b>Si se saca un eslabón hay que recalcular los otros tres.</b> Los cuatro planos
+    son solidarios. Reemplazar el machimbre y el fenólico del techo por un cielorraso suspendido sin
+    función estructural, suprimir una cruz de la cámara para pasar una cañería, o abrir un paño
+    arriostrado del muro para agrandar una ventana: cualquiera de las tres deja el sistema sin un plano
+    y obliga a rehacer el cálculo de los demás.</div>
 </section>
 <section class="blk">
 <h2><span class="mk">▦</span>Planilla de escuadrías</h2>
@@ -335,7 +630,11 @@
 <tr><td>Columna (línea norte)</td><td>doble 2×6"</td><td>90×140 mm</td><td>ejes 3,60 / 4,80</td><td>3,40 m</td><td>Pino · C (CIRSOC 601)</td></tr>
 <tr><td>Columna (línea central)</td><td>doble 2×6"</td><td>90×140 mm</td><td>ejes 3,60 / 4,80</td><td>3,05 m</td><td>Pino · C</td></tr>
 <tr><td>Columna (línea sur)</td><td>doble 2×6"</td><td>90×140 mm</td><td>ejes 3,60 / 4,80</td><td>2,70 m</td><td>Pino · C</td></tr>
-<tr><td>Riostra diagonal</td><td>1×6"</td><td>19×140 mm</td><td>según paño</td><td>a medir en obra</td><td>Pino · C</td></tr>
+<tr><td>Diagonal de cruz · muro</td><td>planchuela 40×4 mm</td><td>40×4 mm</td><td>2 paños por fachada</td><td>3,61 m · 16 diagonales</td><td>Acero galvanizado</td></tr>
+<tr><td>Diagonal de cruz · cámara N–S</td><td>barra roscada Ø12</td><td>Ø12 con tensor</td><td>ejes x = 0 / 3,60 / 8,40</td><td>2,92 m · 6 diagonales</td><td>Acero galvanizado</td></tr>
+<tr><td>Diagonal de cruz · cámara E–O</td><td>barra roscada Ø12</td><td>Ø12 con tensor</td><td>líneas y = 0 / 2,65 / 5,37</td><td>2,18 m · 6 diagonales</td><td>Acero galvanizado</td></tr>
+<tr><td>Placa de nudo de cruz</td><td>placa 6 mm</td><td>—</td><td>corona de pilotín y encadenado</td><td>2 brocas Ø12 c/u</td><td>Acero galvanizado</td></tr>
+<tr><td>Bulón de diagonal de muro</td><td>bulón Ø12</td><td>—</td><td>3 por extremo</td><td>pasante en 90 mm</td><td>Acero galvanizado</td></tr>
 <tr><td>Anclaje columna–pilotín</td><td>barra roscada Ø16</td><td>—</td><td>1 por columna</td><td>empotre 0,20 m</td><td>Acero galvanizado</td></tr>
 </tbody>
 </table>
@@ -353,11 +652,14 @@
 <li><b>Preparación del anclaje</b><span>En cada pilotín de columna, barra roscada Ø16 embutida con químico, empotrada 0,20 m en el hormigón. Es lo que ata la columna contra la succión del viento, que es tracción neta.</span></li>
 <li><b>Izado y aplome</b><span>Parar cada columna sobre su pilotín, calzar la barra roscada en la base perforada, y aplomar con dos niveles cruzados. Apuntalar en diagonal de forma provisoria: las nueve quedan apuntaladas hasta que entren las vigas.</span></li>
 <li><b>Coronas a la altura de cada línea</b><span>Las tres líneas tienen alturas distintas por la pendiente del techo: 3,40 en la norte, 3,05 en la central, 2,70 en la sur, medidas desde el nivel de piso terminado. Verificar con manguera de nivel o láser antes de cortar.</span></li>
-<li><b>Fijación y riostras</b><span>Ajustar tuerca y arandela sobre la barra roscada. Colocar las riostras diagonales de 1×6" en los paños definidos, clavadas en ambos extremos, antes de retirar los puntales provisorios.</span></li>
+<li><b>Fijación al pilotín</b><span>Ajustar tuerca y arandela sobre la barra roscada Ø16 de cada columna. Es el eslabón que toma la tracción por succión de viento: no se deja flojo ni "para apretar después".</span></li>
+<li><b>Cruces de San Andrés en los muros</b><span>Cortar la canaleta en los montantes y embutir la planchuela de 40×4 en diagonal, dos paños por fachada en esquinas opuestas. Tres bulones Ø12 por extremo, a la columna o al montante doble, con el agujero al diámetro exacto del bulón. Recién con las cruces colocadas se retiran los puntales provisorios.</span></li>
+<li><b>Cruces de San Andrés en la cámara</b><span>Seis planos: tres norte–sur sobre los ejes de columna y tres este–oeste sobre las tres líneas. Cada diagonal va de la corona de un pilotín a la base del contiguo, sobre placa de 6 mm tomada con dos brocas Ø12. Ajustar el tensor de cada barra hasta que la diagonal quede sin flojedad: una cruz de tracción floja no arriostra hasta que ya se deformó.</span></li>
 </ol>
 </section>
 <div class="note warn"><b>El aplome no se negocia.</b> Una columna fuera de plomo transmite mal la carga y
-  desalinea la viga y el techo. Apuntalar hasta que las tres vigas estén colocadas y las riostras clavadas.</div>
+  desalinea la viga y el techo. Apuntalar hasta que las tres vigas estén colocadas y las cruces de los
+  muros abulonadas.</div>
 <section class="blk">
 <h2><span class="mk moss">✓</span>Marcar avance</h2>
 <p>Tocá cada paso a medida que se completa en obra. Se guarda en este dispositivo.</p>
@@ -368,7 +670,9 @@
 <div class="chkitem" data-id="c4"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Barras roscadas Ø16 embutidas en los pilotines</div></div>
 <div class="chkitem" data-id="c5"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">9 columnas izadas, aplomadas y apuntaladas</div></div>
 <div class="chkitem" data-id="c6"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Coronas a nivel: 3,40 norte · 3,05 centro · 2,70 sur</div></div>
-<div class="chkitem" data-id="c7"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Riostras diagonales colocadas</div></div>
+<div class="chkitem" data-id="c7"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Barras Ø16 de anclaje ajustadas en las 9 columnas</div></div>
+<div class="chkitem" data-id="c8"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Cruces de muro: 2 paños por fachada, 4 fachadas<span class="chkhint">planchuela 40×4 · 3 bulones Ø12 por extremo</span></div></div>
+<div class="chkitem" data-id="c9"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Cruces de cámara: 6 planos, tensores ajustados<span class="chkhint">3 N–S + 3 E–O · sin flojedad</span></div></div>
 </div>
 <button class="reset" id="resetbtn">Reiniciar avance de esta sección</button>
 </section>

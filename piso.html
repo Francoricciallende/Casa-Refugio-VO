@@ -204,7 +204,7 @@
 </div>
 <div class="figs">
 <div class="fig"><div class="n">18</div><div class="l">viguetas I-joist</div></div>
-<div class="fig"><div class="n">240<small> mm</small></div><div class="l">canto (a confirmar)</div></div>
+<div class="fig"><div class="n">241<small> mm</small></div><div class="l">canto de vigueta</div></div>
 <div class="fig"><div class="n">2,65 / 2,72<small> m</small></div><div class="l">luces de vigueta</div></div>
 <div class="fig"><div class="n">+1,10<small> m</small></div><div class="l">nivel de piso</div></div>
 
@@ -218,10 +218,16 @@ va la aislación de celulosa. Es la "mesa de trabajo" de toda la obra: si queda 
 nivel, todo lo que se apoye encima entra derecho.</p>
 <p>La <b>viga maestra intermedia en y = 2,65</b> es la que hace posible todo lo demás. Sin ella las
 viguetas tendrían que salvar los 5,37 m de una tirada; con ella las luces bajan a 2,65 y 2,72, y
-un I-joist de canto corriente sobra con margen. Apoya en los cinco ejes de pilotines, de modo que
-su propia luz máxima es de 2,40 m.</p>
+un I-joist de 241 mm sobra con margen. Apoya en los cinco ejes de pilotines, de modo que su propia luz
+máxima es de 2,40 m.</p>
 <div class="note"><b>Importante:</b> el piso se arma <b>después</b> de las columnas y el techo, no antes.
 Así se trabaja bajo cubierta. La plataforma se cuelga entre los pilotines, independiente de las columnas.</div>
+<div class="note warn"><b>La plataforma es uno de los cuatro planos de arriostramiento.</b> El fenólico
+de 18 mm clavado y encolado sobre las viguetas no es sólo la superficie de piso: es el <b>diafragma de
+piso</b>, el plano que recibe lo que baja por los muros de corte y lo reparte a las cruces de la cámara.
+Trabaja al 30% de su capacidad con el viento de proyecto. Su clavado perimetral c/0,15 es una
+especificación estructural. El sistema completo está en <a href="columnas.html">Columnas</a> y su
+verificación en la <a href="calculo.html">memoria de cálculo</a>.</div>
 </section>
 <section class="blk">
 <h2><span class="mk">▢</span>Plano del piso</h2>
@@ -253,12 +259,12 @@ Así se trabaja bajo cubierta. La plataforma se cuelga entre los pilotines, inde
 <line x1="495" x2="495" y1="55" y2="324"></line>
 </g>
 <!-- vigas E-O -->
-<line stroke="var(--rust)" stroke-width="7" x1="75" x2="495" y1="55" y2="55"></line>
-<line stroke="var(--rust)" stroke-width="9" x1="75" x2="495" y1="188" y2="188"></line>
-<line stroke="var(--rust)" stroke-width="7" x1="75" x2="495" y1="324" y2="324"></line>
-<text class="subt" fill="#712b13" text-anchor="middle" x="285" y="48">VIGA PERIMETRAL NORTE · 3×8"</text>
-<text class="subt" fill="#712b13" text-anchor="middle" x="285" y="181">VIGA MAESTRA CENTRAL · doble 3×8"</text>
-<text class="subt" fill="#712b13" text-anchor="middle" x="285" y="341">VIGA PERIMETRAL SUR · 3×8"</text>
+<line stroke="var(--rust)" stroke-width="8" x1="75" x2="495" y1="55" y2="55"></line>
+<line stroke="var(--rust)" stroke-width="10" x1="75" x2="495" y1="188" y2="188"></line>
+<line stroke="var(--rust)" stroke-width="8" x1="75" x2="495" y1="324" y2="324"></line>
+<text class="subt" fill="#712b13" text-anchor="middle" x="285" y="48">VIGA PERIMETRAL NORTE · doble 3×8"</text>
+<text class="subt" fill="#712b13" text-anchor="middle" x="285" y="181">VIGA MAESTRA CENTRAL · doble 3×10"</text>
+<text class="subt" fill="#712b13" text-anchor="middle" x="285" y="341">VIGA PERIMETRAL SUR · doble 3×8"</text>
 <!-- pilotines -->
 <g fill="var(--clay)" stroke="#fff" stroke-width="1.4">
 <rect height="13" rx="2" width="13" x="68.5" y="48.5"></rect>
@@ -280,6 +286,7 @@ Así se trabaja bajo cubierta. La plataforma se cuelga entre los pilotines, inde
 <text class="subt" x="512" y="120">viguetas</text>
 <text class="subt" x="512" y="133">I-joist</text>
 <text class="subt" x="512" y="146">c/0,50</text>
+<text class="subt" x="512" y="159">241 mm</text>
 <!-- cotas -->
 <g marker-end="url(#ap)" marker-start="url(#ap)" stroke="var(--dim)" stroke-width="1">
 <line x1="40" x2="40" y1="55" y2="188"></line>
@@ -307,12 +314,12 @@ Así se trabaja bajo cubierta. La plataforma se cuelga entre los pilotines, inde
     tiene capacidad certificada por el fabricante en lugar de estimada. En un piso elevado sobre cámara
     ventilada —donde la humedad varía todo el año— la estabilidad dimensional es lo que evita que el
     piso empiece a crujir y a moverse.</p>
-<div class="note warn"><b>El canto se confirma contra la ficha técnica.</b> Los 240 mm son el mínimo
-    de proyecto, equivalente a un 2×10". La selección definitiva sale de la tabla de luces admisibles
-    del fabricante que se consiga en Córdoba, entrando con: luz 2,72 m (la mayor), separación 0,50 m,
-    sobrecarga de uso 2,0 kN/m² y carga permanente 0,35 kN/m². Con esas luces, un canto de 240 mm queda
-    holgado en cualquier serie comercial; verificar igual la <b>flecha</b> (L/360) y el criterio de
-    vibración del fabricante, que en pisos de vivienda suele gobernar antes que la resistencia.</div>
+<div class="note"><b>El canto de proyecto es 241 mm.</b> Es una medida de serie —el 9½" de catálogo—
+    y cubre con margen la luz de 2,72 m con separación de 0,50 m: la flecha de servicio queda en
+    1,92 mm contra los 7,56 mm que admite el criterio L/360, un 25% de aprovechamiento. En pisos de
+    vivienda lo que gobierna no es la resistencia, que sobra por lejos, sino la flecha y el confort
+    vibratorio, y con estas luces los 241 mm cubren los dos criterios. El detalle del cálculo está en
+    la <a href="calculo.html">memoria de cálculo</a>.</div>
 <div class="note"><b>Lo que hay que respetar del fabricante:</b> apoyo mínimo en cada extremo
     (habitualmente 45 mm), rigidizadores de alma sobre los apoyos, bloqueo o cinta perimetral para que
     no se tumben, y las plantillas de perforación del alma para pasar cañerías. El alma de OSB no se
@@ -324,29 +331,36 @@ Así se trabaja bajo cubierta. La plataforma se cuelga entre los pilotines, inde
 <table>
 <thead><tr><th>Elemento</th><th>Sección nominal</th><th>Sección real</th><th>Separación</th><th>Largo unitario</th><th>Especie / clase</th></tr></thead>
 <tbody>
-<tr><td>Viga perimetral norte</td><td>3×8"</td><td>70×185 mm</td><td>eje y = 0</td><td>8,40 m (tramos ≤ 2,40)</td><td>Pino · C (CIRSOC 601)</td></tr>
-<tr><td>Viga maestra central</td><td>doble 3×8"</td><td>140×185 mm</td><td>eje y = 2,65</td><td>8,40 m (tramos ≤ 2,40)</td><td>Pino · C</td></tr>
-<tr><td>Viga perimetral sur</td><td>3×8"</td><td>70×185 mm</td><td>eje y = 5,37</td><td>8,40 m (tramos ≤ 2,40)</td><td>Pino · C</td></tr>
-<tr><td>Vigueta de piso</td><td>I-joist de fábrica</td><td>canto ≥ 240 mm</td><td>c/0,50 (0,494 real)</td><td>2,65 y 2,72 m</td><td>Según fabricante</td></tr>
+<tr><td>Viga perimetral norte</td><td>doble 3×8"</td><td>140×185 mm</td><td>eje y = 0</td><td>8,40 m (tramos ≤ 2,40)</td><td>Pino · C (CIRSOC 601)</td></tr>
+<tr><td>Viga maestra central</td><td>doble 3×10"</td><td>140×235 mm</td><td>eje y = 2,65</td><td>8,40 m (tramos ≤ 2,40)</td><td>Pino · C</td></tr>
+<tr><td>Viga perimetral sur</td><td>doble 3×8"</td><td>140×185 mm</td><td>eje y = 5,37</td><td>8,40 m (tramos ≤ 2,40)</td><td>Pino · C</td></tr>
+<tr><td>Vigueta de piso</td><td>I-joist de fábrica</td><td>canto 241 mm</td><td>c/0,50 (0,494 real)</td><td>2,65 y 2,72 m</td><td>Según fabricante</td></tr>
 <tr><td>Rigidizador de alma</td><td>según fabricante</td><td>—</td><td>en cada apoyo</td><td>—</td><td>Según fabricante</td></tr>
-<tr><td>Tablero de piso</td><td>fenólico 18 mm</td><td>18 mm</td><td>continuo</td><td>juntas sobre vigueta</td><td>Fenólico fenólico WBP</td></tr>
+<tr><td>Tablero de piso · diafragma</td><td>fenólico 18 mm</td><td>18 mm</td><td>continuo</td><td>clavado perim. c/0,15 · encolado</td><td>Fenólico WBP</td></tr>
 <tr><td>Corte capilar</td><td>membrana / neopreno 5 mm</td><td>—</td><td>1 por corona</td><td>0,25 × 0,25 m</td><td>Asfáltica o EPDM</td></tr>
 </tbody>
 </table>
 </div>
 <p class="muted">Escuadrías cepilladas. Cargas de proyecto: permanente 0,35 kN/m², sobrecarga de uso
     2,0 kN/m² (vivienda, CIRSOC 101). Madera seca, contenido de humedad ≤ 19%.</p>
+<div class="note"><b>Por qué las tres vigas son dobles.</b> La maestra central toma 2,685 m de ancho
+    tributario y es la viga más cargada de la casa: con doble 3×10" trabaja al 56% de la tensión
+    admisible. Las perimetrales llevan menos entrepiso, pero cargan además el <b>muro de woodframe que
+    apoya sobre ellas</b>, y ése es el peso que las dimensiona: la del eje norte, con el muro más alto
+    de la casa (3,40 m), llega a 7,02 kN/m y queda al 63% con doble 3×8". Las dos perimetrales se
+    ejecutan iguales, dimensionadas por la norte.</div>
 </section>
 
 <section class="blk">
 <h2><span class="mk moss">→</span>Paso a paso de obra</h2>
 <ol class="steps">
+<li><b>Cruces de arriostramiento de la cámara</b><span>Antes que nada, con la cámara todavía abierta y accesible: colocar las cruces de San Andrés entre pilotines, seis planos en total —tres norte–sur sobre los ejes de columna y tres este–oeste sobre las tres líneas—. Cada diagonal es barra roscada Ø12 de la corona de un pilotín a la base del contiguo, sobre placa de 6 mm tomada con las dos brocas Ø12 del pilotín. Ajustar los tensores hasta que ninguna diagonal quede floja. Después el fenólico cierra el acceso cómodo y todo se vuelve incómodo.</span></li>
 <li><b>Membrana de corte capilar</b><span>Sobre cada corona de pilotín, una lámina de membrana asfáltica o neopreno de 5 mm entre el hormigón y la madera. Obligatorio: corta la humedad que sube.</span></li>
-<li><b>Vigas este–oeste</b><span>Colocar las tres vigas: perimetral norte 3×8", maestra central doble 3×8" y perimetral sur 3×8". Apoyan en los cinco ejes de pilotines. Empalmes siempre sobre un pilotín, nunca en el aire, y desfasados entre las dos tablas de la maestra.</span></li>
-<li><b>Viguetas I-joist</b><span>Colocar las 18 viguetas de norte a sur cada 0,50, con el apoyo mínimo que pida el fabricante en cada extremo y rigidizadores de alma sobre las tres vigas. Cinta o bloqueo perimetral para que no se tumben. Continuas sobre la maestra central si el largo comercial lo permite.</span></li>
+<li><b>Vigas este–oeste</b><span>Colocar las tres vigas: perimetral norte doble 3×8", maestra central doble 3×10" y perimetral sur doble 3×8". Apoyan en los cinco ejes de pilotines. Empalmes siempre sobre un pilotín, nunca en el aire, y desfasados entre las dos tablas de cada viga.</span></li>
+<li><b>Viguetas I-joist</b><span>Colocar las 18 viguetas de 241 mm de norte a sur cada 0,50, con el apoyo mínimo que pida el fabricante en cada extremo y rigidizadores de alma sobre las tres vigas. Cinta o bloqueo perimetral para que no se tumben. Continuas sobre la maestra central si el largo comercial lo permite.</span></li>
 <li><b>Malla anti-roedor y cañerías</b><span>Antes de cerrar, engrapar la malla anti-roedor bajo las viguetas y pasar todas las cañerías que bajen a la cámara, sólo por las zonas de perforación admitidas en el alma. Después se cierra y no se abre más.</span></li>
 <li><b>Celulosa</b><span>Insuflar la celulosa entre las viguetas, R 3,4, para aislar el piso del frío de la cámara.</span></li>
-<li><b>Tablero de fenólico</b><span>Clavar y encolar el fenólico de 18 mm, con las juntas apoyadas sobre vigueta. Esta es la superficie sobre la que se trabaja el resto de la obra. Controlar escuadra.</span></li>
+<li><b>Tablero de fenólico · diafragma de piso</b><span>Clavar y encolar el fenólico de 18 mm, con las juntas apoyadas sobre vigueta y <b>clavado perimetral c/0,15</b> en todo el borde, con bloqueo perimetral. Es la superficie sobre la que se trabaja el resto de la obra y, a la vez, el diafragma de piso del sistema de arriostramiento: el clavado del perímetro es estructural. Controlar escuadra.</span></li>
 </ol>
 </section>
 <div class="note warn"><b>La escuadra manda.</b> Si la plataforma queda fuera de escuadra, todo lo que
@@ -357,11 +371,11 @@ Así se trabaja bajo cubierta. La plataforma se cuelga entre los pilotines, inde
 <div class="checkcard" id="checklist">
 <div class="chkitem" data-id="p1"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Membrana de corte capilar sobre los 15 pilotines</div></div>
 <div class="chkitem" data-id="p2"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Tres vigas E–O colocadas, empalmes sobre pilotín</div></div>
-<div class="chkitem" data-id="p7"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Canto de I-joist confirmado contra ficha del fabricante</div></div>
-<div class="chkitem" data-id="p3"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">18 viguetas colocadas c/0,50 con rigidizadores</div></div>
+<div class="chkitem" data-id="p7"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Cruces de la cámara colocadas y tensores ajustados<span class="chkhint">6 planos · 3 N–S + 3 E–O</span></div></div>
+<div class="chkitem" data-id="p3"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">18 viguetas de 241 mm colocadas c/0,50 con rigidizadores</div></div>
 <div class="chkitem" data-id="p4"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Malla anti-roedor y cañerías pasadas</div></div>
 <div class="chkitem" data-id="p5"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Celulosa insuflada entre viguetas</div></div>
-<div class="chkitem" data-id="p6"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Fenólico clavado y escuadra verificada</div></div>
+<div class="chkitem" data-id="p6"><div class="chkbox"><svg fill="none" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path></svg></div><div class="chktext">Fenólico clavado c/0,15 en el perímetro y escuadra verificada</div></div>
 </div>
 <button class="reset" id="resetbtn">Reiniciar avance de esta sección</button>
 </section>

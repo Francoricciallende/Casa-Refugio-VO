@@ -203,45 +203,53 @@
 <div class="hero">
 <p class="kicker">Documento técnico</p>
 <h1>Memoria de cálculo</h1>
-<p class="lead">Verificación estructural preliminar del esqueleto de madera y de la fundación,
-    según CIRSOC 601 (estructuras de madera), CIRSOC 101 (cargas) y CIRSOC 102 (viento).
-    Documento de anteproyecto, para revisión y firma del profesional interviniente.</p>
+<p class="lead">Verificación estructural preliminar del esqueleto de madera, del sistema resistente a
+    cargas laterales y de la fundación, según CIRSOC 601 (estructuras de madera), CIRSOC 101 (cargas),
+    CIRSOC 102 (viento) y CIRSOC 103 (sismo). Documento de anteproyecto, para revisión y firma del
+    profesional interviniente.</p>
 </div>
 <div class="figs">
 <div class="fig"><div class="n">601</div><div class="l">CIRSOC madera</div></div>
-<div class="fig"><div class="n">19,8<small> t</small></div><div class="l">carga total a fundar</div></div>
+<div class="fig"><div class="n">20,3<small> t</small></div><div class="l">carga total a fundar</div></div>
 <div class="fig"><div class="n">4,80<small> m</small></div><div class="l">luz máxima de viga</div></div>
-<div class="fig"><div class="n">8</div><div class="l">elementos verificados</div></div>
+<div class="fig"><div class="n">34,3<small> kN</small></div><div class="l">corte de base · viento N–S</div></div>
+<div class="fig"><div class="n">15</div><div class="l">elementos verificados</div></div>
 
 </div>
 
 <section class="blk">
 <h2><span class="mk">i</span>Alcance y criterio</h2>
-<p>Esta memoria verifica los elementos estructurales del esqueleto: vigas de techo, cabios, columnas,
-    vigas de piso y elementos de fundación. Se trabaja por <b>estados límite</b>: último (resistencia,
-    con cargas mayoradas) y de servicio (deformación, con cargas sin mayorar).</p>
+<p>Esta memoria verifica los elementos estructurales del esqueleto —vigas de techo, cabios, columnas,
+    vigas de piso y viguetas—, el <b>sistema resistente a cargas laterales</b> —diafragmas y cruces de
+    San Andrés en los cuatro planos— y los elementos de fundación. Se trabaja por <b>estados límite</b>:
+    último (resistencia, con cargas mayoradas) y de servicio (deformación, con cargas sin mayorar).</p>
 <div class="note warn"><b>Carácter del documento.</b> Los valores de esta página son de
     <b>anteproyecto</b>: sirven para dimensionar, comparar alternativas y cerrar la definición
     geométrica del proyecto. La verificación definitiva, con las tensiones admisibles de la madera
-    efectivamente adquirida y el estudio de suelos del lote, corresponde al profesional matriculado
-    que firme el legajo municipal. Ningún elemento se ejecuta sobre la base de esta página sin esa
-    revisión.</div>
+    efectivamente adquirida y las fichas de los herrajes y anclajes que se compren, corresponde al
+    profesional matriculado que firme el legajo municipal. Ningún elemento se ejecuta sobre la base de
+    esta página sin esa revisión.</div>
 <div class="twocol">
 <div class="infocard">
 <h3>Normativa aplicada</h3>
 <div class="kv"><span class="k">CIRSOC 601</span><span class="v">Estructuras de madera</span></div>
 <div class="kv"><span class="k">CIRSOC 101</span><span class="v">Cargas permanentes y sobrecargas</span></div>
 <div class="kv"><span class="k">CIRSOC 102</span><span class="v">Acción del viento</span></div>
+<div class="kv"><span class="k">CIRSOC 103</span><span class="v">Acción sísmica · Córdoba zona 1</span></div>
 <div class="kv"><span class="k">CIRSOC 201</span><span class="v">Hormigón (fundación)</span></div>
+<div class="kv"><span class="k">CIRSOC 301</span><span class="v">Acero (tensores y placas)</span></div>
 </div>
 <div class="infocard">
-<h3>Materiales</h3>
+<h3>Materiales · valores de diseño</h3>
 <div class="kv"><span class="k">Madera</span><span class="v">Pino · clase resistente C</span></div>
-<div class="kv"><span class="k">f<sub>m</sub> flexión</span><span class="v">≈ 10 MPa (valor de diseño)</span></div>
-<div class="kv"><span class="k">E medio</span><span class="v">9.000 MPa</span></div>
-<div class="kv"><span class="k">E mínimo (pandeo)</span><span class="v">4.500 MPa</span></div>
+<div class="kv"><span class="k">f<sub>m</sub> flexión</span><span class="v">10 MPa</span></div>
+<div class="kv"><span class="k">f<sub>t</sub> tracción paralela</span><span class="v">6 MPa</span></div>
+<div class="kv"><span class="k">f<sub>v</sub> corte</span><span class="v">1,2 MPa</span></div>
+<div class="kv"><span class="k">E medio / E mínimo</span><span class="v">9.000 / 4.500 MPa</span></div>
 <div class="kv"><span class="k">Humedad</span><span class="v">≤ 19% (madera seca)</span></div>
-<div class="kv"><span class="k">Hormigón</span><span class="v">H-21 · acero ADN-420</span></div>
+<div class="kv"><span class="k">Hormigón / acero pasivo</span><span class="v">H-21 · ADN-420</span></div>
+<div class="kv"><span class="k">Acero de tensores y bulones</span><span class="v">calidad 4.6 · f<sub>u</sub> 400 MPa</span></div>
+<div class="kv"><span class="k">σ<sub>adm</sub> adoptada del suelo</span><span class="v">1,0 kg/cm²</span></div>
 </div>
 </div>
 </section>
@@ -252,68 +260,82 @@
 <table>
 <thead><tr><th>Superficie</th><th>Carga permanente D</th><th>Sobrecarga</th><th>Combinación ELU</th><th>Combinación servicio</th></tr></thead>
 <tbody>
-<tr><td>Cubierta</td><td>0,25 kN/m²</td><td>L<sub>r</sub> = 0,30 kN/m²</td><td>1,2 D + 1,6 L<sub>r</sub> = 0,78 kN/m²</td><td>D + L<sub>r</sub> = 0,55 kN/m²</td></tr>
+<tr><td>Cubierta</td><td>0,32 kN/m²</td><td>L<sub>r</sub> = 0,30 kN/m²</td><td>1,2 D + 1,6 L<sub>r</sub> = 0,86 kN/m²</td><td>D + L<sub>r</sub> = 0,62 kN/m²</td></tr>
 <tr><td>Entrepiso</td><td>0,35 kN/m²</td><td>L = 2,00 kN/m²</td><td>1,2 D + 1,6 L = 3,62 kN/m²</td><td>D + L = 2,35 kN/m²</td></tr>
 <tr><td>Muros woodframe</td><td>0,50 kN/m²</td><td>—</td><td>1,2 D</td><td>D</td></tr>
 </tbody>
 </table>
 </div>
-<p class="muted">Cubierta: chapa + contralistón + membrana + celulosa 140 mm + machimbre ½" + cabios.
-    Entrepiso: fenólico 18 mm + I-joist + celulosa + piso terminado. Sobrecarga de vivienda según
-    CIRSOC 101. Nieve despreciable en Villa de Las Rosas. Viento: V₀ = 45 m/s, categoría de
-    exposición C, a confirmar con el mapa de la zona.</p>
+<p class="muted">Cubierta: chapa + contralistón + membrana + fenólico 12 mm (diafragma) + celulosa
+    140 mm + barrera de vapor + machimbre ½" + cabios. Entrepiso: fenólico 18 mm + I-joist + celulosa
+    + piso terminado. Sobrecarga de vivienda según CIRSOC 101. Nieve despreciable en Villa de Las
+    Rosas. Viento: V₀ = 45 m/s, categoría de exposición C.</p>
 <div class="note"><b>Anchos tributarios de las vigas de techo.</b> Los cabios apoyan en las tres
     vigas, de modo que cada una recibe la mitad de los tramos adyacentes más el alero que le
     corresponda: viga norte 0,90 + 2,65/2 = <b>2,225 m</b>; viga central 2,65/2 + 2,72/2 =
     <b>2,685 m</b>; viga sur 2,72/2 + 0,70 = <b>2,060 m</b>. <b>La viga central gobierna</b>, y es la
     que se verifica.</div>
+<div class="note"><b>Peso propio de las piezas de madera.</b> Se toma 6 kN/m³ y se suma como carga
+    lineal a cada elemento verificado: 0,20 kN/m en las secciones dobles de 140×235 mm y 0,16 kN/m en
+    las de 140×185 mm, mayoradas por 1,2.</div>
 </section>
 
 <section class="blk">
 <h2><span class="mk">▦</span>1 · Vigas de techo</h2>
-<p>Se verifica la viga central (la de mayor ancho tributario) en sus dos tramos. Carga lineal:
-    q<sub>u</sub> = 0,78 × 2,685 + 0,18 (peso propio) = <b>2,27 kN/m</b>.</p>
+<p>Las tres vigas este–oeste son <b>doble 3×10" (140×235 mm) continuas de alero a alero</b>, con una
+    sola escuadría en toda su longitud. Se verifica la viga central, la de mayor ancho tributario, en
+    sus dos tramos. Carga lineal: q<sub>u</sub> = 0,86 × 2,685 + 0,24 (peso propio) = <b>2,56 kN/m</b>.</p>
 <div class="tablecard scroll">
 <table>
 <thead><tr><th>Tramo</th><th>Luz</th><th>Sección</th><th>M<sub>u</sub></th><th>σ actuante</th><th>Flecha</th><th>Límite L/300</th><th>Verifica</th></tr></thead>
 <tbody>
-<tr><td>Oeste</td><td>3,60 m</td><td>doble 3×8" (140×185)</td><td>3,68 kNm</td><td>4,61 MPa</td><td>5,4 mm</td><td>12,0 mm</td><td><b>Sí</b> · 46% de f<sub>m</sub></td></tr>
-<tr><td>Este</td><td>4,80 m</td><td>doble 3×10" (140×235)</td><td>6,55 kNm</td><td>5,08 MPa</td><td>8,3 mm</td><td>16,0 mm</td><td><b>Sí</b> · 51% de f<sub>m</sub></td></tr>
+<tr><td>Oeste</td><td>3,60 m</td><td>doble 3×10" (140×235)</td><td>4,14 kNm</td><td>3,21 MPa</td><td>2,99 mm</td><td>12,0 mm</td><td><b>Sí</b> · 32% de f<sub>m</sub></td></tr>
+<tr><td>Este</td><td>4,80 m</td><td>doble 3×10" (140×235)</td><td>7,36 kNm</td><td>5,71 MPa</td><td>9,45 mm</td><td>16,0 mm</td><td><b>Sí</b> · 57% de f<sub>m</sub></td></tr>
 </tbody>
 </table>
 </div>
-<p class="muted">σ = M/S con S = 2·b·h²/6. Flecha = 5qL⁴/384EI con q de servicio y E = 9.000 MPa.
-    Ambos tramos verifican también contra L/360 (10,0 y 13,3 mm).</p>
-<div class="note"><b>Por qué el tramo este cambia de canto.</b> Con 4,80 m de luz y el mismo doble
-    3×8" del tramo oeste, la tensión subiría a 8,2 MPa y la flecha a 17 mm, por encima de L/300.
-    Pasar a doble 3×10" baja la tensión a 5,08 MPa y la flecha a 8,3 mm. El cambio de canto se
-    resuelve sobre la columna del eje 3,60, alineando las caras superiores para que el plano de
-    apoyo de los cabios siga siendo continuo.</div>
-<div class="note"><b>Alternativas para el tramo este.</b> Si no se consigue el 3×10" en escuadría y
-    largo, dos caminos equivalentes:
-    <b>(a) LVL 45×240 mm</b> —madera laminada de fábrica, capacidad certificada, muy estable
-    dimensionalmente, canto similar al doble 3×10"—; o
-    <b>(b) viga flitch</b>, sándwich de dos tablas de 3×8" con una planchuela de acero de
-    6×180 mm bulonada entre medio c/0,30, que aprovecha la escuadría disponible y sube la rigidez
-    del conjunto. Cualquiera de las dos exige recalcular los apoyos y los anclajes.</div>
-<div class="note"><b>Voladizos.</b> Cada viga vuela 0,60 m a cada lado. El momento en el voladizo,
-    M = qL²/2 = 2,27 × 0,36/2 = 0,41 kNm, es un orden de magnitud menor que el del tramo y no
-    gobierna. Sí gobierna en el anclaje: el voladizo en succión de viento tracciona la unión
-    viga–columna del eje extremo.</div>
+<p class="muted">σ = M/S con S = 2·b·h²/6 = 1,289 × 10⁶ mm³. Flecha = 5qL⁴/384EI con q de servicio
+    (1,86 kN/m), I = 1,514 × 10⁸ mm⁴ y E = 9.000 MPa. El modelo de tramos simplemente apoyados es
+    conservador: la viga es continua sobre las tres columnas. Ambos tramos verifican también contra
+    L/360 (12,0 y 13,3 mm de límite).</p>
+<div class="tablecard scroll">
+<table>
+<thead><tr><th>Verificación complementaria</th><th>Valor</th><th>Límite</th><th>Aprovechamiento</th></tr></thead>
+<tbody>
+<tr><td>Corte en el apoyo del tramo este</td><td>τ = 0,32 MPa</td><td>f<sub>v</sub> = 1,2 MPa</td><td><b>27%</b></td></tr>
+<tr><td>Momento en el voladizo de 0,60 m</td><td>0,46 kNm</td><td>—</td><td>trivial frente al tramo</td></tr>
+</tbody>
+</table>
+</div>
+<div class="note"><b>Una sola escuadría de alero a alero.</b> El tramo este, con 4,80 m de luz libre
+    sobre el estar, es el que fija la sección: al 57% de f<sub>m</sub> y con 9,45 mm de flecha deja
+    margen suficiente. Con el mismo canto en el tramo oeste, la cara superior de la viga es un plano
+    continuo en los 9,60 m y los cabios apoyan sin calces ni transiciones sobre la columna del eje
+    3,60. La viga se arma con dos tablas clavadas entre sí, con los empalmes de largo sobre columna y
+    escalonados entre una tabla y la otra.</div>
+<div class="note"><b>Alternativas de suministro.</b> Si no se consigue el 3×10" en escuadría y largo,
+    dos caminos equivalentes: <b>(a) LVL 45×240 mm</b> —madera laminada de fábrica, capacidad
+    certificada, muy estable dimensionalmente—; o <b>(b) viga flitch</b>, sándwich de dos tablas con
+    una planchuela de acero de 6×180 mm bulonada entre medio c/0,30. Cualquiera de las dos exige
+    recalcular los apoyos y los anclajes.</div>
+<div class="note"><b>Voladizos.</b> Cada viga vuela 0,60 m a cada lado. El momento del voladizo es un
+    orden de magnitud menor que el del tramo y no gobierna el dimensionado. Sí gobierna en el anclaje:
+    el voladizo en succión de viento tracciona la unión viga–columna del eje extremo, verificada en el
+    punto 6.</div>
 </section>
 
 <section class="blk">
 <h2><span class="mk">▦</span>2 · Cabios</h2>
 <p>Cabios 2×6" (45×140 mm) cada 0,50 m, continuos sobre la viga central. Carga lineal:
-    q<sub>u</sub> = 0,78 × 0,50 = <b>0,39 kN/m</b>. Tramo mayor: 2,72 m.</p>
+    q<sub>u</sub> = 0,86 × 0,50 = <b>0,43 kN/m</b>. Tramo mayor: 2,72 m.</p>
 <div class="tablecard scroll">
 <table>
 <thead><tr><th>Verificación</th><th>Valor</th><th>Límite</th><th>Aprovechamiento</th></tr></thead>
 <tbody>
-<tr><td>Momento (apoyo central, 2 tramos)</td><td>0,36 kNm</td><td>—</td><td>—</td></tr>
-<tr><td>Tensión de flexión</td><td>2,45 MPa</td><td>≈ 10 MPa</td><td><b>25%</b></td></tr>
-<tr><td>Flecha (hipótesis simple, conservadora)</td><td>2,12 mm</td><td>9,1 mm (L/300)</td><td><b>23%</b></td></tr>
-<tr><td>Voladizo alero norte 0,90</td><td>0,158 kNm</td><td>—</td><td>trivial</td></tr>
+<tr><td>Momento (apoyo central, 2 tramos)</td><td>0,40 kNm</td><td>—</td><td>—</td></tr>
+<tr><td>Tensión de flexión</td><td>2,72 MPa</td><td>f<sub>m</sub> = 10 MPa</td><td><b>27%</b></td></tr>
+<tr><td>Flecha (hipótesis simple, conservadora)</td><td>2,39 mm</td><td>9,07 mm (L/300)</td><td><b>26%</b></td></tr>
+<tr><td>Voladizo alero norte 0,90</td><td>0,175 kNm</td><td>—</td><td>trivial</td></tr>
 </tbody>
 </table>
 </div>
@@ -321,9 +343,9 @@
     la continuidad sobre la viga central la reduce aproximadamente a un 40%. Longitudes: 3,58 m los
     20 cabios norte (2,65 + alero 0,90, medido sobre la pendiente) y 3,45 m los 20 sur
     (2,72 + alero 0,70). Cos 7,41° = 0,9917.</p>
-<div class="note">Los cabios están muy holgados en resistencia: la separación de 0,50 m no la fija
-    el cálculo estructural sino el soporte del machimbre y el ancho del rollo de aislación. Es una
-    decisión constructiva, no resistente.</div>
+<div class="note">Los cabios están holgados en resistencia: la separación de 0,50 m no la fija el
+    cálculo de flexión sino el soporte del machimbre, el clavado del fenólico del diafragma y el ancho
+    del rollo de aislación. Es una decisión constructiva, no resistente.</div>
 </section>
 
 <section class="blk">
@@ -335,64 +357,100 @@
 <table>
 <thead><tr><th>Verificación</th><th>Valor</th><th>Observación</th></tr></thead>
 <tbody>
-<tr><td>Carga axil N<sub>u</sub></td><td>9,50 kN</td><td>incluye peso de vigas</td></tr>
-<tr><td>Tensión de compresión</td><td>0,75 MPa</td><td>muy holgada frente a f<sub>c</sub></td></tr>
+<tr><td>Carga axil N<sub>u</sub></td><td>11,02 kN</td><td>incluye peso de vigas y peso propio</td></tr>
+<tr><td>Tensión de compresión</td><td>0,87 MPa</td><td>muy holgada frente a f<sub>c</sub></td></tr>
 <tr><td>Altura de cálculo</td><td>3,40 m</td><td>la columna más alta (línea norte)</td></tr>
-<tr><td>Pandeo eje débil (90 mm), <b>sin</b> arriostrar</td><td>λ = 131 · f<sub>cr</sub> = 2,59 MPa</td><td>margen <b>3,4</b> — insuficiente como criterio de diseño</td></tr>
-<tr><td>Pandeo eje fuerte (140 mm), <b>con</b> muro</td><td>λ = 84 · f<sub>cr</sub> = 6,28 MPa</td><td>margen <b>8,3</b> — <b>verifica</b></td></tr>
+<tr><td>Pandeo eje débil (90 mm), <b>sin</b> arriostrar</td><td>λ = 131 · f<sub>cr</sub> = 2,59 MPa</td><td>aprovechamiento 34% · margen 3,0 — insuficiente como criterio de diseño</td></tr>
+<tr><td>Pandeo eje fuerte (140 mm), <b>con</b> muro</td><td>λ = 84 · f<sub>cr</sub> = 6,28 MPa</td><td>aprovechamiento <b>14%</b> · margen 7,2 — <b>verifica</b></td></tr>
 </tbody>
 </table>
 </div>
+<p class="muted">f<sub>cr</sub> = π²E<sub>mín</sub>/λ² con E<sub>mín</sub> = 4.500 MPa y
+    λ = L<sub>e</sub>/r, r = b/√12.</p>
 <div class="note warn"><b>Condición de validez.</b> La verificación de la columna <b>depende del muro
-    de woodframe</b>. El bastidor clavado a la columna cada 0,40 m —la separación de montantes del woodframe— impide el pandeo en el eje débil y
-    hace que gobierne el fuerte. Consecuencias operativas: (1) las columnas se apuntalan en diagonal
-    desde que se izan hasta que el woodframe está cerrado; (2) ningún muro que contenga una columna
-    puede eliminarse ni perforarse de lado a lado sin recalcular; (3) la columna del eje x = 3,60 que
-    queda en el tabique del dormitorio hace de ese tabique un elemento estructural, no divisorio.</div>
-<div class="note"><b>Tracción por succión.</b> Con V₀ = 45 m/s la succión de cubierta alcanza
-    1,61 kN/m² contra 0,25 kN/m² de peso propio. El saldo es tracción neta: la columna trabaja
-    "colgada" de la viga y anclada al pilotín. Anclaje previsto: barra roscada Ø16 empotrada 0,20 m
-    con adhesivo químico. La verificación de ese anclaje a arrancamiento debe hacerla el profesional
-    con los datos del producto.</div>
+    de woodframe</b>. El bastidor clavado a la columna cada 0,40 m —la separación de montantes del
+    woodframe— impide el pandeo en el eje débil y hace que gobierne el fuerte. Consecuencias
+    operativas: (1) las columnas se apuntalan en diagonal desde que se izan hasta que el woodframe
+    está cerrado; (2) ningún muro que contenga una columna puede eliminarse ni perforarse de lado a
+    lado sin recalcular; (3) la columna del eje x = 3,60 que queda en el tabique del dormitorio hace
+    de ese tabique un elemento estructural, no divisorio.</div>
+<div class="note"><b>Tracción por succión.</b> La succión de cubierta invierte el signo del esfuerzo:
+    la columna trabaja "colgada" de la viga y anclada al pilotín. El anclaje contra levantamiento se
+    verifica en el punto 6.</div>
 </section>
 
 <section class="blk">
 <h2><span class="mk">▦</span>4 · Vigas de piso</h2>
-<p>Carga de entrepiso q<sub>u</sub> = 3,62 kN/m². La viga maestra central (eje y = 2,65) toma
-    2,685 m de ancho tributario: q = <b>9,72 kN/m</b>. Es la viga más cargada de toda la casa.</p>
+<p>Carga de entrepiso q<sub>u</sub> = 3,62 kN/m². Las tres vigas este–oeste apoyan en los cinco ejes
+    de pilotines, con luz máxima de 2,40 m entre apoyos.</p>
+
+<h3 style="font-family:'Fraunces',serif;font-size:1rem;margin:22px 0 8px">Viga maestra central · doble 3×10"</h3>
+<p>La maestra del eje y = 2,65 toma 2,685 m de ancho tributario: q<sub>u</sub> = 3,62 × 2,685 + 0,24
+    (peso propio) = <b>9,96 kN/m</b>. Es la viga más cargada de toda la casa.</p>
 <div class="tablecard scroll">
 <table>
-<thead><tr><th>Elemento</th><th>Luz entre apoyos</th><th>Sección</th><th>M<sub>u</sub></th><th>σ actuante</th><th>Verifica</th></tr></thead>
+<thead><tr><th>Verificación</th><th>Valor</th><th>Límite</th><th>Aprovechamiento</th></tr></thead>
 <tbody>
-<tr><td>Maestra central · apoyos sólo en ejes de columna</td><td>4,80 m</td><td>doble 3×8"</td><td>27,99 kNm</td><td><b>35,1 MPa</b></td><td><b>NO</b> — 3,5× el límite</td></tr>
-<tr><td>Maestra central · con un apoyo intermedio</td><td>3,60 m</td><td>doble 3×8"</td><td>15,75 kNm</td><td><b>19,7 MPa</b></td><td><b>NO</b> — 2× el límite</td></tr>
-<tr><td>Maestra central · <b>grilla adoptada</b></td><td>2,40 m</td><td>doble 3×8" (140×185)</td><td>7,00 kNm</td><td><b>8,8 MPa</b></td><td><b>Sí</b> · 88%</td></tr>
-<tr><td>Perimetral norte y sur</td><td>2,40 m</td><td>3×8" (70×185)</td><td>3,45 kNm</td><td>8,6 MPa</td><td><b>Sí</b> · 86%</td></tr>
+<tr><td>Momento M<sub>u</sub> (L = 2,40 m)</td><td>7,17 kNm</td><td>—</td><td>—</td></tr>
+<tr><td>Tensión de flexión</td><td>5,56 MPa</td><td>f<sub>m</sub> = 10 MPa</td><td><b>56%</b></td></tr>
+<tr><td>Corte en el apoyo</td><td>τ = 0,63 MPa</td><td>f<sub>v</sub> = 1,2 MPa</td><td><b>52%</b></td></tr>
+<tr><td>Flecha de servicio</td><td>2,06 mm</td><td>6,67 mm (L/360)</td><td><b>31%</b></td></tr>
 </tbody>
 </table>
 </div>
-<p class="muted">Flecha de la maestra con luz 2,40 m: 4,1 mm contra 6,7 mm de L/360. Verifica.</p>
-<div class="note warn"><b>Esta tabla es la que fija la grilla de fundación.</b> Las dos primeras filas
-    muestran que apoyar las vigas de piso sólo en los ejes de columna (0 / 3,60 / 8,40) es inviable
-    con escuadrías de pino corrientes. Por eso la fundación incorpora <b>dos ejes intermedios en
-    x = 1,80 y x = 6,00</b>, que llevan la luz máxima a 2,40 m y la tensión a 8,8 MPa. Los seis
-    pilotines adicionales son lo que permite que las vigas de piso sean de madera comercial en lugar de
-    perfiles especiales.</div>
-<div class="note">Las dos filas superiores quedan documentadas a propósito: son la justificación
-    técnica de la grilla de 5 × 3 ante el revisor municipal, no un descarte que convenga ocultar.
-    El aprovechamiento del 88% de la maestra es ajustado: es el elemento a revisar primero si el
-    profesional adopta una clase resistente de madera distinta.</div>
+<p class="muted">Sección doble 3×10" (140×235 mm): S = 1,289 × 10⁶ mm³, I = 1,514 × 10⁸ mm⁴.
+    M = qL²/8 y corte con el coeficiente 1,15 de viga continua sobre varios apoyos.</p>
+
+<h3 style="font-family:'Fraunces',serif;font-size:1rem;margin:22px 0 8px">Vigas perimetrales norte y sur · doble 3×8"</h3>
+<p>Las perimetrales reciben la mitad del tramo de vigueta adyacente <b>más el muro de woodframe que
+    apoya sobre ellas</b>, que es lo que gobierna su dimensionado. La del eje y = 0 es la crítica:
+    lleva el muro norte, el más alto de la casa (3,40 m).</p>
+<div class="tablecard scroll">
+<table>
+<thead><tr><th>Componente de carga</th><th>Perimetral norte (y = 0)</th><th>Perimetral sur (y = 5,37)</th></tr></thead>
+<tbody>
+<tr><td>Entrepiso · ancho tributario</td><td>3,62 × 1,325 = 4,80 kN/m</td><td>3,62 × 1,360 = 4,92 kN/m</td></tr>
+<tr><td>Muro woodframe sobre la viga</td><td>1,2 × 0,50 × 3,40 = 2,04 kN/m</td><td>1,2 × 0,50 × 2,70 = 1,62 kN/m</td></tr>
+<tr><td>Peso propio de la viga</td><td>0,19 kN/m</td><td>0,19 kN/m</td></tr>
+<tr><td><b>q<sub>u</sub> total</b></td><td><b>7,02 kN/m</b> · gobierna</td><td>6,73 kN/m</td></tr>
+</tbody>
+</table>
+</div>
+<div class="tablecard scroll">
+<table>
+<thead><tr><th>Verificación (perimetral norte)</th><th>Valor</th><th>Límite</th><th>Aprovechamiento</th></tr></thead>
+<tbody>
+<tr><td>Momento M<sub>u</sub> (L = 2,40 m)</td><td>5,06 kNm</td><td>—</td><td>—</td></tr>
+<tr><td>Tensión de flexión</td><td>6,33 MPa</td><td>f<sub>m</sub> = 10 MPa</td><td><b>63%</b></td></tr>
+<tr><td>Corte en el apoyo</td><td>τ = 0,56 MPa</td><td>f<sub>v</sub> = 1,2 MPa</td><td><b>47%</b></td></tr>
+<tr><td>Flecha de servicio</td><td>3,23 mm</td><td>6,67 mm (L/360)</td><td><b>48%</b></td></tr>
+</tbody>
+</table>
+</div>
+<p class="muted">Sección doble 3×8" (140×185 mm): S = 0,799 × 10⁶ mm³, I = 7,39 × 10⁷ mm⁴. Las dos
+    perimetrales se ejecutan iguales, dimensionadas por la norte.</p>
+
+<div class="note warn"><b>Esta sección es la que fija la grilla de fundación.</b> Con la maestra
+    apoyada sólo en los ejes de columna (0 / 3,60 / 8,40) la luz sería de 4,80 m y la tensión de
+    flexión llegaría a <b>22,3 MPa</b>, más del doble de f<sub>m</sub>; con un único apoyo intermedio,
+    luz 3,60 m, quedaría en <b>12,5 MPa</b>, todavía por encima del límite. Los <b>dos ejes
+    intermedios en x = 1,80 y x = 6,00</b> son los que bajan la luz máxima a 2,40 m y la tensión a
+    5,56 MPa. Los seis pilotines adicionales son lo que permite que las vigas de piso sean de madera
+    comercial en lugar de perfiles especiales.</div>
+<div class="note">Las dos hipótesis descartadas quedan documentadas a propósito: son la justificación
+    técnica de la grilla de 5 × 3 ante el revisor municipal, no un descarte que convenga ocultar.</div>
 </section>
 
 <section class="blk">
-<h2><span class="mk">▦</span>5 · Viguetas de entrepiso · I-joist</h2>
-<p>Las viguetas <b>no se calculan con las fórmulas de madera maciza</b>: son un producto de fábrica
-    (alas de madera laminada, alma de OSB) y se seleccionan de la tabla de luces admisibles del
-    fabricante. Lo que corresponde a esta memoria es fijar los datos de entrada y el criterio de
-    aceptación.</p>
+<h2><span class="mk">▦</span>5 · Viguetas de entrepiso · I-joist 241 mm</h2>
+<p>Las viguetas son <b>I-joist de 241 mm de canto</b>, producto de fábrica de alas de madera laminada
+    y alma de OSB. No se calculan con las fórmulas de madera maciza: la resistencia y la rigidez las
+    certifica el fabricante. Lo que verifica esta memoria es que el canto adoptado cubre la luz, la
+    separación y las cargas del proyecto con margen.</p>
 <div class="twocol">
 <div class="infocard">
 <h3>Datos de entrada</h3>
+<div class="kv"><span class="k">Canto</span><span class="v">241 mm</span></div>
 <div class="kv"><span class="k">Luz de cálculo</span><span class="v">2,72 m (la mayor)</span></div>
 <div class="kv"><span class="k">Separación</span><span class="v">0,50 m (0,494 real)</span></div>
 <div class="kv"><span class="k">Carga permanente</span><span class="v">0,35 kN/m²</span></div>
@@ -400,51 +458,244 @@
 <div class="kv"><span class="k">Condición</span><span class="v">simple o continua sobre 2 tramos</span></div>
 </div>
 <div class="infocard">
-<h3>Criterio de aceptación</h3>
-<div class="kv"><span class="k">Canto mínimo</span><span class="v">240 mm (≈ 2×10")</span></div>
-<div class="kv"><span class="k">Flecha</span><span class="v">L/360 bajo sobrecarga</span></div>
-<div class="kv"><span class="k">Vibración</span><span class="v">según criterio del fabricante</span></div>
-<div class="kv"><span class="k">Apoyo mínimo</span><span class="v">según ficha (típico 45 mm)</span></div>
-<div class="kv"><span class="k">Rigidizadores</span><span class="v">de alma, en cada apoyo</span></div>
+<h3>Verificación</h3>
+<div class="kv"><span class="k">q<sub>u</sub> por vigueta</span><span class="v">1,79 kN/m</span></div>
+<div class="kv"><span class="k">M<sub>u</sub> requerido</span><span class="v">1,65 kNm</span></div>
+<div class="kv"><span class="k">EI de referencia · 241 mm</span><span class="v">430 × 10⁹ N·mm²</span></div>
+<div class="kv"><span class="k">Flecha de servicio</span><span class="v">1,92 mm</span></div>
+<div class="kv"><span class="k">Límite L/360</span><span class="v">7,56 mm · <b>25%</b></span></div>
+<div class="kv"><span class="k">Apoyo mínimo</span><span class="v">45 mm con rigidizador de alma</span></div>
 </div>
 </div>
-<div class="note warn"><b>A confirmar en obra.</b> Los 240 mm son el mínimo de proyecto. Con luz de
-    2,72 m y separación 0,50 m, cualquier serie comercial de 240 mm queda holgada en resistencia;
-    lo que suele gobernar en pisos de vivienda es el <b>criterio de vibración</b>, que cada
-    fabricante define a su manera. <b>El canto definitivo sale de la ficha técnica del I-joist que
-    se consiga en Córdoba</b>, no de esta página. Si el producto disponible obliga a un canto mayor,
-    hay que revisar la altura del paquete de piso y la cota de corona de los pilotines.</div>
+<p class="muted">Flecha calculada como tramo simplemente apoyado de 2,72 m con la rigidez de
+    referencia de una serie comercial de 241 mm; la continuidad sobre la maestra central la reduce
+    todavía más. El momento requerido es una fracción de la capacidad de cualquier serie de ese canto:
+    en pisos de vivienda lo que gobierna no es la resistencia sino la flecha y el confort vibratorio,
+    y con 2,72 m de luz y 0,50 de separación los 241 mm cubren los dos criterios.</p>
 <div class="note"><b>Restricciones del producto.</b> El alma de OSB no se corta ni se perfora fuera
     de las zonas y diámetros que indica la plantilla del fabricante. Todas las cañerías que crucen
-    el entrepiso deben replantearse contra esa plantilla <b>antes</b> de colocar las viguetas.</div>
+    el entrepiso deben replantearse contra esa plantilla <b>antes</b> de colocar las viguetas. Se
+    colocan rigidizadores de alma en cada apoyo y bloqueo o cinta perimetral para que no se tumben.</div>
+<div class="note"><b>Doble función del tablero.</b> El fenólico de 18 mm clavado y encolado sobre las
+    viguetas no es sólo la superficie de piso: es el <b>diafragma de piso</b> del sistema resistente a
+    cargas laterales, verificado en el punto 6. Su clavado perimetral c/0,15 es una especificación
+    estructural, no de terminación.</div>
 </section>
 
 <section class="blk">
-<h2><span class="mk">▦</span>6 · Acción del viento y arriostramiento</h2>
-<p>Presión dinámica de referencia con V₀ = 45 m/s: q<sub>z</sub> = 0,613 · V² = <b>1,24 kN/m²</b>.</p>
+<h2><span class="mk">✕</span>6 · Verificación de cargas laterales</h2>
+<p>El sistema resistente a cargas laterales son <b>cruces de San Andrés y diafragmas en cuatro
+    planos</b>, encadenados en una única bajada: diafragma de techo → muros de corte → diafragma de
+    piso → cruces de la cámara → pilotines → encadenado → suelo. Esta sección verifica cada eslabón
+    de esa cadena para la acción del viento (CIRSOC 102) y contrasta el resultado con la acción
+    sísmica (CIRSOC 103).</p>
+
+<h3 style="font-family:'Fraunces',serif;font-size:1rem;margin:22px 0 8px">6.1 · Presión de viento</h3>
 <div class="tablecard scroll">
 <table>
-<thead><tr><th>Acción</th><th>Valor</th><th>Resiste</th><th>Solicitación</th></tr></thead>
+<thead><tr><th>Parámetro</th><th>Valor</th><th>Origen</th></tr></thead>
 <tbody>
-<tr><td>Succión de cubierta (GC<sub>p</sub> = −1,3)</td><td>1,61 kN/m²</td><td>cadena de anclaje</td><td>tracción neta (D = 0,25 kN/m²)</td></tr>
-<tr><td>Empuje norte–sur</td><td>26,8 kN al diafragma</td><td>muros oeste y este (5,37 m c/u)</td><td><b>2,50 kN/m</b> de corte</td></tr>
-<tr><td>Empuje este–oeste</td><td>15,0 kN al diafragma</td><td>muros norte y sur (8,40 m c/u)</td><td><b>0,89 kN/m</b> de corte</td></tr>
+<tr><td>Velocidad básica V₀</td><td>45 m/s</td><td>CIRSOC 102 · Villa de Las Rosas, Córdoba</td></tr>
+<tr><td>Presión dinámica q₀ = 0,613 V₀²</td><td>1,24 kN/m²</td><td>—</td></tr>
+<tr><td>Factor de exposición K<sub>z</sub> (categoría C, z ≤ 4,6 m)</td><td>0,85</td><td>altura de cumbrera +4,50 m</td></tr>
+<tr><td>Factor topográfico K<sub>zt</sub></td><td>1,00</td><td>terreno sin efecto de loma</td></tr>
+<tr><td>q<sub>z</sub> = q₀ · K<sub>z</sub> · K<sub>zt</sub></td><td>1,05 kN/m²</td><td>—</td></tr>
+<tr><td>Factor de ráfaga G</td><td>0,85</td><td>estructura rígida</td></tr>
+<tr><td>C<sub>p</sub> barlovento / sotavento</td><td>+0,80 / −0,50</td><td>ΔC<sub>p</sub> = 1,30</td></tr>
+<tr><td><b>Presión neta de diseño sobre el muro</b></td><td><b>1,17 kN/m²</b></td><td>q<sub>z</sub> · G · ΔC<sub>p</sub></td></tr>
 </tbody>
 </table>
 </div>
-<p class="muted">El diafragma de techo (machimbre ½" clavado sobre los cabios) recoge el empuje de
-    las fachadas y lo transfiere a los muros paralelos a la dirección del viento. El arriostramiento del
-    muro lo aporta la <b>placa de OSB/fenólico de 12 mm</b> clavada al bastidor c/0,15, que desarrolla
-    del orden de 3 a 5 kN/m, por encima de los 2,50 kN/m requeridos. La placa cementicia exterior es
-    revestimiento y no se computa como elemento resistente.</p>
-<div class="note warn"><b>El caso crítico es el muro norte.</b> La fachada norte es casi toda ventana
-    (V1, V2 y V3), de modo que la placa no forma un paño continuo y el muro aporta poco al diafragma
-    vertical. Ahí es donde se justifican las <b>riostras diagonales de 1×6" a 45°</b> entre columna y
-    viga, con un mínimo de dos paños arriostrados por fachada en esquinas opuestas.</div>
-<div class="note"><b>Los tres mecanismos son solidarios:</b> diafragma de techo (machimbre),
-    diafragma de muro (OSB/fenólico) y riostras diagonales. Si se retira uno —por ejemplo, si se
-    reemplaza el machimbre por un cielorraso suspendido sin función estructural— hay que recalcular
-    los otros dos.</div>
+
+<h3 style="font-family:'Fraunces',serif;font-size:1rem;margin:22px 0 8px">6.2 · Corte en la base</h3>
+<p>Área expuesta por dirección: el frente del muro (altura media 3,05 m, promedio entre las coronas
+    norte 3,40 y sur 2,70) más la faja de 0,45 m del canto de la plataforma de piso.</p>
+<div class="tablecard scroll">
+<table>
+<thead><tr><th>Dirección</th><th>Frente</th><th>Área de muro</th><th>Área del canto de piso</th><th>Fuerza total</th><th>Al diafragma de techo</th><th>Al diafragma de piso</th></tr></thead>
+<tbody>
+<tr><td><b>Norte–sur</b></td><td>8,40 m</td><td>25,62 m²</td><td>3,78 m²</td><td><b>34,3 kN</b></td><td>14,9 kN</td><td>19,3 kN</td></tr>
+<tr><td>Este–oeste</td><td>5,37 m</td><td>16,38 m²</td><td>2,42 m²</td><td><b>21,9 kN</b></td><td>9,6 kN</td><td>12,4 kN</td></tr>
+</tbody>
+</table>
+</div>
+<p class="muted">El muro se comporta como una losa vertical entre el diafragma de piso y el de techo:
+    la mitad de su empuje va a cada uno. El empuje sobre el canto de la plataforma entra íntegro en el
+    diafragma de piso. <b>La dirección norte–sur gobierna</b>, porque presenta el lado largo de la
+    casa al viento.</p>
+<div class="note warn"><b>Las cruces de la cámara toman el corte de base completo.</b> Lo que recoge
+    el diafragma de techo baja por los muros de corte hasta el nivel de piso, se suma allí a lo que el
+    diafragma de piso recibe directamente, y recién entonces cruza la cámara. En norte–sur eso
+    significa <b>34,3 kN</b> atravesando el plano de 1,23 m de altura que hay entre el encadenado y la
+    corona de los pilotines. Es el punto crítico de todo el sistema y el que justifica que la cámara
+    esté arriostrada en las dos direcciones.</div>
+
+<h3 style="font-family:'Fraunces',serif;font-size:1rem;margin:22px 0 8px">6.3 · Contraste con la acción sísmica · CIRSOC 103</h3>
+<div class="tablecard scroll">
+<table>
+<thead><tr><th>Parámetro</th><th>Valor</th></tr></thead>
+<tbody>
+<tr><td>Zona sísmica</td><td>1 (peligrosidad muy reducida) · Villa de Las Rosas, Córdoba</td></tr>
+<tr><td>Peso sísmico W (permanentes + 25% de sobrecarga de entrepiso)</td><td>112 kN</td></tr>
+<tr><td>Coeficiente sísmico de diseño adoptado como envolvente</td><td>C = 0,04</td></tr>
+<tr><td>Corte sísmico en la base V = C · W</td><td><b>4,5 kN</b></td></tr>
+<tr><td>Corte por viento en la base (norte–sur)</td><td><b>34,3 kN</b></td></tr>
+</tbody>
+</table>
+</div>
+<div class="note"><b>El viento gobierna por un orden de magnitud.</b> La casa es liviana —madera y
+    woodframe, sin mampostería— así que el peso sísmico es bajo, y la zona 1 es la de menor
+    peligrosidad del país. Todo el arriostramiento queda dimensionado por viento y el sismo no agrega
+    exigencia. El aporte real de CIRSOC 103 a este proyecto es <b>conceptual, no numérico</b>: es lo
+    que impone que la fundación trabaje como un solo bloque, y por eso las quince zapatas van unidas
+    por el encadenado en lugar de quedar aisladas.</div>
+
+<h3 style="font-family:'Fraunces',serif;font-size:1rem;margin:22px 0 8px">6.4 · Diafragmas</h3>
+<div class="tablecard scroll">
+<table>
+<thead><tr><th>Plano</th><th>Tablero</th><th>Luz / profundidad</th><th>Corte unitario</th><th>Capacidad</th><th>Aprovechamiento</th></tr></thead>
+<tbody>
+<tr><td>Techo · viento N–S</td><td>fenólico 12 mm sobre cabios</td><td>8,40 / 5,37 m</td><td><b>1,39 kN/m</b></td><td>5,0 kN/m</td><td><b>28%</b></td></tr>
+<tr><td>Techo · viento E–O</td><td>fenólico 12 mm sobre cabios</td><td>5,37 / 8,40 m</td><td>0,57 kN/m</td><td>5,0 kN/m</td><td>11%</td></tr>
+<tr><td>Piso · viento N–S</td><td>fenólico 18 mm sobre I-joist</td><td>8,40 / 5,37 m</td><td><b>1,80 kN/m</b></td><td>6,0 kN/m</td><td><b>30%</b></td></tr>
+<tr><td>Cordón del diafragma de techo</td><td>cabio de borde 2×6" a tracción</td><td>M/b = 15,69/5,37</td><td>2,92 kN</td><td>34,3 kN</td><td>9%</td></tr>
+</tbody>
+</table>
+</div>
+<p class="muted">Corte unitario v = V/b con V = wL/2. Capacidades de tablero clavado adoptadas para
+    clavos de 2½" con clavado perimetral c/0,15 e interior c/0,30 sobre piezas de 45 mm. El diafragma
+    de piso se verifica con el modelo más desfavorable, de dos apoyos extremos, despreciando el aporte
+    del plano arriostrado central. Cordón: A<sub>neta</sub> = 5.715 mm² por f<sub>t</sub> = 6 MPa.</p>
+<div class="note warn"><b>El machimbre es cielorraso, no diafragma.</b> El machimbre de ½" a la vista
+    da el cierre interior y el apoyo de la aislación, pero una capa de tablas machihembradas no
+    desarrolla el corte que pide el diafragma. Lo que cierra el plano del techo como placa rígida es
+    el <b>entablado de fenólico de 12 mm clavado sobre los cabios</b>, por encima de la aislación y
+    por debajo de la membrana. Si se suprime ese tablero, el diafragma de techo desaparece y todo el
+    sistema lateral queda sin el plano superior.</div>
+
+<h3 style="font-family:'Fraunces',serif;font-size:1rem;margin:22px 0 8px">6.5 · Cruces de San Andrés · esfuerzo en las diagonales</h3>
+<p>Cada cruz trabaja <b>sólo a tracción</b>: de las dos diagonales, una se tracciona y la otra queda
+    floja según el sentido del viento, de modo que la cruz cubre las dos alternancias sin que ninguna
+    pieza necesite resistir compresión. El esfuerzo axil es T = V/cos θ, con θ el ángulo de la
+    diagonal respecto de la horizontal.</p>
+<div class="tablecard scroll">
+<table>
+<thead><tr><th>Plano</th><th>Paño</th><th>θ</th><th>Largo de diagonal</th><th>Corte del paño</th><th>T en la diagonal</th></tr></thead>
+<tbody>
+<tr><td><b>Cámara · N–S</b> (x = 8,40, el más cargado)</td><td>2,65 × 1,23 m</td><td>24,9°</td><td>2,92 m</td><td>13,0 kN</td><td><b>14,3 kN</b></td></tr>
+<tr><td>Cámara · N–S (x = 0 / x = 3,60)</td><td>2,65 × 1,23 m</td><td>24,9°</td><td>2,92 m</td><td>11,6 / 9,7 kN</td><td>12,8 / 10,7 kN</td></tr>
+<tr><td><b>Cámara · E–O</b> (y = 5,37, el más cargado)</td><td>1,80 × 1,23 m</td><td>34,3°</td><td>2,18 m</td><td>7,9 kN</td><td><b>9,6 kN</b></td></tr>
+<tr><td>Muro · N–S (oeste y este)</td><td>2,40 × 2,70 m</td><td>48,4°</td><td>3,61 m</td><td>3,7 kN</td><td><b>5,6 kN</b></td></tr>
+<tr><td>Muro · E–O (norte y sur)</td><td>2,40 × 2,70 m</td><td>48,4°</td><td>3,61 m</td><td>2,4 kN</td><td>3,6 kN</td></tr>
+</tbody>
+</table>
+</div>
+<p class="muted">Reparto del corte de base entre los tres planos arriostrados de cada dirección por
+    área tributaria del diafragma de piso, más el aporte que los muros de corte entregan en sus
+    propios ejes. Cámara N–S: planos en x = 0 / 3,60 / 8,40, tributarias 1,80 / 4,20 / 2,40 m. Cámara
+    E–O: planos en y = 0 / 2,65 / 5,37, tributarias 1,325 / 2,685 / 1,360 m. Muros: dos paños
+    arriostrados por fachada.</p>
+<div class="tablecard scroll">
+<table>
+<thead><tr><th>Diagonal</th><th>Elemento</th><th>Área neta</th><th>T de diseño</th><th>Capacidad</th><th>Aprovechamiento</th></tr></thead>
+<tbody>
+<tr><td><b>Cámara</b> (N–S y E–O)</td><td>barra roscada Ø12 galvanizada con tensor</td><td>84,3 mm²</td><td>14,3 kN</td><td>25,3 kN</td><td><b>57%</b></td></tr>
+<tr><td><b>Muro</b> (4 fachadas)</td><td>planchuela 40×4 mm galvanizada, embutida</td><td>108 mm²</td><td>5,6 kN</td><td>32,4 kN</td><td><b>17%</b></td></tr>
+</tbody>
+</table>
+</div>
+<p class="muted">Capacidad a tracción de la sección neta: 0,75 · A<sub>neta</sub> · f<sub>u</sub> con
+    f<sub>u</sub> = 400 MPa. La barra roscada lleva manguito tensor para dejar la diagonal sin flojedad:
+    una cruz de tracción que trabaja con holgura no arriostra hasta que ya se deformó.</p>
+<div class="note"><b>Por qué el ángulo de la cámara es bajo.</b> El plano de la cámara tiene 1,23 m de
+    altura y los vanos entre pilotines son de 1,80 a 2,65 m, así que la diagonal queda entre 24,9° y
+    34,3°. Un ángulo bajo encarece el esfuerzo: con 24,9° la diagonal tracciona un 10% más que el
+    corte que transmite, y descarga en el pilotín una componente vertical de 6,0 kN. Es el precio
+    geométrico de arriostrar un plano bajo y ancho, y está tomado en cuenta en la verificación de las
+    uniones y del pilotín.</div>
+
+<h3 style="font-family:'Fraunces',serif;font-size:1rem;margin:22px 0 8px">6.6 · Uniones de las diagonales</h3>
+<p>Las diagonales sobran en sección; <b>lo que decide el sistema son las uniones</b>. Cada extremo de
+    una cruz de la cámara se resuelve con una placa de acero de 6 mm: arriba sobre la corona del
+    pilotín, tomada por las dos brocas Ø12 que van embutidas en los quince; abajo sobre la cara
+    superior del encadenado, con dos brocas Ø12 químicas. En el muro, la planchuela se abulona a la
+    columna o al montante doble (90 mm de madera).</p>
+<div class="tablecard scroll">
+<table>
+<thead><tr><th>Unión</th><th>Solicitación</th><th>Modo verificado</th><th>Capacidad</th><th>Aprovechamiento</th></tr></thead>
+<tbody>
+<tr><td rowspan="4"><b>Cámara · corona del pilotín</b><br/><span class="muted">placa 6 mm + 2 brocas Ø12, empotre 0,20 m</span></td><td>corte H = 13,0 kN</td><td>corte del acero de las brocas</td><td>27,0 kN</td><td><b>48%</b></td></tr>
+<tr><td>tracción V = 6,0 kN</td><td>tracción del acero de las brocas</td><td>50,6 kN</td><td>12%</td></tr>
+<tr><td>tracción V = 6,0 kN</td><td>cono de hormigón (h<sub>ef</sub> 200 mm, fuste 0,20 × 0,20)</td><td>15,0 kN</td><td><b>40%</b></td></tr>
+<tr><td>H y V simultáneos</td><td>interacción (H/H<sub>r</sub>)² + (V/V<sub>r</sub>)²</td><td>1,00</td><td>0,25</td></tr>
+<tr><td rowspan="2"><b>Cámara · encadenado</b><br/><span class="muted">placa 6 mm + 2 brocas Ø12 químicas, empotre 0,11 m</span></td><td>corte H = 13,0 kN</td><td>corte del acero de las brocas</td><td>27,0 kN</td><td><b>48%</b></td></tr>
+<tr><td>corte H = 13,0 kN</td><td>arrancamiento por corte del hormigón</td><td>31,8 kN</td><td>41%</td></tr>
+<tr><td rowspan="2"><b>Muro · extremo de la planchuela</b><br/><span class="muted">3 bulones Ø12 en madera de 90 mm</span></td><td>T = 5,6 kN</td><td>fluencia del bulón en la madera · n<sub>ef</sub> = 2,45</td><td>11,0 kN</td><td><b>51%</b></td></tr>
+<tr><td>T = 5,6 kN</td><td>aplastamiento del bulón en la placa de 4 mm</td><td>46,1 kN</td><td>12%</td></tr>
+</tbody>
+</table>
+</div>
+<p class="muted">Corte del acero por broca: 0,4 · A<sub>neta</sub> · f<sub>u</sub>. Tracción: 0,75 ·
+    A<sub>neta</sub> · f<sub>u</sub>. Cono de hormigón con f'<sub>c</sub> = 21 MPa, reducido por la
+    distancia al borde disponible en una sección de 0,20 × 0,20 m y afectado por φ = 0,65. Unión
+    acero–madera de simple corte: 4,5 kN por bulón de diseño, con el factor n<sub>ef</sub> de
+    reducción por fila de tres bulones.</p>
+<div class="note warn"><b>Los dos paños arriostrados por fachada son una condición, no una
+    recomendación.</b> Con un solo paño, todo el corte del muro pasa por una única cruz: la diagonal
+    aguanta de sobra —sube del 17% al 35%—, pero la unión abulonada llega a <b>11,2 kN contra los
+    11,0 kN de capacidad de sus tres bulones, un 102%: no verifica</b>. Es el caso más claro de por qué
+    las uniones son el punto débil del sistema: el elemento sobra y el nudo falla. Con dos paños en
+    esquinas opuestas el esfuerzo se reparte y la unión baja al 51%. En la fachada norte, que es casi
+    toda ventana, esos dos paños hay que reservarlos en el replanteo de aberturas: no aparecen
+    solos.</div>
+<div class="note"><b>Ejecución de las uniones.</b> Los agujeros de los bulones se perforan con el
+    diámetro exacto del bulón —no holgados— porque cualquier juego se traduce en deformación del
+    conjunto antes de que la cruz entre en carga. Las placas van galvanizadas: están en la cámara
+    ventilada, en contacto con hormigón y expuestas a la humedad del suelo.</div>
+
+<h3 style="font-family:'Fraunces',serif;font-size:1rem;margin:22px 0 8px">6.7 · Anclaje columna–pilotín contra levantamiento</h3>
+<p>La succión de cubierta invierte el esfuerzo en las columnas: en lugar de comprimir, el viento
+    tiende a arrancar el techo y con él la columna. Se verifica el eslabón completo en la columna más
+    cargada, la del cruce x = 3,60 / y = 2,65, con 11,28 m² de área tributaria de techo.</p>
+<div class="tablecard scroll">
+<table>
+<thead><tr><th>Concepto</th><th>Valor</th></tr></thead>
+<tbody>
+<tr><td>Succión neta de cubierta (C<sub>p</sub> = −0,9 y GC<sub>pi</sub> = ±0,18)</td><td>1,00 kN/m²</td></tr>
+<tr><td>Levantamiento sobre el área tributaria</td><td>11,28 kN</td></tr>
+<tr><td>Peso permanente de cubierta que contrarresta (0,9 D)</td><td>3,25 kN</td></tr>
+<tr><td><b>Tracción de diseño en el anclaje (0,9 D + 1,0 W)</b></td><td><b>8,03 kN</b></td></tr>
+</tbody>
+</table>
+</div>
+<div class="tablecard scroll">
+<table>
+<thead><tr><th>Verificación</th><th>Modo</th><th>Capacidad</th><th>Aprovechamiento</th></tr></thead>
+<tbody>
+<tr><td>Barra roscada Ø16 galvanizada</td><td>tracción del acero (A<sub>neta</sub> = 157 mm²)</td><td>47,1 kN</td><td><b>17%</b></td></tr>
+<tr><td>Empotre de 0,20 m con adhesivo químico</td><td>adherencia sobre el fuste (τ = 8 MPa, φ = 0,65)</td><td>52,3 kN</td><td>15%</td></tr>
+<tr><td>Transferencia a la armadura del fuste</td><td>tracción de las 4 Ø10 (ADN-420)</td><td>118,7 kN</td><td>7%</td></tr>
+<tr><td>Levantamiento del pilotín aislado</td><td>peso propio 3,8 kN + suelo sobre zapata 4,3 kN</td><td>7,3 kN</td><td><b>110% · no alcanza</b></td></tr>
+<tr><td><b>Levantamiento con el encadenado</b></td><td>moviliza los dos pilotines contiguos del eje</td><td>21,9 kN</td><td><b>37% · verifica</b></td></tr>
+</tbody>
+</table>
+</div>
+<div class="note warn"><b>El encadenado es lo que hace verificar el levantamiento.</b> Un pilotín
+    suelto pesa, con el suelo que lleva encima de la zapata, menos de lo que el viento tira hacia
+    arriba en la columna más cargada. Atado por la viga de fundación, el levantamiento se reparte
+    entre los pilotines contiguos y el conjunto queda al 37%. La viga de fundación no es sólo un
+    elemento de atado frente al sismo: es parte de la cadena de anclaje contra el viento.</div>
+<div class="note warn"><b>La barra tiene que quedar dentro de la jaula de armadura.</b> En un fuste de
+    0,20 × 0,20 m la distancia al borde es de 0,10 m, así que el cono de hormigón alrededor de un
+    anclaje aislado es pequeño y no cubre por sí solo la tracción. Lo que sí cubre es la
+    <b>transferencia a las 4 Ø10 del fuste</b>, que bajan el esfuerzo hasta la zapata y el encadenado.
+    Para eso la barra roscada se perfora centrada, con el empotre de 0,20 m solapando al menos un
+    estribo, y nunca contra una cara.</div>
+<div class="note"><b>Succión local en bordes y aleros.</b> Para el clavado de la chapa, los flejes de
+    cabio y la zinguería, la succión de zona de borde (GC<sub>p</sub> = −1,3) llega a
+    <b>1,37 kN/m²</b> contra los 0,32 kN/m² de peso propio de la cubierta. Cada eslabón de la cadena
+    —chapa, contralistón, cabio, viga, columna, pilotín— necesita su fijación mecánica: el peso propio
+    no alcanza en ningún punto del faldón.</div>
 </section>
 
 <section class="blk">
@@ -454,13 +705,13 @@
 <table>
 <thead><tr><th>Concepto</th><th>Carga</th></tr></thead>
 <tbody>
-<tr><td>Cubierta · permanente (67,5 m²)</td><td class="num">16,9 kN</td></tr>
-<tr><td>Cubierta · sobrecarga</td><td class="num">20,2 kN</td></tr>
+<tr><td>Cubierta · permanente (67,5 m²)</td><td class="num">21,6 kN</td></tr>
+<tr><td>Cubierta · sobrecarga</td><td class="num">20,3 kN</td></tr>
 <tr><td>Entrepiso · permanente (45,1 m²)</td><td class="num">15,8 kN</td></tr>
 <tr><td>Entrepiso · sobrecarga de uso</td><td class="num">90,2 kN</td></tr>
 <tr><td>Muros perimetrales woodframe</td><td class="num">42,0 kN</td></tr>
 <tr><td>Tabiques interiores</td><td class="num">9,6 kN</td></tr>
-<tr><td><b>Total en servicio</b></td><td class="num"><b>194,7 kN ≈ 19,8 t</b></td></tr>
+<tr><td><b>Total en servicio</b></td><td class="num"><b>199,5 kN ≈ 20,3 t</b></td></tr>
 </tbody>
 </table>
 </div>
@@ -483,22 +734,22 @@
 <table>
 <thead><tr><th>Eje x</th><th>Eje y</th><th>Tipo</th><th>Área trib. piso</th><th>Área trib. techo</th><th>N<sub>u</sub> (ELU)</th><th>N servicio</th></tr></thead>
 <tbody>
-<tr><td><b>3,60</b></td><td><b>2,65</b></td><td><b>columna</b></td><td>5,64 m²</td><td>11,28 m²</td><td><b>34,1 kN</b></td><td><b>23,5 kN</b></td></tr>
+<tr><td><b>3,60</b></td><td><b>2,65</b></td><td><b>columna</b></td><td>5,64 m²</td><td>11,28 m²</td><td><b>35,1 kN</b></td><td><b>24,3 kN</b></td></tr>
 <tr><td>6,00</td><td>2,65</td><td>intermedio</td><td>6,44 m²</td><td>—</td><td>23,3 kN</td><td>15,1 kN</td></tr>
-<tr><td>8,40</td><td>2,65</td><td>columna</td><td>3,22 m²</td><td>6,44 m²</td><td>21,6 kN</td><td>15,2 kN</td></tr>
-<tr><td>3,60</td><td>5,37</td><td>columna</td><td>2,86 m²</td><td>5,71 m²</td><td>21,1 kN</td><td>15,1 kN</td></tr>
-<tr><td>3,60</td><td>0</td><td>columna</td><td>2,78 m²</td><td>5,57 m²</td><td>20,7 kN</td><td>14,8 kN</td></tr>
+<tr><td>8,40</td><td>2,65</td><td>columna</td><td>3,22 m²</td><td>6,44 m²</td><td>22,1 kN</td><td>15,7 kN</td></tr>
+<tr><td>3,60</td><td>5,37</td><td>columna</td><td>2,86 m²</td><td>5,71 m²</td><td>21,6 kN</td><td>15,5 kN</td></tr>
+<tr><td>3,60</td><td>0</td><td>columna</td><td>2,78 m²</td><td>5,57 m²</td><td>21,2 kN</td><td>15,2 kN</td></tr>
 <tr><td colspan="7" style="text-align:center;color:var(--ink2)">… ocho pilotines intermedios …</td></tr>
-<tr><td>0</td><td>5,37</td><td>columna</td><td>1,22 m²</td><td>2,45 m²</td><td>10,5 kN</td><td>7,7 kN</td></tr>
-<tr><td>0</td><td>0</td><td>columna</td><td>1,19 m²</td><td>2,38 m²</td><td>10,3 kN</td><td>7,5 kN</td></tr>
+<tr><td>0</td><td>5,37</td><td>columna</td><td>1,22 m²</td><td>2,45 m²</td><td>10,7 kN</td><td>7,9 kN</td></tr>
+<tr><td>0</td><td>0</td><td>columna</td><td>1,19 m²</td><td>2,38 m²</td><td>10,5 kN</td><td>7,7 kN</td></tr>
 </tbody>
 </table>
 </div>
 <div class="note"><b>El pilotín que gobierna es el del cruce x = 3,60 / y = 2,65</b>, y no está en una
     esquina: es el del medio del tabique del dormitorio. Acumula tres cosas a la vez —el mayor ancho
     tributario de piso entre ejes de columna, el mayor ancho tributario de techo (2,685 m, el de la
-    viga central) y el peso del tabique que lo cruza—, y llega a <b>34,1 kN</b> mayorados. El menos
-    cargado, la esquina x = 0 / y = 0, apenas alcanza 10,3 kN: una relación de 3,3 a 1 entre el
+    viga central) y el peso del tabique que lo cruza—, y llega a <b>35,1 kN</b> mayorados. El menos
+    cargado, la esquina x = 0 / y = 0, apenas alcanza 10,5 kN: una relación de 3,3 a 1 entre el
     extremo y el mínimo. Esa dispersión es la que se absorbe al unificar.</div>
 
 <h3 style="font-family:'Fraunces',serif;font-size:1rem;margin:22px 0 8px">Dimensionado único</h3>
@@ -506,20 +757,18 @@
 <table>
 <thead><tr><th>Verificación</th><th>Valor</th><th>Límite / referencia</th><th>Estado</th></tr></thead>
 <tbody>
-<tr><td>Carga de diseño (la más desfavorable)</td><td>N<sub>u</sub> = 34,1 kN · N<sub>s</sub> = 23,5 kN</td><td>eje x = 3,60 / y = 2,65</td><td>—</td></tr>
+<tr><td>Carga de diseño (la más desfavorable)</td><td>N<sub>u</sub> = 35,1 kN · N<sub>s</sub> = 24,3 kN</td><td>eje x = 3,60 / y = 2,65</td><td>—</td></tr>
 <tr><td>Peso propio de fuste + zapata</td><td>3,8 kN</td><td>hormigón 24 kN/m³</td><td>—</td></tr>
-<tr><td><b>Carga total sobre el suelo</b></td><td><b>27,3 kN</b> (servicio)</td><td>incluye peso propio</td><td>—</td></tr>
-<tr><td>Tensión con zapata 0,50 × 0,50</td><td>109 kPa · 1,11 kg/cm²</td><td>σ<sub>adm</sub> ≈ 1,0 kg/cm²</td><td><b>No verifica</b></td></tr>
-<tr><td><b>Tensión con zapata 0,60 × 0,60</b></td><td><b>76 kPa · 0,77 kg/cm²</b></td><td>σ<sub>adm</sub> ≈ 1,0 kg/cm²</td><td><b>Verifica</b> · 77%</td></tr>
-<tr><td>Compresión en el fuste 0,20 × 0,20</td><td>0,97 MPa</td><td>H-21</td><td><b>Verifica</b> · trivial</td></tr>
+<tr><td><b>Carga total sobre el suelo</b></td><td><b>28,1 kN</b> (servicio)</td><td>incluye peso propio</td><td>—</td></tr>
+<tr><td><b>Tensión con zapata 0,60 × 0,60</b></td><td><b>78 kPa · 0,80 kg/cm²</b></td><td>σ<sub>adm</sub> adoptada = 1,0 kg/cm²</td><td><b>Verifica</b> · 80%</td></tr>
+<tr><td>Compresión en el fuste 0,20 × 0,20</td><td>0,99 MPa</td><td>H-21</td><td><b>Verifica</b> · trivial</td></tr>
+<tr><td>Levantamiento por succión de viento</td><td>8,03 kN</td><td>ver punto 6.7</td><td><b>Verifica</b> · 37% con encadenado</td></tr>
 </tbody>
 </table>
 </div>
-<div class="note warn"><b>La zapata de 0,60 no es sobredimensionada: es la mínima que verifica.</b>
-    Con 0,50 × 0,50 la tensión sube a 1,11 kg/cm², por encima de la admisible supuesta. Es decir que
-    el criterio de unificar no sólo simplifica la obra: en el pilotín crítico, la zapata chica que
-    antes se asignaba a los ejes intermedios <b>habría sido insuficiente</b> si ese pilotín hubiera
-    quedado con ella. Los 0,60 × 0,60 × 0,25 rigen para los quince.</div>
+<p class="muted">Tensión sobre el suelo σ = N/A con A = 0,36 m². Los 0,60 × 0,60 × 0,25 rigen para los
+    quince y dejan el pilotín crítico al 80% de la tensión admisible adoptada: es el elemento más
+    aprovechado de todo el proyecto.</p>
 
 <div class="tablecard scroll">
 <table>
@@ -528,16 +777,13 @@
 <tr><td>Zapata</td><td>0,60 × 0,60 × 0,25 m</td><td>malla Ø8 c/0,12</td><td>fondo a −1,00 m</td></tr>
 <tr><td>Fuste</td><td>0,20 × 0,20 m</td><td>4 Ø10 + estribos Ø6 c/0,15</td><td>hasta corona +0,68</td></tr>
 <tr><td>Broca de anclaje</td><td>Ø12 galvanizada</td><td>—</td><td>2 por pilotín, empotre 0,20 m</td></tr>
+<tr><td>Barra de anclaje de columna</td><td>Ø16 galvanizada</td><td>—</td><td>1 por pilotín de columna, empotre 0,20 m</td></tr>
 </tbody>
 </table>
 </div>
-<p class="muted">Hormigón H-21, acero ADN-420, recubrimiento 0,05 m. Las brocas se colocan en los
-    quince por criterio de unificación, aunque sólo nueve reciban columna: dejarlas embutidas en
-    todos cuesta poco y evita el error de omitirlas en el pozo equivocado.</p>
-<div class="note"><b>Verificación con σ<sub>adm</sub> no confirmada.</b> Toda la tabla supone una
-    tensión admisible del suelo de 1,0 kg/cm². Con el aprovechamiento al 77%, hay margen hasta
-    0,77 kg/cm² reales; por debajo de ese valor hay que ampliar la zapata o bajar la cota de
-    fundación. El dato sale del estudio de suelos del lote.</div>
+<p class="muted">Hormigón H-21, acero ADN-420, recubrimiento 0,05 m. Las dos brocas Ø12 se colocan en
+    los quince por criterio de unificación: además de fijar la plataforma, son las que reciben la placa
+    de las cruces de la cámara, así que en los pilotines arriostrados cumplen función estructural.</p>
 </section>
 
 <section class="blk">
@@ -546,22 +792,34 @@
 <table>
 <thead><tr><th>#</th><th>Elemento</th><th>Sección adoptada</th><th>Solicitación crítica</th><th>Aprovechamiento</th><th>Estado</th></tr></thead>
 <tbody>
-<tr><td>1</td><td>Viga techo · tramo oeste</td><td>doble 3×8"</td><td>flexión, L = 3,60</td><td>46%</td><td>Verifica</td></tr>
-<tr><td>2</td><td>Viga techo · tramo este</td><td>doble 3×10"</td><td>flexión, L = 4,80</td><td>51%</td><td>Verifica</td></tr>
-<tr><td>3</td><td>Cabios</td><td>2×6" c/0,50</td><td>flexión, L = 2,72</td><td>25%</td><td>Verifica</td></tr>
-<tr><td>4</td><td>Columnas</td><td>doble 2×6"</td><td>pandeo eje fuerte</td><td>12%</td><td>Verifica <b>con muro</b></td></tr>
-<tr><td>5</td><td>Viga maestra de piso</td><td>doble 3×8"</td><td>flexión, L = 2,40</td><td><b>88%</b></td><td>Verifica · el más ajustado</td></tr>
-<tr><td>6</td><td>Vigas perimetrales de piso</td><td>3×8"</td><td>flexión, L = 2,40</td><td>86%</td><td>Verifica</td></tr>
-<tr><td>7</td><td>Viguetas de entrepiso</td><td>I-joist ≥ 240 mm</td><td>flecha / vibración</td><td>—</td><td><b>A confirmar</b> con ficha</td></tr>
-<tr><td>8</td><td>Zapatas (15 iguales)</td><td>0,60 × 0,60 m</td><td>tensión sobre suelo</td><td><b>77%</b></td><td>Verifica · σ<sub>adm</sub> <b>a confirmar</b></td></tr>
+<tr><td>1</td><td>Vigas de techo</td><td>doble 3×10" (140×235)</td><td>flexión, L = 4,80</td><td>57%</td><td>Verifica</td></tr>
+<tr><td>2</td><td>Cabios</td><td>2×6" c/0,50</td><td>flexión, L = 2,72</td><td>27%</td><td>Verifica</td></tr>
+<tr><td>3</td><td>Columnas</td><td>doble 2×6" (90×140)</td><td>pandeo eje fuerte</td><td>14%</td><td>Verifica <b>con muro</b></td></tr>
+<tr><td>4</td><td>Viga maestra de piso</td><td>doble 3×10" (140×235)</td><td>flexión, L = 2,40</td><td>56%</td><td>Verifica</td></tr>
+<tr><td>5</td><td>Vigas perimetrales de piso</td><td>doble 3×8" (140×185)</td><td>flexión + muro, L = 2,40</td><td>63%</td><td>Verifica</td></tr>
+<tr><td>6</td><td>Viguetas de entrepiso</td><td>I-joist 241 mm</td><td>flecha L/360</td><td>25%</td><td>Verifica</td></tr>
+<tr><td>7</td><td>Diafragma de techo</td><td>fenólico 12 mm sobre cabios</td><td>corte, viento N–S</td><td>28%</td><td>Verifica</td></tr>
+<tr><td>8</td><td>Diafragma de piso</td><td>fenólico 18 mm sobre I-joist</td><td>corte, viento N–S</td><td>30%</td><td>Verifica</td></tr>
+<tr><td>9</td><td>Diagonal de cruz · cámara</td><td>barra roscada Ø12 con tensor</td><td>tracción, 14,3 kN</td><td>57%</td><td>Verifica</td></tr>
+<tr><td>10</td><td>Diagonal de cruz · muro</td><td>planchuela 40×4 embutida</td><td>tracción, 5,6 kN</td><td>17%</td><td>Verifica</td></tr>
+<tr><td>11</td><td>Unión de diagonal · cámara</td><td>placa 6 mm + 2 brocas Ø12</td><td>corte 13,0 kN</td><td>48%</td><td>Verifica</td></tr>
+<tr><td>12</td><td>Unión de diagonal · muro</td><td>3 bulones Ø12 en madera</td><td>fluencia del bulón</td><td><b>51%</b></td><td>Verifica <b>con 2 paños</b></td></tr>
+<tr><td>13</td><td>Anclaje columna–pilotín</td><td>barra roscada Ø16, empotre 0,20</td><td>tracción, 8,03 kN</td><td>17%</td><td>Verifica</td></tr>
+<tr><td>14</td><td>Levantamiento del pilotín</td><td>zapata + suelo + encadenado</td><td>succión de viento</td><td>37%</td><td>Verifica <b>con encadenado</b></td></tr>
+<tr><td>15</td><td>Zapatas (15 iguales)</td><td>0,60 × 0,60 × 0,25 m</td><td>tensión sobre suelo</td><td><b>80%</b></td><td>Verifica · el más ajustado</td></tr>
 </tbody>
 </table>
 </div>
-<div class="note"><b>Los dos elementos más ajustados</b> son la viga maestra de piso (88%) y las
-    perimetrales (86%). Si el profesional adopta una clase resistente inferior a la supuesta, son
-    los primeros a revisar: la salida más simple es pasar la maestra a doble 3×10" o agregar un
-    sexto eje de pilotines, que con el criterio de unificación adoptado serían tres pilotines más,
-    idénticos a los quince.</div>
+<div class="note"><b>Los tres elementos más ajustados</b> son la zapata (80%), la perimetral de piso
+    (63%) y la diagonal de la cámara con su unión (57% y 51%). Los quince verifican, y todos los
+    elementos de madera quedan por debajo del 70% de aprovechamiento que se adopta como criterio en
+    esta memoria.</div>
+<div class="note warn"><b>Las tres condiciones que no se pueden tocar.</b> Tres verificaciones de esta
+    memoria dependen de que otro elemento esté presente, y si ese elemento se suprime el cálculo deja
+    de ser válido: la <b>columna</b> necesita el muro de woodframe que le arriostra el eje débil; la
+    <b>unión de la diagonal del muro</b> necesita los dos paños arriostrados por fachada; el
+    <b>levantamiento del pilotín</b> necesita el encadenado que reparte la tracción. Ninguna de las
+    tres es un detalle de terminación.</div>
 </section>
 
 
