@@ -344,7 +344,7 @@
 </table>
 </div>
 <div class="note warn"><b>Condición de validez.</b> La verificación de la columna <b>depende del muro
-    de woodframe</b>. El bastidor clavado a la columna cada 0,60 m impide el pandeo en el eje débil y
+    de woodframe</b>. El bastidor clavado a la columna cada 0,40 m —la separación de montantes del woodframe— impide el pandeo en el eje débil y
     hace que gobierne el fuerte. Consecuencias operativas: (1) las columnas se apuntalan en diagonal
     desde que se izan hasta que el woodframe está cerrado; (2) ningún muro que contenga una columna
     puede eliminarse ni perforarse de lado a lado sin recalcular; (3) la columna del eje x = 3,60 que
@@ -376,7 +376,7 @@
     muestran que apoyar las vigas de piso sólo en los ejes de columna (0 / 3,60 / 8,40) es inviable
     con escuadrías de pino corrientes. Por eso la fundación incorpora <b>dos ejes intermedios en
     x = 1,80 y x = 6,00</b>, que llevan la luz máxima a 2,40 m y la tensión a 8,8 MPa. Los seis
-    pilotines adicionales son el precio de que las vigas de piso sean de madera comercial en lugar de
+    pilotines adicionales son lo que permite que las vigas de piso sean de madera comercial en lugar de
     perfiles especiales.</div>
 <div class="note">Las dos filas superiores quedan documentadas a propósito: son la justificación
     técnica de la grilla de 5 × 3 ante el revisor municipal, no un descarte que convenga ocultar.
@@ -433,21 +433,22 @@
 </table>
 </div>
 <p class="muted">El diafragma de techo (machimbre ½" clavado sobre los cabios) recoge el empuje de
-    las fachadas y lo transfiere a los muros paralelos a la dirección del viento. Una placa cementicia
-    clavada c/0,15 sobre bastidor desarrolla del orden de 3 a 5 kN/m, por encima de los 2,50 kN/m
-    requeridos.</p>
+    las fachadas y lo transfiere a los muros paralelos a la dirección del viento. El arriostramiento del
+    muro lo aporta la <b>placa de OSB/fenólico de 12 mm</b> clavada al bastidor c/0,15, que desarrolla
+    del orden de 3 a 5 kN/m, por encima de los 2,50 kN/m requeridos. La placa cementicia exterior es
+    revestimiento y no se computa como elemento resistente.</p>
 <div class="note warn"><b>El caso crítico es el muro norte.</b> La fachada norte es casi toda ventana
     (V1, V2 y V3), de modo que la placa no forma un paño continuo y el muro aporta poco al diafragma
     vertical. Ahí es donde se justifican las <b>riostras diagonales de 1×6" a 45°</b> entre columna y
     viga, con un mínimo de dos paños arriostrados por fachada en esquinas opuestas.</div>
 <div class="note"><b>Los tres mecanismos son solidarios:</b> diafragma de techo (machimbre),
-    diafragma de muro (placa cementicia) y riostras diagonales. Si se retira uno —por ejemplo, si se
+    diafragma de muro (OSB/fenólico) y riostras diagonales. Si se retira uno —por ejemplo, si se
     reemplaza el machimbre por un cielorraso suspendido sin función estructural— hay que recalcular
     los otros dos.</div>
 </section>
 
 <section class="blk">
-<h2><span class="mk">▦</span>7 · Fundación</h2>
+<h2><span class="mk">▦</span>7 · Fundación · quince pilotines unificados</h2>
 <p>Bajada de cargas en estado de servicio sobre los quince pilotines.</p>
 <div class="tablecard scroll">
 <table>
@@ -463,16 +464,80 @@
 </tbody>
 </table>
 </div>
+
+<h3 style="font-family:'Fraunces',serif;font-size:1rem;margin:22px 0 8px">Criterio adoptado: todos los pilotines iguales</h3>
+<p>El proyecto <b>unifica los quince pilotines</b>: misma sección de fuste, misma zapata y misma
+    armadura en todos, sin distinguir entre los que reciben columna y los que sólo reciben la
+    plataforma de piso. En consecuencia, <b>todos se dimensionan para el caso más desfavorable</b>
+    y varios quedan sobredimensionados.</p>
+<div class="note"><b>Por qué conviene aunque sobre material.</b> Quince elementos idénticos
+    significan un solo encofrado, una sola parrilla de armadura y una sola planilla de doblado. En
+    una obra chica y por administración, el ahorro de errores de replanteo —confundir cuál pozo
+    lleva qué zapata— vale más que el hormigón de más, que en el elemento que sobra es del orden de
+    unos pocos centésimos de metro cúbico. El sobredimensionado es deliberado y va declarado como
+    tal, no es un descuido de cálculo.</div>
+
+<p>Reparto de carga por pilotín según área tributaria. Se listan los cinco más cargados y los dos
+    menos cargados, de los quince:</p>
 <div class="tablecard scroll">
 <table>
-<thead><tr><th>Zapata</th><th>Dimensión</th><th>Área</th><th>Carga de diseño</th><th>Tensión</th><th>Verifica</th></tr></thead>
+<thead><tr><th>Eje x</th><th>Eje y</th><th>Tipo</th><th>Área trib. piso</th><th>Área trib. techo</th><th>N<sub>u</sub> (ELU)</th><th>N servicio</th></tr></thead>
 <tbody>
-<tr><td>De columna (9)</td><td>0,60 × 0,60 m</td><td>0,36 m²</td><td>25,0 kN</td><td>69 kPa · <b>0,71 kg/cm²</b></td><td>Sí, si σ<sub>adm</sub> ≥ 1,0 kg/cm²</td></tr>
-<tr><td>De plataforma (6)</td><td>0,60 × 0,60 m</td><td>0,36 m²</td><td>25,0 kN</td><td>60 kPa · <b>0,61 kg/cm²</b></td><td>Sí, si σ<sub>adm</sub> ≥ 1,0 kg/cm²</td></tr>
+<tr><td><b>3,60</b></td><td><b>2,65</b></td><td><b>columna</b></td><td>5,64 m²</td><td>11,28 m²</td><td><b>34,1 kN</b></td><td><b>23,5 kN</b></td></tr>
+<tr><td>6,00</td><td>2,65</td><td>intermedio</td><td>6,44 m²</td><td>—</td><td>23,3 kN</td><td>15,1 kN</td></tr>
+<tr><td>8,40</td><td>2,65</td><td>columna</td><td>3,22 m²</td><td>6,44 m²</td><td>21,6 kN</td><td>15,2 kN</td></tr>
+<tr><td>3,60</td><td>5,37</td><td>columna</td><td>2,86 m²</td><td>5,71 m²</td><td>21,1 kN</td><td>15,1 kN</td></tr>
+<tr><td>3,60</td><td>0</td><td>columna</td><td>2,78 m²</td><td>5,57 m²</td><td>20,7 kN</td><td>14,8 kN</td></tr>
+<tr><td colspan="7" style="text-align:center;color:var(--ink2)">… ocho pilotines intermedios …</td></tr>
+<tr><td>0</td><td>5,37</td><td>columna</td><td>1,22 m²</td><td>2,45 m²</td><td>10,5 kN</td><td>7,7 kN</td></tr>
+<tr><td>0</td><td>0</td><td>columna</td><td>1,19 m²</td><td>2,38 m²</td><td>10,3 kN</td><td>7,5 kN</td></tr>
 </tbody>
 </table>
 </div>
+<div class="note"><b>El pilotín que gobierna es el del cruce x = 3,60 / y = 2,65</b>, y no está en una
+    esquina: es el del medio del tabique del dormitorio. Acumula tres cosas a la vez —el mayor ancho
+    tributario de piso entre ejes de columna, el mayor ancho tributario de techo (2,685 m, el de la
+    viga central) y el peso del tabique que lo cruza—, y llega a <b>34,1 kN</b> mayorados. El menos
+    cargado, la esquina x = 0 / y = 0, apenas alcanza 10,3 kN: una relación de 3,3 a 1 entre el
+    extremo y el mínimo. Esa dispersión es la que se absorbe al unificar.</div>
 
+<h3 style="font-family:'Fraunces',serif;font-size:1rem;margin:22px 0 8px">Dimensionado único</h3>
+<div class="tablecard scroll">
+<table>
+<thead><tr><th>Verificación</th><th>Valor</th><th>Límite / referencia</th><th>Estado</th></tr></thead>
+<tbody>
+<tr><td>Carga de diseño (la más desfavorable)</td><td>N<sub>u</sub> = 34,1 kN · N<sub>s</sub> = 23,5 kN</td><td>eje x = 3,60 / y = 2,65</td><td>—</td></tr>
+<tr><td>Peso propio de fuste + zapata</td><td>3,8 kN</td><td>hormigón 24 kN/m³</td><td>—</td></tr>
+<tr><td><b>Carga total sobre el suelo</b></td><td><b>27,3 kN</b> (servicio)</td><td>incluye peso propio</td><td>—</td></tr>
+<tr><td>Tensión con zapata 0,50 × 0,50</td><td>109 kPa · 1,11 kg/cm²</td><td>σ<sub>adm</sub> ≈ 1,0 kg/cm²</td><td><b>No verifica</b></td></tr>
+<tr><td><b>Tensión con zapata 0,60 × 0,60</b></td><td><b>76 kPa · 0,77 kg/cm²</b></td><td>σ<sub>adm</sub> ≈ 1,0 kg/cm²</td><td><b>Verifica</b> · 77%</td></tr>
+<tr><td>Compresión en el fuste 0,20 × 0,20</td><td>0,97 MPa</td><td>H-21</td><td><b>Verifica</b> · trivial</td></tr>
+</tbody>
+</table>
+</div>
+<div class="note warn"><b>La zapata de 0,60 no es sobredimensionada: es la mínima que verifica.</b>
+    Con 0,50 × 0,50 la tensión sube a 1,11 kg/cm², por encima de la admisible supuesta. Es decir que
+    el criterio de unificar no sólo simplifica la obra: en el pilotín crítico, la zapata chica que
+    antes se asignaba a los ejes intermedios <b>habría sido insuficiente</b> si ese pilotín hubiera
+    quedado con ella. Los 0,60 × 0,60 × 0,25 rigen para los quince.</div>
+
+<div class="tablecard scroll">
+<table>
+<thead><tr><th>Elemento (los 15 iguales)</th><th>Dimensión</th><th>Armadura</th><th>Observación</th></tr></thead>
+<tbody>
+<tr><td>Zapata</td><td>0,60 × 0,60 × 0,25 m</td><td>malla Ø8 c/0,12</td><td>fondo a −1,00 m</td></tr>
+<tr><td>Fuste</td><td>0,20 × 0,20 m</td><td>4 Ø10 + estribos Ø6 c/0,15</td><td>hasta corona +0,68</td></tr>
+<tr><td>Broca de anclaje</td><td>Ø12 galvanizada</td><td>—</td><td>2 por pilotín, empotre 0,20 m</td></tr>
+</tbody>
+</table>
+</div>
+<p class="muted">Hormigón H-21, acero ADN-420, recubrimiento 0,05 m. Las brocas se colocan en los
+    quince por criterio de unificación, aunque sólo nueve reciban columna: dejarlas embutidas en
+    todos cuesta poco y evita el error de omitirlas en el pozo equivocado.</p>
+<div class="note"><b>Verificación con σ<sub>adm</sub> no confirmada.</b> Toda la tabla supone una
+    tensión admisible del suelo de 1,0 kg/cm². Con el aprovechamiento al 77%, hay margen hasta
+    0,77 kg/cm² reales; por debajo de ese valor hay que ampliar la zapata o bajar la cota de
+    fundación. El dato sale del estudio de suelos del lote.</div>
 </section>
 
 <section class="blk">
@@ -488,14 +553,15 @@
 <tr><td>5</td><td>Viga maestra de piso</td><td>doble 3×8"</td><td>flexión, L = 2,40</td><td><b>88%</b></td><td>Verifica · el más ajustado</td></tr>
 <tr><td>6</td><td>Vigas perimetrales de piso</td><td>3×8"</td><td>flexión, L = 2,40</td><td>86%</td><td>Verifica</td></tr>
 <tr><td>7</td><td>Viguetas de entrepiso</td><td>I-joist ≥ 240 mm</td><td>flecha / vibración</td><td>—</td><td><b>A confirmar</b> con ficha</td></tr>
-<tr><td>8</td><td>Zapatas</td><td>0,60 y 0,50 m</td><td>tensión sobre suelo</td><td>0,71 kg/cm²</td><td><b>A confirmar</b> con estudio de suelos</td></tr>
+<tr><td>8</td><td>Zapatas (15 iguales)</td><td>0,60 × 0,60 m</td><td>tensión sobre suelo</td><td><b>77%</b></td><td>Verifica · σ<sub>adm</sub> <b>a confirmar</b></td></tr>
 </tbody>
 </table>
 </div>
 <div class="note"><b>Los dos elementos más ajustados</b> son la viga maestra de piso (88%) y las
     perimetrales (86%). Si el profesional adopta una clase resistente inferior a la supuesta, son
     los primeros a revisar: la salida más simple es pasar la maestra a doble 3×10" o agregar un
-    sexto eje de pilotines.</div>
+    sexto eje de pilotines, que con el criterio de unificación adoptado serían tres pilotines más,
+    idénticos a los quince.</div>
 </section>
 
 
