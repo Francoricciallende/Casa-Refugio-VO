@@ -108,6 +108,14 @@
 
   /* --- agregado: estructura y planillas --- */
   .muted{color:var(--ink2);font-size:.8rem}
+  .tablecard{border:1px solid var(--line);border-radius:14px;overflow-x:auto;overflow-y:hidden;margin:10px 0 6px;-webkit-overflow-scrolling:touch}
+  table{width:100%;border-collapse:collapse;font-size:.9rem;min-width:620px}
+  thead th{background:var(--card);text-align:left;padding:10px 12px;font-weight:600;font-size:.76rem;
+    color:var(--ink2);border-bottom:1px solid var(--line);white-space:nowrap}
+  thead th.num{text-align:right}
+  tbody td{padding:9px 12px;border-bottom:1px solid var(--line);font-size:.86rem}
+  tbody tr:last-child td{border-bottom:none}
+  tbody td.num{text-align:right;font-family:'Spline Sans Mono',monospace;font-size:.8rem;white-space:nowrap}
 
   /* --- galeria: vista de la estructura general --- */
   .stepgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0}
@@ -369,6 +377,26 @@
 <p>Distribución de 8,40 × 5,40. El estar-cocina es una sola pieza; dormitorio, baño y guardado
     sobre la crujía oeste. Las paredes divisorias son cerramiento liviano, se levantan al final y
     apoyan sobre pilotines para acompañar con su peso.</p>
+<h3 style="font-family:'Fraunces',serif;font-size:1.05rem;margin:18px 0 4px">Planilla de aberturas</h3>
+<p class="muted" style="margin:0">Medidas de vano: ancho horizontal × alto. El alféizar se mide desde el piso terminado (+1,10) hasta el borde inferior del vano. Los mismos códigos rotulan la planta y las fachadas.</p>
+<div class="tablecard scroll">
+<table>
+<thead><tr><th>Código</th><th>Fachada</th><th>Local</th><th class="num">Ancho</th><th class="num">Alto</th><th>Tipo</th><th class="num">Alféizar</th></tr></thead>
+<tbody>
+<tr><td><b>P1</b> · puerta de acceso</td><td>Este</td><td>Estar–cocina</td><td class="num">2,00</td><td class="num">2,50</td><td>de abrir · dos hojas</td><td class="num">— (a piso)</td></tr>
+<tr><td><b>P2</b> · puerta de servicio</td><td>Sur</td><td>Estar–cocina</td><td class="num">1,00</td><td class="num">2,10</td><td>de abrir · una hoja</td><td class="num">— (a piso)</td></tr>
+<tr><td><b>V1</b> · ventana</td><td>Norte</td><td>Dormitorio</td><td class="num">1,50</td><td class="num">1,20</td><td>de abrir</td><td class="num">1,00</td></tr>
+<tr><td><b>V2</b> · ventana</td><td>Norte</td><td>Estar–cocina</td><td class="num">1,00</td><td class="num">1,20</td><td>de abrir</td><td class="num">1,00</td></tr>
+<tr><td><b>V3</b> · paño fijo</td><td>Norte</td><td>Estar–cocina</td><td class="num">2,00</td><td class="num">1,20</td><td>fija</td><td class="num">1,00</td></tr>
+<tr><td><b>V4</b> · ventana</td><td>Sur</td><td>Baño</td><td class="num">0,50</td><td class="num">0,50</td><td>de abrir</td><td class="num">1,60</td></tr>
+<tr><td><b>V5</b> · ventana</td><td>Sur</td><td>Cocina (sobre mesada)</td><td class="num">2,00</td><td class="num">0,50</td><td>corrediza</td><td class="num">1,10</td></tr>
+<tr><td><b>V6</b> · ventana circular</td><td>Este</td><td>Estar–cocina</td><td class="num">Ø 1,00</td><td class="num">Ø 1,00</td><td>fija</td><td class="num">1,00</td></tr>
+<tr><td><b>V7</b> · ventilación</td><td>Oeste</td><td>Dormitorio (centro)</td><td class="num">0,20</td><td class="num">0,20</td><td>de abrir</td><td class="num">2,00</td></tr>
+<tr><td><b>V8</b> · ventilación</td><td>Oeste</td><td>Baño</td><td class="num">0,20</td><td class="num">0,20</td><td>de abrir</td><td class="num">2,00</td></tr>
+</tbody>
+</table>
+</div>
+<p class="muted">Vidrio al norte: V1 + V2 + V3 = 1,80 + 1,20 + 2,40 = <b>5,40 m²</b>. V4 va alta para dar privacidad al baño y su dintel queda a 2,10, alineado con la puerta de servicio; V5 arranca por encima del salpicado de la mesada. En V6 el alféizar es la base del círculo. Las puertas interiores del dormitorio y el baño son de tabique y no figuran acá.</p>
 <div class="plano scroll">
 <p class="planotitle">Planta · norte arriba</p>
 <svg aria-label="Planta general con todas las aberturas" role="img" viewbox="0 0 640 470">
@@ -402,51 +430,52 @@
 <text class="lblt" text-anchor="middle" x="420" y="200">ESTAR · COCINA</text>
 <text class="subt" text-anchor="middle" x="420" y="215">4,40 × 5,10 · 22,44 m²</text>
 <text class="subt" text-anchor="middle" x="420" y="330">mesada sobre muro sur</text>
-<!-- VENTANAS NORTE (arriba) - V1 dorm (al oeste), V2 estar chica (alineada con P servicio), V3 estar -->
+<!-- ABERTURAS A ESCALA · horizontal 57,14 px/m (x = 80 + 57,14·m desde el oeste) · vertical 53,70 px/m (y = 80 + 53,70·m desde el norte) -->
+<!-- VENTANAS NORTE - V1 dorm 1,05–2,55 · V2 estar 3,90–4,90 (alineada con P2) · V3 fijo 5,85–7,85 -->
 <g stroke="var(--glass)" stroke-width="5">
-<line x1="150" x2="220" y1="80" y2="80"></line> <!-- V1 dorm, hacia oeste -->
-<line x1="315" x2="345" y1="80" y2="80"></line> <!-- V2 chica, alineada con P servicio -->
-<line x1="420" x2="520" y1="80" y2="80"></line> <!-- V3 -->
+<line x1="140" x2="225.7" y1="80" y2="80"></line> <!-- V1 1,50 -->
+<line x1="302.9" x2="360" y1="80" y2="80"></line> <!-- V2 1,00 -->
+<line x1="414.3" x2="528.6" y1="80" y2="80"></line> <!-- V3 2,00 fijo -->
 </g>
-<text class="subt" text-anchor="middle" x="142" y="76">V1</text>
-<text class="subt" text-anchor="middle" x="330" y="76">V2</text>
-<text class="subt" text-anchor="middle" x="432" y="76">V3</text>
-<!-- VENTANAS SUR - V4 baño chica, V5 cocina ALARGADA 2m hasta pared este -->
-<g stroke="var(--glass)" stroke-width="5">
-<line x1="105" x2="140" y1="370" y2="370"></line> <!-- V4 baño -->
-<line x1="400" x2="520" y1="370" y2="370"></line> <!-- V5 cocina 2,00 m, llega a pared este -->
+<text class="subt" font-weight="600" text-anchor="middle" x="182.9" y="97">V1 · 1,50×1,20</text>
+<text class="subt" font-weight="600" text-anchor="middle" x="331.4" y="97">V2 · 1,00×1,20</text>
+<text class="subt" font-weight="600" text-anchor="middle" x="471.4" y="97">V3 · 2,00×1,20 · fijo</text>
+<!-- VENTANAS SUR - V4 baño 0,50–1,00 · V5 cocina corrediza 6,20–8,20 (llega a la pared este) -->
+<line stroke="var(--glass)" stroke-width="5" x1="108.6" x2="137.1" y1="370" y2="370"></line> <!-- V4 0,50 -->
+<g stroke="var(--glass)" stroke-width="3">
+<line x1="434.3" x2="497" y1="367" y2="367"></line> <!-- V5 hoja 1 -->
+<line x1="486" x2="548.6" y1="373" y2="373"></line> <!-- V5 hoja 2 (corrediza) -->
 </g>
-<text class="subt" text-anchor="middle" x="122" y="384">V4</text>
-<text class="subt" text-anchor="middle" x="500" y="384">V5 · 2,00 × 0,40</text>
-<!-- VENTANA ESTE vertical 1,50 × 0,40, del lado SUR de la pared este -->
-<line stroke="var(--glass)" stroke-width="5" x1="560" x2="560" y1="285" y2="320"></line>
-<text class="subt" transform="rotate(90 548 322)" x="548" y="322">V6 · 1,50 × 0,40</text>
-<!-- PUERTA BAÑO AL SUR (segunda puerta, abre hacia afuera - para la pileta) -->
-<line stroke="none" x1="100" x2="100" y1="370" y2="370"></line>
-
-
-<!-- PUERTA ACCESO ESTE doble, CENTRADA -->
-<line stroke="var(--door)" stroke-width="6" x1="560" x2="560" y1="160" y2="220"></line>
-<text class="subt" transform="rotate(90 575 228)" x="575" y="228">acceso doble</text>
-<!-- PUERTA baño-pasillo (abre adentro) - la que YA estaba, queda -->
+<text class="subt" font-weight="600" text-anchor="middle" x="122.9" y="416">V4 · 0,50×0,50</text>
+<text class="subt" font-weight="600" text-anchor="middle" x="491.4" y="416">V5 · 2,00×0,50 · corrediza</text>
+<!-- ESTE - V6 circular Ø1,00, lado sur 3,65–4,65 -->
+<line stroke="var(--glass)" stroke-width="5" x1="560" x2="560" y1="276" y2="329.7"></line>
+<text class="subt" font-weight="600" text-anchor="middle" transform="rotate(90 575 302.9)" x="575" y="302.9">V6 · Ø1,00 circular</text>
+<!-- PUERTA ACCESO ESTE doble P1 2,00 (0,55–2,55), dos hojas de 1,00 que abren adentro; libra la columna del eje 2,65 -->
+<line stroke="var(--door)" stroke-width="6" x1="560" x2="560" y1="109.5" y2="216.9"></line>
+<path d="M560,163.2 A53.7,53.7 0 0,1 506.3,109.5" fill="none" opacity=".6" stroke="var(--door)" stroke-width="1"></path>
+<path d="M560,163.2 A53.7,53.7 0 0,0 506.3,216.9" fill="none" opacity=".6" stroke="var(--door)" stroke-width="1"></path>
+<text class="subt" font-weight="600" text-anchor="middle" transform="rotate(90 575 163.2)" x="575" y="163.2">P1 · 2,00×2,50 · acceso doble</text>
+<!-- PUERTA baño-pasillo (abre adentro) -->
 <line stroke="var(--door)" stroke-width="4" x1="183" x2="183" y1="255" y2="290"></line>
 <path d="M183,255 A32,32 0 0,1 151,287" fill="none" opacity=".6" stroke="var(--door)" stroke-width="1"></path>
-<!-- PUERTA dormitorio: UNA SOLA, la que da al pasillo de guardado (abre adentro) -->
+<!-- PUERTA dormitorio: la que da al pasillo de guardado (abre adentro) -->
 <line stroke="var(--door)" stroke-width="4" x1="210" x2="250" y1="240" y2="240"></line>
 <path d="M250,240 A40,40 0 0,1 210,200" fill="none" opacity=".6" stroke="var(--door)" stroke-width="1"></path>
-<!-- PUERTA servicio: en el SUR, corrida a la derecha (pasada la pared del dorm), alineada con V2 norte, abre adentro -->
-<line stroke="var(--door)" stroke-width="4" x1="315" x2="355" y1="370" y2="370"></line>
-<path d="M355,370 A40,40 0 0,1 315,330" fill="none" opacity=".6" stroke="var(--door)" stroke-width="1"></path>
-<text class="subt" text-anchor="middle" x="335" y="405">P servicio</text>
-<!-- linea guia ventilacion cruzada V2-Pservicio -->
-<line opacity=".5" stroke="var(--glass)" stroke-dasharray="3 3" stroke-width="0.8" x1="330" x2="335" y1="82" y2="368"></line>
-<!-- VENTANAS OESTE 20x20 ventilacion (2, en alto) -->
-<g stroke="var(--glass)" stroke-dasharray="2 2" stroke-width="4">
-<line x1="80" x2="80" y1="120" y2="140"></line> <!-- dorm oeste -->
-<line x1="80" x2="80" y1="300" y2="320"></line> <!-- baño oeste -->
+<!-- PUERTA de servicio P2 1,00 en el SUR (3,90–4,90), alineada con V2 norte, abre adentro -->
+<line stroke="var(--door)" stroke-width="4" x1="302.9" x2="360" y1="370" y2="370"></line>
+<path d="M360,370 A57.1,57.1 0 0,1 302.9,312.9" fill="none" opacity=".6" stroke="var(--door)" stroke-width="1"></path>
+<text class="subt" font-weight="600" text-anchor="middle" x="331.4" y="416">P2 · 1,00×2,10 · servicio</text>
+<!-- linea guia ventilacion cruzada V2-P2 -->
+<line opacity=".5" stroke="var(--glass)" stroke-dasharray="3 3" stroke-width="0.8" x1="331.4" x2="331.4" y1="82" y2="310"></line>
+<!-- VENTANAS OESTE 0,20×0,20 alféizar 2,00 - V7 centro del dormitorio (1,50–1,70) · V8 baño (4,10–4,30) -->
+<g stroke="var(--glass)" stroke-width="5">
+<line x1="80" x2="80" y1="160.6" y2="171.3"></line> <!-- V7 -->
+<line x1="80" x2="80" y1="300.2" y2="310.9"></line> <!-- V8 -->
 </g>
-<text class="subt" x="95" y="128">v20</text>
-<text class="subt" x="95" y="315">v20</text>
+<text class="subt" font-weight="600" x="90" y="188">V7 · 0,20×0,20 · alf. 2,00</text>
+<text class="subt" font-weight="600" x="88" y="330">V8 · 0,20×0,20</text>
+<text class="subt" x="88" y="342">alf. 2,00</text>
 <!-- columnas -->
 <g fill="var(--clay)" stroke="#fff" stroke-width="1.5">
 <circle cx="80" cy="80" r="7"></circle><circle cx="80" cy="370" r="7"></circle>
@@ -468,7 +497,7 @@
 <span><i style="background:var(--wall)"></i>Muro</span>
 <span><i style="background:var(--clay);width:8px;height:8px;border-radius:50%"></i>Columna</span>
 </div>
-<div class="cap">Los puntos marrones son las 9 columnas: tres ejes norte–sur (x = 0 / 3,60 / 8,40) por tres líneas este–oeste (y = 0 / 2,65 / 5,37). Van ocultas dentro de los muros. La línea A–A muestra por dónde se corta la casa para el corte transversal de abajo.</div>
+<div class="cap">Los puntos marrones son las 9 columnas: tres ejes norte–sur (x = 0 / 3,60 / 8,40) por tres líneas este–oeste (y = 0 / 2,65 / 5,37). Van ocultas dentro de los muros. Cada abertura lleva su código y su medida de vano, ancho × alto (ver planilla de arriba), dibujada a escala. La línea A–A muestra por dónde se corta la casa para el corte transversal de abajo.</div>
 </div>
 </section>
 <section class="blk">
@@ -567,121 +596,152 @@
 <p>Norte y sur se ven como rectángulos (el techo no cae hacia esos lados): el norte más alto, el
     sur más bajo. Este y oeste muestran el triángulo de la pendiente. Todas con la casa elevada sobre
     pilotines y los aleros acotados.</p>
-<!-- NORTE: rectangulo alto, sin caida -->
+<!-- FACHADAS A ESCALA · 40 px = 1 m en las cuatro · terreno y = 250 (N/S) o 260 (E/O) · piso terminado +1,10 = 44 px sobre el terreno -->
+<!-- NORTE: rectangulo alto, sin caida · vista desde el norte: el OESTE queda a la DERECHA · x = 448 − 40·m (m desde el oeste) -->
 <div class="plano scroll">
 <p class="planotitle">Fachada norte · rectángulo alto · captación solar</p>
-<svg aria-label="Fachada norte rectangular alta con tres ventanas" role="img" viewbox="0 0 560 230">
-<line stroke="var(--ink2)" stroke-width="1.3" x1="20" x2="540" y1="195" y2="195"></line>
-<g fill="var(--card)" stroke="var(--ink2)" stroke-width="1.2">
-<rect height="30" width="12" x="95" y="165"></rect><rect height="30" width="12" x="210" y="165"></rect>
-<rect height="30" width="12" x="340" y="165"></rect><rect height="30" width="12" x="455" y="165"></rect>
-</g>
-<!-- rectangulo (sin caida) -->
-<rect fill="var(--card)" height="110" stroke="var(--wall)" stroke-width="2.5" width="410" x="75" y="55"></rect>
-<!-- borde de cubierta: vuela 0,60 al oeste y 0,60 al este -->
-<line stroke="var(--clay)" stroke-width="4" x1="46" x2="514" y1="52" y2="52"></line>
-<line stroke="var(--clay)" stroke-width="1" x1="46" x2="46" y1="46" y2="58"></line>
-<line stroke="var(--clay)" stroke-width="1" x1="75" x2="75" y1="46" y2="58"></line>
-<line stroke="var(--clay)" stroke-width="1" x1="485" x2="485" y1="46" y2="58"></line>
-<line stroke="var(--clay)" stroke-width="1" x1="514" x2="514" y1="46" y2="58"></line>
-<text class="alerot" text-anchor="middle" x="60" y="42">0,60</text>
-<text class="alerot" text-anchor="middle" x="500" y="42">0,60</text>
-<text class="alerot" text-anchor="middle" x="280" y="42">alero norte 0,90 (en proyección)</text>
-<!-- ventanas: V1 dorm (izq, movida al oeste), V2, V3 -->
-<rect fill="var(--glass)" height="48" opacity=".65" stroke="var(--wall)" width="70" x="105" y="85"></rect>
-<rect fill="var(--glass)" height="48" opacity=".65" stroke="var(--wall)" width="28" x="255" y="85"></rect>
-<rect fill="var(--glass)" height="48" opacity=".65" stroke="var(--wall)" width="70" x="345" y="85"></rect>
-<text class="subt" text-anchor="middle" x="140" y="113">V1</text>
-<text class="subt" text-anchor="middle" x="269" y="113">V2</text>
-<text class="subt" text-anchor="middle" x="380" y="113">V3</text>
-<line marker-end="url(#a4)" marker-start="url(#a4)" stroke="var(--dim)" stroke-width="1" x1="45" x2="45" y1="165" y2="195"></line>
-<text class="dimt" transform="rotate(-90 32 183)" x="32" y="183">1,10</text>
-<text class="subt" text-anchor="middle" x="280" y="218">4,62 m² de ventana · única calefacción · el techo NO cae hacia el norte</text>
+<svg aria-label="Fachada norte a escala: V1 del dormitorio a la derecha, V2 al centro y paño fijo V3 a la izquierda, con alféizar a 1,00" role="img" viewbox="0 0 560 300">
 <defs><marker id="a4" markerheight="5" markerwidth="5" orient="auto-start-reverse" refx="5" refy="5" viewbox="0 0 10 10"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.4"></path></marker></defs>
+<line stroke="var(--ink2)" stroke-width="1.3" x1="20" x2="540" y1="250" y2="250"></line>
+<!-- pilotines en x = 0 / 1,80 / 3,60 / 6,00 / 8,40 -->
+<g fill="var(--card)" stroke="var(--ink2)" stroke-width="1.2">
+<rect height="44" width="12" x="442" y="206"></rect><rect height="44" width="12" x="370" y="206"></rect>
+<rect height="44" width="12" x="298" y="206"></rect><rect height="44" width="12" x="202" y="206"></rect>
+<rect height="44" width="12" x="106" y="206"></rect>
+</g>
+<!-- muro 8,40 × 3,40 libres -->
+<rect fill="var(--card)" height="136" stroke="var(--wall)" stroke-width="2.5" width="336" x="112" y="70"></rect>
+<!-- borde de cubierta: vuela 0,60 al oeste y 0,60 al este -->
+<line stroke="var(--clay)" stroke-width="4" x1="88" x2="472" y1="66" y2="66"></line>
+<g stroke="var(--clay)" stroke-width="1">
+<line x1="88" x2="88" y1="60" y2="72"></line><line x1="112" x2="112" y1="60" y2="72"></line>
+<line x1="448" x2="448" y1="60" y2="72"></line><line x1="472" x2="472" y1="60" y2="72"></line>
+</g>
+<text class="alerot" text-anchor="middle" x="100" y="56">0,60</text>
+<text class="alerot" text-anchor="middle" x="460" y="56">0,60</text>
+<text class="alerot" text-anchor="middle" x="280" y="56">alero norte 0,90 (en proyección)</text>
+<!-- V3 fijo 5,85–7,85 · V2 3,90–4,90 · V1 1,05–2,55 · alféizar 1,00 · alto 1,20 -->
+<rect fill="var(--glass)" height="48" opacity=".65" stroke="var(--wall)" width="80" x="134" y="118"></rect>
+<rect fill="var(--glass)" height="48" opacity=".65" stroke="var(--wall)" width="40" x="252" y="118"></rect>
+<rect fill="var(--glass)" height="48" opacity=".65" stroke="var(--wall)" width="60" x="346" y="118"></rect>
+<text class="subt" font-weight="600" text-anchor="middle" x="174" y="180">V3 · 2,00×1,20</text>
+<text class="subt" text-anchor="middle" x="174" y="192">paño fijo</text>
+<text class="subt" font-weight="600" text-anchor="middle" x="272" y="180">V2 · 1,00×1,20</text>
+<text class="subt" font-weight="600" text-anchor="middle" x="376" y="180">V1 · 1,50×1,20</text>
+<text class="subt" text-anchor="middle" x="376" y="192">dormitorio</text>
+<!-- cotas -->
+<line marker-end="url(#a4)" marker-start="url(#a4)" stroke="var(--dim)" stroke-width="1" x1="124" x2="124" y1="166" y2="206"></line>
+<text class="dimt" text-anchor="middle" transform="rotate(-90 120 186)" x="120" y="186">1,00</text>
+<line marker-end="url(#a4)" marker-start="url(#a4)" stroke="var(--dim)" stroke-width="1" x1="80" x2="80" y1="206" y2="250"></line>
+<text class="dimt" text-anchor="middle" transform="rotate(-90 72 228)" x="72" y="228">1,10</text>
+<line marker-end="url(#a4)" marker-start="url(#a4)" stroke="var(--dim)" stroke-width="1" x1="462" x2="462" y1="70" y2="206"></line>
+<text class="dimt" text-anchor="middle" transform="rotate(-90 476 138)" x="476" y="138">3,40 libre</text>
+<text class="subt" fill="var(--rust)" text-anchor="middle" x="112" y="266">este</text>
+<text class="subt" fill="var(--rust)" text-anchor="middle" x="448" y="266">oeste</text>
+<text class="subt" text-anchor="middle" x="280" y="288">vista desde el norte: el oeste queda a la derecha · 5,40 m² de vidrio · única calefacción</text>
 </svg>
 </div>
-<!-- SUR: rectangulo mas bajo -->
+<!-- SUR: rectangulo mas bajo · vista desde el sur: el OESTE queda a la IZQUIERDA · x = 112 + 40·m -->
 <div class="plano scroll">
 <p class="planotitle">Fachada sur · rectángulo más bajo</p>
-<svg aria-label="Fachada sur rectangular más baja con puerta de servicio y ventanas" role="img" viewbox="0 0 560 220">
-<line stroke="var(--ink2)" stroke-width="1.3" x1="20" x2="540" y1="190" y2="190"></line>
+<svg aria-label="Fachada sur a escala: V4 del baño alta, puerta de servicio P2 y ventana corrediza V5 de la cocina hasta la pared este" role="img" viewbox="0 0 560 300">
+<line stroke="var(--ink2)" stroke-width="1.3" x1="20" x2="540" y1="250" y2="250"></line>
 <g fill="var(--card)" stroke="var(--ink2)" stroke-width="1.2">
-<rect height="30" width="12" x="95" y="160"></rect><rect height="30" width="12" x="210" y="160"></rect>
-<rect height="30" width="12" x="340" y="160"></rect><rect height="30" width="12" x="455" y="160"></rect>
+<rect height="44" width="12" x="106" y="206"></rect><rect height="44" width="12" x="178" y="206"></rect>
+<rect height="44" width="12" x="250" y="206"></rect><rect height="44" width="12" x="346" y="206"></rect>
+<rect height="44" width="12" x="442" y="206"></rect>
 </g>
-<!-- rectangulo mas bajo (arranca mas abajo) -->
-<rect fill="var(--card)" height="80" stroke="var(--wall)" stroke-width="2.5" width="410" x="75" y="80"></rect>
-<line stroke="var(--clay)" stroke-width="4" x1="46" x2="514" y1="77" y2="77"></line>
-<line stroke="var(--clay)" stroke-width="1" x1="46" x2="46" y1="71" y2="83"></line>
-<line stroke="var(--clay)" stroke-width="1" x1="75" x2="75" y1="71" y2="83"></line>
-<line stroke="var(--clay)" stroke-width="1" x1="485" x2="485" y1="71" y2="83"></line>
-<line stroke="var(--clay)" stroke-width="1" x1="514" x2="514" y1="71" y2="83"></line>
-<text class="alerot" text-anchor="middle" x="60" y="67">0,60</text>
-<text class="alerot" text-anchor="middle" x="500" y="67">0,60</text>
-<text class="alerot" text-anchor="middle" x="280" y="67">alero sur 0,70 (en proyección)</text>
-<!-- V4 baño chica -->
-<rect fill="var(--glass)" height="18" opacity=".6" stroke="var(--wall)" width="22" x="95" y="102"></rect>
-<text class="subt" text-anchor="middle" x="106" y="135">V4</text>
-
-
-<!-- Puerta servicio (alineada con V2 norte) -->
-<rect fill="var(--door)" height="60" opacity=".55" stroke="var(--wall)" width="30" x="240" y="100"></rect>
-<text class="subt" text-anchor="middle" x="255" y="172">P servicio</text>
-<!-- V5 cocina ALARGADA 2m, llega a la pared este (borde derecho) -->
-<rect fill="var(--glass)" height="22" opacity=".6" stroke="var(--wall)" width="98" x="387" y="105"></rect>
-<text class="subt" text-anchor="middle" x="415" y="143">V5 cocina · 2,00 × 0,40</text>
-<text class="subt" text-anchor="middle" x="280" y="212">techo más bajo al sur · V5 alargada llega a la pared este · puerta de servicio</text>
+<!-- muro 8,40 × 2,70 libres -->
+<rect fill="var(--card)" height="108" stroke="var(--wall)" stroke-width="2.5" width="336" x="112" y="98"></rect>
+<line stroke="var(--clay)" stroke-width="4" x1="88" x2="472" y1="94" y2="94"></line>
+<g stroke="var(--clay)" stroke-width="1">
+<line x1="88" x2="88" y1="88" y2="100"></line><line x1="112" x2="112" y1="88" y2="100"></line>
+<line x1="448" x2="448" y1="88" y2="100"></line><line x1="472" x2="472" y1="88" y2="100"></line>
+</g>
+<text class="alerot" text-anchor="middle" x="100" y="84">0,60</text>
+<text class="alerot" text-anchor="middle" x="460" y="84">0,60</text>
+<text class="alerot" text-anchor="middle" x="280" y="84">alero sur 0,70 (en proyección)</text>
+<!-- V4 baño 0,50–1,00 · alféizar 1,60 · dintel 2,10 -->
+<rect fill="var(--glass)" height="20" opacity=".65" stroke="var(--wall)" width="20" x="132" y="122"></rect>
+<text class="subt" font-weight="600" x="158" y="136">V4 · 0,50×0,50</text>
+<!-- P2 puerta de servicio 3,90–4,90 · alto 2,10 (alineada con V2 norte) -->
+<rect fill="var(--door)" height="84" opacity=".55" stroke="var(--wall)" width="40" x="268" y="122"></rect>
+<text class="subt" font-weight="600" text-anchor="middle" x="288" y="116">P2 · 1,00×2,10</text>
+<!-- V5 cocina corrediza 6,20–8,20 · alféizar 1,10 sobre la mesada -->
+<rect fill="var(--glass)" height="20" opacity=".65" stroke="var(--wall)" width="80" x="360" y="142"></rect>
+<line stroke="var(--wall)" stroke-width="1.5" x1="400" x2="400" y1="142" y2="162"></line>
+<path d="M386,152 L414,152" fill="none" marker-end="url(#a4)" marker-start="url(#a4)" stroke="var(--ink2)" stroke-width="1"></path>
+<text class="subt" font-weight="600" text-anchor="middle" x="400" y="176">V5 · 2,00×0,50</text>
+<text class="subt" text-anchor="middle" x="400" y="188">corrediza · cocina</text>
+<!-- cotas -->
+<line marker-end="url(#a4)" marker-start="url(#a4)" stroke="var(--dim)" stroke-width="1" x1="122" x2="122" y1="142" y2="206"></line>
+<text class="dimt" text-anchor="middle" transform="rotate(-90 118 176)" x="118" y="176">1,60</text>
+<line marker-end="url(#a4)" marker-start="url(#a4)" stroke="var(--dim)" stroke-width="1" x1="456" x2="456" y1="162" y2="206"></line>
+<text class="dimt" text-anchor="middle" transform="rotate(-90 470 184)" x="470" y="184">1,10</text>
+<line marker-end="url(#a4)" marker-start="url(#a4)" stroke="var(--dim)" stroke-width="1" x1="80" x2="80" y1="206" y2="250"></line>
+<text class="dimt" text-anchor="middle" transform="rotate(-90 72 228)" x="72" y="228">1,10</text>
+<text class="subt" fill="var(--rust)" text-anchor="middle" x="112" y="266">oeste</text>
+<text class="subt" fill="var(--rust)" text-anchor="middle" x="448" y="266">este</text>
+<text class="subt" text-anchor="middle" x="280" y="288">vista desde el sur · V5 llega a la pared este · P2 alineada con V2 para la ventilación cruzada</text>
 </svg>
 </div>
-<!-- ESTE y OESTE: triangulos -->
+<!-- ESTE y OESTE: triangulos · 40 px = 1 m · norte 3,40 libres, sur 2,70 -->
 <div class="twocol">
 <div class="plano">
 <p class="planotitle">Fachada este · acceso · triángulo</p>
-<svg aria-label="Fachada este: norte alto a la derecha, sur bajo a la izquierda, acceso doble al centro, ventana vertical al sur (izquierda)" role="img" viewbox="0 0 290 210">
-<line stroke="var(--ink2)" stroke-width="1.2" x1="10" x2="280" y1="180" y2="180"></line>
-<g fill="var(--card)" stroke="var(--ink2)" stroke-width="1"><rect height="28" width="10" x="55" y="152"></rect><rect height="28" width="10" x="220" y="152"></rect></g>
-<!-- triangulo: NORTE alto a la DERECHA, SUR bajo a la IZQUIERDA (visto de frente desde el este) -->
-<polygon fill="var(--card)" points="45,110 245,55 245,152 45,152" stroke="var(--wall)" stroke-width="2"></polygon>
-<!-- alero -->
-<line stroke="var(--clay)" stroke-width="3" x1="35" x2="255" y1="114" y2="52"></line>
-<text class="alerot" x="14" y="108">0,70</text>
-<text class="alerot" x="248" y="46">0,90</text>
-<!-- puerta doble AL CENTRO -->
-<rect fill="var(--door)" height="62" opacity=".55" stroke="var(--wall)" width="46" x="122" y="90"></rect>
-<text class="subt" text-anchor="middle" x="145" y="167">acceso doble (centro)</text>
-<!-- ventana VERTICAL 1,50x0,40 del lado SUR = IZQUIERDA (lado de la cocina) -->
-<rect fill="var(--glass)" height="43" opacity=".6" stroke="var(--wall)" width="15" x="72" y="109"></rect>
-<text class="subt" transform="rotate(90 79 135)" x="79" y="135">V6 1,50×0,40</text>
-<text class="subt" fill="var(--rust)" x="55" y="130">S</text>
-<text class="subt" fill="var(--rust)" x="210" y="76">N alto</text>
+<svg aria-label="Fachada este a escala: norte alto a la derecha, sur bajo a la izquierda, puerta doble de acceso P1 y ventana circular V6 del lado sur" role="img" viewbox="0 0 300 300">
+<line stroke="var(--ink2)" stroke-width="1.2" x1="10" x2="290" y1="260" y2="260"></line>
+<!-- pilotines en y = 0 / 2,65 / 5,37 · x = 258 − 40·y -->
+<g fill="var(--card)" stroke="var(--ink2)" stroke-width="1"><rect height="44" width="10" x="253" y="216"></rect><rect height="44" width="10" x="147" y="216"></rect><rect height="44" width="10" x="38" y="216"></rect></g>
+<polygon fill="var(--card)" points="42,108 258,80 258,216 42,216" stroke="var(--wall)" stroke-width="2"></polygon>
+<line stroke="var(--clay)" stroke-width="3" x1="14" x2="294" y1="111.6" y2="75.3"></line>
+<text class="alerot" x="8" y="128">0,70</text>
+<text class="alerot" x="264" y="68">0,90</text>
+<!-- P1 puerta doble 0,55–2,55 desde el norte · 2,00 × 2,50 -->
+<rect fill="var(--door)" height="100" opacity=".55" stroke="var(--wall)" width="80" x="156" y="116"></rect>
+<line stroke="var(--wall)" stroke-width="1.2" x1="196" x2="196" y1="116" y2="216"></line>
+<text class="subt" font-weight="600" text-anchor="middle" x="196" y="108">P1 · 2,00×2,50</text>
+<text class="subt" text-anchor="middle" x="196" y="236">acceso doble</text>
+<!-- V6 circular Ø1,00, centro a 4,15 del norte · alféizar 1,00 -->
+<circle cx="92" cy="156" fill="var(--glass)" opacity=".65" r="20" stroke="var(--wall)"></circle>
+<text class="subt" font-weight="600" text-anchor="middle" x="92" y="128">V6 · Ø1,00</text>
+<text class="subt" text-anchor="middle" x="92" y="190">circular</text>
+<line marker-end="url(#a4)" marker-start="url(#a4)" stroke="var(--dim)" stroke-width="1" x1="60" x2="60" y1="176" y2="216"></line>
+<text class="dimt" text-anchor="middle" transform="rotate(-90 56 196)" x="56" y="196">1,00</text>
+<text class="subt" fill="var(--rust)" x="18" y="236">S</text>
+<text class="subt" fill="var(--rust)" x="272" y="236">N</text>
+<text class="subt" text-anchor="middle" x="150" y="285">vista desde el este · norte a la derecha</text>
 </svg>
 </div>
 <div class="plano">
 <p class="planotitle">Fachada oeste · triángulo · ciego</p>
-<svg aria-label="Fachada oeste: norte alto a la izquierda, sur bajo a la derecha, muro ciego con dos ventanas 20x20 a 2 metros" role="img" viewbox="0 0 290 220">
-<line stroke="var(--ink2)" stroke-width="1.2" x1="10" x2="280" y1="180" y2="180"></line>
-<g fill="var(--card)" stroke="var(--ink2)" stroke-width="1"><rect height="28" width="10" x="55" y="152"></rect><rect height="28" width="10" x="220" y="152"></rect></g>
-<!-- fachada OESTE es espejo de la este: NORTE alto a la IZQUIERDA, SUR bajo a la DERECHA -->
-<polygon fill="var(--card)" points="45,55 245,110 245,152 45,152" stroke="var(--wall)" stroke-width="2"></polygon>
-<line stroke="var(--clay)" stroke-width="3" x1="35" x2="255" y1="52" y2="114"></line>
-<text class="alerot" x="14" y="48">0,90</text>
-<text class="alerot" x="248" y="110">0,70</text>
-<!-- 2 ventanas 20x20 a 2m del piso (misma altura) -->
-<rect fill="var(--glass)" height="14" opacity=".6" stroke="var(--wall)" stroke-dasharray="2 2" width="14" x="95" y="95"></rect>
-<rect fill="var(--glass)" height="14" opacity=".6" stroke="var(--wall)" stroke-dasharray="2 2" width="14" x="180" y="95"></rect>
-<text class="subt" text-anchor="middle" x="102" y="148">20×20</text>
-<text class="subt" text-anchor="middle" x="187" y="148">20×20</text>
-<line marker-end="url(#aw)" marker-start="url(#aw)" stroke="var(--dim)" stroke-width="1" x1="70" x2="70" y1="95" y2="152"></line>
-<text class="dimt" transform="rotate(-90 62 140)" x="62" y="140">2,00</text>
-<text class="subt" text-anchor="middle" x="145" y="170">muro ciego · ventilación en alto</text>
-<text class="subt" fill="var(--rust)" x="60" y="78">N alto</text>
-<text class="subt" fill="var(--rust)" x="228" y="130">S</text>
+<svg aria-label="Fachada oeste a escala: norte alto a la izquierda, sur bajo a la derecha, muro ciego con V7 y V8 de 0,20 por 0,20 con alféizar a 2,00" role="img" viewbox="0 0 300 300">
+<line stroke="var(--ink2)" stroke-width="1.2" x1="10" x2="290" y1="260" y2="260"></line>
+<!-- pilotines en y = 0 / 2,65 / 5,37 · x = 42 + 40·y -->
+<g fill="var(--card)" stroke="var(--ink2)" stroke-width="1"><rect height="44" width="10" x="37" y="216"></rect><rect height="44" width="10" x="143" y="216"></rect><rect height="44" width="10" x="252" y="216"></rect></g>
+<polygon fill="var(--card)" points="42,80 258,108 258,216 42,216" stroke="var(--wall)" stroke-width="2"></polygon>
+<line stroke="var(--clay)" stroke-width="3" x1="6" x2="286" y1="75.3" y2="111.6"></line>
+<text class="alerot" x="6" y="68">0,90</text>
+<text class="alerot" x="262" y="128">0,70</text>
+<!-- V7 centro del dormitorio 1,50–1,70 · V8 baño 4,10–4,30 · alféizar 2,00 -->
+<rect fill="var(--glass)" height="8" opacity=".75" stroke="var(--wall)" width="8" x="102" y="128"></rect>
+<rect fill="var(--glass)" height="8" opacity=".75" stroke="var(--wall)" width="8" x="206" y="128"></rect>
+<text class="subt" font-weight="600" text-anchor="middle" x="106" y="121">V7 · 0,20×0,20</text>
+<text class="subt" font-weight="600" text-anchor="middle" x="210" y="121">V8 · 0,20×0,20</text>
+<text class="subt" text-anchor="middle" x="106" y="150">dormitorio</text>
+<text class="subt" text-anchor="middle" x="210" y="150">baño</text>
+<line opacity=".6" stroke="var(--dim)" stroke-dasharray="2 2" stroke-width="0.8" x1="110" x2="206" y1="136" y2="136"></line>
+<line marker-end="url(#aw)" marker-start="url(#aw)" stroke="var(--dim)" stroke-width="1" x1="158" x2="158" y1="136" y2="216"></line>
+<text class="dimt" text-anchor="middle" transform="rotate(-90 154 186)" x="154" y="186">alf. 2,00</text>
+<text class="subt" fill="var(--rust)" x="18" y="236">N</text>
+<text class="subt" fill="var(--rust)" x="272" y="236">S</text>
+<text class="subt" text-anchor="middle" x="150" y="285">vista desde el oeste · muro ciego · ventilación en alto</text>
 <defs><marker id="aw" markerheight="5" markerwidth="5" orient="auto-start-reverse" refx="5" refy="5" viewbox="0 0 10 10"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.4"></path></marker></defs>
 </svg>
 </div>
 </div>
 <div class="note">
-<b>Las dos ventanitas de 20×20 del oeste</b> van a más de 2 m del piso: son solo para ventilación
+<b>Las dos ventanitas de 0,20×0,20 del oeste (V7 y V8)</b> tienen el alféizar a 2,00 m del piso: son solo para ventilación
       cruzada del dormitorio y el baño, no para mirar ni para entrar sol. Por eso van en lo alto del muro ciego.
     </div>
 </section>
