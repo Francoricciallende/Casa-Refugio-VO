@@ -218,10 +218,11 @@
     exterior y aislación en la cavidad— que envuelven a las columnas. No cargan el techo: solo cierran
     y aíslan. Las nueve columnas quedan ocultas dentro de esos muros, y a cambio el muro le devuelve a
     la columna el arriostramiento que necesita en su eje débil.</p>
-<p>Lo que resiste el viento es un tercer sistema, independiente de los otros dos:
-    <b>cruces de San Andrés y diafragmas en cuatro planos</b> —el techo, las cuatro paredes, el piso y
-    la cámara bajo piso—, encadenados en una única bajada que termina en el encadenado de fundación y
-    de ahí en el suelo. El plano crítico es el de abajo: entre el terreno y la plataforma hay un metro
+<p>Lo que resiste el viento es un tercer sistema, independiente de los otros dos: <b>cuatro
+    planos encadenados</b>. Son el diafragma de techo, los <b>muros de corte de placa OSB/fenólico</b>
+    (las cuatro fachadas y el tabique del dormitorio, anclados con hold-downs), el diafragma de piso y
+    las cruces de San Andrés de la cámara bajo piso. Forman una única bajada que termina en el
+    encadenado de fundación y de ahí en el suelo. El plano crítico es el de abajo: entre el terreno y la plataforma hay un metro
     sin muros, y son las cruces entre pilotines las que evitan que la casa se ladee en bloque sobre sus
     apoyos. <a href="columnas.html">Ver el sistema completo →</a></p>
 
@@ -233,8 +234,8 @@
 <div class="kv"><span class="k">Cerramiento</span><span class="v">woodframe + placa cementicia 0,15 (no portante)</span></div>
 <div class="kv"><span class="k">Fundación</span><span class="v">15 pilotines H-21 + viga de fundación</span></div>
 <div class="kv"><span class="k">Cubierta</span><span class="v">chapa sobre contralistón · faldón 13% N→S</span></div>
-<div class="kv"><span class="k">Piso</span><span class="v">viguetas I-joist 241 mm sobre 3 vigas E–O · +1,10</span></div>
-<div class="kv"><span class="k">Arriostramiento</span><span class="v">cruces de San Andrés + diafragmas · 4 planos</span></div>
+<div class="kv"><span class="k">Piso</span><span class="v">viguetas I-joist 241 mm sobre 3 vigas E–O · vigas de borde · +1,10</span></div>
+<div class="kv"><span class="k">Arriostramiento</span><span class="v">diafragmas + muros de corte de placa + cruces en la cámara</span></div>
 </div>
 <div class="infocard">
 <h3>Programa · 45,36 m²</h3>
@@ -375,8 +376,10 @@
 <section class="blk">
 <h2><span class="mk">▢</span>Planta general</h2>
 <p>Distribución de 8,40 × 5,40. El estar-cocina es una sola pieza; dormitorio, baño y guardado
-    sobre la crujía oeste. Las paredes divisorias son cerramiento liviano, se levantan al final y
-    apoyan sobre pilotines para acompañar con su peso.</p>
+    sobre la crujía oeste. Las paredes divisorias del baño y del pasillo son cerramiento liviano, se
+    levantan al final y apoyan sobre pilotines para acompañar con su peso. El tabique entre el
+    dormitorio y el estar, en el eje x = 3,60, es la excepción: es muro de corte del sistema contra el
+    viento y se levanta con la estructura.</p>
 <h3 style="font-family:'Fraunces',serif;font-size:1.05rem;margin:18px 0 4px">Planilla de aberturas</h3>
 <p class="muted" style="margin:0">Medidas de vano: ancho horizontal × alto. El alféizar se mide desde el piso terminado (+1,10) hasta el borde inferior del vano. Los mismos códigos rotulan la planta y las fachadas.</p>
 <div class="tablecard scroll">
@@ -419,6 +422,8 @@
 <rect fill="none" height="290" stroke="var(--wall)" stroke-width="7" width="480" x="80" y="80"></rect>
 <!-- tabiques -->
 <line stroke="var(--wall)" stroke-width="5" x1="286" x2="286" y1="80" y2="240"></line>
+<line stroke="var(--clay)" stroke-width="3" x1="286" x2="286" y1="86" y2="216"></line> <!-- tabique x = 3,60: muro de corte entre columnas -->
+<text class="subt" fill="var(--clay)" font-weight="600" text-anchor="middle" transform="rotate(-90 276 160)" x="276" y="160">muro de corte</text>
 <line stroke="var(--wall)" stroke-width="5" x1="80" x2="286" y1="240" y2="240"></line>
 <line stroke="var(--wall)" stroke-width="5" x1="183" x2="183" y1="240" y2="370"></line>
 <!-- labels -->
@@ -798,7 +803,7 @@
     proporciones, no para medir: no tienen escala, carátula ni capas. <b>Ante cualquier diferencia
     manda la documentación del proyecto</b>, no el modelo. Tres diferencias conocidas: el modelo no
     dibuja la viga de fundación que une las zapatas, no dibuja las cruces de San Andrés de la cámara ni
-    de los muros, y representa una columna por pilotín, mientras que el proyecto define nueve columnas
+    la placa y los hold-downs de los muros de corte, y representa una columna por pilotín, mientras que el proyecto define nueve columnas
     en grilla de tres por tres.</div>
 </section>
 <div class="note warn">

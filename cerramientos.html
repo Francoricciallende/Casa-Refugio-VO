@@ -195,7 +195,8 @@
     <p class="kicker">Etapa 7 de 8</p>
     <h1>Cerramientos internos</h1>
     <p class="lead">Las divisiones interiores, al final y livianas: tabiques de estructura de madera
-    con placa, no portantes. El interior fue un monoambiente toda la obra; se divide cuando querés.</p>
+    con placa, no portantes. La única excepción es el tabique del eje x = 3,60, que es muro de corte y
+    se levanta con la estructura.</p>
 
     <div class="progwrap">
       <div class="progbar"><div class="progfill" id="fill"></div></div>
@@ -213,12 +214,12 @@
   <!-- QUÉ SE HACE -->
   <section class="blk">
     <h2><span class="mk">i</span>Qué se hace en esta etapa</h2>
-    <p>Las divisiones internas (dormitorio, baño, pasillo) se levantan al final, cuando la estructura
-    y el cierre exterior ya están. No son portantes: solo dividen. Son tabiques livianos de bastidor
-    de madera con placa a ambas caras, apoyados sobre los pilotines previstos.</p>
-    <div class="note"><b>Se hacen últimas y son livianas.</b> Como no sostienen nada, el interior fue
-    un monoambiente durante toda la obra. Dividir al final da libertad: si cambiás la distribución,
-    no tocás la estructura.</div>
+    <p>Las divisiones internas del baño y del pasillo se levantan al final, cuando la estructura y el
+    cierre exterior ya están. No son portantes: solo dividen. Son tabiques livianos de bastidor de
+    madera con placa a ambas caras, apoyados sobre los pilotines previstos.</p>
+    <div class="note"><b>Se hacen últimas y son livianas.</b> Como no sostienen nada, se pueden dejar
+    para el final. Dividir al final da libertad: si cambiás esa distribución, no tocás la estructura.
+    El tabique que separa el dormitorio del estar no entra en esta regla (ver abajo).</div>
   </section>
 
   <!-- MATERIALES -->
@@ -232,25 +233,32 @@
         <thead><tr><th>Tabique</th><th>Estructura</th><th>Separación</th><th>Placa (ambas caras)</th><th>Aislación</th></tr></thead>
         <tbody>
           <tr><td>Baño</td><td>Montantes 2"×2" (45×45 mm)</td><td>c/0,40</td><td>Verde antihumedad 12,5 mm</td><td>Lana en cavidad</td></tr>
-          <tr><td>Dormitorio</td><td>Montantes 2"×2" (45×45 mm)</td><td>c/0,40</td><td>Yeso común 12,5 mm</td><td>Lana en cavidad</td></tr>
+          <tr><td>Dormitorio (hacia el pasillo)</td><td>Montantes 2"×2" (45×45 mm)</td><td>c/0,40</td><td>Yeso común 12,5 mm</td><td>Lana en cavidad</td></tr>
+          <tr><td><b>Dormitorio–estar · eje x = 3,60 · muro de corte</b></td><td>Montantes 2"×4" (45×95 mm) · montante doble en juntas</td><td>c/0,40</td><td>OSB/fenólico 12 mm en una cara (clavo 2½", perimetral c/0,10) + yeso común 12,5 mm en las dos</td><td>Lana en cavidad</td></tr>
         </tbody>
       </table>
     </div>
-    <p class="muted">Espesor de tabique 0,10 m. La placa verde soporta la humedad del baño; la de yeso
-    común alcanza para el resto. Ambos tabiques son livianos y no cargan la estructura.</p>
-    <div class="note warn"><b>Excepción: el tabique del eje x = 3,60.</b> El que separa el dormitorio
-    del estar contiene tres de las nueve columnas y les da el arriostramiento lateral que necesitan.
-    Además está justo encima de uno de los tres planos norte–sur arriostrados de la cámara, de modo
-    que forma parte de la bajada del esfuerzo de viento. Ese no es un tabique divisorio: es
-    estructural, y no puede eliminarse ni perforarse de lado a lado sin recalcular. Ver
-    <a href="columnas.html">Columnas</a>.</div>
+    <p class="muted">Espesor de tabique 0,10 m; el del eje x = 3,60, 0,15 m, enrasado con las
+    columnas que contiene. La placa verde soporta la humedad del baño; la de yeso común alcanza para el
+    resto. Los tabiques del baño y del pasillo son livianos y no cargan la estructura.</p>
+    <div class="note warn"><b>Excepción: el tabique del eje x = 3,60 es muro de corte.</b> El que
+    separa el dormitorio del estar tiene en sus extremos las columnas (3,60; 0) y (3,60; 2,65) y les da
+    el arriostramiento lateral que necesitan. Además es uno de los <b>muros de corte</b> del sistema
+    lateral: toma hasta 7,45 kN del viento norte–sur, casi la mitad del que llega al techo, y sin él
+    el muro este no verifica. Tiene placa de OSB/fenólico clavada, un hold-down HD-2 en cada columna,
+    su solera atornillada a una pieza de piso doble 2×10" y la superior a un colector en el techo. Está
+    justo encima del plano norte–sur de la cámara en x = 3,60. Por eso:
+    <b>no se levanta al final sino con la estructura</b>, en la etapa de <a href="paredes.html">Paredes</a>,
+    junto con los muros exteriores; y <b>no se perfora, no se elimina y no se le abre un vano</b> sin
+    recalcular. Ver <a href="columnas.html">Columnas</a> y la <a href="calculo.html">memoria de cálculo</a>.</div>
   </section>
 
   <!-- PASO A PASO -->
   <section class="blk">
     <h2><span class="mk moss">→</span>Paso a paso de obra</h2>
     <ol class="steps">
-      <li><b>Replanteo de divisiones</b><span>Marcar sobre el piso terminado las líneas de los tabiques, coincidiendo con los pilotines previstos para que apoyen su peso.</span></li>
+      <li><b>El tabique x = 3,60 ya está hecho</b><span>El tabique que separa el dormitorio del estar se levantó y emplacó en la etapa de Paredes, porque es muro de corte. En esta etapa sólo se le coloca la terminación de yeso si no se hizo antes. No se le abren vanos ni se pasan cañerías de lado a lado.</span></li>
+      <li><b>Replanteo de divisiones</b><span>Marcar sobre el piso terminado las líneas de los tabiques del baño y del pasillo, coincidiendo con los pilotines previstos para que apoyen su peso.</span></li>
       <li><b>Estructura del tabique</b><span>Bastidor de montantes 2"×2" @ 0,40. Anclar arriba a la estructura de techo y abajo al piso. Dejar los vanos de puertas.</span></li>
       <li><b>Instalaciones y aislación</b><span>Pasar cañerías y cajas dentro del bastidor antes de cerrar. Colocar lana en la cavidad (aislación acústica entre ambientes).</span></li>
       <li><b>Cierre y terminación</b><span>Placa a ambas caras (verde en el baño, yeso en el resto), tomar juntas y lijar. Colocar puertas. Queda listo para pintar en terminaciones.</span></li>

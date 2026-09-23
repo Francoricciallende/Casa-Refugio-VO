@@ -196,8 +196,8 @@
     <h1>Paredes</h1>
     <p class="lead">El cierre exterior entre columnas: paneles de <b>woodframe no portantes</b> con
     <b>placa cementicia</b> hacia afuera y aislación en la cavidad. No cargan el techo (lo sostienen
-    las columnas), pero sí son muros de corte: llevan las <b>cruces de San Andrés</b> que arriostran
-    la casa contra el viento.</p>
+    las columnas), pero sí son muros de corte: la <b>placa de OSB/fenólico clavada</b> convierte cada
+    tramo de muro lleno en un diafragma vertical que arriostra la casa contra el viento.</p>
 
     <div class="progwrap">
       <div class="progbar"><div class="progfill" id="fill"></div></div>
@@ -226,11 +226,111 @@
     columnas. El panel de woodframe es el cerramiento y la aislación; la placa cementicia le da la
     piel exterior dura y resistente al agua.</div>
     <div class="note warn"><b>Pero sí arriostran.</b> Los muros son el segundo de los cuatro planos
-    del sistema resistente a cargas laterales. Cada una de las <b>cuatro fachadas</b> lleva cruces de
-    San Andrés dentro del bastidor, con un <b>mínimo de dos paños arriostrados por fachada</b> en
-    esquinas opuestas: los muros oeste y este toman el viento norte–sur, los muros norte y sur toman
-    el este–oeste. Además, el bastidor clavado a la columna cada 0,40 es lo que le arriostra a la
+    del sistema resistente a cargas laterales. Son <b>muros de corte de placa</b>: el panel entero,
+    con la placa de OSB/fenólico de 12 mm clavada al bastidor, trabaja como un diafragma vertical. Los
+    muros oeste y este, junto con el tabique del dormitorio, toman el viento norte–sur. Los muros norte
+    y sur toman el este–oeste. Cada tramo lleno se ata abajo con hold-downs. Además, el bastidor clavado a la columna cada 0,40 es lo que le arriostra a la
     columna su eje débil. El sistema completo está en <a href="columnas.html">Columnas</a>.</div>
+  </section>
+
+  <!-- MUROS DE CORTE -->
+  <section class="blk">
+    <h2><span class="mk">▥</span>Muros de corte · dónde está el muro lleno</h2>
+    <p>Un muro de corte de placa sólo trabaja donde el muro está <b>lleno de piso a techo</b>. Cada
+    abertura corta el muro en segmentos, y sólo cuentan los que tienen una relación alto/ancho de
+    hasta 3,5. En la casa son <b>nueve segmentos</b>: dos al norte, dos al sur, tres al oeste, uno al
+    este y el tabique del dormitorio. Cada extremo de cada segmento lleva un <b>hold-down</b> que lo ata
+    a una columna o a una viga de piso.</p>
+    <div class="plano scroll">
+      <p class="planotitle">Planta · segmentos de muro de corte y hold-downs · norte arriba</p>
+      <svg viewBox="0 0 640 470" role="img" aria-label="Planta con los nueve segmentos de muro de corte: dos en la fachada norte, dos en la sur, tres en la oeste, uno en la este y el tabique del eje 3,60, con los hold-downs en sus extremos">
+        <!-- muro perimetral (todo) -->
+        <rect x="80" y="80" width="480" height="290" fill="none" stroke="var(--line)" stroke-width="5"/>
+        <!-- aberturas -->
+        <g stroke="var(--glass)" stroke-width="5">
+          <line x1="140" x2="225.7" y1="80" y2="80"/><line x1="302.9" x2="360" y1="80" y2="80"/><line x1="414.3" x2="528.6" y1="80" y2="80"/>
+          <line x1="108.6" x2="137.1" y1="370" y2="370"/><line x1="434.3" x2="548.6" y1="370" y2="370"/>
+          <line x1="80" x2="80" y1="160.6" y2="171.3"/><line x1="80" x2="80" y1="300.2" y2="310.9"/>
+          <line x1="560" x2="560" y1="276" y2="329.7"/>
+        </g>
+        <g stroke="var(--door)" stroke-width="5">
+          <line x1="302.9" x2="360" y1="370" y2="370"/><line x1="560" x2="560" y1="109.5" y2="216.9"/>
+        </g>
+        <!-- segmentos que cuentan -->
+        <g stroke="var(--clay)" stroke-width="9" stroke-linecap="butt">
+          <line x1="80" x2="140" y1="80" y2="80"/><line x1="225.7" x2="302.9" y1="80" y2="80"/>
+          <line x1="137.1" x2="302.9" y1="370" y2="370"/><line x1="360" x2="434.3" y1="370" y2="370"/>
+          <line x1="80" x2="80" y1="80" y2="160.6"/><line x1="80" x2="80" y1="171.3" y2="300.2"/><line x1="80" x2="80" y1="310.9" y2="370"/>
+          <line x1="560" x2="560" y1="216.9" y2="276"/>
+          <line x1="285.7" x2="285.7" y1="80" y2="222.3"/>
+        </g>
+        <!-- tabique fuera del segmento -->
+        <line x1="285.7" x2="285.7" y1="222.3" y2="240" stroke="var(--line)" stroke-width="5"/>
+        <!-- columnas -->
+        <g fill="var(--paper)" stroke="var(--ink2)" stroke-width="1.4">
+          <circle cx="80" cy="80" r="6"/><circle cx="285.7" cy="80" r="6"/><circle cx="560" cy="80" r="6"/>
+          <circle cx="80" cy="222.3" r="6"/><circle cx="285.7" cy="222.3" r="6"/><circle cx="560" cy="222.3" r="6"/>
+          <circle cx="80" cy="368.4" r="6"/><circle cx="285.7" cy="368.4" r="6"/><circle cx="560" cy="368.4" r="6"/>
+        </g>
+        <!-- hold-downs -->
+        <g fill="var(--rust)">
+          <rect x="136" y="86" width="8" height="8"/><rect x="221.7" y="86" width="8" height="8"/><rect x="298.9" y="86" width="8" height="8"/>
+          <rect x="133.1" y="356" width="8" height="8"/><rect x="298.9" y="356" width="8" height="8"/><rect x="356" y="356" width="8" height="8"/><rect x="430.3" y="356" width="8" height="8"/>
+          <rect x="86" y="84" width="8" height="8"/><rect x="86" y="156.6" width="8" height="8"/><rect x="86" y="167.3" width="8" height="8"/><rect x="86" y="296.2" width="8" height="8"/><rect x="86" y="306.9" width="8" height="8"/><rect x="86" y="358" width="8" height="8"/>
+          <rect x="546" y="212.9" width="8" height="8"/><rect x="546" y="272" width="8" height="8"/>
+          <rect x="291.7" y="84" width="8" height="8"/><rect x="291.7" y="214.3" width="8" height="8"/>
+        </g>
+        <!-- rotulos -->
+        <g class="subt" font-weight="600" fill="var(--clay)">
+          <text x="110" y="70" text-anchor="middle">N1 · 1,05</text>
+          <text x="264" y="70" text-anchor="middle">N2 · 1,35</text>
+          <text x="220" y="392" text-anchor="middle">S1 · 2,90</text>
+          <text x="397" y="392" text-anchor="middle">S2 · 1,30</text>
+          <text x="66" y="120" text-anchor="middle" transform="rotate(-90 66 120)">O1 · 1,50</text>
+          <text x="66" y="236" text-anchor="middle" transform="rotate(-90 66 236)">O2 · 2,40</text>
+          <text x="66" y="340" text-anchor="middle" transform="rotate(-90 66 340)">O3 · 1,10</text>
+          <text x="578" y="246" text-anchor="middle" transform="rotate(90 578 246)">E1 · 1,10 · c/0,075</text>
+          <text x="300" y="150" transform="rotate(90 300 150)" text-anchor="middle">T1 · tabique · 2,65</text>
+        </g>
+        <!-- leyenda -->
+        <line x1="80" x2="104" y1="432" y2="432" stroke="var(--clay)" stroke-width="9"/>
+        <text class="subt" x="110" y="436">segmento que cuenta (m)</text>
+        <line x1="250" x2="274" y1="432" y2="432" stroke="var(--line)" stroke-width="5"/>
+        <text class="subt" x="280" y="436">muro que no cuenta</text>
+        <rect x="396" y="428" width="8" height="8" fill="var(--rust)"/>
+        <text class="subt" x="410" y="436">hold-down</text>
+        <circle cx="490" cy="432" r="5" fill="var(--paper)" stroke="var(--ink2)" stroke-width="1.4"/>
+        <text class="subt" x="500" y="436">columna</text>
+        <line x1="80" x2="104" y1="452" y2="452" stroke="var(--glass)" stroke-width="5"/>
+        <text class="subt" x="110" y="456">ventana</text>
+        <line x1="250" x2="274" y1="452" y2="452" stroke="var(--door)" stroke-width="5"/>
+        <text class="subt" x="280" y="456">puerta</text>
+      </svg>
+      <div class="cap">Los nueve segmentos de muro lleno y sus 18 hold-downs; en la esquina (0; 0) caen dos, uno por muro. En la fachada norte no cuentan
+      los macizos entre V2 y V3 (0,95 m) ni la esquina este (0,55 m): son demasiado angostos para su
+      altura de 3,40. El muro este tiene un solo segmento, entre la puerta P1 y la ventana V6, y por eso
+      lleva clavado c/0,075. El tabique del dormitorio es muro de corte entre sus dos columnas. Bajo los muros este y oeste van
+      vigas de borde doble 3×10" que reciben los hold-downs; ninguno cae sobre una vigueta I-joist.</div>
+    </div>
+    <div class="tablecard scroll">
+      <table>
+        <thead><tr><th>Segmento</th><th>Largo</th><th>h/b</th><th>Clavado perimetral</th><th>Aprovechamiento</th><th>Hold-downs</th></tr></thead>
+        <tbody>
+          <tr><td>N1 · norte</td><td>1,05 m</td><td>3,24</td><td>c/0,10</td><td>37%</td><td>HD-1 · columna (0; 0) + perimetral norte</td></tr>
+          <tr><td>N2 · norte</td><td>1,35 m</td><td>2,52</td><td>c/0,10</td><td>37%</td><td>HD-1 · perimetral norte</td></tr>
+          <tr><td>S1 · sur</td><td>2,90 m</td><td>0,93</td><td>c/0,10</td><td>23%</td><td>HD-1 · perimetral sur</td></tr>
+          <tr><td>S2 · sur</td><td>1,30 m</td><td>2,08</td><td>c/0,10</td><td>23%</td><td>HD-1 · perimetral sur</td></tr>
+          <tr><td>O1 · oeste</td><td>1,50 m</td><td>2,27</td><td>c/0,10</td><td>19%</td><td>HD-1 · columna (0; 0) + viga de borde oeste</td></tr>
+          <tr><td>O2 · oeste</td><td>2,40 m</td><td>1,32</td><td>c/0,10</td><td>19%</td><td>HD-1 · viga de borde oeste</td></tr>
+          <tr><td>O3 · oeste</td><td>1,10 m</td><td>2,58</td><td>c/0,10</td><td>19%</td><td>HD-1 · viga de borde oeste + columna (0; 5,37)</td></tr>
+          <tr><td><b>E1 · este</b></td><td>1,10 m</td><td>2,79</td><td><b>c/0,075</b></td><td><b>57%</b></td><td>HD-2 · columna (8,40; 2,65) + viga de borde este</td></tr>
+          <tr><td><b>T1 · tabique</b></td><td>2,65 m</td><td>1,28</td><td>c/0,10</td><td>47%</td><td>HD-2 · columnas (3,60; 0) y (3,60; 2,65)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="muted">Verificación completa en la <a href="calculo.html">memoria de cálculo</a>, punto 6.
+    Placa OSB/fenólico 12 mm en la cara exterior, clavo 2½". Aprovechamiento del segmento con la
+    envolvente de los repartos por diafragma rígido y por área.</p>
   </section>
 
   <!-- COMPOSICIÓN DEL MURO -->
@@ -242,8 +342,7 @@
         <tbody>
           <tr><td>Placa cementicia 8–10 mm</td><td>revestimiento exterior, resiste agua e intemperie</td></tr>
           <tr><td>Barrera de agua-viento (membrana hidrófuga)</td><td>evita que entre agua, deja salir el vapor</td></tr>
-          <tr><td>OSB / fenólico 12 mm</td><td>rigidiza el paño del panel</td></tr>
-          <tr><td>Cruz de San Andrés · planchuela 40×4 embutida</td><td>muro de corte: toma el viento y lo baja al piso</td></tr>
+          <tr><td>OSB / fenólico 12 mm clavado al bastidor</td><td>muro de corte: toma el viento y lo baja al piso</td></tr>
           <tr><td>Montantes 2"×4" @ 0,40 + lana de vidrio 100 mm</td><td>estructura del cierre y aislación térmica</td></tr>
           <tr><td>Barrera de vapor (film polietileno)</td><td>del lado interior (cálido), evita condensación en la cavidad</td></tr>
           <tr><td>Placa de yeso 12,5 mm</td><td>terminación interior</td></tr>
@@ -262,9 +361,11 @@
         <thead><tr><th>Elemento</th><th>Sección / espesor</th><th>Separación</th><th>Especificación</th></tr></thead>
         <tbody>
           <tr><td>Montantes y soleras</td><td>2"×4" (45×95 mm)</td><td>c/0,40</td><td>Pino · madera seca ≤ 19%</td></tr>
-          <tr><td>Placa de arriostramiento</td><td>OSB / fenólico 12 mm</td><td>continua</td><td>Cara exterior · clavado perimetral c/0,10, interior c/0,20</td></tr>
-          <tr><td>Diagonal de cruz de San Andrés</td><td>Planchuela de acero 40×4 mm</td><td>2 paños por fachada</td><td>Galvanizada · embutida en canaleta en los montantes · 3,61 m por diagonal</td></tr>
-          <tr><td>Bulón de extremo de diagonal</td><td>Bulón Ø12 galvanizado</td><td>3 por extremo</td><td>A columna o montante doble (90 mm) · agujero al diámetro exacto</td></tr>
+          <tr><td>Placa de muro de corte</td><td>OSB / fenólico 12 mm</td><td>continua</td><td>Cara exterior · clavo 2½" · clavado perimetral c/0,10 (<b>c/0,075 en el muro este</b>), interior c/0,20 · juntas siempre sobre montante</td></tr>
+          <tr><td>Montante de borde de segmento</td><td>doble 2"×4" (90×95 mm)</td><td>en cada extremo de segmento</td><td>Recibe el hold-down · en el muro este también en cada junta de placa</td></tr>
+          <tr><td>Hold-down HD-1</td><td>Chapa plegada 3 mm + 4 bulones Ø12</td><td>14 extremos de las fachadas</td><td>Galvanizado · barra roscada Ø16 a la viga, arandela 100×100×10</td></tr>
+          <tr><td>Hold-down HD-2</td><td>Dos chapas 3 mm + 4 bulones Ø12 pasantes</td><td>2 extremos del muro este</td><td>Galvanizado · doble corte · agujero al diámetro exacto</td></tr>
+          <tr><td>Fijación de soleras</td><td>Tirafondo Ø8</td><td>c/0,20</td><td>Solera inferior a la viga de piso · solera superior a viga o cabio de borde</td></tr>
           <tr><td>Membrana hidrófuga</td><td>—</td><td>continua</td><td>Sobre el OSB · solapes 0,10, sellada en aberturas</td></tr>
           <tr><td>Revestimiento exterior</td><td>Placa cementicia 8–10 mm</td><td>continua</td><td>Junta tomada con malla y masilla para exterior</td></tr>
           <tr><td>Aislación en cavidad</td><td>Lana de vidrio 100 mm</td><td>entre montantes</td><td>Llena el espesor del bastidor</td></tr>
@@ -274,14 +375,13 @@
       </table>
     </div>
     <p class="muted">Espesor total del panel 0,15 m. El panel no es portante: cierra, aísla y arriostra,
-    pero no carga el techo. El arriostramiento lo dan la <b>cruz de San Andrés</b> y la placa de
-    OSB/fenólico; la placa cementicia es revestimiento y no se computa como elemento resistente.</p>
-    <div class="note warn"><b>Los dos paños arriostrados por fachada son una condición, no una
-    recomendación.</b> Con un solo paño, todo el corte del muro pasa por una única cruz: la planchuela
-    aguanta de sobra, pero la <b>unión abulonada no verifica</b> —queda al 102% de la capacidad de sus
-    tres bulones—. Con dos paños en esquinas opuestas la unión baja al 51%. <b>En la fachada norte, que
-    es casi toda ventana, esos dos paños hay que reservarlos en el replanteo de aberturas</b>: no
-    aparecen solos.</div>
+    pero no carga el techo. El arriostramiento lo da la <b>placa de OSB/fenólico clavada</b>; la placa
+    cementicia es revestimiento y no se computa como elemento resistente.</p>
+    <div class="note warn"><b>Los segmentos llenos son una condición, no una recomendación.</b> Abrir
+    una ventana, agrandar una existente o pasar una cañería de lado a lado en un segmento que cuenta le
+    saca muro de corte a esa fachada y obliga a recalcular. El caso más ajustado es el <b>muro este</b>.
+    Tiene un solo segmento de 1,10 m, entre la puerta P1 y la ventana V6, que trabaja al 57% y sólo
+    con clavado perimetral c/0,075. Con el c/0,10 del resto de la casa llegaría al 72%.</div>
   </section>
 
   <!-- COLGAR COSAS -->
@@ -311,12 +411,13 @@
   <section class="blk">
     <h2><span class="mk moss">→</span>Paso a paso de obra</h2>
     <ol class="steps">
-      <li><b>Replanteo y soleras</b><span>Marcar sobre la plataforma las líneas de muro entre columnas. Fijar la solera inferior al piso.</span></li>
-      <li><b>Armado de bastidores</b><span>Montantes 2"×4" @ 0,40 acostados sobre la plataforma; soleras superior e inferior, bloqueos horizontales cada 1,20, montante doble en extremos y vanos de aberturas.</span></li>
+      <li><b>Replanteo y soleras</b><span>Marcar sobre la plataforma las líneas de muro entre columnas y los extremos de cada segmento de muro de corte. Fijar la solera inferior con tirafondos Ø8 c/0,20 a la viga de piso que tiene debajo: perimetral al norte y al sur, viga de borde al este y al oeste.</span></li>
+      <li><b>Armado de bastidores</b><span>Montantes 2"×4" @ 0,40 acostados sobre la plataforma; soleras superior e inferior, bloqueos horizontales cada 1,20, montante doble en extremos, vanos de aberturas y en cada extremo de segmento de muro de corte.</span></li>
       <li><b>Levantar y fijar los paneles</b><span>Aplomar entre columnas y fijar a la estructura arriba y al piso abajo. Verificar escuadra y plomo.</span></li>
       <li><b>Instalaciones en el muro</b><span>Pasar las cañerías eléctricas corrugadas y cajas ANTES de cerrar. Agua y cloaca por tabiques interiores o la cámara.</span></li>
-      <li><b>Cruces de San Andrés</b><span>Antes de la placa: cortar la canaleta en los montantes y embutir la diagonal de planchuela 40×4 a lo largo del paño, dos paños por fachada en esquinas opuestas. Tres bulones Ø12 por extremo, a la columna o al montante doble, con el agujero al diámetro exacto del bulón —cualquier juego se traduce en deformación antes de que la cruz entre en carga—. La cruz trabaja sólo a tracción: de las dos ramas, una tira y la otra descansa según el sentido del viento.</span></li>
-      <li><b>Arriostramiento (OSB/fenólico)</b><span>Placa de OSB o fenólico 12 mm clavada sobre los montantes en la cara exterior: rigidiza el paño y cierra el panel sobre las cruces ya colocadas.</span></li>
+      <li><b>Hold-downs</b><span>En cada extremo de segmento, la chapa del hold-down abulonada al montante doble con 4 bulones Ø12 y la barra roscada Ø16 pasante a través de la solera, el fenólico y la viga de piso, con arandela 100×100×10 y tuerca por debajo. Donde el extremo es una columna, la chapa va a la columna y la toma la barra de anclaje al pilotín. En el muro este va el tipo HD-2, con chapa en las dos caras. Agujero al diámetro exacto del bulón: cualquier juego se traduce en deformación del muro antes de que el anclaje entre en carga.</span></li>
+      <li><b>Placa de muro de corte (OSB/fenólico)</b><span>Placa de OSB o fenólico 12 mm en la cara exterior, con clavo 2½": clavado perimetral c/0,10 e interior c/0,20. Todas las juntas de placa apoyadas sobre montante. En el segmento del muro este, entre P1 y V6, el clavado perimetral es <b>c/0,075</b> y las juntas caen sobre montante doble. Es el muro de corte: el clavado es estructural. Recién con las placas clavadas se retiran los puntales provisorios de las columnas.</span></li>
+      <li><b>Tabique del eje x = 3,60 (muro de corte)</b><span>Se levanta en esta etapa, no con los cerramientos internos. Bastidor 2"×4" @ 0,40 entre las columnas (3,60; 0) y (3,60; 2,65). Solera inferior atornillada con tirafondos Ø8 c/0,20 a la pieza doble 2×10" que va bajo el tabique. Solera superior atornillada c/0,20 al cabio colector del eje, a través del machimbre. Placa OSB/fenólico 12 mm en una cara con clavado perimetral c/0,10. Hold-down HD-2 en cada columna, tomado por la barra Ø16 de anclaje al pilotín.</span></li>
       <li><b>Barrera de agua-viento</b><span>Membrana hidrófuga sobre el OSB, solapada 0,10 y sellada en aberturas. El agua no entra, el vapor sale.</span></li>
       <li><b>Placa cementicia exterior</b><span>Atornillar la placa cementicia sobre la membrana, respetando juntas de dilatación. Tomar juntas con malla y masilla para exterior.</span></li>
       <li><b>Aislación y barrera de vapor</b><span>Lana de vidrio 100 mm en la cavidad; film de polietileno del lado interior, solapado y sellado.</span></li>
@@ -337,8 +438,9 @@
       <div class="chkitem" data-id="w2"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Bastidores armados</div></div>
       <div class="chkitem" data-id="w3"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Paneles levantados y aplomados</div></div>
       <div class="chkitem" data-id="w4"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Instalaciones pasadas antes de cerrar</div></div>
-      <div class="chkitem" data-id="w10"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Cruces de San Andrés: 2 paños por fachada, 4 fachadas<span class="chkhint">planchuela 40×4 · 3 bulones Ø12 por extremo</span></div></div>
-      <div class="chkitem" data-id="w5"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Arriostramiento (OSB/fenólico) colocado</div></div>
+      <div class="chkitem" data-id="w10"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Hold-downs colocados: 16 extremos de las fachadas<span class="chkhint">HD-2 en el muro este · barra Ø16 a la viga</span></div></div>
+      <div class="chkitem" data-id="w5"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Placa de muro de corte clavada<span class="chkhint">perimetral c/0,10 · c/0,075 en el muro este</span></div></div>
+      <div class="chkitem" data-id="w11"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Tabique x = 3,60 emplacado como muro de corte<span class="chkhint">2 hold-downs HD-2 · solera a la pieza de piso · colector arriba</span></div></div>
       <div class="chkitem" data-id="w6"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Barrera de agua-viento sellada</div></div>
       <div class="chkitem" data-id="w7"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Placa cementicia exterior con juntas tomadas</div></div>
       <div class="chkitem" data-id="w8"><div class="chkbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="chktext">Aislación y barrera de vapor colocadas</div></div>
