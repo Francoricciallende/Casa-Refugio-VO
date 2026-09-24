@@ -505,6 +505,690 @@
 <div class="cap">Los puntos marrones son las 9 columnas: tres ejes norte–sur (x = 0 / 3,60 / 8,40) por tres líneas este–oeste (y = 0 / 2,65 / 5,37). Van ocultas dentro de los muros. Cada abertura lleva su código y su medida de vano, ancho × alto (ver planilla de arriba), dibujada a escala. La línea A–A muestra por dónde se corta la casa para el corte transversal de abajo.</div>
 </div>
 </section>
+
+<!-- ============ PLANTA DE ELECTRICIDAD ============ -->
+<section class="blk" id="electricidad">
+<h2><span class="mk">ϟ</span>Planta de electricidad</h2>
+<p>Instalación monofásica 220 V. Pilar de medición en la línea municipal, línea subterránea hasta la casa y
+    tablero seccional (TS) en el pasillo. Iluminación por techo y tabiques; tomas y usos especiales por debajo
+    del piso, dentro de la cámara ventilada. Seis circuitos con dos diferenciales.</p>
+<p class="muted" style="margin-top:6px">Tocá el plano para verlo en grande.</p>
+<div class="plano scroll" onclick="openBig('svgElec')" style="cursor:zoom-in">
+<p class="planotitle">Planta de electricidad · norte arriba</p>
+<svg style="min-width:760px" id="svgElec" viewBox="0 0 1230 760" role="img" aria-label="Planta de electricidad con bocas, llaves, tomacorrientes, tablero y circuitos">
+<defs><marker id="mE" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.4"/></marker><marker id="fE" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M1 1L9 5L1 9Z" fill="context-stroke"/></marker><pattern id="hE" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="5" stroke="var(--ink)" stroke-width="2"/></pattern></defs>
+<line x1="150.0" y1="666.0" x2="822.0" y2="666.0" stroke="var(--dim)" stroke-width="1" marker-start="url(#mE)" marker-end="url(#mE)"/>
+<text class="dimt" x="486.0" y="660.0" text-anchor="middle">8,40 m (ejes exteriores)</text>
+<line x1="92.0" y1="110.0" x2="92.0" y2="542.0" stroke="var(--dim)" stroke-width="1" marker-start="url(#mE)" marker-end="url(#mE)"/>
+<text class="dimt" x="84.0" y="326.0" text-anchor="middle" transform="rotate(-90 84.0 326.0)">5,40 m</text>
+<rect x="150.0" y="110.0" width="672.0" height="432.0" fill="none" stroke="var(--wall)" stroke-width="9.6"/>
+<line x1="438.0" y1="110.0" x2="438.0" y2="348.4" stroke="var(--wall)" stroke-width="7.0"/>
+<line x1="150.0" y1="348.4" x2="438.0" y2="348.4" stroke="var(--wall)" stroke-width="6.0"/>
+<line x1="294.0" y1="348.4" x2="294.0" y2="542.0" stroke="var(--wall)" stroke-width="6.0"/>
+<line x1="234.0" y1="110.0" x2="354.0" y2="110.0" stroke="var(--card)" stroke-width="11.0"/>
+<line x1="234.0" y1="107.5" x2="354.0" y2="107.5" stroke="var(--glass)" stroke-width="1.3"/>
+<line x1="234.0" y1="112.5" x2="354.0" y2="112.5" stroke="var(--glass)" stroke-width="1.3"/>
+<text class="subt" x="294.0" y="101.0" text-anchor="middle" opacity=".8">V1</text>
+<line x1="462.0" y1="110.0" x2="542.0" y2="110.0" stroke="var(--card)" stroke-width="11.0"/>
+<line x1="462.0" y1="107.5" x2="542.0" y2="107.5" stroke="var(--glass)" stroke-width="1.3"/>
+<line x1="462.0" y1="112.5" x2="542.0" y2="112.5" stroke="var(--glass)" stroke-width="1.3"/>
+<text class="subt" x="502.0" y="101.0" text-anchor="middle" opacity=".8">V2</text>
+<line x1="618.0" y1="110.0" x2="778.0" y2="110.0" stroke="var(--card)" stroke-width="11.0"/>
+<line x1="618.0" y1="107.5" x2="778.0" y2="107.5" stroke="var(--glass)" stroke-width="1.3"/>
+<line x1="618.0" y1="112.5" x2="778.0" y2="112.5" stroke="var(--glass)" stroke-width="1.3"/>
+<text class="subt" x="698.0" y="101.0" text-anchor="middle" opacity=".8">V3</text>
+<line x1="190.0" y1="542.0" x2="230.0" y2="542.0" stroke="var(--card)" stroke-width="11.0"/>
+<line x1="190.0" y1="539.5" x2="230.0" y2="539.5" stroke="var(--glass)" stroke-width="1.3"/>
+<line x1="190.0" y1="544.5" x2="230.0" y2="544.5" stroke="var(--glass)" stroke-width="1.3"/>
+<text class="subt" x="210.0" y="559.0" text-anchor="middle" opacity=".8">V4</text>
+<line x1="646.0" y1="542.0" x2="806.0" y2="542.0" stroke="var(--card)" stroke-width="11.0"/>
+<line x1="646.0" y1="539.5" x2="806.0" y2="539.5" stroke="var(--glass)" stroke-width="1.3"/>
+<line x1="646.0" y1="544.5" x2="806.0" y2="544.5" stroke="var(--glass)" stroke-width="1.3"/>
+<text class="subt" x="726.0" y="559.0" text-anchor="middle" opacity=".8">V5</text>
+<line x1="822.0" y1="402.0" x2="822.0" y2="482.0" stroke="var(--card)" stroke-width="11.0"/>
+<line x1="819.5" y1="402.0" x2="819.5" y2="482.0" stroke="var(--glass)" stroke-width="1.3"/>
+<line x1="824.5" y1="402.0" x2="824.5" y2="482.0" stroke="var(--glass)" stroke-width="1.3"/>
+<text class="subt" x="838.0" y="442.0" text-anchor="middle" opacity=".8" transform="rotate(90 838.0 442.0)">V6</text>
+<line x1="150.0" y1="226.0" x2="150.0" y2="250.0" stroke="var(--card)" stroke-width="11.0"/>
+<line x1="147.5" y1="226.0" x2="147.5" y2="250.0" stroke="var(--glass)" stroke-width="1.3"/>
+<line x1="152.5" y1="226.0" x2="152.5" y2="250.0" stroke="var(--glass)" stroke-width="1.3"/>
+<text class="subt" x="134.0" y="238.0" text-anchor="middle" opacity=".8" transform="rotate(90 134.0 238.0)">V7</text>
+<line x1="150.0" y1="434.0" x2="150.0" y2="458.0" stroke="var(--card)" stroke-width="11.0"/>
+<line x1="147.5" y1="434.0" x2="147.5" y2="458.0" stroke="var(--glass)" stroke-width="1.3"/>
+<line x1="152.5" y1="434.0" x2="152.5" y2="458.0" stroke="var(--glass)" stroke-width="1.3"/>
+<text class="subt" x="134.0" y="446.0" text-anchor="middle" opacity=".8" transform="rotate(90 134.0 446.0)">V8</text>
+<line x1="822.0" y1="154.0" x2="822.0" y2="234.0" stroke="var(--card)" stroke-width="11.0"/>
+<line x1="822.0" y1="154.0" x2="742.0" y2="154.0" stroke="var(--door)" stroke-width="1.6"/>
+<path d="M822.0,234.0 A80.0,80.0 0 0,1 742.0,154.0" fill="none" stroke="var(--door)" stroke-width=".8" opacity=".55"/>
+<line x1="822.0" y1="314.0" x2="822.0" y2="234.0" stroke="var(--card)" stroke-width="11.0"/>
+<line x1="822.0" y1="314.0" x2="742.0" y2="314.0" stroke="var(--door)" stroke-width="1.6"/>
+<path d="M822.0,234.0 A80.0,80.0 0 0,0 742.0,314.0" fill="none" stroke="var(--door)" stroke-width=".8" opacity=".55"/>
+<line x1="462.0" y1="542.0" x2="542.0" y2="542.0" stroke="var(--card)" stroke-width="11.0"/>
+<line x1="462.0" y1="542.0" x2="462.0" y2="462.0" stroke="var(--door)" stroke-width="1.6"/>
+<path d="M542.0,542.0 A80.0,80.0 0 0,0 462.0,462.0" fill="none" stroke="var(--door)" stroke-width=".8" opacity=".55"/>
+<line x1="332.4" y1="348.4" x2="388.4" y2="348.4" stroke="var(--card)" stroke-width="8.0"/>
+<line x1="332.4" y1="348.4" x2="332.4" y2="292.4" stroke="var(--door)" stroke-width="1.6"/>
+<path d="M388.4,348.4 A56.0,56.0 0 0,0 332.4,292.4" fill="none" stroke="var(--door)" stroke-width=".8" opacity=".55"/>
+<line x1="294.0" y1="422.8" x2="294.0" y2="370.8" stroke="var(--card)" stroke-width="8.0"/>
+<line x1="294.0" y1="422.8" x2="242.0" y2="422.8" stroke="var(--door)" stroke-width="1.6"/>
+<path d="M294.0,370.8 A52.0,52.0 0 0,0 242.0,422.8" fill="none" stroke="var(--door)" stroke-width=".8" opacity=".55"/>
+<text class="subt" x="838.0" y="234.0" text-anchor="middle" opacity=".8" transform="rotate(90 838.0 234.0)">P1 acceso</text>
+<text class="subt" x="502.0" y="559.0" text-anchor="middle" opacity=".8">P2</text>
+<rect x="146.0" y="106.0" width="8" height="8" fill="var(--clay)" opacity=".45"/>
+<rect x="146.0" y="318.0" width="8" height="8" fill="var(--clay)" opacity=".45"/>
+<rect x="146.0" y="535.6" width="8" height="8" fill="var(--clay)" opacity=".45"/>
+<rect x="434.0" y="106.0" width="8" height="8" fill="var(--clay)" opacity=".45"/>
+<rect x="434.0" y="318.0" width="8" height="8" fill="var(--clay)" opacity=".45"/>
+<rect x="434.0" y="535.6" width="8" height="8" fill="var(--clay)" opacity=".45"/>
+<rect x="818.0" y="106.0" width="8" height="8" fill="var(--clay)" opacity=".45"/>
+<rect x="818.0" y="318.0" width="8" height="8" fill="var(--clay)" opacity=".45"/>
+<rect x="818.0" y="535.6" width="8" height="8" fill="var(--clay)" opacity=".45"/>
+<text class="lblt" x="294.0" y="186.0" text-anchor="middle" opacity=".55" font-size="11">DORMITORIO</text>
+<text class="lblt" x="626.0" y="314.0" text-anchor="middle" opacity=".55" font-size="11">ESTAR · COCINA</text>
+<text class="lblt" x="194.0" y="487.6" text-anchor="middle" opacity=".55" font-size="11">BAÑO</text>
+<text class="lblt" x="366.0" y="378.0" text-anchor="middle" opacity=".55" font-size="11">PASILLO</text>
+<text class="subt" x="366.0" y="390.0" text-anchor="middle" opacity=".55">guardado</text>
+<polyline points="386.0,529.2 366.0,430.0 222.0,430.0 159.6,390.0" fill="none" stroke="#d08b00" stroke-width="1.3"  opacity=".85"/>
+<polyline points="366.0,430.0 302.0,439.6" fill="none" stroke="#d08b00" stroke-width="1.3"  opacity=".85"/>
+<polyline points="366.0,430.0 294.0,229.2 398.0,340.4" fill="none" stroke="#d08b00" stroke-width="1.3"  opacity=".85"/>
+<polyline points="386.0,529.2 686.0,422.0 574.0,230.0 734.0,230.0 831.6,134.0" fill="none" stroke="#d08b00" stroke-width="1.3"  opacity=".85"/>
+<polyline points="734.0,230.0 814.0,338.0 831.6,348.4" fill="none" stroke="#d08b00" stroke-width="1.3"  opacity=".85"/>
+<polyline points="686.0,422.0 547.6,532.4 558.0,551.6" fill="none" stroke="#d08b00" stroke-width="1.3"  opacity=".85"/>
+<polyline points="386.0,529.2 418.0,532.4" fill="none" stroke="#d08b00" stroke-width="1.3"  opacity=".85"/>
+<polyline points="418.0,532.4 550.0,454.0" fill="none" stroke="#d08b00" stroke-width="1.3" stroke-dasharray="5 3" opacity=".85"/>
+<polyline points="386.0,529.2 450.0,551.6" fill="none" stroke="#2f6fb0" stroke-width="1.3" stroke-dasharray="5 3" opacity=".85"/>
+<polyline points="386.0,529.2 422.0,466.0 814.0,374.0 786.0,118.0 582.0,118.0" fill="none" stroke="#2f6fb0" stroke-width="1.3" stroke-dasharray="5 3" opacity=".85"/>
+<polyline points="422.0,466.0 422.0,138.0 398.0,118.0" fill="none" stroke="#2f6fb0" stroke-width="1.3" stroke-dasharray="5 3" opacity=".85"/>
+<polyline points="422.0,138.0 178.0,138.0 158.0,158.0" fill="none" stroke="#2f6fb0" stroke-width="1.3" stroke-dasharray="5 3" opacity=".85"/>
+<polyline points="178.0,138.0 178.0,294.0 158.0,294.0" fill="none" stroke="#2f6fb0" stroke-width="1.3" stroke-dasharray="5 3" opacity=".85"/>
+<polyline points="386.0,529.2 342.0,482.0 178.0,366.0 158.0,366.0" fill="none" stroke="#2e8b57" stroke-width="1.3" stroke-dasharray="5 3" opacity=".85"/>
+<polyline points="386.0,529.2 578.0,514.0 578.0,532.4" fill="none" stroke="#2e8b57" stroke-width="1.3" stroke-dasharray="5 3" opacity=".85"/>
+<polyline points="578.0,514.0 798.0,514.0 814.0,506.0" fill="none" stroke="#2e8b57" stroke-width="1.3" stroke-dasharray="5 3" opacity=".85"/>
+<polyline points="386.0,529.2 322.0,532.4" fill="none" stroke="#c0392b" stroke-width="1.3" stroke-dasharray="5 3" opacity=".85"/>
+<polyline points="386.0,529.2 486.0,498.0 774.0,506.0" fill="none" stroke="#7b4fa0" stroke-width="1.3" stroke-dasharray="5 3" opacity=".85"/>
+<polyline points="386.0,529.2 518.0,522.0 638.0,532.4" fill="none" stroke="#6b6b6b" stroke-width="1.3" stroke-dasharray="5 3" opacity=".85"/>
+<polyline points="34.0,42.0 34.0,618.0 386.0,618.0 386.0,535.6" fill="none" stroke="var(--ink)" stroke-width="2.4" stroke-dasharray="10 4 2 4"/>
+<text x="34.0" y="31.6" font-size="9" font-weight="700" fill="var(--ink)" text-anchor="start">desde pilar de medición en L.M. (ver implantación)</text>
+<text x="46.0" y="636.4" font-size="9" font-weight="700" fill="var(--ink)" text-anchor="start">Línea principal subterránea 2×10 mm² Cu (IRAM 2178) en caño PVC Ø40 a 0,70 m · ingresa por cámara ventilada</text>
+<line x1="376.0" y1="535.2" x2="318.0" y2="583.6" stroke="#3a8a3a" stroke-width="1.6"/>
+<g stroke="#3a8a3a" stroke-width="1.6"><line x1="309.0" y1="583.6" x2="327.0" y2="583.6"/><line x1="312.0" y1="587.6" x2="324.0" y2="587.6"/><line x1="315.0" y1="591.6" x2="321.0" y2="591.6"/></g>
+<text x="306.0" y="588.4" font-size="9.5" font-weight="700" fill="#3a8a3a" text-anchor="end">PAT</text>
+<rect x="366.0" y="522.2" width="40" height="14" fill="url(#hE)" stroke="var(--ink)" stroke-width="1.6"/>
+<text x="386.0" y="510.0" font-size="11" font-weight="700" fill="var(--ink)" text-anchor="middle">TS</text>
+<circle cx="294.0" cy="229.2" r="8" fill="var(--card)" stroke="#d08b00" stroke-width="1.8" />
+<path d="M288.5,223.7 L299.5,234.7 M299.5,223.7 L288.5,234.7" stroke="#d08b00" stroke-width="1.4"/>
+<text x="305.0" y="220.2" font-size="10" font-weight="700" fill="#d08b00">C1·a</text>
+<circle cx="222.0" cy="430.0" r="8" fill="var(--card)" stroke="#d08b00" stroke-width="1.8" />
+<path d="M216.5,424.5 L227.5,435.5 M227.5,424.5 L216.5,435.5" stroke="#d08b00" stroke-width="1.4"/>
+<text x="210.0" y="452.0" font-size="10" font-weight="700" fill="#d08b00">C1·b</text>
+<circle cx="159.6" cy="390.0" r="6" fill="#d08b00" stroke="var(--card)" stroke-width="1"/>
+<circle cx="159.6" cy="390.0" r="2.2" fill="var(--card)"/>
+<text x="168.6" y="406.0" font-size="10" font-weight="700" fill="#d08b00">C1·b'</text>
+<circle cx="366.0" cy="430.0" r="8" fill="var(--card)" stroke="#d08b00" stroke-width="1.8" />
+<path d="M360.5,424.5 L371.5,435.5 M371.5,424.5 L360.5,435.5" stroke="#d08b00" stroke-width="1.4"/>
+<text x="377.0" y="421.0" font-size="10" font-weight="700" fill="#d08b00">C1·c</text>
+<circle cx="574.0" cy="230.0" r="8" fill="var(--card)" stroke="#d08b00" stroke-width="1.8" />
+<path d="M568.5,224.5 L579.5,235.5 M579.5,224.5 L568.5,235.5" stroke="#d08b00" stroke-width="1.4"/>
+<text x="560.0" y="217.0" font-size="10" font-weight="700" fill="#d08b00">C1·e</text>
+<circle cx="734.0" cy="230.0" r="8" fill="var(--card)" stroke="#d08b00" stroke-width="1.8" />
+<path d="M728.5,224.5 L739.5,235.5 M739.5,224.5 L728.5,235.5" stroke="#d08b00" stroke-width="1.4"/>
+<text x="720.0" y="217.0" font-size="10" font-weight="700" fill="#d08b00">C1·e</text>
+<circle cx="686.0" cy="422.0" r="8" fill="var(--card)" stroke="#d08b00" stroke-width="1.8" />
+<path d="M680.5,416.5 L691.5,427.5 M691.5,416.5 L680.5,427.5" stroke="#d08b00" stroke-width="1.4"/>
+<text x="697.0" y="413.0" font-size="10" font-weight="700" fill="#d08b00">C1·f</text>
+<circle cx="831.6" cy="134.0" r="6" fill="#d08b00" stroke="var(--card)" stroke-width="1"/>
+<circle cx="831.6" cy="134.0" r="2.2" fill="var(--card)"/>
+<text x="841.6" y="138.0" font-size="10" font-weight="700" fill="#d08b00">C1·h ext.</text>
+<circle cx="558.0" cy="551.6" r="6" fill="#d08b00" stroke="var(--card)" stroke-width="1"/>
+<circle cx="558.0" cy="551.6" r="2.2" fill="var(--card)"/>
+<text x="568.0" y="564.6" font-size="10" font-weight="700" fill="#d08b00">C1·g ext.</text>
+<circle cx="550.0" cy="454.0" r="8" fill="var(--card)" stroke="#d08b00" stroke-width="1.8" stroke-dasharray="5 3"/>
+<path d="M544.5,448.5 L555.5,459.5 M555.5,448.5 L544.5,459.5" stroke="#d08b00" stroke-width="1.4"/>
+<text x="561.0" y="445.0" font-size="10" font-weight="700" fill="#d08b00">C1·d luz de cámara (bajo piso)</text>
+<line x1="398.0" y1="340.4" x2="406.0" y2="332.4" stroke="var(--ink)" stroke-width="1.5"/>
+<line x1="406.0" y1="332.4" x2="409.0" y2="335.4" stroke="var(--ink)" stroke-width="1.5"/>
+<circle cx="398.0" cy="340.4" r="3.8" fill="var(--ink)"/>
+<text x="412.0" y="338.4" font-size="10" font-weight="700" fill="var(--ink)" text-anchor="start">a</text>
+<line x1="302.0" y1="439.6" x2="310.0" y2="431.6" stroke="var(--ink)" stroke-width="1.5"/>
+<line x1="310.0" y1="431.6" x2="313.0" y2="434.6" stroke="var(--ink)" stroke-width="1.5"/>
+<circle cx="302.0" cy="439.6" r="3.8" fill="var(--ink)"/>
+<text x="306.0" y="455.6" font-size="10" font-weight="700" fill="var(--ink)" text-anchor="start">b·b'·c</text>
+<line x1="814.0" y1="338.0" x2="822.0" y2="330.0" stroke="var(--ink)" stroke-width="1.5"/>
+<line x1="822.0" y1="330.0" x2="825.0" y2="333.0" stroke="var(--ink)" stroke-width="1.5"/>
+<circle cx="814.0" cy="338.0" r="3.8" fill="var(--ink)"/>
+<text x="806.0" y="353.0" font-size="10" font-weight="700" fill="var(--ink)" text-anchor="end">e·h</text>
+<line x1="547.6" y1="532.4" x2="555.6" y2="524.4" stroke="var(--ink)" stroke-width="1.5"/>
+<line x1="555.6" y1="524.4" x2="558.6" y2="527.4" stroke="var(--ink)" stroke-width="1.5"/>
+<circle cx="547.6" cy="532.4" r="3.8" fill="var(--ink)"/>
+<text x="543.6" y="524.4" font-size="10" font-weight="700" fill="var(--ink)" text-anchor="end">f·g</text>
+<line x1="418.0" y1="532.4" x2="426.0" y2="524.4" stroke="var(--ink)" stroke-width="1.5"/>
+<line x1="426.0" y1="524.4" x2="429.0" y2="527.4" stroke="var(--ink)" stroke-width="1.5"/>
+<circle cx="418.0" cy="532.4" r="3.8" fill="var(--ink)"/>
+<text x="432.0" y="530.4" font-size="10" font-weight="700" fill="var(--ink)" text-anchor="start">d</text>
+<rect x="827.1" y="343.9" width="9" height="9" fill="var(--card)" stroke="var(--ink)" stroke-width="1.3"/><circle cx="831.6" cy="348.4" r="1.9" fill="var(--ink)"/>
+<text x="841.2" y="352.4" font-size="9"  fill="var(--ink2)" text-anchor="start">timbre</text>
+<g transform="translate(158.0,158.0) rotate(270)"><path d="M-7,0 A7,7 0 0,0 7,0 Z" fill="#2f6fb0" stroke="#2f6fb0" stroke-width="1" /></g>
+<text x="178.0" y="162.0" font-size="9" font-weight="700" fill="#2f6fb0" text-anchor="middle">C2</text>
+<g transform="translate(158.0,294.0) rotate(270)"><path d="M-7,0 A7,7 0 0,0 7,0 Z" fill="#2f6fb0" stroke="#2f6fb0" stroke-width="1" /></g>
+<text x="178.0" y="298.0" font-size="9" font-weight="700" fill="#2f6fb0" text-anchor="middle">C2</text>
+<g transform="translate(398.0,118.0) rotate(0)"><path d="M-7,0 A7,7 0 0,0 7,0 Z" fill="#2f6fb0" stroke="#2f6fb0" stroke-width="1" /></g>
+<text x="398.0" y="142.0" font-size="9" font-weight="700" fill="#2f6fb0" text-anchor="middle">C2</text>
+<g transform="translate(582.0,118.0) rotate(0)"><path d="M-7,0 A7,7 0 0,0 7,0 Z" fill="#2f6fb0" stroke="#2f6fb0" stroke-width="1" /></g>
+<text x="582.0" y="142.0" font-size="9" font-weight="700" fill="#2f6fb0" text-anchor="middle">C2</text>
+<g transform="translate(786.0,118.0) rotate(0)"><path d="M-7,0 A7,7 0 0,0 7,0 Z" fill="#2f6fb0" stroke="#2f6fb0" stroke-width="1" /></g>
+<text x="786.0" y="142.0" font-size="9" font-weight="700" fill="#2f6fb0" text-anchor="middle">C2</text>
+<g transform="translate(814.0,374.0) rotate(90)"><path d="M-7,0 A7,7 0 0,0 7,0 Z" fill="#2f6fb0" stroke="#2f6fb0" stroke-width="1" /></g>
+<text x="796.0" y="378.0" font-size="9" font-weight="700" fill="#2f6fb0" text-anchor="middle">C2</text>
+<g transform="translate(450.0,551.6) rotate(0)"><path d="M-7,0 A7,7 0 0,0 7,0 Z" fill="#2f6fb0" stroke="#2f6fb0" stroke-width="1" /></g>
+<text x="450.0" y="575.6" font-size="9" font-weight="700" fill="#2f6fb0" text-anchor="middle">C2 ext. IP44</text>
+<g transform="translate(158.0,366.0) rotate(270)"><path d="M-7,0 A7,7 0 0,0 7,0 Z" fill="#2e8b57" stroke="#2e8b57" stroke-width="1" /></g>
+<text x="174.0" y="370.0" font-size="9" font-weight="700" fill="#2e8b57" text-anchor="start">C3 h1,20</text>
+<g transform="translate(578.0,532.4) rotate(180)"><path d="M-7,0 A7,7 0 0,0 7,0 Z" fill="#2e8b57" stroke="#2e8b57" stroke-width="1" /></g>
+<text x="578.0" y="508.4" font-size="9" font-weight="700" fill="#2e8b57" text-anchor="middle">C3 hel. h0,60</text>
+<g transform="translate(814.0,506.0) rotate(90)"><path d="M-7,0 A7,7 0 0,0 7,0 Z" fill="#2e8b57" stroke="#2e8b57" stroke-width="1" /></g>
+<text x="800.0" y="494.0" font-size="9" font-weight="700" fill="#2e8b57" text-anchor="end">C3 mesada h1,10</text>
+<g transform="translate(322.0,532.4) rotate(180)"><path d="M-7,0 A7,7 0 0,0 7,0 Z" fill="var(--card)" stroke="#c0392b" stroke-width="2.2" /><circle cx="0" cy="3" r="1.9" fill="#c0392b"/></g>
+<text x="322.0" y="518.4" font-size="9" font-weight="700" fill="#c0392b" text-anchor="middle">C4 TT h2,00</text>
+<g transform="translate(774.0,506.0) rotate(180)"><path d="M-7,0 A7,7 0 0,0 7,0 Z" fill="var(--card)" stroke="#7b4fa0" stroke-width="2.2" stroke-dasharray="5 3"/><circle cx="0" cy="3" r="1.9" fill="#7b4fa0"/></g>
+<text x="770.0" y="466.0" font-size="9" font-weight="700" fill="#7b4fa0" text-anchor="end">C5 bomba (bajo piso)</text>
+<g transform="translate(638.0,532.4) rotate(180)"><path d="M-7,0 A7,7 0 0,0 7,0 Z" fill="var(--card)" stroke="#6b6b6b" stroke-width="2.2" /><circle cx="0" cy="3" r="1.9" fill="#6b6b6b"/></g>
+<text x="638.0" y="520.4" font-size="9" font-weight="700" fill="#6b6b6b" text-anchor="middle">C6 anafe h0,60</text>
+<g transform="translate(840,60)"><line x1="0" y1="14" x2="0" y2="-14" stroke="var(--rust)" stroke-width="2"/><path d="M0,-14 L-4,-6 L4,-6 Z" fill="var(--rust)"/><text x="0" y="-18" text-anchor="middle" font-size="12" font-weight="700" fill="var(--rust)">N</text></g>
+<text x="930" y="40" font-size="12" font-weight="700" fill="var(--ink)">REFERENCIAS</text>
+<g transform="translate(940,58)"><circle r="7.5" fill="var(--card)" stroke="#d08b00" stroke-width="1.8"/><path d="M-5,-5L5,5M5,-5L-5,5" stroke="#d08b00" stroke-width="1.4"/></g>
+<text x="960" y="62" font-size="10" fill="var(--ink)">Boca de techo (IUG)</text>
+<g transform="translate(940,78)"><circle r="5.5" fill="#d08b00"/><circle r="2" fill="var(--card)"/></g>
+<text x="960" y="82" font-size="10" fill="var(--ink)">Aplique de pared (baño h 2,00 · ext. h 2,20)</text>
+<g transform="translate(940,98)"><line x1="0" y1="0" x2="8" y2="-8" stroke="var(--ink)" stroke-width="1.5"/><line x1="8" y1="-8" x2="11" y2="-5" stroke="var(--ink)" stroke-width="1.5"/><circle r="3.6" fill="var(--ink)"/></g>
+<text x="960" y="102" font-size="10" fill="var(--ink)">Llave de efecto h 1,10 (letras = bocas que comanda)</text>
+<g transform="translate(940,118)"><path d="M-6.5,0 A6.5,6.5 0 0,0 6.5,0Z" fill="#2f6fb0" stroke="#2f6fb0"/></g>
+<text x="960" y="122" font-size="10" fill="var(--ink)">Tomacorriente 10 A c/ tierra h 0,40</text>
+<text x="960" y="134" font-size="9" fill="var(--ink2)">(salvo altura indicada)</text>
+<g transform="translate(940,150)"><path d="M-6.5,0 A6.5,6.5 0 0,0 6.5,0Z" fill="var(--card)" stroke="#c0392b" stroke-width="2.2"/><circle cx="0" cy="3" r="1.8" fill="#c0392b"/></g>
+<text x="960" y="154" font-size="10" fill="var(--ink)">Toma uso especial 20 A (TUE)</text>
+<g transform="translate(940,170)"><rect x="-16" y="-6" width="32" height="12" fill="url(#hE)" stroke="var(--ink)" stroke-width="1.6"/></g>
+<text x="960" y="174" font-size="10" fill="var(--ink)">TS Tablero seccional h 1,50 (eje)</text>
+<g transform="translate(940,190)"><rect x="-4" y="-4" width="8" height="8" fill="var(--card)" stroke="var(--ink)"/><circle r="1.8" fill="var(--ink)"/></g>
+<text x="960" y="194" font-size="10" fill="var(--ink)">Pulsador de timbre (chicharra en TS)</text>
+<g transform="translate(940,210)"><g stroke="#3a8a3a" stroke-width="1.6"><line x1="0" y1="-10" x2="0" y2="-4"/><line x1="-9" y1="-4" x2="9" y2="-4"/><line x1="-6" y1="0" x2="6" y2="0"/><line x1="-3" y1="4" x2="3" y2="4"/></g></g>
+<text x="960" y="214" font-size="10" fill="var(--ink)">Puesta a tierra: jabalina Cu-acero 5/8"×1,50</text>
+<text x="960" y="226" font-size="9" fill="var(--ink2)">con cámara de inspección · R ≤ 10 Ω</text>
+<g transform="translate(940,242)"><line x1="-12" y1="0" x2="12" y2="0" stroke="#555" stroke-width="1.3"/></g>
+<text x="960" y="246" font-size="10" fill="var(--ink)">Cañería por techo / tabique</text>
+<g transform="translate(940,262)"><line x1="-12" y1="0" x2="12" y2="0" stroke="#555" stroke-width="1.3" stroke-dasharray="5 3"/></g>
+<text x="960" y="266" font-size="10" fill="var(--ink)">Cañería bajo piso (cámara ventilada)</text>
+<text x="960" y="278" font-size="9" fill="var(--ink2)">símbolo punteado = elemento bajo piso</text>
+<g transform="translate(940,294)"><line x1="-12" y1="0" x2="12" y2="0" stroke="var(--ink)" stroke-width="2.4" stroke-dasharray="10 4 2 4"/></g>
+<text x="960" y="298" font-size="10" fill="var(--ink)">Línea principal subterránea</text>
+<text x="930" y="318" font-size="12" font-weight="700" fill="var(--ink)">CIRCUITOS · TS</text>
+<rect x="932" y="335" width="14" height="8" rx="2" fill="#d08b00"/>
+<text x="952" y="343" font-size="9.8" fill="var(--ink)" font-weight="600">C1 IUG iluminación</text>
+<text x="952" y="354" font-size="9" fill="var(--ink2)">1,5 mm² · 2×10 A · ID1</text>
+<rect x="932" y="361" width="14" height="8" rx="2" fill="#2f6fb0"/>
+<text x="952" y="369" font-size="9.8" fill="var(--ink)" font-weight="600">C2 TUG tomas generales</text>
+<text x="952" y="380" font-size="9" fill="var(--ink2)">2,5 mm² · 2×16 A · ID1</text>
+<rect x="932" y="387" width="14" height="8" rx="2" fill="#2e8b57"/>
+<text x="952" y="395" font-size="9.8" fill="var(--ink)" font-weight="600">C3 TUG cocina y baño</text>
+<text x="952" y="406" font-size="9" fill="var(--ink2)">2,5 mm² · 2×16 A · ID1</text>
+<rect x="932" y="413" width="14" height="8" rx="2" fill="#c0392b"/>
+<text x="952" y="421" font-size="9.8" fill="var(--ink)" font-weight="600">C4 TUE termotanque</text>
+<text x="952" y="432" font-size="9" fill="var(--ink2)">2,5 mm² · 2×16 A · ID2</text>
+<rect x="932" y="439" width="14" height="8" rx="2" fill="#7b4fa0"/>
+<text x="952" y="447" font-size="9.8" fill="var(--ink)" font-weight="600">C5 TUE bomba presurizadora</text>
+<text x="952" y="458" font-size="9" fill="var(--ink2)">2,5 mm² · 2×16 A · ID2</text>
+<rect x="932" y="465" width="14" height="8" rx="2" fill="#6b6b6b"/>
+<text x="952" y="473" font-size="9.8" fill="var(--ink)" font-weight="600">C6 TUE anafe/horno (previsión)</text>
+<text x="952" y="484" font-size="9" fill="var(--ink2)">4 mm² · 2×25 A · ID2</text>
+<text x="930" y="500" font-size="9.2" fill="var(--ink)">ID1 · ID2: diferencial 2×40 A 30 mA</text>
+<text x="930" y="513" font-size="9.2" fill="var(--ink)">Corte general TS: termomagnética 2×40 A</text>
+<text x="930" y="526" font-size="9.2" fill="var(--ink)">Conductor PE verde-amarillo en todo circuito</text>
+<rect x="930" y="680" width="290" height="62" fill="none" stroke="var(--ink2)" stroke-width="1"/><line x1="930" y1="706" x2="1220" y2="706" stroke="var(--ink2)" stroke-width=".6"/><text x="938" y="698" font-size="12.5" font-weight="700" fill="var(--ink)">PLANTA DE ELECTRICIDAD</text><text x="938" y="720" font-size="9.5" fill="var(--ink2)">Casa-Refugio · Lote 103 · Villa de Las Rosas, Cba.</text><text x="938" y="734" font-size="9.5" fill="var(--ink2)">Esquema de referencia · dibujar a esc. 1:100 · Sep 2026</text>
+</svg>
+<div class="cap">Cada boca lleva su circuito y la letra de la llave que la comanda (C1·a → llave "a"). Trazo continuo: cañería por techo o tabique. Trazo punteado: cañería bajo piso por la cámara ventilada.</div>
+</div>
+<h3 style="font-family:'Fraunces',serif;font-size:1.05rem;margin:18px 0 4px">Planilla de circuitos · TS</h3>
+<div class="tablecard"><table><thead><tr><th>Circuito</th><th>Tipo</th><th>Alimenta</th><th>Conductor</th><th>Protección</th><th>Diferencial</th></tr></thead><tbody><tr><td><b>C1</b></td><td>IUG</td><td>10 puntos: 6 bocas de techo, 3 apliques (espejo, acceso, servicio), luz de cámara · timbre</td><td>1,5 mm²</td><td>TM 2×10 A</td><td>ID1</td></tr><tr><td><b>C2</b></td><td>TUG</td><td>7 tomas: dormitorio (3), estar (3), exterior sur IP44 (1)</td><td>2,5 mm²</td><td>TM 2×16 A</td><td>ID1</td></tr><tr><td><b>C3</b></td><td>TUG</td><td>3 tomas: lavatorio, heladera, mesada</td><td>2,5 mm²</td><td>TM 2×16 A</td><td>ID1</td></tr><tr><td><b>C4</b></td><td>TUE</td><td>Termotanque eléctrico 80 L</td><td>2,5 mm²</td><td>TM 2×16 A</td><td>ID2</td></tr><tr><td><b>C5</b></td><td>TUE</td><td>Bomba presurizadora (en cámara, IP44)</td><td>2,5 mm²</td><td>TM 2×16 A</td><td>ID2</td></tr><tr><td><b>C6</b></td><td>TUE</td><td>Previsión anafe / horno eléctrico</td><td>4 mm²</td><td>TM 2×25 A</td><td>ID2</td></tr></tbody></table></div>
+<p class="muted">ID1 e ID2: interruptor diferencial 2×40 A · 30 mA. Corte general del TS: termomagnética 2×40 A. Pilar: medidor de la distribuidora (CEOSP o CEMDO, según corresponda) + tablero principal con termomagnética 2×40 A. Potencia máxima simultánea estimada ≈ 7 kVA (a confirmar por el electricista). Todos los circuitos llevan conductor de protección PE verde-amarillo.</p>
+<h3 style="font-family:'Fraunces',serif;font-size:1.05rem;margin:18px 0 4px">Alturas de montaje (sobre piso terminado +1,10)</h3>
+<div class="tablecard"><table><thead><tr><th>Elemento</th><th class="num">Altura</th><th>Nota</th></tr></thead><tbody><tr><td>Llaves de efecto</td><td class="num">1,10</td><td>del lado del picaporte</td></tr><tr><td>Tomas generales (C2)</td><td class="num">0,40</td><td></td></tr><tr><td>Toma lavatorio</td><td class="num">1,20</td><td>a más de 0,60 m de la ducha</td></tr><tr><td>Toma heladera / anafe</td><td class="num">0,60</td><td>anafe bajo mesada</td></tr><tr><td>Toma mesada</td><td class="num">1,10</td><td>sobre salpicado</td></tr><tr><td>Toma termotanque</td><td class="num">2,00</td><td></td></tr><tr><td>Tablero seccional</td><td class="num">1,50 (eje)</td><td>libre de obstáculos, en el pasillo</td></tr><tr><td>Aplique espejo baño</td><td class="num">2,00</td><td></td></tr><tr><td>Apliques exteriores</td><td class="num">2,20</td><td>IP44 o superior</td></tr></tbody></table></div>
+<div class="note warn"><b>Obligatorio en Córdoba.</b> La instalación la ejecuta y certifica un instalador electricista habilitado (Ley provincial 10.281 de Seguridad Eléctrica, registro ERSeP). Sin el certificado de instalación apta la distribuidora no conecta el medidor. Diseño según AEA 90364-7-771 (viviendas); materiales con certificación de seguridad eléctrica.</div>
+<div class="note"><b>Casa de madera.</b> Todo el cableado va dentro de cañería no propagante de llama (corrugado ignífugo en tabiques, rígido en la cámara), con cajas no propagantes; nunca cable suelto dentro de un tabique. Sellar cada paso por la barrera de vapor. El tabique del eje x = 3,60 es muro de corte: no lleva cajas ni pasos de cañería.</div>
+</section>
+
+<!-- ============ PLANTA SANITARIA ============ -->
+<section class="blk" id="sanitaria">
+<h2><span class="mk">≋</span>Planta sanitaria</h2>
+<p>El agua de red llega a un tanque cisterna enterrado al sureste de la casa. Una bomba presurizadora, ubicada
+    en la cámara ventilada, alimenta toda la casa: agua fría directa y agua caliente desde un termotanque
+    eléctrico ubicado en el pasillo, pegado a la ducha. Los desagües bajan a la cámara y salen hacia el norte,
+    siguiendo la pendiente del terreno, a cámara séptica y pozo absorbente.</p>
+<p class="muted" style="margin-top:6px">Tocá cada plano para verlo en grande.</p>
+<div class="plano scroll" onclick="openBig('svgSani')" style="cursor:zoom-in">
+<p class="planotitle">Planta sanitaria · norte arriba</p>
+<svg style="min-width:780px" id="svgSani" viewBox="0 0 1420 960" role="img" aria-label="Planta sanitaria con agua fría, agua caliente, desagües, cisterna enterrada y bomba presurizadora">
+<defs><marker id="mS" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.4"/></marker><marker id="fS" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M1 1L9 5L1 9Z" fill="context-stroke"/></marker><pattern id="hS" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="5" stroke="var(--ink)" stroke-width="2"/></pattern></defs>
+<line x1="110.0" y1="904.0" x2="782.0" y2="904.0" stroke="var(--dim)" stroke-width="1" marker-start="url(#mS)" marker-end="url(#mS)"/>
+<text class="dimt" x="446.0" y="898.0" text-anchor="middle">8,40 m (ejes exteriores)</text>
+<line x1="52.0" y1="300.0" x2="52.0" y2="732.0" stroke="var(--dim)" stroke-width="1" marker-start="url(#mS)" marker-end="url(#mS)"/>
+<text class="dimt" x="44.0" y="516.0" text-anchor="middle" transform="rotate(-90 44.0 516.0)">5,40 m</text>
+<rect x="110.0" y="300.0" width="672.0" height="432.0" fill="none" stroke="var(--wall)" stroke-width="9.6"/>
+<line x1="398.0" y1="300.0" x2="398.0" y2="538.4" stroke="var(--wall)" stroke-width="7.0"/>
+<line x1="110.0" y1="538.4" x2="398.0" y2="538.4" stroke="var(--wall)" stroke-width="6.0"/>
+<line x1="254.0" y1="538.4" x2="254.0" y2="732.0" stroke="var(--wall)" stroke-width="6.0"/>
+<line x1="194.0" y1="300.0" x2="314.0" y2="300.0" stroke="var(--card)" stroke-width="11.0"/>
+<line x1="194.0" y1="297.5" x2="314.0" y2="297.5" stroke="var(--glass)" stroke-width="1.3"/>
+<line x1="194.0" y1="302.5" x2="314.0" y2="302.5" stroke="var(--glass)" stroke-width="1.3"/>
+<text class="subt" x="254.0" y="291.0" text-anchor="middle" opacity=".8">V1</text>
+<line x1="422.0" y1="300.0" x2="502.0" y2="300.0" stroke="var(--card)" stroke-width="11.0"/>
+<line x1="422.0" y1="297.5" x2="502.0" y2="297.5" stroke="var(--glass)" stroke-width="1.3"/>
+<line x1="422.0" y1="302.5" x2="502.0" y2="302.5" stroke="var(--glass)" stroke-width="1.3"/>
+<text class="subt" x="462.0" y="291.0" text-anchor="middle" opacity=".8">V2</text>
+<line x1="578.0" y1="300.0" x2="738.0" y2="300.0" stroke="var(--card)" stroke-width="11.0"/>
+<line x1="578.0" y1="297.5" x2="738.0" y2="297.5" stroke="var(--glass)" stroke-width="1.3"/>
+<line x1="578.0" y1="302.5" x2="738.0" y2="302.5" stroke="var(--glass)" stroke-width="1.3"/>
+<text class="subt" x="658.0" y="291.0" text-anchor="middle" opacity=".8">V3</text>
+<line x1="150.0" y1="732.0" x2="190.0" y2="732.0" stroke="var(--card)" stroke-width="11.0"/>
+<line x1="150.0" y1="729.5" x2="190.0" y2="729.5" stroke="var(--glass)" stroke-width="1.3"/>
+<line x1="150.0" y1="734.5" x2="190.0" y2="734.5" stroke="var(--glass)" stroke-width="1.3"/>
+<text class="subt" x="170.0" y="749.0" text-anchor="middle" opacity=".8">V4</text>
+<line x1="606.0" y1="732.0" x2="766.0" y2="732.0" stroke="var(--card)" stroke-width="11.0"/>
+<line x1="606.0" y1="729.5" x2="766.0" y2="729.5" stroke="var(--glass)" stroke-width="1.3"/>
+<line x1="606.0" y1="734.5" x2="766.0" y2="734.5" stroke="var(--glass)" stroke-width="1.3"/>
+<text class="subt" x="686.0" y="749.0" text-anchor="middle" opacity=".8">V5</text>
+<line x1="782.0" y1="592.0" x2="782.0" y2="672.0" stroke="var(--card)" stroke-width="11.0"/>
+<line x1="779.5" y1="592.0" x2="779.5" y2="672.0" stroke="var(--glass)" stroke-width="1.3"/>
+<line x1="784.5" y1="592.0" x2="784.5" y2="672.0" stroke="var(--glass)" stroke-width="1.3"/>
+<text class="subt" x="798.0" y="632.0" text-anchor="middle" opacity=".8" transform="rotate(90 798.0 632.0)">V6</text>
+<line x1="110.0" y1="416.0" x2="110.0" y2="440.0" stroke="var(--card)" stroke-width="11.0"/>
+<line x1="107.5" y1="416.0" x2="107.5" y2="440.0" stroke="var(--glass)" stroke-width="1.3"/>
+<line x1="112.5" y1="416.0" x2="112.5" y2="440.0" stroke="var(--glass)" stroke-width="1.3"/>
+<text class="subt" x="94.0" y="428.0" text-anchor="middle" opacity=".8" transform="rotate(90 94.0 428.0)">V7</text>
+<line x1="110.0" y1="624.0" x2="110.0" y2="648.0" stroke="var(--card)" stroke-width="11.0"/>
+<line x1="107.5" y1="624.0" x2="107.5" y2="648.0" stroke="var(--glass)" stroke-width="1.3"/>
+<line x1="112.5" y1="624.0" x2="112.5" y2="648.0" stroke="var(--glass)" stroke-width="1.3"/>
+<text class="subt" x="94.0" y="636.0" text-anchor="middle" opacity=".8" transform="rotate(90 94.0 636.0)">V8</text>
+<line x1="782.0" y1="344.0" x2="782.0" y2="424.0" stroke="var(--card)" stroke-width="11.0"/>
+<line x1="782.0" y1="344.0" x2="702.0" y2="344.0" stroke="var(--door)" stroke-width="1.6"/>
+<path d="M782.0,424.0 A80.0,80.0 0 0,1 702.0,344.0" fill="none" stroke="var(--door)" stroke-width=".8" opacity=".55"/>
+<line x1="782.0" y1="504.0" x2="782.0" y2="424.0" stroke="var(--card)" stroke-width="11.0"/>
+<line x1="782.0" y1="504.0" x2="702.0" y2="504.0" stroke="var(--door)" stroke-width="1.6"/>
+<path d="M782.0,424.0 A80.0,80.0 0 0,0 702.0,504.0" fill="none" stroke="var(--door)" stroke-width=".8" opacity=".55"/>
+<line x1="422.0" y1="732.0" x2="502.0" y2="732.0" stroke="var(--card)" stroke-width="11.0"/>
+<line x1="422.0" y1="732.0" x2="422.0" y2="652.0" stroke="var(--door)" stroke-width="1.6"/>
+<path d="M502.0,732.0 A80.0,80.0 0 0,0 422.0,652.0" fill="none" stroke="var(--door)" stroke-width=".8" opacity=".55"/>
+<line x1="292.4" y1="538.4" x2="348.4" y2="538.4" stroke="var(--card)" stroke-width="8.0"/>
+<line x1="292.4" y1="538.4" x2="292.4" y2="482.4" stroke="var(--door)" stroke-width="1.6"/>
+<path d="M348.4,538.4 A56.0,56.0 0 0,0 292.4,482.4" fill="none" stroke="var(--door)" stroke-width=".8" opacity=".55"/>
+<line x1="254.0" y1="612.8" x2="254.0" y2="560.8" stroke="var(--card)" stroke-width="8.0"/>
+<line x1="254.0" y1="612.8" x2="202.0" y2="612.8" stroke="var(--door)" stroke-width="1.6"/>
+<path d="M254.0,560.8 A52.0,52.0 0 0,0 202.0,612.8" fill="none" stroke="var(--door)" stroke-width=".8" opacity=".55"/>
+<text class="subt" x="798.0" y="424.0" text-anchor="middle" opacity=".8" transform="rotate(90 798.0 424.0)">P1 acceso</text>
+<text class="subt" x="462.0" y="749.0" text-anchor="middle" opacity=".8">P2</text>
+<rect x="106.0" y="296.0" width="8" height="8" fill="var(--clay)" opacity=".45"/>
+<rect x="106.0" y="508.0" width="8" height="8" fill="var(--clay)" opacity=".45"/>
+<rect x="106.0" y="725.6" width="8" height="8" fill="var(--clay)" opacity=".45"/>
+<rect x="394.0" y="296.0" width="8" height="8" fill="var(--clay)" opacity=".45"/>
+<rect x="394.0" y="508.0" width="8" height="8" fill="var(--clay)" opacity=".45"/>
+<rect x="394.0" y="725.6" width="8" height="8" fill="var(--clay)" opacity=".45"/>
+<rect x="778.0" y="296.0" width="8" height="8" fill="var(--clay)" opacity=".45"/>
+<rect x="778.0" y="508.0" width="8" height="8" fill="var(--clay)" opacity=".45"/>
+<rect x="778.0" y="725.6" width="8" height="8" fill="var(--clay)" opacity=".45"/>
+<text class="lblt" x="254.0" y="376.0" text-anchor="middle" opacity=".55" font-size="11">DORMITORIO</text>
+<text class="lblt" x="586.0" y="504.0" text-anchor="middle" opacity=".55" font-size="11">ESTAR · COCINA</text>
+<text class="lblt" x="327.6" y="572.0" text-anchor="middle" opacity=".55" font-size="11">PASILLO</text>
+<text class="subt" x="327.6" y="584.0" text-anchor="middle" opacity=".55">guardado</text>
+<text class="lblt" x="202.0" y="562.4" text-anchor="middle" opacity=".55" font-size="11">BAÑO</text>
+<text class="subt" x="202.0" y="574.4" text-anchor="middle" opacity=".55">ver ampliación</text>
+<polyline points="150.0,709.6 150.0,184.0" fill="none" stroke="#7a4a22" stroke-width="4.2" stroke-linejoin="round"/>
+<polyline points="150.0,356.0 150.0,332.0" fill="none" stroke="#7a4a22" stroke-width="4.2" marker-end="url(#fS)" stroke-linejoin="round"/>
+<text x="161.2" y="376.0" font-size="9.5" font-weight="700" fill="#7a4a22" text-anchor="start" transform="rotate(90 161.2 376.0)">Ø110 · i = 1:60 · bajo piso</text>
+<polyline points="138.8,589.6 210.0,628.0" fill="none" stroke="#d9822b" stroke-width="2.2" stroke-linejoin="round"/>
+<polyline points="222.0,696.8 222.0,648.0 210.0,628.0" fill="none" stroke="#d9822b" stroke-width="2.2" stroke-linejoin="round"/>
+<polyline points="210.0,628.0 150.0,628.0" fill="none" stroke="#d9822b" stroke-width="3.2" stroke-linejoin="round"/>
+<rect x="203.0" y="621.0" width="14" height="14" fill="var(--card)" stroke="#d9822b" stroke-width="1.9"/><circle cx="210.0" cy="628.0" r="3.5" fill="none" stroke="#d9822b" stroke-width="1.4"/>
+<circle cx="222.0" cy="696.8" r="4.5" fill="var(--card)" stroke="#d9822b" stroke-width="1.7"/>
+<polyline points="150.0,669.6 119.6,669.6" fill="none" stroke="#3a8a3a" stroke-width="2.2" stroke-dasharray="5 3" stroke-linejoin="round"/>
+<circle cx="119.6" cy="669.6" r="6.5" fill="var(--card)" stroke="#3a8a3a" stroke-width="2"/><circle cx="119.6" cy="669.6" r="2.2" fill="#3a8a3a"/>
+<text x="100.4" y="672.8" font-size="9" font-weight="700" fill="#3a8a3a" text-anchor="end">CV Ø63</text>
+<polyline points="686.0,706.4 686.0,218.4" fill="none" stroke="#d9822b" stroke-width="2.8" stroke-linejoin="round"/>
+<polyline points="686.0,356.0 686.0,332.0" fill="none" stroke="#d9822b" stroke-width="2.8" marker-end="url(#fS)" stroke-linejoin="round"/>
+<text x="697.2" y="348.0" font-size="9.5" font-weight="700" fill="#d9822b" text-anchor="start" transform="rotate(90 697.2 348.0)">Ø50 cocina · i = 2 % · bajo piso</text>
+<polyline points="686.0,189.6 686.0,170.4 161.2,170.4" fill="none" stroke="#7a4a22" stroke-width="4.2" stroke-linejoin="round"/>
+<polyline points="454.0,170.4 422.0,170.4" fill="none" stroke="#7a4a22" stroke-width="4.2" marker-end="url(#fS)" stroke-linejoin="round"/>
+<text x="478.0" y="159.2" font-size="9.5" font-weight="700" fill="#7a4a22" text-anchor="start">Ø110 enterrado · i = 1:60</text>
+<rect x="674.0" y="192.0" width="24" height="24" fill="var(--card)" stroke="#d9822b" stroke-width="2.2"/><line x1="674.0" y1="192.0" x2="698.0" y2="216.0" stroke="#d9822b" stroke-width="1"/>
+<text x="703.6" y="200.8" font-size="9.5" font-weight="700" fill="#d9822b" text-anchor="start">CIG · cámara interceptora de grasa</text>
+<rect x="138.0" y="158.4" width="24" height="24" fill="var(--card)" stroke="#7a4a22" stroke-width="2.2"/><line x1="138.0" y1="158.4" x2="162.0" y2="182.4" stroke="#7a4a22" stroke-width="1"/>
+<text x="167.6" y="149.6" font-size="9.5" font-weight="700" fill="#7a4a22" text-anchor="start">CI · cámara de inspección 0,60×0,60</text>
+<polyline points="150.0,156.0 150.0,96.0" fill="none" stroke="#7a4a22" stroke-width="4.2" marker-end="url(#fS)" stroke-linejoin="round"/>
+<text x="162.8" y="104.0" font-size="9.5" font-weight="700" fill="#7a4a22" text-anchor="start">a cámara séptica → pozo absorbente (ver implantación)</text>
+<polyline points="1038.0,224.0 1038.0,812.0 1017.2,812.0" fill="none" stroke="#2f6fb0" stroke-width="2" stroke-dasharray="8 3 2 3" marker-end="url(#fS)" stroke-linejoin="round"/>
+<text x="1026.0" y="216.0" font-size="9" font-weight="700" fill="#2f6fb0" text-anchor="end">Ingreso agua de red Ø25 (¾") enterrado a 0,60 · desde medidor en L.M.</text>
+<circle cx="958.0" cy="812.0" r="56.0" fill="var(--card)" stroke="#2f6fb0" stroke-width="2.2" stroke-dasharray="6 3"/><circle cx="958.0" cy="812.0" r="46.4" fill="none" stroke="#2f6fb0" stroke-width="1"/>
+<text x="958.0" y="810.4" font-size="13" font-weight="700" fill="#2f6fb0" text-anchor="middle">TC</text>
+<text x="958.0" y="828.0" font-size="9"  fill="#2f6fb0" text-anchor="middle">2.000 L enterrado</text>
+<polyline points="911.6,780.0 806.0,736.0 758.0,672.8" fill="none" stroke="#2f6fb0" stroke-width="2.4" stroke-linejoin="round"/>
+<text x="858.0" y="732.0" font-size="9"  fill="#2f6fb0" text-anchor="start">succión Ø32 + válvula de pie</text>
+<circle cx="746.0" cy="660.0" r="12" fill="var(--card)" stroke="#2f6fb0" stroke-width="2" stroke-dasharray="4 2"/><path d="M739.5,665.0 L746.0,652.5 L752.5,665.0 Z" fill="#2f6fb0"/>
+<text x="746.0" y="634.4" font-size="10.5" font-weight="700" fill="#2f6fb0" text-anchor="middle">BP</text>
+<polyline points="734.0,660.0 719.6,656.0 247.6,656.0" fill="none" stroke="#2f6fb0" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M709.9,650.5 L709.9,661.5 L722.9,650.5 L722.9,661.5 Z" fill="#2f6fb0" stroke="var(--card)" stroke-width=".6"/>
+<text x="716.4" y="645.6" font-size="8.5" font-weight="700" fill="#2f6fb0" text-anchor="middle">LLG</text>
+<text x="478.0" y="650.4" font-size="9" font-weight="700" fill="#2f6fb0" text-anchor="middle">AF Ø25 · PPR termofusión</text>
+<polyline points="698.8,656.0 698.8,701.6 690.8,706.4" fill="none" stroke="#2f6fb0" stroke-width="1.9" stroke-linejoin="round"/>
+<path d="M693.3,675.9 L704.3,675.9 L693.3,688.9 L704.3,688.9 Z" fill="#2f6fb0" stroke="var(--card)" stroke-width=".6"/>
+<polyline points="292.4,656.0 292.4,688.0" fill="none" stroke="#2f6fb0" stroke-width="1.9" stroke-linejoin="round"/>
+<path d="M233.1,650.5 L233.1,661.5 L246.1,650.5 L246.1,661.5 Z" fill="#2f6fb0" stroke="var(--card)" stroke-width=".6"/>
+<polyline points="247.6,656.0 166.0,656.0 166.0,712.8" fill="none" stroke="#2f6fb0" stroke-width="1.9" stroke-linejoin="round"/>
+<polyline points="230.0,656.0 230.0,668.0 247.6,668.0 247.6,700.0" fill="none" stroke="#2f6fb0" stroke-width="1.9" stroke-linejoin="round"/>
+<polyline points="174.0,656.0 174.0,605.6 118.0,605.6 118.0,591.2" fill="none" stroke="#2f6fb0" stroke-width="1.9" stroke-linejoin="round"/>
+<polyline points="268.4,690.4 268.4,641.6 239.6,641.6" fill="none" stroke="#c0392b" stroke-width="2" stroke-dasharray="6 3" stroke-linejoin="round"/>
+<path d="M233.1,636.1 L233.1,647.1 L246.1,636.1 L246.1,647.1 Z" fill="#c0392b" stroke="var(--card)" stroke-width=".6"/>
+<polyline points="239.6,641.6 183.6,641.6 183.6,596.0 124.4,596.0 124.4,589.6" fill="none" stroke="#c0392b" stroke-width="2" stroke-dasharray="6 3" stroke-linejoin="round"/>
+<polyline points="268.4,704.8 254.0,704.8 250.8,700.0" fill="none" stroke="#c0392b" stroke-width="2" stroke-dasharray="6 3" stroke-linejoin="round"/>
+<polyline points="298.8,700.0 319.6,669.6 674.8,669.6 674.8,700.0 681.2,704.8" fill="none" stroke="#c0392b" stroke-width="2" stroke-dasharray="6 3" stroke-linejoin="round"/>
+<path d="M669.3,680.7 L680.3,680.7 L669.3,693.7 L680.3,693.7 Z" fill="#c0392b" stroke="var(--card)" stroke-width=".6"/>
+<text x="478.0" y="682.4" font-size="9" font-weight="700" fill="#c0392b" text-anchor="middle">AC Ø20 aislada</text>
+<circle cx="247.6" cy="700.0" r="4" fill="#c0392b" stroke="#2f6fb0" stroke-width="1.8"/>
+<text x="718.0" y="697.6" font-size="8.5" font-weight="700" fill="var(--ink)" text-anchor="start">LLP</text>
+<polyline points="755.6,661.6 774.0,640.0 798.0,640.0" fill="none" stroke="#2f6fb0" stroke-width="1.7" stroke-linejoin="round"/>
+<circle cx="801.2" cy="640.0" r="5" fill="#2f6fb0"/><line x1="801.2" y1="640.0" x2="811.2" y2="640.0" stroke="#2f6fb0" stroke-width="2"/>
+<text x="814.0" y="628.0" font-size="9.5" font-weight="700" fill="#2f6fb0" text-anchor="start">CS</text>
+<rect x="190.0" y="664.0" width="60.0" height="62.4" fill="none" fill-opacity=".85" stroke="var(--ink)" stroke-width="1.2" stroke-dasharray="4 2"/>
+<path d="M190.0,664.0 L250.0,726.4 M250.0,664.0 L190.0,726.4" stroke="var(--ink2)" stroke-width=".5" opacity=".6"/>
+<rect x="134.0" y="712.8" width="32.0" height="16.0" fill="var(--card)" fill-opacity=".85" stroke="var(--ink)" stroke-width="1.2"/>
+<ellipse cx="150.0" cy="692.0" rx="14.4" ry="20.0" fill="var(--card)" fill-opacity=".85" stroke="var(--ink)" stroke-width="1.2"/>
+<ellipse cx="129.2" cy="584.0" rx="16.0" ry="21.6" fill="var(--card)" fill-opacity=".85" stroke="var(--ink)" stroke-width="1.2"/>
+<circle cx="281.2" cy="704.8" r="19.2" fill="var(--card)" stroke="#c0392b" stroke-width="2"/>
+<text x="281.2" y="708.0" font-size="11" font-weight="700" fill="#c0392b" text-anchor="middle">TT</text>
+<rect x="566.0" y="682.4" width="212.8" height="46.4" fill="none" fill-opacity=".85" stroke="var(--ink)" stroke-width="1.2" stroke-dasharray="2 2" opacity=".6"/>
+<rect x="662.0" y="690.4" width="48.0" height="32.0" fill="var(--card)" fill-opacity=".85" stroke="var(--ink)" stroke-width="1.2" />
+<circle cx="686.0" cy="706.4" r="2.8" fill="var(--ink)"/>
+<text x="598.0" y="712.8" font-size="8"  fill="var(--ink2)" text-anchor="middle">MESADA</text>
+<text x="686.0" y="719.2" font-size="7.5"  fill="var(--ink2)" text-anchor="middle">PILETA</text>
+<g transform="translate(1040,70)"><line x1="0" y1="14" x2="0" y2="-14" stroke="var(--rust)" stroke-width="2"/><path d="M0,-14 L-4,-6 L4,-6 Z" fill="var(--rust)"/><text x="0" y="-18" text-anchor="middle" font-size="12" font-weight="700" fill="var(--rust)">N</text></g>
+<text x="1120" y="40" font-size="12" font-weight="700" fill="var(--ink)">REFERENCIAS</text>
+<g transform="translate(1132,58)"><line x1="-13" y1="0" x2="13" y2="0" stroke="#2f6fb0" stroke-width="2.4" /></g>
+<text x="1152" y="62" font-size="10" fill="var(--ink)">Agua fría (AF) · PPR termofusión</text>
+<text x="1152" y="74" font-size="9" fill="var(--ink2)">troncal Ø25 (¾") · ramales Ø20 (½")</text>
+<g transform="translate(1132,90)"><line x1="-13" y1="0" x2="13" y2="0" stroke="#c0392b" stroke-width="2" stroke-dasharray="6 3"/></g>
+<text x="1152" y="94" font-size="10" fill="var(--ink)">Agua caliente (AC) Ø20 · PN20, aislada</text>
+<g transform="translate(1132,110)"><line x1="-13" y1="0" x2="13" y2="0" stroke="#2f6fb0" stroke-width="1.8" stroke-dasharray="8 3 2 3"/></g>
+<text x="1152" y="114" font-size="10" fill="var(--ink)">Ingreso de red (PEAD/PPR Ø25 enterrado)</text>
+<g transform="translate(1132,130)"><line x1="-13" y1="0" x2="13" y2="0" stroke="#7a4a22" stroke-width="4" /></g>
+<text x="1152" y="134" font-size="10" fill="var(--ink)">Cloacal primaria PVC Ø110 · i ≥ 1:60</text>
+<g transform="translate(1132,150)"><line x1="-13" y1="0" x2="13" y2="0" stroke="#d9822b" stroke-width="2.4" /></g>
+<text x="1152" y="154" font-size="10" fill="var(--ink)">Cloacal secundaria PVC Ø40–Ø63 · i ≥ 2 %</text>
+<g transform="translate(1132,170)"><line x1="-13" y1="0" x2="13" y2="0" stroke="#3a8a3a" stroke-width="2" stroke-dasharray="5 3"/></g>
+<text x="1152" y="174" font-size="10" fill="var(--ink)">Ventilación PVC Ø63</text>
+<g transform="translate(1132,190)"><path d="M-6,-5 L-6,5 L6,-5 L6,5Z" fill="#2f6fb0"/></g>
+<text x="1152" y="194" font-size="10" fill="var(--ink)">Llave de paso (LLG general · LLP local)</text>
+<g transform="translate(1132,210)"><rect x="-6" y="-6" width="12" height="12" fill="var(--card)" stroke="#d9822b" stroke-width="1.8"/><circle r="3" fill="none" stroke="#d9822b" stroke-width="1.4"/></g>
+<text x="1152" y="214" font-size="10" fill="var(--ink)">PPA pileta de patio abierta Ø110</text>
+<g transform="translate(1132,230)"><rect x="-9" y="-9" width="18" height="18" fill="var(--card)" stroke="#7a4a22" stroke-width="2"/><line x1="-9" y1="-9" x2="9" y2="9" stroke="#7a4a22"/></g>
+<text x="1152" y="234" font-size="10" fill="var(--ink)">Cámara (CI inspección · CIG grasa)</text>
+<g transform="translate(1132,250)"><circle r="6" fill="var(--card)" stroke="#3a8a3a" stroke-width="2"/><circle r="2" fill="#3a8a3a"/></g>
+<text x="1152" y="254" font-size="10" fill="var(--ink)">CV columna de ventilación</text>
+<g transform="translate(1132,270)"><circle r="10" fill="var(--card)" stroke="#2f6fb0" stroke-width="2" stroke-dasharray="4 2"/><path d="M-5,4 L0,-6 L5,4Z" fill="#2f6fb0"/></g>
+<text x="1152" y="274" font-size="10" fill="var(--ink)">BP bomba presurizadora (bajo piso)</text>
+<g transform="translate(1132,290)"><circle r="10" fill="var(--card)" stroke="#2f6fb0" stroke-width="2" stroke-dasharray="6 3"/></g>
+<text x="1152" y="294" font-size="10" fill="var(--ink)">TC tanque cisterna enterrado</text>
+<g transform="translate(1132,310)"><circle r="9" fill="var(--card)" stroke="#c0392b" stroke-width="1.8"/></g>
+<text x="1152" y="314" font-size="10" fill="var(--ink)">TT termotanque eléctrico</text>
+<g transform="translate(1132,330)"><circle r="4.5" fill="#2f6fb0"/><line x1="0" y1="0" x2="9" y2="0" stroke="#2f6fb0" stroke-width="1.8"/></g>
+<text x="1152" y="334" font-size="10" fill="var(--ink)">CS canilla de servicio exterior h 0,50</text>
+<g transform="translate(1132,350)"><line x1="-13" y1="0" x2="10" y2="0" stroke="#7a4a22" stroke-width="3" marker-end="url(#fS)"/></g>
+<text x="1152" y="354" font-size="10" fill="var(--ink)">Sentido de escurrimiento</text>
+<text x="1120" y="376" font-size="9.2" fill="var(--ink)">Toda la cañería corre bajo piso por la</text>
+<text x="1120" y="388" font-size="9.2" fill="var(--ink)">cámara ventilada, sujeta y registrable.</text>
+<text x="1120" y="400" font-size="9.2" fill="var(--ink)">Alturas de conexión: ver planilla.</text>
+<rect x="1120" y="880" width="290" height="62" fill="none" stroke="var(--ink2)" stroke-width="1"/><line x1="1120" y1="906" x2="1410" y2="906" stroke="var(--ink2)" stroke-width=".6"/><text x="1128" y="898" font-size="12.5" font-weight="700" fill="var(--ink)">PLANTA SANITARIA</text><text x="1128" y="920" font-size="9.5" fill="var(--ink2)">Casa-Refugio · Lote 103 · Villa de Las Rosas, Cba.</text><text x="1128" y="934" font-size="9.5" fill="var(--ink2)">Esquema de referencia · dibujar a esc. 1:100 · Sep 2026</text>
+</svg>
+<div class="cap">Todas las cañerías corren bajo el piso por la cámara ventilada, sujetas a la estructura y registrables. El baño se detalla en la ampliación de abajo.</div>
+</div>
+<div class="plano scroll" onclick="openBig('svgBano')" style="cursor:zoom-in">
+<p class="planotitle">Ampliación · baño y termotanque</p>
+<svg style="min-width:560px" id="svgBano" viewBox="0 0 880 900" role="img" aria-label="Ampliación de baño y termotanque con cañerías y alturas">
+<defs><marker id="mD" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.4"/></marker><marker id="fD" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M1 1L9 5L1 9Z" fill="context-stroke"/></marker><pattern id="hD" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="5" stroke="var(--ink)" stroke-width="2"/></pattern></defs>
+<!--
+<line x1="150.0" y1="1037.7" x2="1746.0" y2="1037.7" stroke="var(--dim)" stroke-width="1" marker-start="url(#mD)" marker-end="url(#mD)"/>
+<text class="dimt" x="948.0" y="1031.7" text-anchor="middle">8,40 m (ejes exteriores)</text>
+<line x1="92.0" y1="-396.8" x2="92.0" y2="629.2" stroke="var(--dim)" stroke-width="1" marker-start="url(#mD)" marker-end="url(#mD)"/>
+<text class="dimt" x="84.0" y="116.2" text-anchor="middle" transform="rotate(-90 84.0 116.2)">5,40 m</text>
+-->
+<rect x="150.0" y="-396.8" width="1596.0" height="1026.0" fill="none" stroke="var(--wall)" stroke-width="22.8"/>
+<line x1="834.0" y1="-396.8" x2="834.0" y2="169.4" stroke="var(--wall)" stroke-width="16.625"/>
+<line x1="150.0" y1="169.4" x2="834.0" y2="169.4" stroke="var(--wall)" stroke-width="14.25"/>
+<line x1="492.0" y1="169.4" x2="492.0" y2="629.2" stroke="var(--wall)" stroke-width="14.25"/>
+<line x1="349.5" y1="-396.8" x2="634.5" y2="-396.8" stroke="var(--card)" stroke-width="26.125"/>
+<line x1="349.5" y1="-399.3" x2="634.5" y2="-399.3" stroke="var(--glass)" stroke-width="1.3"/>
+<line x1="349.5" y1="-394.3" x2="634.5" y2="-394.3" stroke="var(--glass)" stroke-width="1.3"/>
+<text class="subt" x="492.0" y="-405.8" text-anchor="middle" opacity=".8">V1</text>
+<line x1="891.0" y1="-396.8" x2="1081.0" y2="-396.8" stroke="var(--card)" stroke-width="26.125"/>
+<line x1="891.0" y1="-399.3" x2="1081.0" y2="-399.3" stroke="var(--glass)" stroke-width="1.3"/>
+<line x1="891.0" y1="-394.3" x2="1081.0" y2="-394.3" stroke="var(--glass)" stroke-width="1.3"/>
+<text class="subt" x="986.0" y="-405.8" text-anchor="middle" opacity=".8">V2</text>
+<line x1="1261.5" y1="-396.8" x2="1641.5" y2="-396.8" stroke="var(--card)" stroke-width="26.125"/>
+<line x1="1261.5" y1="-399.3" x2="1641.5" y2="-399.3" stroke="var(--glass)" stroke-width="1.3"/>
+<line x1="1261.5" y1="-394.3" x2="1641.5" y2="-394.3" stroke="var(--glass)" stroke-width="1.3"/>
+<text class="subt" x="1451.5" y="-405.8" text-anchor="middle" opacity=".8">V3</text>
+<line x1="245.0" y1="629.2" x2="340.0" y2="629.2" stroke="var(--card)" stroke-width="26.125"/>
+<line x1="245.0" y1="626.7" x2="340.0" y2="626.7" stroke="var(--glass)" stroke-width="1.3"/>
+<line x1="245.0" y1="631.7" x2="340.0" y2="631.7" stroke="var(--glass)" stroke-width="1.3"/>
+<text class="subt" x="292.5" y="646.2" text-anchor="middle" opacity=".8">V4</text>
+<line x1="1328.0" y1="629.2" x2="1708.0" y2="629.2" stroke="var(--card)" stroke-width="26.125"/>
+<line x1="1328.0" y1="626.7" x2="1708.0" y2="626.7" stroke="var(--glass)" stroke-width="1.3"/>
+<line x1="1328.0" y1="631.7" x2="1708.0" y2="631.7" stroke="var(--glass)" stroke-width="1.3"/>
+<text class="subt" x="1518.0" y="646.2" text-anchor="middle" opacity=".8">V5</text>
+<line x1="1746.0" y1="296.7" x2="1746.0" y2="486.7" stroke="var(--card)" stroke-width="26.125"/>
+<line x1="1743.5" y1="296.7" x2="1743.5" y2="486.7" stroke="var(--glass)" stroke-width="1.3"/>
+<line x1="1748.5" y1="296.7" x2="1748.5" y2="486.7" stroke="var(--glass)" stroke-width="1.3"/>
+<text class="subt" x="1762.0" y="391.7" text-anchor="middle" opacity=".8" transform="rotate(90 1762.0 391.7)">V6</text>
+<line x1="150.0" y1="-121.3" x2="150.0" y2="-64.3" stroke="var(--card)" stroke-width="26.125"/>
+<line x1="147.5" y1="-121.3" x2="147.5" y2="-64.3" stroke="var(--glass)" stroke-width="1.3"/>
+<line x1="152.5" y1="-121.3" x2="152.5" y2="-64.3" stroke="var(--glass)" stroke-width="1.3"/>
+<text class="subt" x="134.0" y="-92.8" text-anchor="middle" opacity=".8" transform="rotate(90 134.0 -92.8)">V7</text>
+<line x1="150.0" y1="372.7" x2="150.0" y2="429.7" stroke="var(--card)" stroke-width="26.125"/>
+<line x1="147.5" y1="372.7" x2="147.5" y2="429.7" stroke="var(--glass)" stroke-width="1.3"/>
+<line x1="152.5" y1="372.7" x2="152.5" y2="429.7" stroke="var(--glass)" stroke-width="1.3"/>
+<text class="subt" x="134.0" y="401.2" text-anchor="middle" opacity=".8" transform="rotate(90 134.0 401.2)">V8</text>
+<line x1="1746.0" y1="-292.3" x2="1746.0" y2="-102.3" stroke="var(--card)" stroke-width="26.125"/>
+<line x1="1746.0" y1="-292.3" x2="1556.0" y2="-292.3" stroke="var(--door)" stroke-width="1.6"/>
+<path d="M1746.0,-102.3 A190.0,190.0 0 0,1 1556.0,-292.3" fill="none" stroke="var(--door)" stroke-width=".8" opacity=".55"/>
+<line x1="1746.0" y1="87.7" x2="1746.0" y2="-102.3" stroke="var(--card)" stroke-width="26.125"/>
+<line x1="1746.0" y1="87.7" x2="1556.0" y2="87.7" stroke="var(--door)" stroke-width="1.6"/>
+<path d="M1746.0,-102.3 A190.0,190.0 0 0,0 1556.0,87.7" fill="none" stroke="var(--door)" stroke-width=".8" opacity=".55"/>
+<line x1="891.0" y1="629.2" x2="1081.0" y2="629.2" stroke="var(--card)" stroke-width="26.125"/>
+<line x1="891.0" y1="629.2" x2="891.0" y2="439.2" stroke="var(--door)" stroke-width="1.6"/>
+<path d="M1081.0,629.2 A190.0,190.0 0 0,0 891.0,439.2" fill="none" stroke="var(--door)" stroke-width=".8" opacity=".55"/>
+<line x1="583.2" y1="169.4" x2="716.2" y2="169.4" stroke="var(--card)" stroke-width="19.0"/>
+<line x1="583.2" y1="169.4" x2="583.2" y2="36.4" stroke="var(--door)" stroke-width="1.6"/>
+<path d="M716.2,169.4 A133.0,133.0 0 0,0 583.2,36.4" fill="none" stroke="var(--door)" stroke-width=".8" opacity=".55"/>
+<line x1="492.0" y1="346.1" x2="492.0" y2="222.6" stroke="var(--card)" stroke-width="19.0"/>
+<line x1="492.0" y1="346.1" x2="368.5" y2="346.1" stroke="var(--door)" stroke-width="1.6"/>
+<path d="M492.0,222.6 A123.5,123.5 0 0,0 368.5,346.1" fill="none" stroke="var(--door)" stroke-width=".8" opacity=".55"/>
+<text class="subt" x="1762.0" y="-102.3" text-anchor="middle" opacity=".8" transform="rotate(90 1762.0 -102.3)">P1 acceso</text>
+<text class="subt" x="986.0" y="646.2" text-anchor="middle" opacity=".8">P2</text>
+<rect x="146.0" y="-400.8" width="8" height="8" fill="var(--clay)" opacity=".45"/>
+<rect x="146.0" y="102.7" width="8" height="8" fill="var(--clay)" opacity=".45"/>
+<rect x="146.0" y="619.5" width="8" height="8" fill="var(--clay)" opacity=".45"/>
+<rect x="830.0" y="-400.8" width="8" height="8" fill="var(--clay)" opacity=".45"/>
+<rect x="830.0" y="102.7" width="8" height="8" fill="var(--clay)" opacity=".45"/>
+<rect x="830.0" y="619.5" width="8" height="8" fill="var(--clay)" opacity=".45"/>
+<rect x="1742.0" y="-400.8" width="8" height="8" fill="var(--clay)" opacity=".45"/>
+<rect x="1742.0" y="102.7" width="8" height="8" fill="var(--clay)" opacity=".45"/>
+<rect x="1742.0" y="619.5" width="8" height="8" fill="var(--clay)" opacity=".45"/>
+<text class="lblt" x="492.0" y="-216.3" text-anchor="middle" opacity=".55" font-size="11">DORMITORIO</text>
+<text class="lblt" x="1280.5" y="87.7" text-anchor="middle" opacity=".55" font-size="11">ESTAR · COCINA</text>
+<text class="lblt" x="666.8" y="220.7" text-anchor="middle" opacity=".55" font-size="11">PASILLO</text>
+<text class="subt" x="666.8" y="232.7" text-anchor="middle" opacity=".55">guardado</text>
+<polyline points="245.0,576.0 245.0,-672.3" fill="none" stroke="#7a4a22" stroke-width="4.2" stroke-linejoin="round"/>
+<polyline points="245.0,-263.8 245.0,-320.8" fill="none" stroke="#7a4a22" stroke-width="4.2" marker-end="url(#fS)" stroke-linejoin="round"/>
+<text x="271.6" y="-216.3" font-size="9.5" font-weight="700" fill="#7a4a22" text-anchor="start" transform="rotate(90 271.6 -216.3)">Ø110 · i = 1:60 · bajo piso</text>
+<polyline points="218.4,291.0 387.5,382.2" fill="none" stroke="#d9822b" stroke-width="2.2" stroke-linejoin="round"/>
+<polyline points="416.0,545.6 416.0,429.7 387.5,382.2" fill="none" stroke="#d9822b" stroke-width="2.2" stroke-linejoin="round"/>
+<polyline points="387.5,382.2 245.0,382.2" fill="none" stroke="#d9822b" stroke-width="3.2" stroke-linejoin="round"/>
+<text x="324.8" y="368.9" font-size="8.5" font-weight="700" fill="#d9822b" text-anchor="middle">Ø63</text>
+<text x="248.8" y="268.2" font-size="8.5" font-weight="700" fill="#d9822b" text-anchor="start">Ø40</text>
+<text x="423.6" y="462.0" font-size="8.5" font-weight="700" fill="#d9822b" text-anchor="start">Ø50</text>
+<rect x="380.5" y="375.2" width="14" height="14" fill="var(--card)" stroke="#d9822b" stroke-width="1.9"/><circle cx="387.5" cy="382.2" r="3.5" fill="none" stroke="#d9822b" stroke-width="1.4"/>
+<text x="408.4" y="363.2" font-size="9" font-weight="700" fill="#d9822b" text-anchor="start">PPA</text>
+<circle cx="416.0" cy="545.6" r="4.5" fill="var(--card)" stroke="#d9822b" stroke-width="1.7"/>
+<polyline points="245.0,481.0 172.8,481.0" fill="none" stroke="#3a8a3a" stroke-width="2.2" stroke-dasharray="5 3" stroke-linejoin="round"/>
+<circle cx="172.8" cy="481.0" r="6.5" fill="var(--card)" stroke="#3a8a3a" stroke-width="2"/><circle cx="172.8" cy="481.0" r="2.2" fill="#3a8a3a"/>
+<text x="127.2" y="488.6" font-size="9" font-weight="700" fill="#3a8a3a" text-anchor="end">CV Ø63</text>
+<polyline points="1518.0,568.4 1518.0,-590.6" fill="none" stroke="#d9822b" stroke-width="2.8" stroke-linejoin="round"/>
+<polyline points="1518.0,-263.8 1518.0,-320.8" fill="none" stroke="#d9822b" stroke-width="2.8" marker-end="url(#fS)" stroke-linejoin="round"/>
+<text x="1544.6" y="-282.8" font-size="9.5" font-weight="700" fill="#d9822b" text-anchor="start" transform="rotate(90 1544.6 -282.8)">Ø50 cocina · i = 2 % · bajo piso</text>
+<polyline points="1518.0,-659.0 1518.0,-704.6 271.6,-704.6" fill="none" stroke="#7a4a22" stroke-width="4.2" stroke-linejoin="round"/>
+<polyline points="967.0,-704.6 891.0,-704.6" fill="none" stroke="#7a4a22" stroke-width="4.2" marker-end="url(#fS)" stroke-linejoin="round"/>
+<text x="1024.0" y="-731.2" font-size="9.5" font-weight="700" fill="#7a4a22" text-anchor="start">Ø110 enterrado · i = 1:60</text>
+<rect x="1506.0" y="-636.8" width="24" height="24" fill="var(--card)" stroke="#d9822b" stroke-width="2.2"/><line x1="1506.0" y1="-636.8" x2="1530.0" y2="-612.8" stroke="#d9822b" stroke-width="1"/>
+<text x="1559.8" y="-632.4" font-size="9.5" font-weight="700" fill="#d9822b" text-anchor="start">CIG · cámara interceptora de grasa</text>
+<rect x="233.0" y="-716.6" width="24" height="24" fill="var(--card)" stroke="#7a4a22" stroke-width="2.2"/><line x1="233.0" y1="-716.6" x2="257.0" y2="-692.6" stroke="#7a4a22" stroke-width="1"/>
+<text x="286.8" y="-754.0" font-size="9.5" font-weight="700" fill="#7a4a22" text-anchor="start">CI · cámara de inspección 0,60×0,60</text>
+<polyline points="245.0,-738.8 245.0,-881.3" fill="none" stroke="#7a4a22" stroke-width="4.2" marker-end="url(#fS)" stroke-linejoin="round"/>
+<text x="275.4" y="-862.3" font-size="9.5" font-weight="700" fill="#7a4a22" text-anchor="start">a cámara séptica → pozo absorbente (ver implantación)</text>
+<polyline points="2354.0,-577.3 2354.0,819.2 2304.6,819.2" fill="none" stroke="#2f6fb0" stroke-width="2" stroke-dasharray="8 3 2 3" marker-end="url(#fS)" stroke-linejoin="round"/>
+<text x="2325.5" y="-596.3" font-size="9" font-weight="700" fill="#2f6fb0" text-anchor="end">Ingreso agua de red Ø25 (¾") enterrado a 0,60 · desde medidor en L.M.</text>
+<circle cx="2164.0" cy="819.2" r="133.0" fill="var(--card)" stroke="#2f6fb0" stroke-width="2.2" stroke-dasharray="6 3"/><circle cx="2164.0" cy="819.2" r="110.2" fill="none" stroke="#2f6fb0" stroke-width="1"/>
+<text x="2164.0" y="815.4" font-size="13" font-weight="700" fill="#2f6fb0" text-anchor="middle">TC</text>
+<text x="2164.0" y="857.2" font-size="9"  fill="#2f6fb0" text-anchor="middle">2.000 L enterrado</text>
+<polyline points="2053.8,743.2 1803.0,638.7 1689.0,488.6" fill="none" stroke="#2f6fb0" stroke-width="2.4" stroke-linejoin="round"/>
+<text x="1926.5" y="629.2" font-size="9"  fill="#2f6fb0" text-anchor="start">succión Ø32 + válvula de pie</text>
+<circle cx="1660.5" cy="458.2" r="12" fill="var(--card)" stroke="#2f6fb0" stroke-width="2" stroke-dasharray="4 2"/><path d="M1654.0,463.2 L1660.5,450.7 L1667.0,463.2 Z" fill="#2f6fb0"/>
+<text x="1660.5" y="397.4" font-size="10.5" font-weight="700" fill="#2f6fb0" text-anchor="middle">BP</text>
+<polyline points="1632.0,458.2 1597.8,448.7 476.8,448.7" fill="none" stroke="#2f6fb0" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M1583.7,443.2 L1583.7,454.2 L1596.7,443.2 L1596.7,454.2 Z" fill="#2f6fb0" stroke="var(--card)" stroke-width=".6"/>
+<text x="1590.2" y="424.0" font-size="8.5" font-weight="700" fill="#2f6fb0" text-anchor="middle">LLG</text>
+<text x="1024.0" y="435.4" font-size="9" font-weight="700" fill="#2f6fb0" text-anchor="middle">AF Ø25 · PPR termofusión</text>
+<polyline points="1548.4,448.7 1548.4,557.0 1529.4,568.4" fill="none" stroke="#2f6fb0" stroke-width="1.9" stroke-linejoin="round"/>
+<path d="M1542.9,504.9 L1553.9,504.9 L1542.9,517.9 L1553.9,517.9 Z" fill="#2f6fb0" stroke="var(--card)" stroke-width=".6"/>
+<polyline points="583.2,448.7 583.2,524.7" fill="none" stroke="#2f6fb0" stroke-width="1.9" stroke-linejoin="round"/>
+<path d="M451.3,443.2 L451.3,454.2 L464.3,443.2 L464.3,454.2 Z" fill="#2f6fb0" stroke="var(--card)" stroke-width=".6"/>
+<polyline points="476.8,448.7 283.0,448.7 283.0,583.6" fill="none" stroke="#2f6fb0" stroke-width="1.9" stroke-linejoin="round"/>
+<polyline points="435.0,448.7 435.0,477.2 476.8,477.2 476.8,553.2" fill="none" stroke="#2f6fb0" stroke-width="1.9" stroke-linejoin="round"/>
+<polyline points="302.0,448.7 302.0,329.0 169.0,329.0 169.0,294.8" fill="none" stroke="#2f6fb0" stroke-width="1.9" stroke-linejoin="round"/>
+<polyline points="526.2,530.4 526.2,414.5 457.8,414.5" fill="none" stroke="#c0392b" stroke-width="2" stroke-dasharray="6 3" stroke-linejoin="round"/>
+<path d="M451.3,409.0 L451.3,420.0 L464.3,409.0 L464.3,420.0 Z" fill="#c0392b" stroke="var(--card)" stroke-width=".6"/>
+<polyline points="457.8,414.5 324.8,414.5 324.8,306.2 184.2,306.2 184.2,291.0" fill="none" stroke="#c0392b" stroke-width="2" stroke-dasharray="6 3" stroke-linejoin="round"/>
+<polyline points="526.2,564.6 492.0,564.6 484.4,553.2" fill="none" stroke="#c0392b" stroke-width="2" stroke-dasharray="6 3" stroke-linejoin="round"/>
+<polyline points="598.4,553.2 647.8,481.0 1491.4,481.0 1491.4,553.2 1506.6,564.6" fill="none" stroke="#c0392b" stroke-width="2" stroke-dasharray="6 3" stroke-linejoin="round"/>
+<path d="M1485.9,516.3 L1496.9,516.3 L1485.9,529.3 L1496.9,529.3 Z" fill="#c0392b" stroke="var(--card)" stroke-width=".6"/>
+<text x="1024.0" y="511.4" font-size="9" font-weight="700" fill="#c0392b" text-anchor="middle">AC Ø20 aislada</text>
+<circle cx="476.8" cy="553.2" r="4" fill="#c0392b" stroke="#2f6fb0" stroke-width="1.8"/>
+<text x="425.5" y="405.0" font-size="8.5" font-weight="700" fill="var(--ink)" text-anchor="end">LLP</text>
+<text x="1594.0" y="547.5" font-size="8.5" font-weight="700" fill="var(--ink)" text-anchor="start">LLP</text>
+<polyline points="1683.3,462.0 1727.0,410.7 1784.0,410.7" fill="none" stroke="#2f6fb0" stroke-width="1.7" stroke-linejoin="round"/>
+<circle cx="1791.6" cy="410.7" r="5" fill="#2f6fb0"/><line x1="1791.6" y1="410.7" x2="1801.6" y2="410.7" stroke="#2f6fb0" stroke-width="2"/>
+<text x="1822.0" y="382.2" font-size="9.5" font-weight="700" fill="#2f6fb0" text-anchor="start">CS</text>
+<rect x="340.0" y="467.7" width="142.5" height="148.2" fill="none" fill-opacity=".85" stroke="var(--ink)" stroke-width="1.2" stroke-dasharray="4 2"/>
+<path d="M340.0,467.7 L482.5,615.9 M482.5,467.7 L340.0,615.9" stroke="var(--ink2)" stroke-width=".5" opacity=".6"/>
+<text x="362.8" y="606.4" font-size="8"  fill="var(--ink2)" text-anchor="start">DUCHA</text>
+<rect x="207.0" y="583.6" width="76.0" height="38.0" fill="var(--card)" fill-opacity=".85" stroke="var(--ink)" stroke-width="1.2"/>
+<ellipse cx="245.0" cy="534.2" rx="34.2" ry="47.5" fill="var(--card)" fill-opacity=".85" stroke="var(--ink)" stroke-width="1.2"/>
+<text x="245.0" y="467.7" font-size="8"  fill="var(--ink2)" text-anchor="middle">INODORO</text>
+<ellipse cx="195.6" cy="277.7" rx="38.0" ry="51.3" fill="var(--card)" fill-opacity=".85" stroke="var(--ink)" stroke-width="1.2"/>
+<text x="195.6" y="211.2" font-size="8"  fill="var(--ink2)" text-anchor="start">LAVATORIO</text>
+<circle cx="556.6" cy="564.6" r="45.6" fill="var(--card)" stroke="#c0392b" stroke-width="2"/>
+<text x="556.6" y="572.2" font-size="11" font-weight="700" fill="#c0392b" text-anchor="middle">TT</text>
+<rect x="1233.0" y="511.4" width="505.4" height="110.2" fill="none" fill-opacity=".85" stroke="var(--ink)" stroke-width="1.2" stroke-dasharray="2 2" opacity=".6"/>
+<rect x="1461.0" y="530.4" width="114.0" height="76.0" fill="var(--card)" fill-opacity=".85" stroke="var(--ink)" stroke-width="1.2" />
+<circle cx="1518.0" cy="568.4" r="2.8" fill="var(--ink)"/>
+<text x="1309.0" y="583.6" font-size="8"  fill="var(--ink2)" text-anchor="middle">MESADA</text>
+<text x="1518.0" y="598.8" font-size="7.5"  fill="var(--ink2)" text-anchor="middle">PILETA</text>
+<polyline points="530.0,600.7 503.4,600.7 503.4,401.2 400.8,389.8" fill="none" stroke="#d9822b" stroke-width="1.3" stroke-dasharray="3 2" stroke-linejoin="round"/>
+<line x1="150.0" y1="657.7" x2="245.0" y2="657.7" stroke="var(--dim)" stroke-width="1" marker-start="url(#mD)" marker-end="url(#mD)"/>
+<text class="dimt" x="197.5" y="671.7" text-anchor="middle">0,50</text>
+<line x1="340.0" y1="657.7" x2="492.0" y2="657.7" stroke="var(--dim)" stroke-width="1" marker-start="url(#mD)" marker-end="url(#mD)"/>
+<text class="dimt" x="416.0" y="671.7" text-anchor="middle">0,80</text>
+<line x1="115.8" y1="169.4" x2="115.8" y2="277.7" stroke="var(--dim)" stroke-width="1" marker-start="url(#mD)" marker-end="url(#mD)"/>
+<text class="dimt" x="109.8" y="226.5" text-anchor="end">0,57</text>
+<rect x="20" y="698" width="330" height="171" fill="var(--card)" stroke="var(--line)"/>
+<text x="30" y="720" font-size="11" font-weight="700" fill="var(--ink)" xml:space="preserve">ALTURAS DE CONEXIÓN (sobre piso terminado)</text>
+<text x="30" y="737" font-size="10.5"  fill="var(--ink)" xml:space="preserve">Ducha: mezcladora h 1,00 · flor h 2,05</text>
+<text x="30" y="754" font-size="10.5"  fill="var(--ink)" xml:space="preserve">Lavatorio: AF / AC h 0,55 · desagüe Ø40</text>
+<text x="30" y="771" font-size="10.5"  fill="var(--ink)" xml:space="preserve">Inodoro c/ depósito: AF h 0,20</text>
+<text x="30" y="788" font-size="10.5"  fill="var(--ink)" xml:space="preserve">  descarga Ø110, eje a 0,32 de pared</text>
+<text x="30" y="805" font-size="10.5"  fill="var(--ink)" xml:space="preserve">Llaves de paso (LLP) AF / AC: h 1,20</text>
+<text x="30" y="822" font-size="10.5"  fill="var(--ink)" xml:space="preserve">Termotanque 80 L: entrada AF, salida AC,</text>
+<text x="30" y="839" font-size="10.5"  fill="var(--ink)" xml:space="preserve">  válvula de seguridad → PPA (trazo fino)</text>
+<text x="30" y="856" font-size="10.5"  fill="var(--ink)" xml:space="preserve">CV Ø63: sube a techo, remata +0,60 c/ sombrerete</text>
+<g transform="translate(60,50)"><line x1="0" y1="14" x2="0" y2="-14" stroke="var(--rust)" stroke-width="2"/><path d="M0,-14 L-4,-6 L4,-6 Z" fill="var(--rust)"/><text x="0" y="-18" text-anchor="middle" font-size="12" font-weight="700" fill="var(--rust)">N</text></g>
+<rect x="560" y="800" width="300" height="62" fill="none" stroke="var(--ink2)" stroke-width="1"/><line x1="560" y1="826" x2="860" y2="826" stroke="var(--ink2)" stroke-width=".6"/><text x="568" y="818" font-size="12.5" font-weight="700" fill="var(--ink)">AMPLIACIÓN BAÑO · TERMOTANQUE</text><text x="568" y="840" font-size="9.5" fill="var(--ink2)">Casa-Refugio · Lote 103 · Villa de Las Rosas, Cba.</text><text x="568" y="854" font-size="9.5" fill="var(--ink2)">Esquema de referencia · dibujar a esc. 1:25 · Sep 2026</text>
+</svg>
+<div class="cap">Ducha contra el tabique del pasillo: el termotanque queda del otro lado y el recorrido de agua caliente es mínimo. Inodoro bajo la ventana V4, lavatorio contra el muro oeste.</div>
+</div>
+<div class="plano scroll" onclick="openBig('svgServ')" style="cursor:zoom-in">
+<p class="planotitle">Implantación de servicios · distancias a ejes del lote</p>
+<svg style="min-width:480px" id="svgServ" viewBox="0 0 660 800" role="img" aria-label="Implantación de servicios con distancias a ejes del lote">
+<defs><marker id="mI" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.4"/></marker><marker id="fI" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M1 1L9 5L1 9Z" fill="context-stroke"/></marker><pattern id="hI" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="5" stroke="var(--ink)" stroke-width="2"/></pattern></defs>
+<rect x="95.0" y="61.0" width="331.0" height="26" fill="var(--card)" stroke="var(--line)"/>
+<text class="subt" x="260.5" y="78.0" text-anchor="middle">CALLE PÚBLICA · línea municipal (L.M.) · frente 25,46 m</text>
+<path d="M95.0,667.0 L95.0,95.0 L426.0,95.0 L426.0,667.0" fill="none" stroke="var(--clay)" stroke-width="2.2"/>
+<path d="M95.0,667.0 L426.0,667.0" stroke="var(--clay)" stroke-width="1" stroke-dasharray="2 4"/>
+<text class="subt" x="260.5" y="682.0" text-anchor="middle">el lote continúa al sur (fondo ≈ 85 m)</text>
+<text class="subt" x="85.0" y="381.0" text-anchor="middle" transform="rotate(-90 85.0 381.0)">eje medianero OESTE · Lote 102</text>
+<text class="subt" x="440.0" y="381.0" text-anchor="middle" transform="rotate(90 440.0 381.0)">eje medianero ESTE · Lote 104</text>
+<rect x="147.0" y="485.0" width="109.2" height="70.2" fill="var(--wall)" opacity=".5" stroke="var(--wall)" stroke-width="2"/>
+<text class="lblt" x="201.6" y="525.3" text-anchor="middle" font-size="11">VIVIENDA</text>
+<rect x="120.5" y="96.0" width="14" height="11" fill="var(--ink)"/>
+<text x="138.5" y="106.0" font-size="9.5" font-weight="700" fill="var(--ink)">Pilar de luz (medidor + TP)</text>
+<rect x="291.8" y="96.0" width="12" height="11" fill="#2f6fb0"/>
+<text x="307.8" y="106.0" font-size="9.5" font-weight="700" fill="#2f6fb0">Medidor de agua</text>
+<polyline points="127.5,106.7 114.5,115.8 114.5,568.2 185.4,568.2 185.4,555.2" fill="none" stroke="var(--ink)" stroke-width="1.8" stroke-dasharray="10 4 2 4"/>
+<polyline points="297.8,106.7 297.8,568.2 294.5,568.2" fill="none" stroke="#2f6fb0" stroke-width="1.8" stroke-dasharray="8 3 2 3"/>
+<circle cx="284.8" cy="568.2" r="9.1" fill="var(--card)" stroke="#2f6fb0" stroke-width="2.2"/>
+<text x="304.3" y="572.2" font-size="9.5" font-weight="700" fill="#2f6fb0">TC cisterna 2.000 L</text>
+<polyline points="240.6,485.0 240.6,464.2 153.5,464.2 153.5,485.0" fill="none" stroke="#7a4a22" stroke-width="2"/>
+<polyline points="153.5,464.2 153.5,342.0" fill="none" stroke="#7a4a22" stroke-width="2.6"/>
+<rect x="147.5" y="458.2" width="12" height="12" fill="var(--card)" stroke="#7a4a22" stroke-width="1.8"/>
+<rect x="234.6" y="458.2" width="12" height="12" fill="var(--card)" stroke="#7a4a22" stroke-width="1.8"/>
+<text x="250.6" y="460.2" font-size="9.5" font-weight="700" fill="#7a4a22">CIG</text>
+<text x="163.5" y="460.2" font-size="9.5" font-weight="700" fill="#7a4a22">CI</text>
+<rect x="139.5" y="411.0" width="28" height="18" rx="3" fill="var(--card)" stroke="#7a4a22" stroke-width="2"/>
+<text x="173.5" y="424.0" font-size="9.5" font-weight="700" fill="#7a4a22">CS cámara séptica</text>
+<circle cx="153.5" cy="342.0" r="9.8" fill="var(--card)" stroke="#7a4a22" stroke-width="2"/><circle cx="153.5" cy="342.0" r="2.2" fill="#7a4a22"/>
+<text x="169.5" y="346.0" font-size="9.5" font-weight="700" fill="#7a4a22">PA pozo absorbente</text>
+<g stroke="#3a8a3a" stroke-width="1.6"><line x1="167.3" y1="563.0" x2="181.3" y2="563.0"/><line x1="170.3" y1="566.0" x2="178.3" y2="566.0"/></g>
+<text x="174.3" y="589.0" font-size="9.5" font-weight="700" fill="#3a8a3a" text-anchor="middle">PAT</text>
+<line x1="278.3" y1="95.0" x2="278.3" y2="342.0" stroke="var(--dim)" stroke-width="1" marker-start="url(#mI)" marker-end="url(#mI)"/>
+<text class="dimt" x="273.3" y="218.5" text-anchor="middle" transform="rotate(-90 273.3 218.5)">19,00</text>
+<line x1="278.3" y1="342.0" x2="278.3" y2="420.0" stroke="var(--dim)" stroke-width="1" marker-start="url(#mI)" marker-end="url(#mI)"/>
+<text class="dimt" x="273.3" y="381.0" text-anchor="middle" transform="rotate(-90 273.3 381.0)">6,00</text>
+<line x1="278.3" y1="420.0" x2="278.3" y2="485.0" stroke="var(--dim)" stroke-width="1" marker-start="url(#mI)" marker-end="url(#mI)"/>
+<text class="dimt" x="273.3" y="452.5" text-anchor="middle" transform="rotate(-90 273.3 452.5)">5,00</text>
+<line x1="95.0" y1="383.6" x2="153.5" y2="383.6" stroke="var(--dim)" stroke-width="1" marker-start="url(#mI)" marker-end="url(#mI)"/>
+<text class="dimt" x="124.2" y="378.6" text-anchor="middle">4,50</text>
+<line x1="95.0" y1="537.0" x2="147.0" y2="537.0" stroke="var(--dim)" stroke-width="1" marker-start="url(#mI)" marker-end="url(#mI)"/>
+<text class="dimt" x="121.0" y="532.0" text-anchor="middle">4,00</text>
+<line x1="409.6" y1="95.0" x2="409.6" y2="568.2" stroke="var(--dim)" stroke-width="1" marker-start="url(#mI)" marker-end="url(#mI)"/>
+<text class="dimt" x="404.6" y="331.6" text-anchor="middle" transform="rotate(-90 404.6 331.6)">36,40</text>
+<line x1="95.0" y1="615.0" x2="284.8" y2="615.0" stroke="var(--dim)" stroke-width="1" marker-start="url(#mI)" marker-end="url(#mI)"/>
+<text class="dimt" x="189.9" y="610.0" text-anchor="middle">14,60 eje O → TC</text>
+<line x1="284.8" y1="615.0" x2="426.0" y2="615.0" stroke="var(--dim)" stroke-width="1" marker-start="url(#mI)" marker-end="url(#mI)"/>
+<text class="dimt" x="355.4" y="610.0" text-anchor="middle">10,86 → eje E</text>
+<line x1="95.0" y1="596.8" x2="95.0" y2="622.8" stroke="var(--dim)" stroke-width=".7"/>
+<line x1="284.8" y1="596.8" x2="284.8" y2="622.8" stroke="var(--dim)" stroke-width=".7"/>
+<line x1="426.0" y1="596.8" x2="426.0" y2="622.8" stroke="var(--dim)" stroke-width=".7"/>
+<line x1="153.5" y1="342.0" x2="284.8" y2="568.2" stroke="var(--rust)" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="305.6" y="381.0" font-size="9.5" font-weight="700" fill="var(--rust)">PA ↔ TC ≈ 20 m</text>
+<text x="305.6" y="393.0" font-size="9" fill="var(--rust)">(recomendado ≥ 15 m)</text>
+<line x1="30" y1="690" x2="60" y2="690" stroke="var(--ink)" stroke-width="1.8" stroke-dasharray="10 4 2 4"/><text x="68" y="694" font-size="9.5" fill="var(--ink)">Línea eléctrica subterránea</text>
+<line x1="30" y1="708" x2="60" y2="708" stroke="#2f6fb0" stroke-width="1.8" stroke-dasharray="8 3 2 3"/><text x="68" y="712" font-size="9.5" fill="var(--ink)">Agua de red a cisterna</text>
+<line x1="30" y1="726" x2="60" y2="726" stroke="#7a4a22" stroke-width="2.4"/><text x="68" y="730" font-size="9.5" fill="var(--ink)">Cloacal Ø110</text>
+<text x="30" y="752" font-size="9" fill="var(--ink2)">Terreno escurre al NO: la cisterna queda aguas arriba del pozo.</text>
+<g transform="translate(610,60)"><line x1="0" y1="14" x2="0" y2="-14" stroke="var(--rust)" stroke-width="2"/><path d="M0,-14 L-4,-6 L4,-6 Z" fill="var(--rust)"/><text x="0" y="-18" text-anchor="middle" font-size="12" font-weight="700" fill="var(--rust)">N</text></g>
+<rect x="360" y="710" width="285" height="62" fill="none" stroke="var(--ink2)" stroke-width="1"/><line x1="360" y1="736" x2="645" y2="736" stroke="var(--ink2)" stroke-width=".6"/><text x="368" y="728" font-size="12.5" font-weight="700" fill="var(--ink)">IMPLANTACIÓN DE SERVICIOS</text><text x="368" y="750" font-size="9.5" fill="var(--ink2)">Casa-Refugio · Lote 103 · Villa de Las Rosas, Cba.</text><text x="368" y="764" font-size="9.5" fill="var(--ink2)">Distancias a ejes del lote en m · verificar c/ mensura</text>
+</svg>
+<div class="cap">La cisterna queda aguas arriba (sureste) y el sistema séptico aguas abajo (noroeste), a unos 20 m entre sí. La línea eléctrica entra por el oeste y el sur, sin cruzar la cloaca.</div>
+</div>
+<h3 style="font-family:'Fraunces',serif;font-size:1.05rem;margin:18px 0 4px">Especificación de la instalación</h3>
+<div class="tablecard"><table><thead><tr><th>Elemento</th><th>Especificación</th></tr></thead><tbody><tr><td>Ingreso de red</td><td>Medidor en línea municipal · caño PEAD o PPR Ø25 (¾") enterrado a 0,60 m hasta la cisterna, con flotante mecánico</td></tr><tr><td>Tanque cisterna (TC)</td><td>2.000 L, polietileno tricapa apto para enterrar · tapa hermética 0,20 m sobre terreno · ventilación Ø63 con malla · rebalse a terreno</td></tr><tr><td>Bomba presurizadora (BP)</td><td>0,5–0,75 HP autocebante con control electrónico de presión · válvula de pie con retención en la cisterna · succión Ø32 · llave general (LLG) y unión doble · sobre base, en la cámara ventilada</td></tr><tr><td>Agua fría / caliente</td><td>Polipropileno copolímero random termofusión · troncal Ø25, ramales Ø20 · agua caliente PN20 · toda cañería de la cámara aislada con coquilla (protección contra heladas)</td></tr><tr><td>Termotanque (TT)</td><td>Eléctrico 80 L en el pasillo · llave de paso de entrada · válvula de seguridad con descarga a la PPA</td></tr><tr><td>Llaves de paso (LLP)</td><td>Una de agua fría y una de caliente por local: baño (h 1,20) y cocina (bajo mesada)</td></tr><tr><td>Desagüe primario</td><td>PVC 3,2 mm Ø110 · pendiente entre 1:60 y 1:20 · inodoro directo al caño principal</td></tr><tr><td>Desagüe secundario</td><td>PVC Ø40 lavatorio, Ø50 ducha y pileta de cocina, Ø63 de PPA a principal · pendiente ≥ 2 %</td></tr><tr><td>Ventilación (CV)</td><td>PVC Ø63 desde el caño principal, sube por muro oeste y remata 0,60 m sobre la cubierta con sombrerete</td></tr><tr><td>Cámaras</td><td>CIG interceptora de grasa (cocina) · CI de inspección 0,60×0,60 a la salida de la casa · todas con tapa registrable</td></tr><tr><td>Tratamiento</td><td>Cámara séptica prefabricada (mín. 1.000 L) + pozo absorbente Ø1,20 con ventilación · profundidad según ensayo de absorción, sin alcanzar la napa</td></tr><tr><td>Canilla de servicio (CS)</td><td>Exterior este, h 0,50 sobre terreno, desde el troncal después de la bomba</td></tr></tbody></table></div>
+<div class="note"><b>Distancias de seguridad.</b> Pozo absorbente a 4,50 m del eje medianero oeste (mín. 1,50) y a unos 20 m de la cisterna (recomendado ≥ 15 m), aguas abajo. Cámara séptica a 5 m de la casa. Cisterna a 36,40 m de la línea municipal y 14,60 m del eje oeste. Todas las posiciones se ajustan en obra con la mensura.</div>
+<div class="note"><b>Cámara ventilada.</b> Las cañerías se replantean esquivando las cruces de San Andrés entre pilotines: ninguna diagonal se corta ni se afloja para pasar un caño. Ningún caño atraviesa el tabique del eje x = 3,60. Sujeción con abrazaderas cada 1,00 m como máximo en los horizontales de desagüe.</div>
+<div class="note warn"><b>Para el dibujante · presentación municipal (Ord. 1088/13).</b> Planta de electricidad y planta de instalaciones sanitarias a escala 1:100, con carátula reglamentaria. En la sanitaria acotar cámara séptica, pozo absorbente, cisterna y cámaras a los ejes delimitantes del lote (ver implantación de servicios). Proyecto en rojo. Instalación sanitaria ejecutada por instalador matriculado; la conexión de agua de red se tramita en la Oficina de Obras Públicas y la línea de edificación con la distribuidora (CEOSP o CEMDO). Si se usa gas envasado, lleva plano propio de gasista matriculado.</div>
+</section>
 <section class="blk">
 <h2><span class="mk">⛭</span>Corte transversal A–A</h2>
 <p>Imaginá que cortás la casa con un cuchillo por la línea A–A de la planta y la mirás de perfil.
